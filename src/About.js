@@ -1,7 +1,8 @@
+import './About.css';
 function About() {
 	return (
 		<>
-			<h1>About</h1>
+			<h1 className='About-color'>О нас</h1>
 		</>
 	);
 }

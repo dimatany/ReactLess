@@ -1,7 +1,7 @@
 function Masters() {
 	return (
 		<>
-			<h1>Masters</h1>
+			<h1>Мастера</h1>
 		</>
 	);
 }
