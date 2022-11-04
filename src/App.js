@@ -12,7 +12,6 @@ import NotFound from './NotFound';
 
 function App() {
   return (
-      <body>
       <div className="container">
           <Router>
               <Header/>
@@ -25,7 +24,6 @@ function App() {
               </Routes>
           </Router>
       </div>
-      </body>
   );
 }
 
