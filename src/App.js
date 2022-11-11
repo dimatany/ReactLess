@@ -1,14 +1,14 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link, Outlet } from 'react-router-dom'
 
 import './Reset.css';
-import './App.css';
-import Main from './Main';
-import Header from './Header';
-import About from './About';
-import Masters from './Masters';
-import Contacts from './Contacts';
-import NotFound from './NotFound';
+import './index.css';
+import Main from './components/Main';
+import Header from './components/Header';
+import About from './components/About';
+import Masters from './components/Masters';
+import Contacts from './components/Contacts';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
