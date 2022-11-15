@@ -1,3 +1,4 @@
+import './Contacts.css';
 function Contacts() {
 	return (
 		<>
