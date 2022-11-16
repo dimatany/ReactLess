@@ -1,3 +1,5 @@
+import React from 'react';
+import './Reviews.css';
 import './Reviews.css';
 function Reviews() {
 	return (

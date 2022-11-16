@@ -1,3 +1,5 @@
+import React from 'react';
+import './Masters.css';
 function Masters() {
 	return (
 		<>
