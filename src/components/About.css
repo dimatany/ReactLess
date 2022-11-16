@@ -1,5 +1,62 @@
-.About-color {
-  font-style: italic;
+.background-nav {
+  background: url("Hbg.png") center/cover no-repeat;
+  height: 75vh;
+  width: 100%;
+  position: relative;
+  top: -75px;
+  z-index: 0;
+  margin-bottom: 40px;
+}
+.background-nav h1 {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20vh;
+  font-weight: 700;
+  line-height: 120%;
+  font-size: 72px;
+  max-width: 50%;
+}
+
+.about {
+  margin: 0 auto 40px;
+  min-width: 320px;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+}
+.about span {
+  display: block;
+  margin-bottom: 40px;
+}
+.about p {
+  line-height: 25px;
+  padding-bottom: 40px;
+}
+.about p:last-child {
+  margin-bottom: 100px;
+}
+
+.services {
+  width: 100%;
+}
+.services h2 {
+  margin: 0 auto 80px;
+  min-width: 320px;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 58px;
+}
+.services .services-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.services .services-card img {
+  width: 300px;
+  height: 250px;
 }
 
 /*# sourceMappingURL=About.css.map */
