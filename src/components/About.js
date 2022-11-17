@@ -9,11 +9,10 @@ import './ab6.png';
 
 
 function About() {
-	let photo;
 	return (
 		<>
 			<nav className='background-nav'>
-				<h1>Студія краси Осокорки|Позняки</h1>
+				<h1>Студія краси Осокорки</h1>
 			</nav>
 			<div className='about'>
 				<span>
@@ -28,12 +27,30 @@ function About() {
 			<div className='services'>
 				<h2>Наші послуги</h2>
 				<div className='services-card'>
-					<img src={require("./ab1.png")}  alt='is top image'/>
-					<img src={require("./ab2.png")}  alt='is top image'/>
-					<img src={require("./ab3.png")}  alt='is top image'/>
-					<img src={require("./ab4.png")}  alt='is top image'/>
-					<img src={require("./ab5.png")}  alt='is top image'/>
-					<img src={require("./ab6.png")}  alt='is top image'/>
+					<div className='shadow'>
+						<img src={require("./ab1.png")}  alt='is top image'/>
+						<span>Перукарські послуги</span>
+					</div>
+					<div className='shadow'>
+						<img src={require("./ab2.png")}  alt='is top image'/>
+						<span>Манікюр</span>
+					</div>
+					<div className='shadow'>
+						<img src={require("./ab3.png")}  alt='is top image'/>
+						<span>Педикюр</span>
+					</div>
+					<div className='shadow'>
+						<img src={require("./ab4.png")}  alt='is top image'/>
+						<span>Косметологія</span>
+					</div>
+					<div className='shadow'>
+						<img src={require("./ab5.png")}  alt='is top image'/>
+						<span>Естетист з тіла</span>
+					</div>
+					<div className='shadow'>
+						<img src={require("./ab6.png")}  alt='is top image'/>
+						<span>Візаж</span>
+					</div>
 				</div>
 			</div>
 		</>

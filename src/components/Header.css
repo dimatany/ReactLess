@@ -1,7 +1,7 @@
 .nav {
   position: relative;
   z-index: 1;
-  border-bottom: 1px solid silver;
+  border-bottom: 1px solid white;
 }
 .nav ul {
   display: flex;
