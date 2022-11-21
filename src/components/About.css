@@ -1,6 +1,6 @@
 .background-nav {
   background: url("Hbg.png") center/cover no-repeat;
-  height: 75vh;
+  height: 85vh;
   width: 100%;
   position: relative;
   top: -75px;
@@ -31,6 +31,7 @@
 .about p {
   line-height: 25px;
   padding-bottom: 40px;
+  font-size: 18px;
 }
 .about p:last-child {
   margin-bottom: 100px;
@@ -73,6 +74,9 @@
   z-index: 10;
   font-size: 20px;
   font-weight: 700;
+}
+.shadow span:hover {
+  color: #BA8A4C;
 }
 
 .shadow:before,
