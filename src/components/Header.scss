@@ -1,11 +1,18 @@
 $highlight-color: #BA8A4C;
+$border-color: rgba(255, 255, 255, .5);
 .nav {
   position: fixed;
   z-index: 1;
-  border-bottom: 1px solid white;
   backdrop-filter: blur(10px);
   max-width: 1600px;
   width: 100%;
+  .border {
+    border-bottom: 1px solid $border-color;
+    border-top: 1px solid transparent;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+  }
   ul {
     display: flex;
     flex-direction: row;

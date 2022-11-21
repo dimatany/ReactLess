@@ -57,7 +57,7 @@ class App extends React.Component {
 	render () {
 		return (
 			<section className="section">
-				<div className="tabs">
+				<div className="tabs wrap">
 					<h2>Наші роботи</h2>
 					<Tabs>
 						<Tab label="Показати все">

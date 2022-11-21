@@ -1,0 +1,61 @@
+.section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: start;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  gap: 30px;
+}
+.section .contacts span, .section .working-mode span, .section .social span {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+.section .contacts ul, .section .working-mode ul, .section .social ul {
+  margin-top: 20px;
+}
+.section .contacts ul li, .section .working-mode ul li, .section .social ul li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.section .contacts ul li a, .section .working-mode ul li a, .section .social ul li a {
+  text-decoration: none;
+}
+.section .contacts ul li a:hover, .section .working-mode ul li a:hover, .section .social ul li a:hover {
+  color: #BA8A4C;
+}
+.section .working-mode ul {
+  margin-top: 20px;
+}
+.section .social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section .social svg {
+  margin-top: 20px;
+}
+
+.border {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  max-width: 1300px;
+  width: 100%;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0 50px 0;
+}
+.copyright span {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=Footer.css.map */

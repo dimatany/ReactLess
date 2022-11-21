@@ -1,10 +1,16 @@
 .nav {
   position: fixed;
   z-index: 1;
-  border-bottom: 1px solid white;
   backdrop-filter: blur(10px);
   max-width: 1600px;
   width: 100%;
+}
+.nav .border {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid transparent;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
 }
 .nav ul {
   display: flex;

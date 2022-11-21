@@ -1,3 +1,11 @@
+.wrap {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .background-nav {
   background: url("Hbg.png") center/cover no-repeat;
   height: 85vh;
@@ -75,9 +83,6 @@
   z-index: 10;
   font-size: 20px;
   font-weight: 700;
-}
-.shadow span:hover {
-  color: #BA8A4C;
 }
 
 .shadow:before,
