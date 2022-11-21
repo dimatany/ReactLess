@@ -1,11 +1,14 @@
 import React from 'react';
 import './About.css';
+import Tabs from './Tabs';
+
 import './ab1.png';
 import './ab2.png';
 import './ab3.png';
 import './ab4.png';
 import './ab5.png';
 import './ab6.png';
+
 
 
 function About() {
@@ -53,6 +56,7 @@ function About() {
 					</div>
 				</div>
 			</div>
+			<Tabs/>
 		</>
 	);
 }
