@@ -47,7 +47,7 @@ $highlight-color: #BA8A4C;
 }
 .services {
   width: 100%;
-  margin-bottom: 200px;
+  margin-bottom: 250px;
   h2 {
     margin: 0 auto 80px;
     min-width: 320px;
@@ -62,6 +62,20 @@ $highlight-color: #BA8A4C;
     flex-wrap: wrap;
     justify-content: center;
     gap: 100px;
+  }
+}
+.logo-partners {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto 200px;
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li {
+      width: 25%;
+    }
   }
 }
 .shadow{

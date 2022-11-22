@@ -6,7 +6,6 @@ $highlight-color: #BA8A4C;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: start;
-  padding-top: 30px;
   padding-bottom: 30px;
   gap: 30px;
   .contacts, .working-mode, .social {
@@ -50,14 +49,16 @@ $highlight-color: #BA8A4C;
   border-top: 1px solid $border-color;
   max-width: 1300px;
   width: 100%;
+  padding-top: 20px;
 }
 .copyright {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px 0 50px 0;
+  padding: 30px 0 30px 0;
   span {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
+    font-style: italic;
   }
 }

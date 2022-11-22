@@ -47,7 +47,7 @@
 
 .services {
   width: 100%;
-  margin-bottom: 200px;
+  margin-bottom: 250px;
 }
 .services h2 {
   margin: 0 auto 80px;
@@ -63,6 +63,21 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 100px;
+}
+
+.logo-partners {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto 200px;
+}
+.logo-partners ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.logo-partners ul li {
+  width: 25%;
 }
 
 .shadow {

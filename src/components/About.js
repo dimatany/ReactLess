@@ -39,22 +39,30 @@ function About() {
 						<span>Манікюр</span>
 					</div>
 					<div className='shadow'>
-						<img src={require("./ab3.png")}  alt='is top image'/>
+						<img src={require("./ab3.png")}  alt='image of the service'/>
 						<span>Педикюр</span>
 					</div>
 					<div className='shadow'>
-						<img src={require("./ab4.png")}  alt='is top image'/>
+						<img src={require("./ab4.png")}  alt='image of the service'/>
 						<span>Косметологія</span>
 					</div>
 					<div className='shadow'>
-						<img src={require("./ab5.png")}  alt='is top image'/>
+						<img src={require("./ab5.png")}  alt='image of the service'/>
 						<span>Естетист з тіла</span>
 					</div>
 					<div className='shadow'>
-						<img src={require("./ab6.png")}  alt='is top image'/>
+						<img src={require("./ab6.png")}  alt='image of the service'/>
 						<span>Візаж</span>
 					</div>
 				</div>
+			</div>
+			<div className='logo-partners'>
+				<ul>
+					<li><img src={require("./logoBrand1.png")}  alt='logo of partners'/></li>
+					<li><img src={require("./logoBrand2.png")}  alt='logo of partners'/></li>
+					<li><img src={require("./logoBrand3.png")}  alt='logo of partners'/></li>
+					<li><img src={require("./logoBrand4.png")}  alt='logo of partners'/></li>
+				</ul>
 			</div>
 			<Tabs/>
 		</>
