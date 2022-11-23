@@ -29,6 +29,9 @@ $highlight-color: #BA8A4C;
       }
     }
   }
+  .contacts {
+    text-align: center;
+  }
   .working-mode {
     ul {
       margin-top: 20px;
@@ -41,6 +44,10 @@ $highlight-color: #BA8A4C;
     justify-content: center;
     svg {
       margin-top: 20px;
+      &:hover {
+        stroke: $highlight-color;
+        fill: $highlight-color;
+      }
     }
   }
 }
@@ -55,10 +62,19 @@ $highlight-color: #BA8A4C;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 0 30px 0;
+  padding: 30px 0;
   span {
     font-weight: 700;
     font-size: 16px;
     font-style: italic;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
   }
 }

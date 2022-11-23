@@ -3,10 +3,8 @@ $highlight-color: #BA8A4C;
 
 .wrap {
   max-width: 1300px;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 .background-nav {
   background: url("Hbg.png") center / cover no-repeat;
@@ -15,7 +13,7 @@ $highlight-color: #BA8A4C;
   position: relative;
   top: -75px;
   z-index: 0;
-  margin-bottom: 40px;
+  margin-bottom: 10vh;
   h1 {
     text-align: center;
     margin: 0 auto;
@@ -23,31 +21,31 @@ $highlight-color: #BA8A4C;
     font-weight: 700;
     line-height: 120%;
     font-size: 72px;
-    max-width: 50%;
+    max-width: 60%;
   }
 }
 .about {
-  margin: 0 auto 40px;
+  margin: 0 auto 10vh;
   min-width: 320px;
   max-width: 700px;
-  width: 100%;
+  width: 90%;
   text-align: center;
   span {
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 10vh;
   }
   p {
     line-height: 25px;
-    padding-bottom: 40px;
+    padding-bottom: 10vh;
     font-size: 18px;
     &:last-child {
-      margin-bottom: 100px;
+      margin-bottom: 15vh;
     }
   }
 }
 .services {
   width: 100%;
-  margin-bottom: 250px;
+  margin-bottom: 45vh;
   h2 {
     margin: 0 auto 80px;
     min-width: 320px;
@@ -67,7 +65,7 @@ $highlight-color: #BA8A4C;
 .logo-partners {
   max-width: 1300px;
   width: 100%;
-  margin: 0 auto 200px;
+  margin: 0 auto 40vh;
   ul {
     display: flex;
     flex-direction: row;
@@ -125,3 +123,23 @@ $highlight-color: #BA8A4C;
     background-position: 0 50%;
   }
 }
+@media screen and (max-width: 720px) {
+  .background-nav {
+    h1 {
+      text-align: center;
+      padding-top: 40vh;
+      line-height: 120%;
+      font-size: 45px;
+      max-width: 60%;
+    }
+  }
+  .about {
+    svg {
+      width: 44px;
+      height: 44px;
+    }
+  }
+}
+
+
+
