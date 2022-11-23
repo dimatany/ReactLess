@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Main from './Main';
+
 import About from './About';
 import Masters from './Masters';
 import Goods from './Goods';
@@ -34,7 +34,6 @@ function Header() {
 				</nav>
 				<Router>
 					<Routes>
-						<Route path="/" element={<Main/>}/>
 						<Route path="/about" element={<About/>}/>
 						<Route path="/masters" element={<Masters/>}/>
 						<Route path="/goods" element={<Goods/>}/>
