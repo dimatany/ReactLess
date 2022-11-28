@@ -6,7 +6,7 @@ $highlight-color: #BA8A4C;
   width: 90%;
   margin: 0 auto;
 }
-.background-nav {
+.background {
   background: url("Hbg.png") center / cover no-repeat;
   height: 85vh;
   width: 100%;
@@ -55,14 +55,14 @@ $highlight-color: #BA8A4C;
     font-weight: 700;
     font-size: 58px;
   }
-  .services-card {
+  .card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 100px;
   }
 }
-.logo-partners {
+.partners {
   max-width: 1300px;
   width: 100%;
   margin: 0 auto 25vh;
@@ -76,7 +76,7 @@ $highlight-color: #BA8A4C;
     }
   }
 }
-.shadow{
+.shadow {
   position: relative;
   background: #010002;
   border-radius: 20px;
@@ -140,6 +140,4 @@ $highlight-color: #BA8A4C;
     }
   }
 }
-
-
 

@@ -1,9 +1,10 @@
 import React from 'react';
-import './Stocks.css';
+import styles from './Stocks.module.css';
+
 function Stocks() {
 	return (
 		<>
-			<h1 className="title">Акции</h1>
+			<h2>Акции</h2>
 		</>
 	);
 }

@@ -1,6 +1,6 @@
 $highlight-color: black;
 
-.masters-block {
+.block {
   padding-top: 20vh;
   width: 90%;
   max-width: 1300px;
@@ -13,7 +13,7 @@ $highlight-color: black;
     font-size: 58px;
     margin-bottom: 10vh;
   }
-  .masters-card {
+  .cardmaster {
     display: flex;
     flex-wrap: wrap;
     gap: 10vw;
@@ -21,7 +21,7 @@ $highlight-color: black;
     justify-content: center;
     margin-bottom: 15vh;
   }
-  .masters-description {
+  .description {
     max-width: 70vw;
     margin: 0 auto;
     font-size: 20px;
@@ -73,7 +73,7 @@ $highlight-color: black;
     padding-top: 5px;
   }
 }
-.card-first {
+.first {
   background: url("./Mas1.png") center center no-repeat;
   background-size: 379px;
   &:hover {
@@ -81,7 +81,7 @@ $highlight-color: black;
     background-size: 600px;
   }
 }
-.card-second {
+.second {
   background: url("./Mas2.png") center center no-repeat;
   background-size: 379px;
   &:hover {
@@ -89,7 +89,7 @@ $highlight-color: black;
     background-size: 600px;
   }
 }
-.card-third {
+.third {
   background: url("./Mas3.png") center center no-repeat;
   background-size: 379px;
   &:hover {
@@ -97,7 +97,7 @@ $highlight-color: black;
     background-size: 600px;
   }
 }
-.card-fourth {
+.fourth {
   background: url("./Mas4.png") center center no-repeat;
   background-size: 379px;
   &:hover {
@@ -105,7 +105,7 @@ $highlight-color: black;
     background-size: 600px;
   }
 }
-.card-fifth {
+.fifth {
   background: url("./Mas5.png") center center no-repeat;
   background-size: 379px;
   &:hover {
@@ -113,7 +113,7 @@ $highlight-color: black;
     background-size: 600px;
   }
 }
-.card-sixth {
+.sixth {
   background: url("./Mas6.png") center center no-repeat;
   background-size: 379px;
   &:hover {
@@ -121,23 +121,3 @@ $highlight-color: black;
     background-size: 600px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

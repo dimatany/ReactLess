@@ -1,4 +1,4 @@
-.masters-block {
+.block {
   padding-top: 20vh;
   width: 90%;
   max-width: 1300px;
@@ -6,13 +6,13 @@
   text-align: center;
   padding-bottom: 20vh;
 }
-.masters-block h2 {
+.block h2 {
   text-align: center;
   font-weight: 700;
   font-size: 58px;
   margin-bottom: 10vh;
 }
-.masters-block .masters-card {
+.block .cardmaster {
   display: flex;
   flex-wrap: wrap;
   gap: 10vw;
@@ -20,7 +20,7 @@
   justify-content: center;
   margin-bottom: 15vh;
 }
-.masters-block .masters-description {
+.block .description {
   max-width: 70vw;
   margin: 0 auto;
   font-size: 20px;
@@ -73,58 +73,58 @@
   padding-top: 5px;
 }
 
-.card-first {
+.first {
   background: url("./Mas1.png") center center no-repeat;
   background-size: 379px;
 }
-.card-first:hover {
+.first:hover {
   background: url("./Mas1.png") left center no-repeat;
   background-size: 600px;
 }
 
-.card-second {
+.second {
   background: url("./Mas2.png") center center no-repeat;
   background-size: 379px;
 }
-.card-second:hover {
+.second:hover {
   background: url("./Mas2.png") left center no-repeat;
   background-size: 600px;
 }
 
-.card-third {
+.third {
   background: url("./Mas3.png") center center no-repeat;
   background-size: 379px;
 }
-.card-third:hover {
+.third:hover {
   background: url("./Mas3.png") left center no-repeat;
   background-size: 600px;
 }
 
-.card-fourth {
+.fourth {
   background: url("./Mas4.png") center center no-repeat;
   background-size: 379px;
 }
-.card-fourth:hover {
+.fourth:hover {
   background: url("./Mas4.png") left center no-repeat;
   background-size: 600px;
 }
 
-.card-fifth {
+.fifth {
   background: url("./Mas5.png") center center no-repeat;
   background-size: 379px;
 }
-.card-fifth:hover {
+.fifth:hover {
   background: url("./Mas5.png") left center no-repeat;
   background-size: 600px;
 }
 
-.card-sixth {
+.sixth {
   background: url("./Mas6.png") center center no-repeat;
   background-size: 379px;
 }
-.card-sixth:hover {
+.sixth:hover {
   background: url("./Mas6.png") left center no-repeat;
   background-size: 600px;
 }
 
-/*# sourceMappingURL=Masters.css.map */
+/*# sourceMappingURL=Masters.module.css.map */

@@ -32,7 +32,7 @@ $highlight-color: #BA8A4C;
   .contacts {
     text-align: center;
   }
-  .working-mode {
+  .mode {
     ul {
       margin-top: 20px;
     }
@@ -68,6 +68,12 @@ $highlight-color: #BA8A4C;
     font-size: 16px;
     font-style: italic;
   }
+}
+
+.wrap {
+  max-width: 1300px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 720px) {

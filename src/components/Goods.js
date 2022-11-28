@@ -1,5 +1,6 @@
 import React from 'react';
-import './Goods.css';
+import styles from './Goods.module.css'
+
 function Goods() {
 	return (
 		<>

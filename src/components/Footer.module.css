@@ -29,7 +29,7 @@
 .section .contacts {
   text-align: center;
 }
-.section .working-mode ul {
+.section .mode ul {
   margin-top: 20px;
 }
 .section .social {
@@ -66,6 +66,12 @@
   font-style: italic;
 }
 
+.wrap {
+  max-width: 1300px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 720px) {
   .section {
     display: flex;
@@ -75,4 +81,4 @@
   }
 }
 
-/*# sourceMappingURL=Footer.css.map */
+/*# sourceMappingURL=Footer.module.css.map */

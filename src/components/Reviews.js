@@ -1,10 +1,12 @@
 import React from 'react';
-import './Reviews.css';
-import './Reviews.css';
+import styles from './Reviews.module.css';
+
+
+
 function Reviews() {
 	return (
 		<>
-			<h1 className="title">Отзывы</h1>
+			<h2>Отзывы</h2>
 		</>
 	);
 }

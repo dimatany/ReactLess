@@ -8,14 +8,14 @@ import Stocks from './Stocks';
 import Reviews from './Reviews';
 import Contacts from './Contacts';
 import NotFound from './NotFound';
-import './Header.css';
+import styles from './Header.module.css'
 
 function Header() {
 	return (
 		<>
 			<header>
-				<nav className='nav'>
-					<ul className='border'>
+				<nav className={styles.nav}>
+					<ul className={styles.border}>
 						<li><a href="/about">Главная</a></li>
 						<li><a href="/masters">Мастера</a></li>
 						<li><a href="/goods">Косметика</a></li>

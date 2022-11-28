@@ -4,9 +4,16 @@ body {
   font-family: "Cormorant Garamond", serif;
 }
 
-.App-logo {
-  width: 20px;
-  height: 20px;
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.wrap {
+  max-width: 1300px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=index.css.map */

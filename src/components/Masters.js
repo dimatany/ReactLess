@@ -1,5 +1,5 @@
 import React from 'react';
-import './Masters.css';
+import styles from './Masters.module.css'
 
 import './Mas1.png';
 import './Mas2.png';
@@ -12,65 +12,65 @@ import './Mas6.png';
 function Masters() {
 	return (
 		<>
-			<div className='masters-block'>
+			<div className={styles.block}>
 				<h2>Майстри</h2>
-				<div className='masters-card'>
-					<div className='card card-first'>
-						<div className='frame'>
+				<div className={styles.cardmaster}>
+					<div className={[styles["first"], styles['card']].join(" ")}>
+						<div className={styles.frame}>
 							<p>Анна
-								<div className='profession'>
+								<div className={styles.profession}>
 									<span>Перукар</span>
 								</div>
 							</p>
 						</div>
 					</div>
-					<div className='card card-second'>
-						<div className='frame'>
+					<div className={[styles["second"], styles['card']].join(" ")}>
+						<div className={styles.frame}>
 							<p>Елена
-								<div className='profession'>
+								<div className={styles.profession}>
 									<span>Майстер манікюру</span>
 								</div>
 							</p>
 						</div>
 					</div>
-					<div className='card card-third'>
-						<div className='frame'>
+					<div className={[styles["third"], styles['card']].join(" ")}>
+						<div className={styles.frame}>
 							<p>Розанна
-								<div className='profession'>
+								<div className={styles.profession}>
 									<span>Майстер педікюру</span>
 								</div>
 							</p>
 						</div>
 					</div>
-					<div className='card card-fourth'>
-						<div className='frame'>
+					<div className={[styles["fourth"], styles['card']].join(" ")}>
+						<div className={styles.frame}>
 							<p>Вера
-								<div className='profession'>
+								<div className={styles.profession}>
 									<span>Косметолог</span>
 								</div>
 							</p>
 						</div>
 					</div>
-					<div className='card card-fifth'>
-						<div className='frame'>
+					<div className={[styles["fifth"], styles['card']].join(" ")}>
+						<div className={styles.frame}>
 							<p>Леся
-								<div className='profession'>
+								<div className={styles.profession}>
 									<span>Естетист з тіла</span>
 								</div>
 							</p>
 						</div>
 					</div>
-					<div className='card card-sixth'>
-						<div className='frame'>
+					<div className={[styles["sixth"], styles['card']].join(" ")}>
+						<div className={styles.frame}>
 							<p>Татьяна
-								<div className='profession'>
+								<div className={styles.profession}>
 									<span>Вiзаж</span>
 								</div>
 							</p>
 						</div>
 					</div>
 				</div>
-				<div className='masters-description'>
+				<div className={styles.description}>
 					<p>Ми раді представити досвідчених, кваліфікованих і креативних художників, які знають абсолютно все про зміну іміджу!
 						Тут працює команда салону краси «Фурор» — перукарі, стилісти, майстри манікюру, педикюру, пірсингу, перукарі, косметологи, лікарі та естетики. Вивчіть профілі майстрів, подивіться роботи, сертифікати та відгуки про роботу. Вибирайте фахівця, який ближче вам по духу, настрою і неодмінно відповідає вашим уявленням про професіоналізм.</p>
 				</div>

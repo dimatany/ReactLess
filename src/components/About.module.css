@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 
-.background-nav {
+.background {
   background: url("Hbg.png") center/cover no-repeat;
   height: 85vh;
   width: 100%;
@@ -13,7 +13,7 @@
   z-index: 0;
   margin-bottom: 10vh;
 }
-.background-nav h1 {
+.background h1 {
   text-align: center;
   margin: 0 auto;
   padding-top: 30vh;
@@ -56,25 +56,25 @@
   font-weight: 700;
   font-size: 58px;
 }
-.services .services-card {
+.services .card {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 100px;
 }
 
-.logo-partners {
+.partners {
   max-width: 1300px;
   width: 100%;
   margin: 0 auto 25vh;
 }
-.logo-partners ul {
+.partners ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.logo-partners ul li {
+.partners ul li {
   width: 25%;
 }
 
@@ -142,4 +142,4 @@
   }
 }
 
-/*# sourceMappingURL=About.css.map */
+/*# sourceMappingURL=About.module.css.map */
