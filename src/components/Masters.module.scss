@@ -1,6 +1,7 @@
 $highlight-color: black;
 $color-text: rgba(186, 138, 76);
 $color-text2: white;
+$active: #FE2E2E;
 
 .block {
   padding-top: 20vh;
@@ -42,7 +43,6 @@ $color-text2: white;
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  padding-left: 15px;
   &:hover {
     border: 1px solid $highlight-color;
     opacity: 1;
@@ -89,6 +89,14 @@ $color-text2: white;
     background: $highlight-color;
     color: $color-text2;
     margin-top: 15%;
+    &:hover {
+      color: $highlight-color;
+      background: $color-text2;
+      border: 2px solid $color-text;
+    }
+    &:active {
+      border: 3px solid $active;
+    }
   }
 }
 .first {
