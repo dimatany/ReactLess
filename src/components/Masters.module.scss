@@ -1,4 +1,6 @@
 $highlight-color: black;
+$color-text: rgba(186, 138, 76);
+$color-text2: white;
 
 .block {
   padding-top: 20vh;
@@ -33,17 +35,25 @@ $highlight-color: black;
   width: 290px;
   background: transparent;
   border-radius: 10px;
-  transition: border 1s;
   position: relative;
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 15px;
   &:hover {
     border: 1px solid $highlight-color;
+    opacity: 1;
   }
   p {
-    color: $highlight-color;
-    text-shadow: 3px 3px 3px #BA8A4C;
-    font-size: 36px;
+    color: $color-text;
+    text-shadow:1px 1px 1px $highlight-color;
+    font-size: 30px;
     font-weight: 700;
-    padding-top: 20px;
+    margin-top: 50%;
+    margin-left: 10px;
   }
 }
 .card {
@@ -52,7 +62,7 @@ $highlight-color: black;
   border-radius: 10px;
   transition: background 0.8s;
   overflow: hidden;
-  background: black;
+  background: $highlight-color;
   box-shadow: 0 70px 63px -60px $highlight-color;
   display: flex;
   justify-content: center;
@@ -60,17 +70,25 @@ $highlight-color: black;
   position: relative;
 }
 .profession {
+  display: flex;
+  flex-direction: column;
   span {
-    transform: rotate(-90deg);
-    transform-origin: left top 0;
-    position: absolute;
-    bottom: 5px;
-    color: $highlight-color;
-    font-size: 36px;
+    color: $color-text;
+    text-shadow: 1px 1px 1px $highlight-color;
+    font-size: 20px;
     font-weight: 700;
-    display: flex;
-    justify-content: start;
-    padding-top: 5px;
+    width: 130px;
+    margin-top: 10%;
+  }
+  button {
+    padding: 5px;
+    border: 2px solid $color-text;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 130px;
+    background: $highlight-color;
+    color: $color-text2;
+    margin-top: 15%;
   }
 }
 .first {
@@ -121,3 +139,7 @@ $highlight-color: black;
     background-size: 600px;
   }
 }
+
+
+
+

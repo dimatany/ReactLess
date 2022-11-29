@@ -20,6 +20,7 @@ function Masters() {
 							<p>Анна
 								<div className={styles.profession}>
 									<span>Перукар</span>
+									<button>Приклади</button>
 								</div>
 							</p>
 						</div>
@@ -28,7 +29,8 @@ function Masters() {
 						<div className={styles.frame}>
 							<p>Елена
 								<div className={styles.profession}>
-									<span>Майстер манікюру</span>
+									<span>Манікюр</span>
+									<button>Приклади</button>
 								</div>
 							</p>
 						</div>
@@ -37,7 +39,8 @@ function Masters() {
 						<div className={styles.frame}>
 							<p>Розанна
 								<div className={styles.profession}>
-									<span>Майстер педікюру</span>
+									<span>Педікюр</span>
+									<button>Приклади</button>
 								</div>
 							</p>
 						</div>
@@ -47,6 +50,7 @@ function Masters() {
 							<p>Вера
 								<div className={styles.profession}>
 									<span>Косметолог</span>
+									<button>Приклади</button>
 								</div>
 							</p>
 						</div>
@@ -55,7 +59,8 @@ function Masters() {
 						<div className={styles.frame}>
 							<p>Леся
 								<div className={styles.profession}>
-									<span>Естетист з тіла</span>
+									<span>Масажист</span>
+									<button>Приклади</button>
 								</div>
 							</p>
 						</div>
@@ -65,6 +70,7 @@ function Masters() {
 							<p>Татьяна
 								<div className={styles.profession}>
 									<span>Вiзаж</span>
+									<button>Приклади</button>
 								</div>
 							</p>
 						</div>
@@ -78,5 +84,6 @@ function Masters() {
 		</>
 	);
 }
+
 
 export default Masters;
