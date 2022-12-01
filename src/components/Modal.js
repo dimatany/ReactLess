@@ -16,7 +16,7 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
 					</button>
 				</div>
 				<p>
-					Hello, I'm a modal.
+					тут будет куча фото пока просто вставлю потом хочу подтянуть по api с инстаграм
 				</p>
 			</div>
 		</div>

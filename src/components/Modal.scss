@@ -3,7 +3,7 @@ $color-text: rgba(186, 138, 76);
 $color-text2: white;
 $active: #FE2E2E;
 
-.App {
+.modalApp {
   text-align: center;
   padding-top: 2rem;
 }
@@ -17,7 +17,6 @@ $active: #FE2E2E;
   width: 70%;
   padding: 2rem;
 }
-
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -28,7 +27,6 @@ $active: #FE2E2E;
   background-color: #000;
   opacity: .5;
 }
-
 .modal-wrapper {
   position: fixed;
   top: 0;
@@ -40,12 +38,10 @@ $active: #FE2E2E;
   overflow-y: auto;
   outline: 0;
 }
-
 .modal-header {
   display: flex;
   justify-content: flex-end;
 }
-
 .modal-close-button {
   font-size: 2.4rem;
   font-weight: 700;
@@ -55,7 +51,6 @@ $active: #FE2E2E;
   top: -20px;
   right: -25px;
 }
-
 button {
   font-size: .9rem;
   font-weight: 700;
@@ -64,7 +59,6 @@ button {
   padding: .3rem 1rem;
   margin-left: -5px;
 }
-
 .button-default {
   background: #247BA0;
   color: #fff;
