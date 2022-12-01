@@ -7,23 +7,23 @@
   padding-bottom: 30px;
   gap: 30px;
 }
-.section .contacts span, .section .working-mode span, .section .social span {
+.section .contacts span, .section .mode span, .section .social span {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
 }
-.section .contacts ul, .section .working-mode ul, .section .social ul {
+.section .contacts ul, .section .mode ul, .section .social ul {
   margin-top: 20px;
 }
-.section .contacts ul li, .section .working-mode ul li, .section .social ul li {
+.section .contacts ul li, .section .mode ul li, .section .social ul li {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
-.section .contacts ul li a, .section .working-mode ul li a, .section .social ul li a {
+.section .contacts ul li a, .section .mode ul li a, .section .social ul li a {
   text-decoration: none;
 }
-.section .contacts ul li a:hover, .section .working-mode ul li a:hover, .section .social ul li a:hover {
+.section .contacts ul li a:hover, .section .mode ul li a:hover, .section .social ul li a:hover {
   color: #BA8A4C;
 }
 .section .contacts {
