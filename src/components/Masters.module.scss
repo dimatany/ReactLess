@@ -14,6 +14,14 @@ $active: #FE2E2E;
     text-align: center;
     font-weight: 700;
     font-size: 58px;
+    margin-bottom: 5vh;
+  }
+  .explanation {
+    display: block;
+    color: $color-text;
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
     margin-bottom: 10vh;
   }
   .cardmaster {
@@ -81,12 +89,12 @@ $active: #FE2E2E;
     margin-top: 10%;
   }
   button {
-    padding: 5px;
+    padding: 5px 0 10px 0;
     border: 2px solid $color-text;
     border-radius: 20px;
     font-size: 20px;
-    width: 130px;
-    background: $highlight-color;
+    width: 171px;
+    background: black;
     color: $color-text2;
     margin-top: 15%;
     &:hover {
@@ -147,4 +155,6 @@ $active: #FE2E2E;
     background-size: 600px;
   }
 }
+
+
 
