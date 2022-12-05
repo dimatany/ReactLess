@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from '../../components/MastersF/Masters.module.css';
+import Modal from '../../components/ModalF/Modal';
+import useModal from '../../components/ModalF/useModal';
 import '../../components/ModalF/Modal.css';
 import CardItem from '../CardItemF/CardItem';
 
@@ -12,6 +14,7 @@ import './Mas6.png';
 
 
 function Masters() {
+	
 	return (
 		<>
 			<div className={styles.block}>
