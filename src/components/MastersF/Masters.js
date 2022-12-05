@@ -57,8 +57,8 @@ function Masters() {
 	/////////////
 	const [block, setBlock] = useState([
 		{id: 1, title: 'Зачіски, Стрижки, Кольористика', picCollection: ['MP1.jpg', 'MP2.jpg', 'MP3.jpg', 'MP4.jpg', 'MP5.jpg','MP6.jpg']},
-		{id: 2, title: 'Mанікюр', picCollection: ['MM1.jpg', 'MM2.jpg', 'MM3.jpg', 'MM4.jpg', 'MM5.jpg','MM6.jpg']},
-		{id: 3, title: 'Педікюр', picCollection: ['MPP1.jpg', 'MPP2.jpg', 'MPP3.jpg', 'MPP4.jpg', 'MPP5.jpg','MPP6.jpg']},
+		{id: 2, title: 'Манікюр', picCollection: ['MM1.jpg', 'MM2.jpg', 'MM3.jpg', 'MM4.jpg', 'MM5.jpg','MM6.jpg']},
+		{id: 3, title: 'Педикюр', picCollection: ['MPP1.jpg', 'MPP2.jpg', 'MPP3.jpg', 'MPP4.jpg', 'MPP5.jpg','MPP6.jpg']},
 		{id: 4, title: 'Косметологія ін\'єкційна та догляд за шкірою', picCollection: ['MK1.jpg', 'MK2.jpg', 'MK3.jpg', 'MK4.jpg', 'MK5.jpg','MK6.jpg']},
 		{id: 5, title: 'test', picCollection: ['MF1.jpg', 'MF2.jpg', 'MF3.jpg', 'MF4.jpg', 'MF5.jpg','MF6.jpg']},
 		{id: 6, title: 'test', picCollection: ['MV1.jpg', 'MV2.jpg', 'MV3.jpg', 'MV4.jpg', 'MV5.jpg','MV6.jpg']},
