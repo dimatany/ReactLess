@@ -14,7 +14,6 @@ import './Mas6.png';
 
 
 function Masters() {
-	
 	return (
 		<>
 			<div className={styles.block}>
