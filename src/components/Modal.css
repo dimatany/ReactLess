@@ -5,7 +5,7 @@
 
 .modal {
   z-index: 100;
-  background: rgb(186, 138, 76);
+  background: #edae3b;
   position: relative;
   margin: 1.75rem auto;
   border-radius: 20px;
@@ -21,7 +21,7 @@
   z-index: 1040;
   width: 100vw;
   height: 100vh;
-  background-color: #000;
+  background-color: #202125;
   opacity: 0.5;
 }
 
@@ -62,8 +62,8 @@ button {
 }
 
 .button-default {
-  background: #247BA0;
-  color: #fff;
+  background: #5383ed;
+  color: #ffffff;
 }
 .button-default svg {
   position: relative;

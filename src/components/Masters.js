@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './Masters.module.css';
 import Modal from './Modal';
 import useModal from './useModal';
@@ -10,11 +10,22 @@ import './Mas3.png';
 import './Mas4.png';
 import './Mas5.png';
 import './Mas6.png';
-
-
-
 function Masters() {
 	const {isShowing, toggle} = useModal();
+	
+	/////////////
+	const [block, setBlock] = useState([
+		{id: 1, title: 'Зачіски, Стрижки, Кольористика', picCollection: ['Mas1.png', 'Mas2.png', 'Mas3.png', 'Mas4.png', 'Mas5.png','Mas6.png']},
+		{id: 2, title: 'Mанікюр', picCollection: ['Mas1.png', 'Mas2.png', 'Mas3.png', 'Mas4.png', 'Mas5.png','Mas6.png']},
+		{id: 3, title: 'Педікюр', picCollection: ['Mas1.png', 'Mas2.png', 'Mas3.png', 'Mas4.png', 'Mas5.png','Mas6.png']},
+		{id: 4, title: 'Косметологія ін\'єкційна та догляд за шкірою', picCollection: ['Mas1.png', 'Mas2.png', 'Mas3.png', 'Mas4.png', 'Mas5.png','Mas6.png']},
+		{id: 5, title: 'test', picCollection: ['Mas1.png', 'Mas2.png', 'Mas3.png', 'Mas4.png', 'Mas5.png','Mas6.png']},
+		{id: 6, title: 'test', picCollection: ['Mas1.png', 'Mas2.png', 'Mas3.png', 'Mas4.png', 'Mas5.png','Mas6.png']},
+		{id: 7, title: 'test', picCollection: ['Mas1.png', 'Mas2.png', 'Mas3.png', 'Mas4.png', 'Mas5.png','Mas6.png']},
+		]
+	)
+	////////////
+	
 	return (
 		<>
 			<div className={styles.block}>

@@ -1,5 +1,5 @@
-$highlight-color: #BA8A4C;
-$border-color: rgba(255, 255, 255, .5);
+$bright-orange: #edae3b;
+$silver: rgba(255, 255, 255, .5);
 .nav {
   position: fixed;
   z-index: 1;
@@ -7,7 +7,7 @@ $border-color: rgba(255, 255, 255, .5);
   max-width: 1600px;
   width: 100%;
   .border {
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid $silver;
     border-top: 1px solid transparent;
     max-width: 1300px;
     width: 100%;
@@ -25,7 +25,7 @@ $border-color: rgba(255, 255, 255, .5);
         font-size: 18px;
         text-decoration: none;
         &:hover {
-          color: $highlight-color;
+          color: $bright-orange;
         }
       }
     }

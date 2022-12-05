@@ -1,3 +1,9 @@
+.wrap {
+  max-width: 1300px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 .section {
   display: flex;
   flex-direction: row;
@@ -24,7 +30,7 @@
   text-decoration: none;
 }
 .section .contacts ul li a:hover, .section .mode ul li a:hover, .section .social ul li a:hover {
-  color: #BA8A4C;
+  color: #edae3b;
 }
 .section .contacts {
   text-align: center;
@@ -42,8 +48,8 @@
   margin-top: 20px;
 }
 .section .social svg:hover {
-  stroke: #BA8A4C;
-  fill: #BA8A4C;
+  stroke: #edae3b;
+  fill: #edae3b;
 }
 
 .border {
@@ -64,12 +70,6 @@
   font-weight: 700;
   font-size: 16px;
   font-style: italic;
-}
-
-.wrap {
-  max-width: 1300px;
-  width: 90%;
-  margin: 0 auto;
 }
 
 @media screen and (max-width: 720px) {

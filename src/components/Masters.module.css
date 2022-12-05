@@ -14,7 +14,7 @@
 }
 .block .explanation {
   display: block;
-  color: rgb(186, 138, 76);
+  color: #edae3b;
   text-align: center;
   font-weight: 700;
   font-size: 25px;
@@ -49,12 +49,12 @@
   text-align: left;
 }
 .frame:hover {
-  border: 1px solid black;
+  border: 1px solid #202125;
   opacity: 1;
 }
 .frame p {
-  color: rgb(186, 138, 76);
-  text-shadow: 1px 1px 1px black;
+  color: #edae3b;
+  text-shadow: 1px 1px 1px #202125;
   font-size: 30px;
   font-weight: 700;
   margin-top: 50%;
@@ -67,8 +67,8 @@
   border-radius: 10px;
   transition: background 0.8s;
   overflow: hidden;
-  background: black;
-  box-shadow: 0 70px 63px -60px black;
+  background: #202125;
+  box-shadow: 0 70px 63px -60px #202125;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,8 +80,8 @@
   flex-direction: column;
 }
 .profession span {
-  color: rgb(186, 138, 76);
-  text-shadow: 1px 1px 1px black;
+  color: #edae3b;
+  text-shadow: 1px 1px 1px #202125;
   font-size: 20px;
   font-weight: 700;
   width: 130px;
@@ -89,18 +89,18 @@
 }
 .profession button {
   padding: 5px 0 10px 0;
-  border: 2px solid rgb(186, 138, 76);
+  border: 2px solid #edae3b;
   border-radius: 20px;
   font-size: 20px;
   width: 171px;
-  background: black;
-  color: white;
+  background: #202125;
+  color: #ffffff;
   margin-top: 15%;
 }
 .profession button:hover {
-  color: black;
-  background: white;
-  border: 2px solid rgb(186, 138, 76);
+  color: #202125;
+  background: #ffffff;
+  border: 2px solid #edae3b;
 }
 .profession button:active {
   border: 3px solid #FE2E2E;

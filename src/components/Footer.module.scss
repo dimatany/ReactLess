@@ -1,5 +1,11 @@
-$border-color: rgba(255, 255, 255, .5);
-$highlight-color: #BA8A4C;
+$silver: rgba(255, 255, 255, .5);
+$bright-orange: #edae3b;
+
+.wrap {
+  max-width: 1300px;
+  width: 90%;
+  margin: 0 auto;
+}
 .section {
   display: flex;
   flex-direction: row;
@@ -24,7 +30,7 @@ $highlight-color: #BA8A4C;
       a {
         text-decoration: none;
         &:hover {
-          color: $highlight-color;
+          color: $bright-orange;
         }
       }
     }
@@ -45,15 +51,15 @@ $highlight-color: #BA8A4C;
     svg {
       margin-top: 20px;
       &:hover {
-        stroke: $highlight-color;
-        fill: $highlight-color;
+        stroke: $bright-orange;
+        fill: $bright-orange;
       }
     }
   }
 }
 .border {
-  border-bottom: 1px solid $border-color;
-  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $silver;
+  border-top: 1px solid $silver;
   max-width: 1300px;
   width: 100%;
   padding-top: 20px;
@@ -69,13 +75,6 @@ $highlight-color: #BA8A4C;
     font-style: italic;
   }
 }
-
-.wrap {
-  max-width: 1300px;
-  width: 90%;
-  margin: 0 auto;
-}
-
 @media screen and (max-width: 720px) {
   .section {
     display: flex;
