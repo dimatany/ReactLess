@@ -53,8 +53,9 @@ import '../../components/ModalF/MV4.jpg';
 import '../../components/ModalF/MV5.jpg';
 import '../../components/ModalF/MV6.jpg';
 function Masters() {
+	
 	const {isShowing, toggle} = useModal();
-	/////////////
+	
 	const [block, setBlock] = useState([
 		{id: 1, title: 'Зачіски, Стрижки, Кольористика', picCollection: ['MP1.jpg', 'MP2.jpg', 'MP3.jpg', 'MP4.jpg', 'MP5.jpg','MP6.jpg']},
 		{id: 2, title: 'Манікюр', picCollection: ['MM1.jpg', 'MM2.jpg', 'MM3.jpg', 'MM4.jpg', 'MM5.jpg','MM6.jpg']},
@@ -64,7 +65,7 @@ function Masters() {
 		{id: 6, title: 'test', picCollection: ['MV1.jpg', 'MV2.jpg', 'MV3.jpg', 'MV4.jpg', 'MV5.jpg','MV6.jpg']},
 		]
 	)
-	////////////
+	
 	return (
 		<>
 			<div className={styles.block}>

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 
 const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
-	<React.Fragment>
+	<>
 		<div className="modal-overlay"/>
 		<div className="modal-wrapper" aria-modal aria-hidden tabIndex={-1} role="dialog">
 			<div className="modal">
@@ -17,11 +17,11 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
 					</button>
 				</div>
 				<p>
-					тут должны быть фото которые тянутся из массива обектов но при нажатии на каждую кнопку тянется свои массив фото
+					тут должны быть фото которые тянутся из массива объектов но при нажатии на каждую кнопку тянется свои массив фото
 				</p>
 			</div>
 		</div>
-	</React.Fragment>, document.body
+	</>, document.body
 ) : null;
 
 export default Modal;
