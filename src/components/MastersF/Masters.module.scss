@@ -2,6 +2,8 @@ $very-dark-blue: #202125;
 $white: #ffffff;
 $bright-orange: #edae3b;
 $bright-red: #FE2E2E;
+$soft-blue2: #5383ed;
+$moderate-orange2: rgb(186, 138, 76, .4);
 
 .block {
   padding-top: 20vh;
@@ -99,7 +101,7 @@ $bright-red: #FE2E2E;
     margin-top: 15%;
     &:hover {
       color: $very-dark-blue;
-      background: $white;
+      background: $moderate-orange2;
       border: 2px solid $bright-orange;
     }
     &:active {

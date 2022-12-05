@@ -10,18 +10,59 @@ import './Mas3.png';
 import './Mas4.png';
 import './Mas5.png';
 import './Mas6.png';
+
+import '../../components/ModalF/MP1.jpg';
+import '../../components/ModalF/MP2.jpg';
+import '../../components/ModalF/MP3.jpg';
+import '../../components/ModalF/MP4.jpg';
+import '../../components/ModalF/MP5.jpg';
+import '../../components/ModalF/MP6.jpg';
+
+import '../../components/ModalF/MM1.jpg';
+import '../../components/ModalF/MM2.jpg';
+import '../../components/ModalF/MM3.jpg';
+import '../../components/ModalF/MM4.jpg';
+import '../../components/ModalF/MM5.jpg';
+import '../../components/ModalF/MM6.jpg';
+
+import '../../components/ModalF/MPP1.jpg';
+import '../../components/ModalF/MPP2.jpg';
+import '../../components/ModalF/MPP3.jpg';
+import '../../components/ModalF/MPP4.jpg';
+import '../../components/ModalF/MPP5.jpg';
+import '../../components/ModalF/MPP6.jpg';
+
+import '../../components/ModalF/MK1.jpg';
+import '../../components/ModalF/MK2.jpg';
+import '../../components/ModalF/MK3.jpg';
+import '../../components/ModalF/MK4.jpg';
+import '../../components/ModalF/MK5.jpg';
+import '../../components/ModalF/MK6.jpg';
+
+import '../../components/ModalF/MF1.jpg';
+import '../../components/ModalF/MF2.jpg';
+import '../../components/ModalF/MF3.jpg';
+import '../../components/ModalF/MF4.jpg';
+import '../../components/ModalF/MF5.jpg';
+import '../../components/ModalF/MF6.jpg';
+
+import '../../components/ModalF/MV1.jpg';
+import '../../components/ModalF/MV2.jpg';
+import '../../components/ModalF/MV3.jpg';
+import '../../components/ModalF/MV4.jpg';
+import '../../components/ModalF/MV5.jpg';
+import '../../components/ModalF/MV6.jpg';
 function Masters() {
 	const {isShowing, toggle} = useModal();
 	
 	/////////////
 	const [block, setBlock] = useState([
-		{id: 1, title: 'Зачіски, Стрижки, Кольористика', picCollection: ['Mas1.png', 'Mas2.png', 'Mas3.png', 'Mas4.png', 'Mas5.png','Mas6.png']},
-		{id: 2, title: 'Mанікюр', picCollection: ['Mas1.png', 'Mas2.png', 'Mas3.png', 'Mas4.png', 'Mas5.png','Mas6.png']},
-		{id: 3, title: 'Педікюр', picCollection: ['Mas1.png', 'Mas2.png', 'Mas3.png', 'Mas4.png', 'Mas5.png','Mas6.png']},
-		{id: 4, title: 'Косметологія ін\'єкційна та догляд за шкірою', picCollection: ['Mas1.png', 'Mas2.png', 'Mas3.png', 'Mas4.png', 'Mas5.png','Mas6.png']},
-		{id: 5, title: 'test', picCollection: ['Mas1.png', 'Mas2.png', 'Mas3.png', 'Mas4.png', 'Mas5.png','Mas6.png']},
-		{id: 6, title: 'test', picCollection: ['Mas1.png', 'Mas2.png', 'Mas3.png', 'Mas4.png', 'Mas5.png','Mas6.png']},
-		{id: 7, title: 'test', picCollection: ['Mas1.png', 'Mas2.png', 'Mas3.png', 'Mas4.png', 'Mas5.png','Mas6.png']},
+		{id: 1, title: 'Зачіски, Стрижки, Кольористика', picCollection: ['MP1.jpg', 'MP2.jpg', 'MP3.jpg', 'MP4.jpg', 'MP5.jpg','MP6.jpg']},
+		{id: 2, title: 'Mанікюр', picCollection: ['MM1.jpg', 'MM2.jpg', 'MM3.jpg', 'MM4.jpg', 'MM5.jpg','MM6.jpg']},
+		{id: 3, title: 'Педікюр', picCollection: ['MPP1.jpg', 'MPP2.jpg', 'MPP3.jpg', 'MPP4.jpg', 'MPP5.jpg','MPP6.jpg']},
+		{id: 4, title: 'Косметологія ін\'єкційна та догляд за шкірою', picCollection: ['MK1.jpg', 'MK2.jpg', 'MK3.jpg', 'MK4.jpg', 'MK5.jpg','MK6.jpg']},
+		{id: 5, title: 'test', picCollection: ['MF1.jpg', 'MF2.jpg', 'MF3.jpg', 'MF4.jpg', 'MF5.jpg','MF6.jpg']},
+		{id: 6, title: 'test', picCollection: ['MV1.jpg', 'MV2.jpg', 'MV3.jpg', 'MV4.jpg', 'MV5.jpg','MV6.jpg']},
 		]
 	)
 	////////////
@@ -109,6 +150,7 @@ function Masters() {
 					<p>Ми раді представити досвідчених, кваліфікованих і креативних художників, які знають абсолютно все про зміну іміджу!
 						Тут працює команда салону краси «Фурор» — перукарі, стилісти, майстри манікюру, педикюру, пірсингу, перукарі, косметологи, лікарі та естетики. Вивчіть профілі майстрів, подивіться роботи, сертифікати та відгуки про роботу. Вибирайте фахівця, який ближче вам по духу, настрою і неодмінно відповідає вашим уявленням про професіоналізм.</p>
 				</div>
+				
 			</div>
 			<div className="modalApp">
 				<Modal

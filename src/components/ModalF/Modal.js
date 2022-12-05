@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+
 const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
 	<React.Fragment>
 		<div className="modal-overlay"/>

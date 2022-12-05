@@ -99,7 +99,7 @@
 }
 .profession button:hover {
   color: #202125;
-  background: #ffffff;
+  background: rgba(186, 138, 76, 0.4);
   border: 2px solid #edae3b;
 }
 .profession button:active {
