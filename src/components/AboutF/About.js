@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './About.module.css'
-import Tabs from './Tabs';
+import Tabs from '../../components/TabsF/Tabs';
 
 import './ab1.png';
 import './ab2.png';

@@ -1,13 +1,13 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
-import About from './About';
-import Masters from './Masters';
-import Goods from './Goods';
-import Stocks from './Stocks';
-import Reviews from './Reviews';
-import Contacts from './Contacts';
-import NotFound from './NotFound';
+import About from '../../components/AboutF/About';
+import Masters from '../../components/MastersF/Masters';
+import Goods from '../../components/GoodsF/Goods';
+import Stocks from '../../components/StocksF/Stocks';
+import Reviews from '../../components/ReviewsF/Reviews';
+import Contacts from '../../components/ContactF/Contacts';
+import NotFound from '../../components/ErrorF/NotFound';
 import styles from './Header.module.css'
 
 function Header() {

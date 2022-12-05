@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import styles from './Masters.module.css';
-import Modal from './Modal';
-import useModal from './useModal';
-import './Modal.css';
+import styles from '../../components/MastersF/Masters.module.css';
+import Modal from '../../components/ModalF/Modal';
+import useModal from '../../components/ModalF/useModal';
+import '../../components/ModalF/Modal.css';
 
 import './Mas1.png';
 import './Mas2.png';
