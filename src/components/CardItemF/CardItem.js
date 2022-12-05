@@ -1,8 +1,17 @@
 import React, {useState} from 'react';
-import styles from '../../components/MastersF/Masters.module.css';
+
+import styles from '../../components/CardItemF/CardItem.module.css';
 import Modal from '../../components/ModalF/Modal';
 import useModal from '../../components/ModalF/useModal';
 import '../../components/ModalF/Modal.css';
+
+import './CI1.png'
+import './CI2.png'
+import './CI3.png'
+import './CI4.png'
+import './CI5.png'
+import './CI6.png'
+
 
 import '../../../src/components/ModalF/MP1.jpg';
 import '../../../src/components/ModalF/MP2.jpg';
@@ -45,7 +54,6 @@ import '../../../src/components/ModalF/MV3.jpg';
 import '../../../src/components/ModalF/MV4.jpg';
 import '../../../src/components/ModalF/MV5.jpg';
 import '../../../src/components/ModalF/MV6.jpg';
-import Masters from '../MastersF/Masters';
 
 function CardItem() {
 	const {isShowing, toggle} = useModal();

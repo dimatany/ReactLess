@@ -1,15 +1,7 @@
 import React from 'react';
 import styles from '../../components/MastersF/Masters.module.css';
 import '../../components/ModalF/Modal.css';
-import CardItem from '../CardItemF/CardItem';
-
-import './Mas1.png';
-import './Mas2.png';
-import './Mas3.png';
-import './Mas4.png';
-import './Mas5.png';
-import './Mas6.png';
-
+import CardItem from '../../components/CardItemF/CardItem';
 
 function Masters() {
 	return (
@@ -28,6 +20,5 @@ function Masters() {
 		</>
 	);
 }
-
 
 export default Masters;
