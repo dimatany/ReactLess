@@ -49,7 +49,6 @@ import '../../../src/components/ModalF/MV6.jpg';
 
 function CardItem(props) {
 	const {isShowing, toggle} = useModal();
-	
 	return (
 		<>
 			<div className={[styles["first"], styles['card']].join(" ")}>
