@@ -4,12 +4,12 @@ import Modal from '../../components/ModalF/Modal';
 import useModal from '../../components/ModalF/useModal';
 import '../../components/ModalF/Modal.css';
 
-import './CI1.png'
-import './CI2.png'
-import './CI3.png'
-import './CI4.png'
-import './CI5.png'
-import './CI6.png'
+import './CI1.png';
+import './CI2.png';
+import './CI3.png';
+import './CI4.png';
+import './CI5.png';
+import './CI6.png';
 import '../../../src/components/ModalF/MP1.jpg';
 import '../../../src/components/ModalF/MP2.jpg';
 import '../../../src/components/ModalF/MP3.jpg';
