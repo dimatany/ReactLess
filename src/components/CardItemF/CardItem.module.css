@@ -59,14 +59,12 @@
   background: #202125;
   color: #ffffff;
   margin-top: 15%;
+  background: #434343;
+  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
 .profession button:hover {
-  color: #202125;
-  background: rgba(186, 138, 76, 0.4);
-  border: 2px solid #edae3b;
-}
-.profession button:active {
-  border: 3px solid #FE2E2E;
+  color: #edae3b;
+  border: 2px solid #FE2E2E;
 }
 
 .first {

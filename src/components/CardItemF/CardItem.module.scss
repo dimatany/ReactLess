@@ -1,4 +1,5 @@
 $very-dark-blue: #202125;
+$grayish-blue: #434343;
 $white: #ffffff;
 $bright-orange: #edae3b;
 $bright-red: #FE2E2E;
@@ -63,13 +64,11 @@ $moderate-orange2: rgb(186, 138, 76, .4);
     background: $very-dark-blue;
     color: $white;
     margin-top: 15%;
+    background: $grayish-blue;
+    box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
     &:hover {
-      color: $very-dark-blue;
-      background: $moderate-orange2;
-      border: 2px solid $bright-orange;
-    }
-    &:active {
-      border: 3px solid $bright-red;
+      color: $bright-orange;
+      border: 2px solid $bright-red
     }
   }
 }

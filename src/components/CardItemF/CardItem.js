@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-
 import styles from '../../components/CardItemF/CardItem.module.css';
 import Modal from '../../components/ModalF/Modal';
 import useModal from '../../components/ModalF/useModal';
@@ -11,43 +10,36 @@ import './CI3.png'
 import './CI4.png'
 import './CI5.png'
 import './CI6.png'
-
-
 import '../../../src/components/ModalF/MP1.jpg';
 import '../../../src/components/ModalF/MP2.jpg';
 import '../../../src/components/ModalF/MP3.jpg';
 import '../../../src/components/ModalF/MP4.jpg';
 import '../../../src/components/ModalF/MP5.jpg';
 import '../../../src/components/ModalF/MP6.jpg';
-
 import '../../../src/components/ModalF/MM1.jpg';
 import '../../../src/components/ModalF/MM2.jpg';
 import '../../../src/components/ModalF/MM3.jpg';
 import '../../../src/components/ModalF/MM4.jpg';
 import '../../../src/components/ModalF/MM5.jpg';
 import '../../../src/components/ModalF/MM6.jpg';
-
 import '../../../src/components/ModalF/MPP1.jpg';
 import '../../../src/components/ModalF/MPP2.jpg';
 import '../../../src/components/ModalF/MPP3.jpg';
 import '../../../src/components/ModalF/MPP4.jpg';
 import '../../../src/components/ModalF/MPP5.jpg';
 import '../../../src/components/ModalF/MPP6.jpg';
-
 import '../../../src/components/ModalF/MK1.jpg';
 import '../../../src/components/ModalF/MK2.jpg';
 import '../../../src/components/ModalF/MK3.jpg';
 import '../../../src/components/ModalF/MK4.jpg';
 import '../../../src/components/ModalF/MK5.jpg';
 import '../../../src/components/ModalF/MK6.jpg';
-
 import '../../../src/components/ModalF/MF1.jpg';
 import '../../../src/components/ModalF/MF2.jpg';
 import '../../../src/components/ModalF/MF3.jpg';
 import '../../../src/components/ModalF/MF4.jpg';
 import '../../../src/components/ModalF/MF5.jpg';
 import '../../../src/components/ModalF/MF6.jpg';
-
 import '../../../src/components/ModalF/MV1.jpg';
 import '../../../src/components/ModalF/MV2.jpg';
 import '../../../src/components/ModalF/MV3.jpg';
