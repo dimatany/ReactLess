@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
+
 const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
 	<>
 		<div className="modal-overlay"/>
