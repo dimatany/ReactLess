@@ -23,13 +23,13 @@
 .block .cardmaster {
   display: flex;
   flex-wrap: wrap;
-  gap: 10vw;
+  gap: 4vw;
   align-items: center;
   justify-content: center;
 }
 .block .description {
   max-width: 70vw;
-  margin: 0 auto;
+  margin: 20vh auto 0;
   font-size: 20px;
   line-height: 44px;
 }
