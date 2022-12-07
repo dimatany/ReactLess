@@ -17,7 +17,7 @@ $soft-blue2: #5383ed;
   width: 70%;
   padding: 2rem;
 }
-.modal-overlay {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -27,7 +27,7 @@ $soft-blue2: #5383ed;
   background-color: $very-dark-blue;
   opacity: .5;
 }
-.modal-wrapper {
+.wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -38,11 +38,11 @@ $soft-blue2: #5383ed;
   overflow-y: auto;
   outline: 0;
 }
-.modal-header {
+.header {
   display: flex;
   justify-content: flex-end;
 }
-.modal-close-button {
+.close {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 1;
@@ -59,7 +59,7 @@ button {
   padding: .3rem 1rem;
   margin-left: -5px;
 }
-.button-default {
+.default {
   background: $soft-blue2;
   color: $white;
   svg {

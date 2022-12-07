@@ -13,7 +13,7 @@
   padding: 2rem;
 }
 
-.modal-overlay {
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -24,7 +24,7 @@
   opacity: 0.5;
 }
 
-.modal-wrapper {
+.wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -36,12 +36,12 @@
   outline: 0;
 }
 
-.modal-header {
+.header {
   display: flex;
   justify-content: flex-end;
 }
 
-.modal-close-button {
+.close {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 1;
@@ -60,14 +60,14 @@ button {
   margin-left: -5px;
 }
 
-.button-default {
+.default {
   background: #5383ed;
   color: #ffffff;
 }
-.button-default svg {
+.default svg {
   position: relative;
   top: 5px;
   left: 5px;
 }
 
-/*# sourceMappingURL=Modal.css.map */
+/*# sourceMappingURL=Modal.module.css.map */
