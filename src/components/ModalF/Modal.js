@@ -1,44 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import styles from '../ModalF/Modal.module.css';
-
-import './MP1.jpg';
-import './MP2.jpg';
-import './MP3.jpg';
-import './MP4.jpg';
-import './MP5.jpg';
-import './MP6.jpg';
-import './MM1.jpg';
-import './MM2.jpg';
-import './MM3.jpg';
-import './MM4.jpg';
-import './MM5.jpg';
-import './MM6.jpg';
-import './MPP1.jpg';
-import './MPP2.jpg';
-import './MPP3.jpg';
-import './MPP4.jpg';
-import './MPP5.jpg';
-import './MPP6.jpg';
-import './MK1.jpg';
-import './MK2.jpg';
-import './MK3.jpg';
-import './MK4.jpg';
-import './MK5.jpg';
-import './MK6.jpg';
-import './MF1.jpg';
-import './MF2.jpg';
-import './MF3.jpg';
-import './MF4.jpg';
-import './MF5.jpg';
-import './MF6.jpg';
-import './MV1.jpg';
-import './MV2.jpg';
-import './MV3.jpg';
-import './MV4.jpg';
-import './MV5.jpg';
-import './MV6.jpg';
-
+import Slider from '../../components/SliderF/Slider';
 
 const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
 	<>
@@ -54,9 +17,12 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
 						</span>
 					</button>
 				</div>
-				<p>
-					тут должны быть фото которые тянутся из массива объектов но при нажатии на каждую кнопку тянется свои массив фото
-				</p>
+				<div className={styles.section}>
+					<h3>Кращі твори нашого майстра</h3>
+					<div>
+						<Slider/>
+					</div>
+				</div>
 			</div>
 		</div>
 	</>, document.body
