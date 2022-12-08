@@ -37,7 +37,6 @@ import MV3 from './MV3.jpg';
 import MV4 from './MV4.jpg';
 import MV5 from './MV5.jpg';
 import MV6 from './MV6.jpg';
-import About from '../AboutF/About';
 
 const img1 = [
 	<img key={MP1} src={MP1}  alt={"example of work"}/>,
