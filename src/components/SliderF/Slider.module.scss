@@ -1,24 +1,23 @@
 .slider {
   position: relative;
-  width: 90%;
-  height: 80vh;
-  margin: auto;
+  width: 100%;
+  height: 50vh;
+  margin: 2vh auto;
   display: flex;
   align-items: center;
   overflow: hidden;
+  border-radius: 20%;
 }
 
 .slider-img {
   position: absolute;
   width: 100%;
-  height: 500px;
-  transition: all 0.5s;
+  height: 100%;
+  transition: all 0.5s ease-in;
 }
 
-.slider-prev {
-  transform: translateX(-100%);
-}
-
-.slider-next {
-  transform: translateX(100%);
+@media screen and (max-width: 720px) {
+  .slider {
+    height: 40vh;
+  }
 }

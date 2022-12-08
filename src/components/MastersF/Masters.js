@@ -3,6 +3,8 @@ import styles from '../../components/MastersF/Masters.module.css';
 import '../../components/ModalF/Modal.module.css';
 import CardItem from '../../components/CardItemF/CardItem';
 
+
+
 function Masters() {
 	let blocks, setBlocks;
 	[blocks, setBlocks] = useState([

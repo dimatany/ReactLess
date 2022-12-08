@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from "react";
+import React, {useEffect, useState} from 'react';
 import styles from './Slider.module.css';
 
-import MP1 from "./MP1.jpg"
+import MP1 from './MP1.jpg';
 import MP2 from './MP2.jpg';
 import MP3 from './MP3.jpg';
 import MP4 from './MP4.jpg';
@@ -98,34 +98,20 @@ function Slider() {
 			// Меняем состояние
 			setActiveIndex((current) => {
 				// Вычисляем индекс следующего слайда, который должен вывестись
-				const res = current === img1.length - 1 ? 0 : current + 1
 				// Возвращаем индекс
-				return res
+				return current === img1.length - 1 ? 0 : current + 1
 			})
 		}, 3000)
 		// Выключаем интервал
 		return () => clearInterval()
 	}, [])
 	
-	// Вычисляем индекс предыдущего слайда
-	const prevImgIndex = activeIndex ? activeIndex - 1 : img1.length - 1
-	// Вычисляем индекс следующего слайда
-	const nextImgIndex = activeIndex === img1.length - 1 ? 0 : activeIndex + 1
-	
 	return (
 		<>
 			<div className={styles.slider}>
-				<div className={[styles["sliderImg"], styles['sliderPrev']].join(" ")}
-				     key={prevImgIndex}>
-					{img1[prevImgIndex]}
-				</div>
 				<div className={styles.sliderImg}
 				     key={activeIndex}>
 					{img1[activeIndex]}
-				</div>
-				<div className={[styles["sliderImg"], styles['sliderNext']].join(" ")}
-				     key={nextImgIndex}>
-					{img1[nextImgIndex]}
 				</div>
 			</div>
 		</>
