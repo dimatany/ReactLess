@@ -101,7 +101,7 @@ function Slider() {
 				// Возврат индекса
 				return current === img1.length - 1 ? 0 : current + 1
 			})
-		}, 3000)
+		}, 2000)
 		// Выключаем интервал
 		return () => clearInterval()
 	}, [])

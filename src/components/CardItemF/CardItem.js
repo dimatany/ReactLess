@@ -15,7 +15,7 @@ function CardItem(props) {
 					<p>{props.post.name}
 						<div className={styles.profession}>
 							<span>{props.post.title}</span>
-							<button className="button-default" onClick={toggle}>Приклади</button>
+							<button onClick={toggle}>Приклади</button>
 						</div>
 					</p>
 				</div>
