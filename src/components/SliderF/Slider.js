@@ -88,7 +88,7 @@ const img6 = [
 ];
 
 
-function Slider() {
+function Slider(props) {
 	// Индекс текущего слайда
 	const [activeIndex, setActiveIndex] = useState(0);
 	// Хук Effect

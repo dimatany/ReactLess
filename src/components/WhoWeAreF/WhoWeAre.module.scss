@@ -1,0 +1,31 @@
+.wrap {
+  max-width: 1300px;
+  width: 90%;
+  margin: 0 auto;
+}
+.about {
+  margin: 0 auto 10vh;
+  min-width: 320px;
+  max-width: 700px;
+  width: 90%;
+  text-align: center;
+}
+.about span {
+  display: block;
+  margin-bottom: 10vh;
+}
+.about p {
+  line-height: 25px;
+  padding-bottom: 10vh;
+  font-size: 18px;
+}
+.about p:last-child {
+  margin-bottom: 15vh;
+}
+
+@media screen and (max-width: 720px) {
+  .about svg {
+    width: 44px;
+    height: 44px;
+  }
+}

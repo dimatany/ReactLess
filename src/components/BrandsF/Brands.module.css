@@ -1,0 +1,18 @@
+.partners {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto 25vh;
+}
+
+.partners ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.partners ul li {
+  width: 25%;
+}
+
+/*# sourceMappingURL=Brands.module.css.map */
