@@ -47,5 +47,14 @@ function Header() {
 		</>
 	);
 }
+//почему не могу использовать в хедер пропсы по умолчанию?
+Header.defaultProps = {
+	item1: '',
+	item2: '',
+	item3: '',
+	item4: '',
+	item5: '',
+	item6: '',
+};
 
 export default Header;

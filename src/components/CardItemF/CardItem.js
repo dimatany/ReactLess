@@ -4,8 +4,6 @@ import Modal from '../../components/ModalF/Modal';
 import useModal from '../../components/ModalF/useModal';
 import '../../components/ModalF/Modal.module.css';
 
-
-
 function CardItem(props) {
 	const {isShowing, toggle} = useModal();
 	return (
@@ -15,7 +13,7 @@ function CardItem(props) {
 					<p>{props.post.name}
 						<div className={styles.profession}>
 							<span>{props.post.title}</span>
-							<button onClick={toggle}>Приклади</button>
+							<button onClick={toggle}>{props.button}</button>
 						</div>
 					</p>
 				</div>
@@ -29,5 +27,9 @@ function CardItem(props) {
 		</>
 	)
 }
+
+CardItem.defaultProps = {
+	button: 'Приклади',
+};
 
 export default CardItem;

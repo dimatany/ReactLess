@@ -1,13 +1,6 @@
 import React from 'react';
 import './Tabs.css';
 
-import './tabM1.png';
-import './tabM2.png';
-import './tabM3.png';
-import './tabM4.png';
-import './tabM5.png';
-import './tabM6.png';
-
 class Tabs extends React.Component {
 	constructor (props) {
 		super (props)
@@ -15,11 +8,9 @@ class Tabs extends React.Component {
 			selectedTab: 0
 		}
 	}
-	
 	selectTab = (index) => {
 		this.setState({ selectedTab : index })
 	}
-	
 	render () {
 		return (
 			<div>

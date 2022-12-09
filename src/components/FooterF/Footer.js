@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Footer.module.css'
 
 
-function Footer() {
+function Footer(props) {
 	return (
 		<>
 			<footer>
@@ -16,21 +16,21 @@ function Footer() {
 						</svg>
 					</div>
 					<div className={styles.contacts}>
-						<span>Контакти</span>
+						<span>{props.title1}</span>
 						<ul>
-							<li> <a href="mailto:cheize2020@gmail.com?subject=contact for joint work">Email me(cheize2020@gmail.com)</a></li>
-							<li><a href="tel:+380670000000">Сall me (+3 80(00) 000 00 00)</a></li>
+							<li><a href="mailto:cheize2020@gmail.com?subject=contact for joint work"></a>{props.email}</li>
+							<li><a href="tel:+380670000000"></a>{props.number}</li>
 						</ul>
 					</div>
 					<div className={styles.mode}>
-						<span>Pежим роботи</span>
+						<span>{props.title2}</span>
 						<ul>
-							<li>C 10:00 до 21:00 (Пн-Пт)</li>
-							<li>С 11:00 до 20:00 (Сб-Вс)</li>
+							<li>{props.mode1}</li>
+							<li>{props.mode2}</li>
 						</ul>
 					</div>
 					<div className={styles.social}>
-						<span>Мы в Instagram</span>
+						<span>{props.title3}</span>
 						<a href="https://www.instagram.com/cheize20/?hl=ru" target="_blank" rel="noopener noreferrer nofollow" title="instagram">
 							<svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
 								<path d="M18.5341 1H7.46592C3.89455 1 1 3.89507 1 7.46592V18.5341C1 22.1054 3.89507 25 7.46643 25H18.5336C22.1049 25 25 22.1049 25 18.5336V7.46592C25 3.89455 22.1049 1 18.5336 1H18.5341Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
@@ -41,11 +41,22 @@ function Footer() {
 					</div>
 				</div>
 				<div className={styles.copyright}>
-					<span>Copyright © 2017 - 2022</span>
+					<span>{props.copyright}</span>
 				</div>
 			</footer>
 		</>
 	);
 }
+
+Footer.defaultProps = {
+	title1: 'Контакти',
+	title2: 'Pежим роботи',
+	title3: 'Мы в Instagram',
+	email: 'Email me(cheize2020@gmail.com)',
+	number: 'Сall me (+3 80(00) 000 00 00)',
+	mode1: 'C 10:00 до 21:00 (Пн-Пт)',
+	mode2: 'С 11:00 до 20:00 (Сб-Вс)',
+	copyright: 'Copyright © 2017 - 2022',
+};
 
 export default Footer;
