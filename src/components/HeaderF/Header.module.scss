@@ -27,6 +27,10 @@ $silver: rgba(255, 255, 255, .5);
         &:hover {
           color: $bright-orange;
         }
+        svg {
+          width: 60px;
+          height: 60px;
+        }
       }
     }
   }

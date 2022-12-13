@@ -13,6 +13,11 @@
   padding-bottom: 30px;
   gap: 30px;
 }
+.section .svg svg {
+  width: 60px;
+  height: 60px;
+  padding-top: 30px;
+}
 .section .contacts span, .section .mode span, .section .social span {
   font-weight: 700;
   font-size: 24px;

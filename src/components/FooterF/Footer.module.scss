@@ -14,6 +14,11 @@ $bright-orange: #edae3b;
   align-items: start;
   padding-bottom: 30px;
   gap: 30px;
+  .svg svg {
+    width: 60px;
+    height: 60px;
+    padding-top: 30px;
+  }
   .contacts, .mode, .social {
     span {
       font-weight: 700;
