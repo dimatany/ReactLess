@@ -1,47 +1,26 @@
 import React from 'react';
 import styles from './WhatWeDo.module.css'
-import './ab1.png';
-import './ab2.png';
-import './ab3.png';
-import './ab4.png';
-import './ab5.png';
-import './ab6.png';
-
 function WhatWeDo(props) {
+	const posts = [
+		{id:1, title: 'Перукарські послуги', uri: require("./ab1.png"), alt: 'is top image', },
+		{id:2, title: 'Манікюр', uri: require("./ab2.png"), alt: 'is top image',},
+		{id:3, title: 'Педикюр', uri: require("./ab3.png"), alt: 'is top image', },
+		{id:4, title: 'Косметологія', uri: require("./ab4.png"), alt: 'is top image', },
+		{id:5, title: 'Естет із тіла', uri: require("./ab5.png"), alt: 'is top image',},
+		{id:6, title: 'Візаж', uri: require("./ab6.png"), alt: 'is top image',},
+	];
+	
 	return (
 		<div className={[styles["services"], styles['wrap']].join(" ")}>
 			<h2>Наші послуги</h2>
 			<div className={styles.card}>
-				<div className={styles.shadow}>
-					<img src={require("./ab1.png")}  alt='is top image'/>
-					<span>Перукарські послуги</span>
-				</div>
-				<div className={styles.shadow}>
-					<img src={require("./ab2.png")}  alt='is top image'/>
-					<span>Манікюр</span>
-				</div>
-				<div className={styles.shadow}>
-					<img src={require("./ab3.png")}  alt='image of the service'/>
-					<span>Педикюр</span>
-				</div>
-				<div className={styles.shadow}>
-					<img src={require("./ab4.png")}  alt='image of the service'/>
-					<span>Косметологія</span>
-				</div>
-				<div className={styles.shadow}>
-					<img src={require("./ab5.png")}  alt='image of the service'/>
-					<span>Естетист з тіла</span>
-				</div>
-				<div className={styles.shadow}>
-					<img src={require("./ab6.png")}  alt='image of the service'/>
-					<span>Візаж</span>
-				</div>
+				{posts.map(el =>
+					<div className={styles.shadow} key={el.id}>
+						<img key={el.id} src={el.uri} alt={el.alt}/>
+						<span>{el.title}</span>
+					</div>)}
 			</div>
 		</div>
 	);
-}
-
-WhatWeDo.defaultProps = {
-
 }
 export default WhatWeDo;
