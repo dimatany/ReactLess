@@ -73,49 +73,4 @@
   background-size: 600px;
 }
 
-.second {
-  background: url("./CI2.png") center center no-repeat;
-  background-size: 379px;
-}
-.second:hover {
-  background: url("./CI2.png") left center no-repeat;
-  background-size: 600px;
-}
-
-.third {
-  background: url("./CI3.png") center center no-repeat;
-  background-size: 379px;
-}
-.third:hover {
-  background: url("./CI3.png") left center no-repeat;
-  background-size: 600px;
-}
-
-.fourth {
-  background: url("./CI4.png") center center no-repeat;
-  background-size: 379px;
-}
-.fourth:hover {
-  background: url("./CI4.png") left center no-repeat;
-  background-size: 600px;
-}
-
-.fifth {
-  background: url("./CI5.png") center center no-repeat;
-  background-size: 379px;
-}
-.fifth:hover {
-  background: url("./CI5.png") left center no-repeat;
-  background-size: 600px;
-}
-
-.sixth {
-  background: url("./CI6.png") center center no-repeat;
-  background-size: 379px;
-}
-.sixth:hover {
-  background: url("./CI6.png") left center no-repeat;
-  background-size: 600px;
-}
-
 /*# sourceMappingURL=CardItem.module.css.map */

@@ -3,56 +3,26 @@ import styles from '../../components/MastersF/Masters.module.css';
 import '../../components/ModalF/Modal.module.css';
 import CardItem from '../../components/CardItemF/CardItem';
 
+import image1 from '../../components/CardItemF/CI5.png'
+
 function Masters(props) {
-	let blocks, setBlocks;
-	[blocks, setBlocks] = useState([
-			{
-				id: 1,
-				title: 'Перукар',
-				name: 'Анна',
-				photo: 'CI1.png',
-			},
-			{
-				id: 2,
-				title: 'Манікюр',
-				name: 'Елена',
-				photo: 'CI2.png',
-			},
-			{
-				id: 3,
-				title: 'Педикюр',
-				name: 'Розанна',
-				photo: 'CI3.png',
-			},
-			{
-				id: 4,
-				title: 'Косметолог',
-				name: 'Вера',
-				photo: 'CI4.png',
-			},
-			{
-				id: 5,
-				title: 'Масажист',
-				name: 'Леся',
-				photo: 'CI5.png',
-			},
-			{
-				id: 6,
-				title: 'Візаж',
-				name: 'Тетяна',
-				photo: 'CI1.png',
-			},
-		],
-	);
+	const blocks = [
+			{id: 1, title: 'Перукар', name: 'Анна', background: require("../../components/CardItemF/CI1.png"),},
+			{id: 2, title: 'Манікюр', name: 'Елена',  background: require("../../components/CardItemF/CI2.png"),},
+			{id: 3, title: 'Педикюр', name: 'Розанна',  background: require("../../components/CardItemF/CI3.png"),},
+			{id: 4, title: 'Косметолог', name: 'Вера',  background: require("../../components/CardItemF/CI4.png"),},
+			{id: 5, title: 'Масажист', name: 'Леся',  background: require("../../components/CardItemF/CI5.png"),},
+			{id: 6, title: 'Візаж', name: 'Тетяна',  background: require("../../components/CardItemF/CI6.png"),},
+		];
 	
 	return (
 		<>
 			<div className={styles.block}>
 				<h2>{props.title}</h2>
 				<span className={styles.explanation}>{props.subtitle}</span>
-				<div className={styles.cardmaster}>
-					{blocks.map((post) =>
-						<CardItem post={post} key={post.id}/>
+				<div className={styles.cardmaster} >
+					{blocks.map((el) =>
+						<CardItem post={el} key={el.id} style={{backgroundImage: `url(${el.background})`}}/>
 					)}
 				</div>
 				<div className={styles.description}>

@@ -6,6 +6,7 @@ import '../../components/ModalF/Modal.module.css';
 
 function CardItem(props) {
 	const {isShowing, toggle} = useModal();
+	
 	return (
 		<>
 			<div className={[styles["first"], styles['card']].join(" ")}>
