@@ -1,4 +1,5 @@
-$very-dark-blue: #202125;
+$dark-blue: #202125;
+$dark-salt: #191d1c;
 $grayish-blue: #434343;
 $white: #ffffff;
 $soft-blue: #8ab4f8;
@@ -8,10 +9,11 @@ $soft-yellow: #f7d775;
 $bright-orange: #edae3b;
 $moderate-orange2: rgb(186, 138, 76, .4);
 $bright-red: #FE2E2E;
-$lime-green: #4e9a52;
+$lime-green: #4fa19d;
+
 
 body {
-  background-color: $very-dark-blue;
+  background-color: $dark-blue;
   color: $white;
   font-family: 'Cormorant Garamond', serif;
 }

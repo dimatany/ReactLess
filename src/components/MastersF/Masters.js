@@ -1,19 +1,17 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styles from '../../components/MastersF/Masters.module.css';
 import '../../components/ModalF/Modal.module.css';
 import CardItem from '../../components/CardItemF/CardItem';
 
-import image1 from '../../components/CardItemF/CI5.png'
-
 function Masters(props) {
 	const blocks = [
-			{id: 1, title: 'Перукар', name: 'Анна', background: require("../../components/CardItemF/CI1.png"),},
-			{id: 2, title: 'Манікюр', name: 'Елена',  background: require("../../components/CardItemF/CI2.png"),},
-			{id: 3, title: 'Педикюр', name: 'Розанна',  background: require("../../components/CardItemF/CI3.png"),},
-			{id: 4, title: 'Косметолог', name: 'Вера',  background: require("../../components/CardItemF/CI4.png"),},
-			{id: 5, title: 'Масажист', name: 'Леся',  background: require("../../components/CardItemF/CI5.png"),},
-			{id: 6, title: 'Візаж', name: 'Тетяна',  background: require("../../components/CardItemF/CI6.png"),},
-		];
+		{id: 1, title: 'Перукар', name: 'Анна', background: require("../../components/CardItemF/CI1.png"),},
+		{id: 2, title: 'Манікюр', name: 'Елена',  background: require("../../components/CardItemF/CI2.png"),},
+		{id: 3, title: 'Педикюр', name: 'Розанна',  background: require("../../components/CardItemF/CI3.png"),},
+		{id: 4, title: 'Косметолог', name: 'Вера',  background: require("../../components/CardItemF/CI4.png"),},
+		{id: 5, title: 'Масажист', name: 'Леся',  background: require("../../components/CardItemF/CI5.png"),},
+		{id: 6, title: 'Візаж', name: 'Тетяна',  background: require("../../components/CardItemF/CI6.png"),},
+	];
 	
 	return (
 		<>

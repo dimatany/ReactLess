@@ -4,7 +4,7 @@ import styles from '../ModalF/Modal.module.css';
 import Slider from '../../components/SliderF/Slider';
 
 const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
-	<>
+	<React.Fragment>
 		<div className={styles.overlay}/>
 		<div className={styles.wrapper} aria-modal aria-hidden tabIndex={-1} role="dialog">
 			<div className={styles.modal}>
@@ -25,9 +25,7 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
 				</div>
 			</div>
 		</div>
-	</>, document.body
+	</React.Fragment>, document.body
 ) : null;
-
-
 
 export default Modal;

@@ -1,5 +1,7 @@
 $highlight-color: #BA8A4C;
 $highlight-color-blur: rgb(186, 138, 76, .4);
+$dark-salt: #191d1c;
+
 .tabs {
   h2 {
     margin: 0 auto 80px;
@@ -45,7 +47,7 @@ $highlight-color-blur: rgb(186, 138, 76, .4);
   }
 }
  .is-active {
-   background: black;
+   background: $dark-salt;
    padding: 7px;
    border-radius: 10px;
  }

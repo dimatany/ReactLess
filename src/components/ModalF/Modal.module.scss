@@ -3,13 +3,14 @@ $white: #ffffff;
 $bright-orange: #edae3b;
 $bright-red: #FE2E2E;
 $soft-blue2: #5383ed;
+$soft-blue: #8ab4f8;
 
 .modalApp {
   text-align: center;
 }
 .modal {
   z-index: 100;
-  background: $bright-orange;
+  background: $soft-blue;
   position: relative;
   margin: 1.75rem auto;
   border-radius: 20px;
