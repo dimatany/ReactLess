@@ -1,5 +1,7 @@
 $bright-orange: #edae3b;
 $silver: rgba(255, 255, 255, .5);
+$dark-salt: #191d1c;
+
 .nav {
   position: fixed;
   z-index: 1;
@@ -24,6 +26,7 @@ $silver: rgba(255, 255, 255, .5);
         font-weight: 600;
         font-size: 18px;
         text-decoration: none;
+        text-shadow: 1px 1px 1px $dark-salt;
         &:hover {
           color: $bright-orange;
         }

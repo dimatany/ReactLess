@@ -1,0 +1,195 @@
+$dark-blue: #202125;
+$dark-salt: #191d1c;
+$grayish-blue: #434343;
+$white: #ffffff;
+$soft-blue: #8ab4f8;
+$soft-blue2: #5383ed;
+$silver: rgba(255, 255, 255, .5);
+$soft-yellow: #f7d775;
+$bright-orange: #edae3b;
+$moderate-orange2: rgb(186, 138, 76, .4);
+$bright-red: #FE2E2E;
+$lime-green: #4fa19d;
+.wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.block {
+  padding-top: 20vh;
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10vh;
+  h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 58px;
+    margin-bottom: 5vh;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 15px 30px 1px $grayish-blue;
+  background: $white;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 1em auto;
+  min-height: 350px;
+  max-width: 600px;
+  width: 100%;
+}
+.productDetails {
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  padding: 30px;
+  height: 100%;
+  width: 50%;
+  background: $soft-blue;
+  will-change: transform;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(30deg, $soft-yellow, $soft-blue2, $bright-red, $lime-green,  $soft-yellow, $soft-blue2, $bright-red, $lime-green);
+    background-size: 300% 300%;
+    width: calc(100% + 3px);
+    height: calc(100% + 3px);
+    z-index: -1;
+  }
+  h4 {
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    color: $dark-salt;
+    margin-bottom: 30px;
+  }
+  p {
+    color: $dark-salt;
+    font-size: 18px;
+    width: 95%;
+    overflow: scroll;
+  }
+}
+.productImage {
+  transition: all 0.5s ease-out;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  float: right;
+  width: 50%;
+  img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-out;
+    &:hover {
+      transform: scale(1.5, 1.5);
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(30deg, $soft-yellow, $soft-blue2, $bright-red, $lime-green,  $soft-yellow, $soft-blue2, $bright-red, $lime-green);
+    background-size: 300% 300%;
+    width: calc(100% + 3px);
+    height: calc(100% + 3px);
+    z-index: -1;
+  }
+}
+.productImage:hover .info {
+  transform: translateX(0);
+}
+.control {
+  position: absolute;
+  left: 25%;
+  top: 65%;
+}
+.btn {
+  transform: translateY(0px);
+  transition: 0.3s linear;
+  background: $lime-green;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: $white;
+  padding: 0;
+  margin-bottom: 20px;
+  &:hover {
+    transform: translateY(-4px);
+  }
+  span {
+    transition: transform 0.3s;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin:0;
+  }
+}
+.btn .price, .shoppingCart{
+  background: $dark-salt;
+  border: 0;
+  margin: 0;
+}
+.btn .price {
+  transform: translateX(-10%);
+  padding-right: 10px;
+}
+.btn .shoppingCart {
+  transform: translateX(-100%);
+  position: absolute;
+  background: $dark-salt;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+.btn .buy {
+  z-index: 3;
+  font-weight: bolder;
+}
+.btn:hover .price {
+  transform: translateX(-110%);
+}
+.btn:hover .shoppingCart {
+  transform: translateX(0%);
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    .productImage {
+      width: 100%;
+      min-height: 65%;
+    }
+    .productDetails {
+      width: 95%;
+      min-height: 300px;
+      padding-bottom: 30px;
+    }
+    .control {
+      left: 35%;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    .productImage {
+      width: 100%;
+      min-height: 58%;
+    }
+    .control {
+      left: 30%;
+    }
+  }
+}

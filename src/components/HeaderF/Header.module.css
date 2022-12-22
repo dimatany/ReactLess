@@ -23,6 +23,7 @@
   font-weight: 600;
   font-size: 18px;
   text-decoration: none;
+  text-shadow: 1px 1px 1px #191d1c;
 }
 .nav ul li a:hover {
   color: #edae3b;
