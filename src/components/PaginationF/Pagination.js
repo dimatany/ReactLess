@@ -1,17 +1,21 @@
 import React from 'react';
 import styles from './Pagination.module.css';
+import Goods from '../GoodsF/Goods';
 
-function Pagination(){
-	const [currentPage, setCurrentPage] = React.useState(4);
-	let maxPages = 10;
+function Pagination() {
+	const [currentPage, setCurrentPage] = React.useState(1);
+	const maxPages = 100;
 	let items = [];
-	let leftSide = currentPage - 2;
+	let leftSide = currentPage - 1;
 	if(leftSide <= 0 ) leftSide = 1;
-	let rightSide = currentPage + 2;
+	let rightSide = currentPage + 1;
 	if(rightSide > maxPages) rightSide = maxPages;
+	
 	for (let number = leftSide; number <= rightSide; number++) {
 		items.push(
-			<div key={number} className={(number === currentPage ? [styles['roundEffect'], styles['active']].join(" ") : styles.roundEffect)} onClick={()=>{ setCurrentPage(number)}}>
+			<div key={number}
+			     className={(number === currentPage ? [styles['roundEffect'], styles['active']].join(" ") : styles.roundEffect)}
+			     onClick={()=>{ setCurrentPage(number)}}>
 				{number}
 			</div>,
 		);

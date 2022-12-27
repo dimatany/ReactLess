@@ -3,11 +3,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 3vh;
-}
-
-.flexContainer > div {
-  padding-top: 10px;
+  margin-bottom: 5vh;
 }
 
 .paginateCtn {
@@ -15,40 +11,43 @@
 }
 
 .roundEffect {
-  color: #DD4124;
+  color: #FE2E2E;
   cursor: pointer;
   font-size: 16px;
   text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 9px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
   border-radius: 50%;
   height: 40px;
   width: 40px;
   margin: 5px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background: #434343;
+  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
   text-decoration: none;
+  transition: 0.1s linear;
 }
 
 .roundEffect:hover {
   text-decoration: none;
-  background: #DD4124;
-  color: #FFF;
+  background: #FE2E2E;
+  color: #ffffff;
 }
 
 .roundEffect:hover a {
   text-decoration: none;
-  color: #FFF;
+  color: #ffffff;
 }
 
 .active {
-  background: #DD4124;
-  color: #FFF;
+  background: #FE2E2E;
+  color: #ffffff;
 }
 
 a:link {
   text-decoration: none;
-  color: #DD4124;
+  color: #FE2E2E;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=Pagination.module.css.map */

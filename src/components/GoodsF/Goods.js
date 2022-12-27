@@ -4,7 +4,7 @@ import Pagination from '../PaginationF/Pagination';
 
 
 function Goods(props) {
-	const carts = [
+	const items = [
 		{
 			id:1,
 			title: 'Безсульфатний шампунь з кератином, 150 мл',
@@ -204,7 +204,7 @@ function Goods(props) {
 				<h2>{props.title}</h2>
 			</div>
 			<div className={styles.wrap}>
-				{carts.map(el =>
+				{items.map(el =>
 					<div className={styles.container}>
 						<div className={styles.productDetails} key={el.id}>
 							<h4>{el.title}</h4>
