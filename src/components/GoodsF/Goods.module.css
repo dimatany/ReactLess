@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 3vh;
 }
 
 .block {
@@ -16,7 +17,7 @@
   text-align: center;
   font-weight: 700;
   font-size: 58px;
-  margin-bottom: 5vh;
+  margin-bottom: 3vh;
 }
 
 .container {
@@ -25,7 +26,7 @@
   box-shadow: 0 15px 30px 1px #434343;
   background: #ffffff;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
   margin: 1em auto;
   min-height: 350px;
@@ -60,12 +61,36 @@
   font-size: 24px;
   color: #191d1c;
   margin-bottom: 30px;
+  height: 10vh;
+  overflow: scroll;
 }
 .productDetails p {
   color: #191d1c;
   font-size: 18px;
   width: 95%;
   overflow: scroll;
+  height: 15vh;
+}
+.productDetails .more {
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 18px;
+  width: 75px;
+  background: #191d1c;
+  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  left: 24%;
+  top: 60%;
+}
+.productDetails .more svg {
+  fill: #ffffff;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
 }
 
 .productImage {
@@ -104,14 +129,14 @@
 .control {
   position: absolute;
   left: 25%;
-  top: 65%;
+  top: 70%;
 }
 
 .btn {
   transform: translateY(0px);
   transition: 0.3s linear;
   background: #4fa19d;
-  border-radius: 5px;
+  border-radius: 10px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -179,6 +204,9 @@
     min-height: 300px;
     padding-bottom: 30px;
   }
+  .container .productDetails .more {
+    left: 34%;
+  }
   .container .control {
     left: 35%;
   }
@@ -187,6 +215,9 @@
   .container .productImage {
     width: 100%;
     min-height: 58%;
+  }
+  .container .productDetails .more {
+    left: 29%;
   }
   .container .control {
     left: 30%;

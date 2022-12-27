@@ -14,6 +14,7 @@ $lime-green: #4fa19d;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 3vh;
 }
 .block {
   padding-top: 20vh;
@@ -26,7 +27,7 @@ $lime-green: #4fa19d;
     text-align: center;
     font-weight: 700;
     font-size: 58px;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
   }
 }
 .container {
@@ -35,7 +36,7 @@ $lime-green: #4fa19d;
   box-shadow: 0 15px 30px 1px $grayish-blue;
   background: $white;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
   margin: 1em auto;
   min-height: 350px;
@@ -68,12 +69,36 @@ $lime-green: #4fa19d;
     font-size: 24px;
     color: $dark-salt;
     margin-bottom: 30px;
+    height: 10vh;
+    overflow: scroll;
   }
   p {
     color: $dark-salt;
     font-size: 18px;
     width: 95%;
     overflow: scroll;
+    height: 15vh;
+  }
+  .more {
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 75px;
+    background: $dark-salt;
+    box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    left: 24%;
+    top: 60%;
+    svg {
+      fill: $white;
+      width: 20px;
+      height: 20px;
+      margin: 0 auto;
+    }
   }
 }
 .productImage {
@@ -110,13 +135,13 @@ $lime-green: #4fa19d;
 .control {
   position: absolute;
   left: 25%;
-  top: 65%;
+  top: 70%;
 }
 .btn {
   transform: translateY(0px);
   transition: 0.3s linear;
   background: $lime-green;
-  border-radius: 5px;
+  border-radius: 10px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -176,6 +201,9 @@ $lime-green: #4fa19d;
       width: 95%;
       min-height: 300px;
       padding-bottom: 30px;
+      .more {
+        left: 34%;
+      }
     }
     .control {
       left: 35%;
@@ -187,6 +215,11 @@ $lime-green: #4fa19d;
     .productImage {
       width: 100%;
       min-height: 58%;
+    }
+    .productDetails {
+      .more {
+        left: 29%;
+      }
     }
     .control {
       left: 30%;
