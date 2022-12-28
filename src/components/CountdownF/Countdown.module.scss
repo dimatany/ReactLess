@@ -1,0 +1,54 @@
+.wrap {
+  padding-top: 3vh;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto 10vh;
+  border-radius: 10px;
+  height: 50vh;
+  .timeBox {
+    display: flex;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin: 0 auto;
+    padding: 100px;
+    .days,
+    .hours,
+    .minutes,
+    .seconds  {
+      font-size: 35px;
+      color: #fff;
+      margin: 0 auto;
+      padding: 20px;
+      animation: animate 3s linear infinite;
+      text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+      h3 {
+        padding: 20px;
+      }
+    }
+  }
+}
+
+.hours {
+  animation-delay: 0.3s;
+}
+
+.minutes {
+  animation-delay: 0.7s;
+}
+
+.seconds {
+  animation-delay: 0.1s;
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}

@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Pagination.module.css';
-import Goods from '../GoodsF/Goods';
 
 function Pagination() {
 	const [currentPage, setCurrentPage] = React.useState(1);
@@ -32,16 +31,17 @@ function Pagination() {
 		}
 	}
 	
-	const paginationRender = (
-		<div className={styles.flexContainer}>
-			<div className={styles.paginateCtn}>
-				<div className={styles.roundEffect} onClick={prevPage}> &lsaquo; </div>
-				{items}
-				<div className={styles.roundEffect} onClick={nextPage}> &rsaquo; </div>
+	return (
+		<>
+			<div className={styles.flexContainer}>
+				<div className={styles.paginateCtn}>
+					<div className={styles.roundEffect} onClick={prevPage}> &lsaquo; </div>
+					{items}
+					<div className={styles.roundEffect} onClick={nextPage}> &rsaquo; </div>
+				</div>
 			</div>
-		</div>
+		</>
 	);
-	return (paginationRender);
 }
 
 export default Pagination;
