@@ -1,32 +1,31 @@
 .wrap {
   padding-top: 3vh;
   width: 90%;
-  max-width: 900px;
-  margin: 0 auto 10vh;
-  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto 1vh;
   height: 50vh;
 }
 .wrap .timeBox {
   display: flex;
   text-align: center;
-  background: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
+  background: #191d1c;
+  box-shadow: 0 8px 32px 0 #5383ed;
+  backdrop-filter: blur(6px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid #8ab4f8;
   margin: 0 auto;
-  padding: 100px;
+  padding: 80px;
 }
 .wrap .timeBox .days,
 .wrap .timeBox .hours,
 .wrap .timeBox .minutes,
 .wrap .timeBox .seconds {
   font-size: 35px;
-  color: #fff;
+  color: #ffffff;
   margin: 0 auto;
   padding: 20px;
   animation: animate 3s linear infinite;
-  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+  text-shadow: 0 0 50px #FE2E2E, 0 0 100px #FE2E2E, 0 0 150px #FE2E2E, 0 0 200px #FE2E2E;
 }
 .wrap .timeBox .days h3,
 .wrap .timeBox .hours h3,
@@ -53,6 +52,21 @@
   }
   to {
     filter: hue-rotate(360deg);
+  }
+}
+@media screen and (max-width: 700px) {
+  .wrap .timeBox {
+    max-width: 300px;
+    height: 83vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .wrap .timeBox .days,
+.wrap .timeBox .hours,
+.wrap .timeBox .minutes,
+.wrap .timeBox .seconds {
+    font-size: 25px;
   }
 }
 

@@ -1,7 +1,7 @@
 .block {
   padding-top: 20vh;
   width: 90%;
-  max-width: 1300px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
   padding-bottom: 3vh;
@@ -11,6 +11,53 @@
   font-weight: 700;
   font-size: 58px;
   margin-bottom: 3vh;
+}
+.block p {
+  display: block;
+  color: #edae3b;
+  text-align: center;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.description {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto 1vh;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+  height: 30vh;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+.description p {
+  font-family: "Lobster", cursive;
+  letter-spacing: 2px;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.video {
+  max-width: 1000px;
+  margin: 0 auto 5vh;
+}
+.video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  max-height: 400px;
+}
+
+@media screen and (max-width: 700px) {
+  .description {
+    margin-top: 45vh;
+    margin-bottom: 3vh;
+  }
+  .video {
+    margin-bottom: 3vh;
+  }
 }
 
 /*# sourceMappingURL=Stocks.module.css.map */

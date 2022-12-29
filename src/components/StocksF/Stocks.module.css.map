@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["Stocks.module.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA;EACA;EACA;;AACA;EACE;EACA;EACA;EACA","file":"Stocks.module.css"}
+{"version":3,"sourceRoot":"","sources":["Stocks.module.scss"],"names":[],"mappings":"AAaA;EACE;EACA;EACA;EACA;EACA;EACA;;AACA;EACE;EACA;EACA;EACA;;AAEF;EACE;EACA,OApBY;EAqBZ;EACA;EACA;;;AAGJ;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AACA;EACE;EACA;EACA;EACA,OA9CI;;;AAiDR;EACE;EACA;;AACA;EACE;EACA;EACA;EACA;;;AAIJ;EACE;IACE;IACA;;EAEF;IACE","file":"Stocks.module.css"}

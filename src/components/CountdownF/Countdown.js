@@ -39,24 +39,26 @@ let Countdown = ({ date }) => {
 				<div className={styles.timeBox}>
 					<div className={styles.days}>
 						<h3>{diffDays.toString().padStart(2, "0")}</h3>
-						<span>дней</span>
+						<span>days</span>
 					</div>
 					<div className={styles.hours}>
 						<h3>{diffH.toString().padStart(2, "0")}</h3>
-						<span>часов</span>
+						<span>hours</span>
 					</div>
 					<div className={styles.minutes}>
 						<h3>{diffM.toString().padStart(2, "0")}</h3>
-						<span>минут</span>
+						<span>minutes</span>
 					</div>
 					<div className={styles.seconds}>
 						<h3>{diffS.toString().padStart(2, "0")}</h3>
-						<span>секунд</span>
+						<span>seconds</span>
 					</div>
 				</div>
 			</div>
 		</>
 	);
 };
+
+
 
 export default Countdown;

@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Goods.module.css';
 import Pagination from '../PaginationF/Pagination';
-import Countdown from '../CountdownF/Countdown';
 
 
 function Goods(props) {
