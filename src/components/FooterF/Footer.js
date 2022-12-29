@@ -61,7 +61,7 @@ function Footer(props) {
 Footer.defaultProps = {
 	title1: 'Контакти',
 	title2: 'Pежим роботи',
-	title3: 'Мы в Instagram',
+	title3: 'Ми в Instagram',
 	email: 'Email me(cheize2020@gmail.com)',
 	number: 'Сall me (+3 80(00) 000 00 00)',
 	mode1: 'C 10:00 до 21:00 (Пн-Пт)',

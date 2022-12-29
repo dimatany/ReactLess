@@ -4,7 +4,7 @@ import styles from './Contacts.module.css'
 function Contacts() {
 	return (
 		<>
-			<h1>Контакты</h1>
+			<h1>Контакти</h1>
 		</>
 	);
 }

@@ -248,8 +248,8 @@ function Goods(props) {
 }
 
 Goods.defaultProps = {
-	title: 'Товары',
-	button: 'Купить',
+	title: 'Товари',
+	button: 'Купити',
 	currency: 'грн',
 };
 export default Goods;

@@ -5,7 +5,7 @@ import './logoBrand2.png';
 import './logoBrand3.png';
 import './logoBrand4.png';
 
-function Brands(props) {
+function Brands() {
 	return (
 		<div className={styles.partners}>
 			<ul>

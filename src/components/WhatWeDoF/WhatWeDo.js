@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './WhatWeDo.module.css'
+
 function WhatWeDo(props) {
 	const posts = [
 		{id:1, title: 'Перукарські послуги', image: require("./ab1.png"), alt: 'is top image', },
@@ -12,7 +13,7 @@ function WhatWeDo(props) {
 	
 	return (
 		<div className={[styles["services"], styles['wrap']].join(" ")}>
-			<h2>Наші послуги</h2>
+			<h2>{props.title}</h2>
 			<div className={styles.card}>
 				{posts.map(el =>
 					<div className={styles.shadow} key={el.id}>
@@ -23,4 +24,8 @@ function WhatWeDo(props) {
 		</div>
 	);
 }
+
+WhatWeDo.defaultProps = {
+	title: 'Наші послуги',
+};
 export default WhatWeDo;

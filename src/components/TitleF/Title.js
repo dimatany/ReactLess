@@ -11,7 +11,7 @@ function Title(props) {
 }
 
 Title.defaultProps = {
-	title: 'Студія краси Осокорки',
+	title: 'Beauty Salon',
 }
 
 export default Title;

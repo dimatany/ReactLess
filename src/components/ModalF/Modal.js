@@ -28,4 +28,5 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
 	</React.Fragment>, document.body
 ) : null;
 
+
 export default Modal;
