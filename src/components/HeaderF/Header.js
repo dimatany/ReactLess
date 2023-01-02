@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-
-import About from '../../components/AboutF/About';
-import Masters from '../../components/MastersF/Masters';
-import Goods from '../../components/GoodsF/Goods';
-import Stocks from '../../components/StocksF/Stocks';
-import Reviews from '../../components/ReviewsF/Reviews';
-import Contacts from '../../components/ContactF/Contacts';
-import NotFound from '../../components/ErrorF/NotFound';
 import styles from './Header.module.css'
+
+const About = lazy(() => import('../../components/AboutF/About'));
+const Masters = lazy(() => import('../../components/MastersF/Masters'));
+const Goods = lazy(() => import('../../components/GoodsF/Goods'));
+const Stocks = lazy(() => import('../../components/StocksF/Stocks'));
+const Reviews = lazy(() => import('../../components/ReviewsF/Reviews'));
+const Contacts = lazy(() => import('../../components/ContactF/Contacts'));
+const NotFound = lazy(() => import('../../components/ErrorF/NotFound'));
+
+const renderLoader = () => <p>Loading</p>;
 
 function Header() {
 	return (
@@ -41,17 +43,19 @@ function Header() {
 						<li><a href="/contacts">Контакти</a></li>
 					</ul>
 				</nav>
-				<Router>
-					<Routes>
-						<Route path="/about" element={<About/>}/>
-						<Route path="/masters" element={<Masters/>}/>
-						<Route path="/goods" element={<Goods/>}/>
-						<Route path="/stocks" element={<Stocks/>}/>
-						<Route path="/reviews" element={<Reviews/>}/>
-						<Route path="/contacts" element={<Contacts/>}/>
-						<Route path="*" element={<NotFound/>}/>
-					</Routes>
-				</Router>
+				<Suspense fallback={renderLoader()}>
+					<Router>
+						<Routes>
+							<Route path="/about" element={<About/>}/>
+							<Route path="/masters" element={<Masters/>}/>
+							<Route path="/goods" element={<Goods/>}/>
+							<Route path="/stocks" element={<Stocks/>}/>
+							<Route path="/reviews" element={<Reviews/>}/>
+							<Route path="/contacts" element={<Contacts/>}/>
+							<Route path="*" element={<NotFound/>}/>
+						</Routes>
+					</Router>
+				</Suspense>
 			</header>
 		</>
 	);
