@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Navigation from '../NavigationF/Navigation';
+import Loading from '../LoadingF/Loading';
 
 const About = lazy(() => import('../../components/AboutF/About'));
 const Masters = lazy(() => import('../../components/MastersF/Masters'));
@@ -10,7 +11,7 @@ const Reviews = lazy(() => import('../../components/ReviewsF/Reviews'));
 const Contacts = lazy(() => import('../../components/ContactF/Contacts'));
 const NotFound = lazy(() => import('../../components/ErrorF/NotFound'));
 
-const renderLoader = () => <p>Loading</p>;
+const renderLoader = () => <Loading/>;
 
 function Header() {
 	return (
