@@ -6,10 +6,11 @@ const GoodsDetail = () => {
 	const params = useParams();
 	
 	const currentGoods = dataItems.find(
-		(el) => el.id === params.dataItems
+		(el) => el.id === params.goodsDetail
 	);
 	
-	const { name, description} = currentGoods;
+	const { name, description } = currentGoods;
+	
 	return (
 		<>
 			<div className={styles.test}>

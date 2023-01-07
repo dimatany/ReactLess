@@ -1,8 +1,7 @@
-import React from 'react';
+import { Link } from "react-router-dom";
+import dataItems from './DataGoods';
 import styles from './Goods.module.css';
 import Pagination from '../PaginationF/Pagination';
-import dataItems from './DataGoods';
-
 
 function Goods(props) {
 	return (
@@ -14,13 +13,15 @@ function Goods(props) {
 				{dataItems.map(el =>
 					<div className={styles.container}>
 						<div className={styles.productDetails} key={el.id}>
-							<h4>{el.title}</h4>
+							<h4>{el.name}</h4>
 							<p>{el.description}</p>
-							<button className={styles.more}>
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-									<path d="M22,3H5A2,2 0 0,0 3,5V9H5V5H22V19H5V15H3V19A2,2 0 0,0 5,21H22A2,2 0 0,0 24,19V5A2,2 0 0,0 22,3M7,15V13H0V11H7V9L11,12L7,15M20,13H13V11H20V13M20,9H13V7H20V9M17,17H13V15H17V17Z" />
-								</svg>
-							</button>
+							<Link key={el.id} to={el.id}>
+								<button className={styles.more}>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+										<path d="M22,3H5A2,2 0 0,0 3,5V9H5V5H22V19H5V15H3V19A2,2 0 0,0 5,21H22A2,2 0 0,0 24,19V5A2,2 0 0,0 22,3M7,15V13H0V11H7V9L11,12L7,15M20,13H13V11H20V13M20,9H13V7H20V9M17,17H13V15H17V17Z" />
+									</svg>
+								</button>
+							</Link>
 							<div className={styles.control}>
 								<button className={styles.btn}>
 									<span className={styles.price}>{el.prise} {props.currency}</span>

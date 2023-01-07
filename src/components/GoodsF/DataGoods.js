@@ -1,6 +1,6 @@
 const dataItems = [
 	{
-		id:1,
+		id: '1',
 		name: 'Безсульфатний шампунь з кератином, 150 мл',
 		description: 'https://isei.ua/ua/lador-keratin-lpp-keratinoviq-bezsulfatniy-shampun-150ml',
 		prise: 250,
@@ -8,7 +8,7 @@ const dataItems = [
 		alt: 'is top image',
 	},
 	{
-		id:2,
+		id: '2',
 		name: 'Шампунь для сухого і нормального волосся безсульфатний, 530 мл',
 		description: 'https://isei.ua/ua/lador-keratin-lpp-keratinovoye-bezsulfatny-shampun-530-ml',
 		prise: 200,
@@ -16,7 +16,7 @@ const dataItems = [
 		alt: 'is top image',
 	},
 	{
-		id:3,
+		id: '3',
 		name: 'Філер для волосся відновлюючий, 4*13 мл',
 		description: 'https://isei.ua/ua/filler-dlya-volos-vosstanavlivayushchij-413-ml-7905',
 		prise: 129,
@@ -24,7 +24,7 @@ const dataItems = [
 		alt: 'is top image',
 	},
 	{
-		id:4,
+		id: '4',
 		name: 'Філер для волосся відновлюючий, 13 мл',
 		description: 'https://isei.ua/ua/lador-perfect-hair-fill-upfiler-dlya-volos-13-ml',
 		prise: 80,
@@ -32,7 +32,7 @@ const dataItems = [
 		alt: 'is top image',
 	},
 	{
-		id:5,
+		id: '5',
 		name: 'Шампунь з амінокислотами, 400 мл',
 		description: 'https://isei.ua/ua/shampun-dlya-volos-400-ml-7006',
 		prise: 590,
@@ -40,7 +40,7 @@ const dataItems = [
 		alt: 'is top image',
 	},
 	{
-		id:6,
+		id: '6',
 		name: 'Шампунь для волосся на основі трав\'яних екстрактів, 150 мл',
 		description: 'https://isei.ua/ua/shampun-dlya-volos-na-osnove-travyanyh-ehkstraktov-150-ml-7005',
 		prise: 305,
@@ -48,7 +48,7 @@ const dataItems = [
 		alt: 'is top image',
 	},
 	{
-		id:7,
+		id: '7',
 		name: 'Маска для волосся на основі трав\'яних екстрактів, 360 мл',
 		description: 'https://isei.ua/ua/maska-dlya-volos-na-osnove-travyanyh-ehkstraktov-360-ml-7008',
 		prise: 800,
@@ -56,7 +56,7 @@ const dataItems = [
 		alt: 'is top image',
 	},
 	{
-		id:8,
+		id: '8',
 		name: 'Маска для волосся на основі трав\'яних екстрактів, 150 мл',
 		description: 'https://isei.ua/ua/maska-dlya-volos-na-osnove-travyanyh-ehkstraktov-150-ml-7007',
 		prise: 365,
@@ -64,7 +64,7 @@ const dataItems = [
 		alt: 'is top image',
 	},
 	{
-		id: 9,
+		id: '9',
 		name: 'Бальзам для пошкодженого волосся з протеїнами шовку, 200 мл',
 		description: 'https://isei.ua/ua/lador-wonder-balzam-dlya-silno-povrezhdennykh-volos-200-ml',
 		prise: 660,
@@ -72,7 +72,7 @@ const dataItems = [
 		alt: 'is top image',
 	},
 	{
-		id: 10,
+		id: '10',
 		name: 'Бальзам-маска для волосся з протеїнами шовку, 250 мл',
 		description: 'https://isei.ua/ua/lador-wonder-tear-balzam-maska-dlya-uvlazhneniya-250-ml',
 		prise: 720,
@@ -80,7 +80,7 @@ const dataItems = [
 		alt: 'is top image',
 	},
 	{
-		id: 11,
+		id: '11',
 		name: 'Шампунь проти випадіння з ментолом для всіх типів волосся, 530 мл',
 		description: 'https://isei.ua/ua/lador-dermatical-hair-loss-shampun-530-ml',
 		prise: 845,
@@ -88,7 +88,7 @@ const dataItems = [
 		alt: 'is top image',
 	},
 	{
-		id: 12,
+		id: '12',
 		name: 'Кондиціонер для сухого та пошкодженого волосся зволожуючий без силіконів, 530 мл',
 		description: 'https://isei.ua/ua/lador-balansing-kondicioner-dlya-volos-530-ml-4343',
 		prise: 549,
@@ -96,7 +96,7 @@ const dataItems = [
 		alt: 'is top image',
 	},
 	{
-		id: 13,
+		id: '13',
 		name: 'Шампунь для сухого волосся органічний безсульфатний, 530 мл',
 		description: 'https://isei.ua/ua/lador-triplex-natural-bezsulfatnyy-shampun-530-ml',
 		prise: 710,
@@ -104,7 +104,7 @@ const dataItems = [
 		alt: 'is top image',
 	},
 	{
-		id: 14,
+		id: '14',
 		name: 'Маска для екстра-відновлення пошкодженого волосся колагенова, 150 мл',
 		description: 'https://isei.ua/ua/lador-keratin-lpp-keratinovoye-maska-d-volos-150-ml',
 		prise: 249,
@@ -112,7 +112,7 @@ const dataItems = [
 		alt: 'is top image',
 	},
 	{
-		id: 15,
+		id: '15',
 		name: 'Шампунь для сухого і пошкодженого волосся зволожуючий без силіконів, 530 мл',
 		description: 'https://isei.ua/ua/lador-balansing-shampun-dlya-volos-530-ml-4342',
 		prise: 576,
@@ -120,7 +120,7 @@ const dataItems = [
 		alt: 'is top image',
 	},
 	{
-		id: 16,
+		id: '16',
 		name: 'Шампунь для сухого і пошкодженого волосся безлужний, 900 мл',
 		description: 'https://isei.ua/ua/lador-damage-protector-acid-shampun-900-ml',
 		prise: 49,
@@ -128,7 +128,7 @@ const dataItems = [
 		alt: 'is top image',
 	},
 	{
-		id: 17,
+		id: '17',
 		name: 'Шампунь для тонкого і пошкодженого волосся органічний безсульфатний, 150 мл',
 		description: 'https://isei.ua/ua/lador-triplex-natural-bezsulfatnyy-shampun-150-ml',
 		prise: 245,
@@ -136,7 +136,7 @@ const dataItems = [
 		alt: 'is top image',
 	},
 	{
-		id: 18,
+		id: '18',
 		name: 'Міст для волосся для зміцнення і захисту, 100 мл',
 		description: 'https://isei.ua/ua/lador-wonder-pic-most-dlya-ukrepleniya-i-zashchity-volos-100-ml',
 		prise: 480,
@@ -144,7 +144,7 @@ const dataItems = [
 		alt: 'is top image',
 	},
 	{
-		id: 19,
+		id: '19',
 		name: 'Філер для волосся відновлюючий, 150 мл',
 		description: 'https://isei.ua/ua/lador-perfect-hair-fill-up-filler-dlya-volos-150-ml-4346',
 		prise: 480,
@@ -152,7 +152,7 @@ const dataItems = [
 		alt: 'is top image',
 	},
 	{
-		id: 20,
+		id: '20',
 		name: 'Шампунь проти лупи, 530 мл',
 		description: 'https://isei.ua/ua/lador-anti-dandruff-shampun-dlya-volos-530-ml-4341',
 		prise: 570,
@@ -160,7 +160,7 @@ const dataItems = [
 		alt: 'is top image',
 	},
 	{
-		id: 21,
+		id: '21',
 		name: 'Набір філерів з кератином',
 		description: 'https://isei.ua/ua/nabor-fillerov-s-keratinom-9227',
 		prise: 679,
@@ -168,7 +168,7 @@ const dataItems = [
 		alt: 'is top image',
 	},
 	{
-		id: 22,
+		id: '22',
 		name: 'Термозахисний спрей для укладки волосся, 100 мл',
 		description: 'https://isei.ua/ua/termozashchitnyj-sprej-dlya-ukladki-volos-100-ml-7011',
 		prise: 489,
@@ -176,7 +176,7 @@ const dataItems = [
 		alt: 'is top image',
 	},
 	{
-		id: 23,
+		id: '23',
 		name: 'Шампунь для волосся зволожуючий, 600 мл',
 		description: 'https://isei.ua/ua/shampun-dlya-volos-uvlazhnyayushchij-600-ml-7151',
 		prise: 635,
@@ -184,7 +184,7 @@ const dataItems = [
 		alt: 'is top image',
 	},
 	{
-		id: 24,
+		id: '24',
 		name: 'Безсульфатний шампунь з кератином, 150 мл',
 		description: 'https://isei.ua/ua/lador-keratin-lpp-keratinoviq-bezsulfatniy-shampun-150ml',
 		prise: 249,
