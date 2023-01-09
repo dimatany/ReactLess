@@ -2,25 +2,32 @@ import { Link } from "react-router-dom";
 import dataItems from './DataGoods';
 import styles from './Goods.module.css';
 import Pagination from '../PaginationF/Pagination';
+import React from 'react';
 
 function Goods(props) {
+	
+	const [checked, setChecked] = React.useState(true);
+	
+	function handleChange() {
+		setChecked(!checked);
+	}
+	
 	return (
 		<>
 			<div className={styles.block}>
 				<h2>{props.title}</h2>
 			</div>
-			<div className={styles.wrap}>
+			<div className={styles.wrapper}>
 				{dataItems.map(el =>
 					<div className={styles.container}>
 						<div className={styles.productDetails} key={el.id}>
 							<h4>{el.name}</h4>
-							<p>{el.description}</p>
+							<div className={styles.wrapBlock}>
+								<p>{el.description}</p>
+							</div>
 							<Link key={el.id} to={el.id}>
-								<button className={styles.more}>
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-										<path d="M22,3H5A2,2 0 0,0 3,5V9H5V5H22V19H5V15H3V19A2,2 0 0,0 5,21H22A2,2 0 0,0 24,19V5A2,2 0 0,0 22,3M7,15V13H0V11H7V9L11,12L7,15M20,13H13V11H20V13M20,9H13V7H20V9M17,17H13V15H17V17Z" />
-									</svg>
-								</button>
+								<label htmlFor="button">{props.label}</label>
+								<input type="checkbox" checked={checked} onChange={handleChange} />
 							</Link>
 							<div className={styles.control}>
 								<button className={styles.btn}>
@@ -58,6 +65,7 @@ function Goods(props) {
 Goods.defaultProps = {
 	title: 'Товари',
 	button: 'Купити',
+	label: 'Дізнайтеся більше',
 	currency: 'грн',
 };
 export default Goods;
