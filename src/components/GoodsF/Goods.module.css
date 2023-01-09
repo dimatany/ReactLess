@@ -218,7 +218,7 @@ label {
     min-height: 65%;
   }
   .container .productDetails {
-    width: 95%;
+    width: 100%;
     min-height: 300px;
     padding-bottom: 30px;
   }
