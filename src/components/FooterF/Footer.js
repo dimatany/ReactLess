@@ -32,7 +32,7 @@ function Footer(props) {
 						   target="_blank"
 						   rel="noopener noreferrer nofollow"
 						   title="instagram">
-							<SVGInstagram fill='white'/>
+							<SVGInstagram fill='white' stroke='white'/>
 						</a>
 					</div>
 				</div>
