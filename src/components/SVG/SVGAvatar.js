@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SvgAvatar({fill, stroke}) {
+function SvgAvatar({fill}) {
 	return (
 		<div>
 			<svg width="700pt" height="700pt" version="1.1" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" fill={fill}>
