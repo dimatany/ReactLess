@@ -1,3 +1,68 @@
-.test {
-  background: #93ff2d;
+$dark-blue: #202125;
+$dark-salt: #191d1c;
+$grayish-blue: #434343;
+$white: #ffffff;
+$soft-blue: #8ab4f8;
+$soft-blue2: #5383ed;
+$silver: rgba(255, 255, 255, .5);
+$soft-yellow: #f7d775;
+$bright-orange: #edae3b;
+$moderate-orange2: rgb(186, 138, 76, .4);
+$bright-red: #FE2E2E;
+$lime-green: #4fa19d;
+
+
+.wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 25vh 40px 2vh 40px;
+  .illustration {
+    width: 50%;
+    img {
+      max-height: 500px;
+      width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 5px 32px 0 $soft-blue2;
+    }
+  }
+  .sinopsis {
+    font-size: 20px;
+    width: 50%;
+    span {
+      color: $bright-red;
+      font-size: 18px;
+    }
+    .name {
+      line-height: 35px;
+      margin-bottom: 7vh;
+      color: $bright-orange;
+      font-size: 35px;
+      font-weight: bold;
+    }
+    .article, .description, .forWhat, .type, .application, .composition  {
+      padding-top: 1vh;
+      margin-bottom: 5vh;
+    }
+    .prise {
+      margin-top: 20px;
+      margin-bottom: 15vh;
+      color: $bright-orange;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+}
+.info {
+  font-size: 20px;
+  width: 95%;
+  margin: 0 auto 15vh;
+  span {
+    color: $bright-red;
+    font-size: 18px;
+  }
+  .description, .application, .composition {
+    padding-top: 1vh;
+    margin-bottom: 5vh;
+  }
 }

@@ -1,5 +1,57 @@
-.test {
-  background: #93ff2d;
+.wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 25vh 40px 2vh 40px;
+}
+.wrap .illustration {
+  width: 50%;
+}
+.wrap .illustration img {
+  max-height: 500px;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 5px 32px 0 #5383ed;
+}
+.wrap .sinopsis {
+  font-size: 20px;
+  width: 50%;
+}
+.wrap .sinopsis span {
+  color: #FE2E2E;
+  font-size: 18px;
+}
+.wrap .sinopsis .name {
+  line-height: 35px;
+  margin-bottom: 7vh;
+  color: #edae3b;
+  font-size: 35px;
+  font-weight: bold;
+}
+.wrap .sinopsis .article, .wrap .sinopsis .description, .wrap .sinopsis .forWhat, .wrap .sinopsis .type, .wrap .sinopsis .application, .wrap .sinopsis .composition {
+  padding-top: 1vh;
+  margin-bottom: 5vh;
+}
+.wrap .sinopsis .prise {
+  margin-top: 20px;
+  margin-bottom: 15vh;
+  color: #edae3b;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.info {
+  font-size: 20px;
+  width: 95%;
+  margin: 0 auto 15vh;
+}
+.info span {
+  color: #FE2E2E;
+  font-size: 18px;
+}
+.info .description, .info .application, .info .composition {
+  padding-top: 1vh;
+  margin-bottom: 5vh;
 }
 
 /*# sourceMappingURL=GoodsDetail.module.css.map */
