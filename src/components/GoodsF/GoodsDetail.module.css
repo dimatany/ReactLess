@@ -1,21 +1,19 @@
 .wrap {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 25vh 40px 2vh 40px;
 }
-.wrap .illustration {
-  width: 50%;
-}
 .wrap .illustration img {
   max-height: 500px;
-  width: 500px;
+  max-width: 500px;
   border-radius: 10px;
   box-shadow: 0 5px 32px 0 #5383ed;
+  margin-bottom: 10vh;
 }
 .wrap .sinopsis {
   font-size: 20px;
-  width: 50%;
 }
 .wrap .sinopsis span {
   color: #FE2E2E;
@@ -52,6 +50,19 @@
 .info .description, .info .application, .info .composition {
   padding-top: 1vh;
   margin-bottom: 5vh;
+}
+.info .description::first-line, .info .application::first-line, .info .composition::first-line {
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 720px) {
+  .sinopsis {
+    margin-top: 15vh;
+  }
+  .info {
+    font-size: 16px;
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=GoodsDetail.module.css.map */

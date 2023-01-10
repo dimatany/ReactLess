@@ -11,24 +11,23 @@ $moderate-orange2: rgb(186, 138, 76, .4);
 $bright-red: #FE2E2E;
 $lime-green: #4fa19d;
 
-
 .wrap {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 25vh 40px 2vh 40px;
   .illustration {
-    width: 50%;
     img {
       max-height: 500px;
-      width: 500px;
+      max-width: 500px;
       border-radius: 10px;
       box-shadow: 0 5px 32px 0 $soft-blue2;
+      margin-bottom: 10vh;
     }
   }
   .sinopsis {
     font-size: 20px;
-    width: 50%;
     span {
       color: $bright-red;
       font-size: 18px;
@@ -64,5 +63,18 @@ $lime-green: #4fa19d;
   .description, .application, .composition {
     padding-top: 1vh;
     margin-bottom: 5vh;
+    &::first-line {
+      font-weight: bolder;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .sinopsis {
+    margin-top: 15vh;
+  }
+  .info {
+    font-size: 16px;
+    width: 90%;
   }
 }
