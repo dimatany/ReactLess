@@ -5,7 +5,7 @@ import Loading from '../LoadingF/Loading';
 function Contacts() {
 	return (
 		<>
-			<h1>Контакти</h1>
+			<h2>Контакти</h2>
 			<Loading/>
 		</>
 	);

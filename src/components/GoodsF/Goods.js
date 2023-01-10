@@ -20,7 +20,7 @@ function Goods(props) {
 			</div>
 			<div className={styles.wrapper}>
 				{dataItems.map(el =>
-					<div className={styles.container}>
+					<div key={el.id} className={styles.container}>
 						<div className={styles.productDetails} key={el.id}>
 							<h4>{el.name}</h4>
 							<div className={styles.wrapBlock}>
