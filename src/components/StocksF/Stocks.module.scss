@@ -1,5 +1,7 @@
 $white: #ffffff;
 $bright-orange: #edae3b;
+$dark-blue: #202125;
+$dark-salt: #191d1c;
 
 .block {
   padding-top: 20vh;
@@ -42,12 +44,55 @@ $bright-orange: #edae3b;
 }
 .video {
   max-width: 1000px;
-  margin: 0 auto 5vh;
+  margin: 0 auto 15vh;
   video {
     width: 100%;
     height: 100%;
     border-radius: 10px;
     max-height: 400px;
+  }
+}
+
+.transition {
+  width: 50%;
+  margin: 10vh auto 10vh;
+  text-align: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  position: relative;
+  background: $dark-salt;
+  border-radius: 20px;
+  a {
+    text-decoration: none;
+    font-size: 22px;
+  }
+}
+.transition:before,
+.transition:after{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000);
+  background-size: 400% 400%;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  border-radius: 20px;
+  z-index: -1;
+  animation: animate 3s ease alternate infinite;
+}
+.transition:after{
+  filter: blur(20px);
+}
+@keyframes animate{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
   }
 }
 
