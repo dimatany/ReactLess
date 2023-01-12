@@ -13,6 +13,9 @@ function Goods(props) {
 	
 	return (
 		<>
+			<div className={styles.block}>
+				<h2>{props.title}</h2>
+			</div>
 			<div className={styles.wrapper}>
 				{dataItems.map(el =>
 					<div key={el.id} className={styles.container}>

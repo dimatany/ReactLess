@@ -1,7 +1,123 @@
-.test {
-  font-size: 108px;
+$dark-blue: #202125;
+$dark-salt: #191d1c;
+$grayish-blue: #434343;
+$white: #ffffff;
+$soft-blue: #8ab4f8;
+$soft-blue2: #5383ed;
+$silver: rgba(255, 255, 255, .5);
+$soft-yellow: #f7d775;
+$bright-orange: #edae3b;
+$moderate-orange2: rgb(186, 138, 76, .4);
+$bright-red: #FE2E2E;
+$lime-green: #4fa19d;
+
+.wrap {
+  padding-top: 20vh;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 3vh;
+  .wrapTitle {
+    text-align: center;
+    font-weight: 700;
+    font-size: 58px;
+    margin-bottom: 10vh;
+    line-height: 7vh;
+  }
+  .wrapDescription {
+    max-width: 100%;
+    margin: 0 auto 10vh;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    color: $bright-orange;
+    text-align: center;
+    line-height: 6vh;
+  }
+  .infoBlock {
+    display: flex;
+    flex-direction: row;
+    gap: 10vh;
+    width: 100%;
+    .infoImage {
+      width: 50%;
+      margin-bottom: 15vh;
+      min-width: 300px;
+      height: 350px;
+      img {
+        border-radius: 10px;
+        box-shadow: 0 8px 32px 0 #5383ed;
+      }
+    }
+    .infoDetails {
+      width: 50%;
+      text-align: left;
+    }
+  }
 }
-.test2 {
-  width: 200px;
-  height: 200px;
+
+details > summary {
+  padding: 10px;
+  color: $white;
+  cursor: pointer;
+  border-radius: 10px;
+  background: #434343;
+  box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
+  text-align: center;
+  font-size: 18px;
 }
+details > p {
+  padding: 5vh 0 5vh 0;
+  overflow: scroll;
+  max-height: 25vh;
+  font-size: 16px;
+  color: $silver;
+  line-height: 31px;
+}
+details > span {
+  padding: 5vh 0 5vh 0;
+  overflow: scroll;
+  font-size: 30px;
+  color: $bright-red;
+}
+details[open] > summary {
+  background-color: $dark-salt;
+}
+summary:before {
+  content: "";
+  margin-left: 15px;
+}
+.currency {
+  margin-left: 10px;
+  font-size: 16px;
+  color: $bright-red;
+}
+
+.resume {
+
+}
+
+@media screen and (max-width: 900px) {
+  .wrap {
+    .infoBlock {
+      display: flex;
+      flex-wrap: wrap;
+      min-width: 320px;
+      gap: 5vh;
+      .infoImage {
+        width: 100%;
+        margin-bottom: 1vh;
+      }
+      .infoDetails {
+        width: 100%;
+        margin-bottom: 15vh;
+      }
+    }
+  }
+  details > p {
+    max-height: 35vh;
+  }
+}
+
+
