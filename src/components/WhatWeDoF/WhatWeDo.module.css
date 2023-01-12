@@ -30,21 +30,34 @@
   position: relative;
   border-radius: 20px;
 }
-
 .shadow img {
   width: 300px;
   height: 250px;
   border-radius: 20px;
 }
-
 .shadow span {
   display: block;
   position: absolute;
   top: 110%;
-  left: 5%;
+  left: 25%;
   z-index: 10;
   font-size: 20px;
   font-weight: 700;
+}
+.shadow span a {
+  text-decoration: none;
+}
+.shadow span a:hover {
+  color: #f7d775;
+}
+.shadow .test1 {
+  position: relative;
+  top: 0;
+  color: #ffffff;
+  font-size: 24px;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #202125;
 }
 
 .shadow:before,

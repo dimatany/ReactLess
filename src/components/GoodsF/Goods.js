@@ -1,27 +1,22 @@
+import React from 'react';
 import { Link } from "react-router-dom";
 import dataItems from './DataGoods';
 import styles from './Goods.module.css';
 import Pagination from '../PaginationF/Pagination';
-import React from 'react';
 import SVGTrolley from '../SVG/SVGTrolley';
 
 function Goods(props) {
-	
 	const [checked, setChecked] = React.useState(true);
-	
 	function handleChange() {
 		setChecked(!checked);
 	}
 	
 	return (
 		<>
-			<div className={styles.block}>
-				<h2>{props.title}</h2>
-			</div>
 			<div className={styles.wrapper}>
 				{dataItems.map(el =>
 					<div key={el.id} className={styles.container}>
-						<div className={styles.productDetails} key={el.id}>
+						<div key={el.id} className={styles.productDetails}>
 							<h4>{el.name}</h4>
 							<div className={styles.wrapBlock}>
 								<p>{el.description}</p>

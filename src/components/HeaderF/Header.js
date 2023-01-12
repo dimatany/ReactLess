@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Navigation from '../NavigationF/Navigation';
 import Loading from '../LoadingF/Loading';
 import GoodsDetail from '../GoodsF/GoodsDetail';
+import WhatWeDoDetail from '../WhatWeDoF/WhatWeDoDetail';
 
 const About = lazy(() => import('../../components/AboutF/About'));
 const Masters = lazy(() => import('../../components/MastersF/Masters'));
@@ -24,6 +25,7 @@ function Header() {
 						<Routes>
 							<Route index element={<About/>} />
 							<Route path="/about" element={<About/>}/>
+							<Route path="/about/:whatWeDoDetail" element={<WhatWeDoDetail/>}/>
 							<Route path="/masters" element={<Masters/>}/>
 							<Route path="/goods" element={<Goods/>}/>
 							<Route path="/goods/:goodsDetail" element={<GoodsDetail/>}/>

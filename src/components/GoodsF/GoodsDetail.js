@@ -1,8 +1,7 @@
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import dataItems from './DataGoods';
 import styles from './GoodsDetail.module.css';
-import React from 'react';
-
 
 function GoodsDetail(props) {
 	const params = useParams();
@@ -52,6 +51,5 @@ GoodsDetail.defaultProps = {
 	title6: 'склад',
 	title7: 'ціна',
 	currency: 'грн',
-	
 };
 export default GoodsDetail;
