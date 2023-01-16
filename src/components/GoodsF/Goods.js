@@ -4,6 +4,7 @@ import dataItems from './DataGoods';
 import styles from './Goods.module.css';
 import Pagination from '../PaginationF/Pagination';
 import SVGTrolley from '../SVG/SVGTrolley';
+import GoodsFilter from './GoodsFilter';
 
 function Goods(props) {
 	const [checked, setChecked] = React.useState(true);
@@ -12,11 +13,17 @@ function Goods(props) {
 		setChecked(!checked);
 	}
 	
+	
 	return (
 		<>
 			<div className={styles.block}>
 				<h2>{props.title}</h2>
 			</div>
+			
+			
+			<GoodsFilter/>
+			
+			
 			<div className={styles.wrapper}>
 				{dataItems.map(el =>
 					<div key={el.id} className={styles.container}>

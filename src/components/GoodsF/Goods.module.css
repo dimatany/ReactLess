@@ -36,9 +36,16 @@ input[type=checkbox]:checked + .wrapBlock {
 label {
   order: 1;
   color: #5383ed;
-  text-decoration: underline;
   font-size: 18px;
   cursor: pointer;
+  background: linear-gradient(to right, transparent, transparent), linear-gradient(to right, #FE2E2E, #edae3b, #4fa19d);
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+label:hover {
+  background-size: 0 3px, 100% 3px;
 }
 
 .container {
