@@ -7,6 +7,7 @@ import SVGTrolley from '../SVG/SVGTrolley';
 
 function Goods(props) {
 	const [checked, setChecked] = React.useState(true);
+	
 	function handleChange() {
 		setChecked(!checked);
 	}
