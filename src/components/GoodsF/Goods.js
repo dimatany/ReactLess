@@ -8,11 +8,9 @@ import GoodsFilter from './GoodsFilter';
 
 function Goods(props) {
 	const [checked, setChecked] = React.useState(true);
-	
 	function handleChange() {
 		setChecked(!checked);
 	}
-	
 	
 	return (
 		<>
@@ -20,9 +18,7 @@ function Goods(props) {
 				<h2>{props.title}</h2>
 			</div>
 			
-			
 			<GoodsFilter/>
-			
 			
 			<div className={styles.wrapper}>
 				{dataItems.map(el =>
