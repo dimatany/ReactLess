@@ -5,8 +5,8 @@ import styles from './GoodsFilter.module.css'
 function GoodsFilter(props) {
 	const [value, setValue] = React.useState('');
 	const newDataItems = [];
-	const result = dataItems.filter(({type}) =>(!newDataItems[type] && (newDataItems[type] = 1)));
-	
+	const resultType = dataItems.filter(({type}) =>(!newDataItems[type] && (newDataItems[type] = 1)));
+	const resultFor = dataItems.filter(({forWhat}) =>(!newDataItems[forWhat] && (newDataItems[forWhat] = 1)));
 	function handleChange(event) {
 		setValue(event.target.value);
 	}
@@ -16,8 +16,8 @@ function GoodsFilter(props) {
 			<div className={styles.wrap}>
 				<div className={styles.wrapSelect}>
 					<select className={styles.type} value={value} onChange={handleChange}>
-						<option selected>визначитесь з типом</option>
-						{result.map(el =>
+						<option selected>{props.button1}</option>
+						{resultType.map(el =>
 							<option key={el.id} value={el.type}>{el.type}</option>
 						)}
 					</select>
@@ -27,8 +27,8 @@ function GoodsFilter(props) {
 				</div>
 				<div className={styles.wrapSelect}>
 					<select className={styles.type} value={value} onChange={handleChange}>
-						<option selected>визначитесь за користю</option>
-						{result.map(el =>
+						<option selected>{props.button2}</option>
+						{resultFor.map(el =>
 							<option key={el.id} value={el.forWhat}>{el.forWhat}</option>
 						)}
 					</select>
@@ -41,5 +41,10 @@ function GoodsFilter(props) {
 		</>
 	);
 }
+
+GoodsFilter.defaultProps = {
+	button1: 'визначитесь з типом',
+	button2: 'визначитесь за користю',
+};
 
 export default GoodsFilter;

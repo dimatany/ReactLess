@@ -5,7 +5,7 @@ import Slider from '../../components/SliderF/Slider';
 import SVGChange from '../SVG/SVGChange';
 
 const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
-	<React.Fragment>
+	<>
 		<div className={styles.overlay}/>
 		<div className={styles.wrapper} aria-modal aria-hidden tabIndex={-1} role="dialog">
 			<div className={styles.modal}>
@@ -24,7 +24,7 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
 				</div>
 			</div>
 		</div>
-	</React.Fragment>, document.body
+	</>, document.body
 ) : null;
 
 

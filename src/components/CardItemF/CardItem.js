@@ -10,12 +10,12 @@ function CardItem(props) {
 		<>
 			<div className={[styles["first"], styles['card']].join(" ")}>
 				<div className={styles.frame}>
-					<p>{props.post.name}
+					<div className={styles.frameName}>{props.post.name}
 						<div className={styles.profession}>
 							<span>{props.post.title}</span>
 							<button onClick={toggle}>{props.button}</button>
 						</div>
-					</p>
+					</div>
 				</div>
 			</div>
 			<div className="modalApp">

@@ -15,7 +15,7 @@
   border: 1px solid #202125;
   opacity: 1;
 }
-.frame p {
+.frame .frameName {
   color: #edae3b;
   text-shadow: 1px 1px 1px #202125;
   font-size: 30px;
@@ -66,10 +66,13 @@
 .first {
   background: url("./CI1.png") center center no-repeat;
   background-size: 379px;
+  transition: all 0.8s ease-in-out;
 }
 .first:hover {
   background: url("./CI1.png") left center no-repeat;
   background-size: 600px;
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
 }
 
 /*# sourceMappingURL=CardItem.module.css.map */
