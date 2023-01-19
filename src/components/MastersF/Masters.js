@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../../components/MastersF/Masters.module.css';
 import '../../components/ModalF/Modal.module.css';
 import CardItem from '../../components/CardItemF/CardItem';
+import Descriptions from '../DescriptionsF/Descriptions';
 
 function Masters(props) {
 	const blocks = [
@@ -23,9 +24,7 @@ function Masters(props) {
 						<CardItem post={el} key={el.id} style={{backgroundImage: `url(${el.background})`}}/>
 					)}
 				</div>
-				<div className={styles.description}>
-					<p>{props.description}</p>
-				</div>
+				<Descriptions text={props.text}/>
 			</div>
 		</>
 	);
@@ -34,7 +33,7 @@ function Masters(props) {
 Masters.defaultProps = {
 	title: 'Майстри',
 	subtitle: 'Натисніть на фото майстра і подивіться його роботи',
-	description: 'Ми раді представити досвідчених, кваліфікованих і креативних художників, які знають абсолютно все про зміну іміджу!Тут працює команда салону краси «Фурор» — перукарі, стилісти, майстри манікюру, педикюру, пірсингу, перукарі, косметологи, лікарі та естетики. Вивчіть профілі майстрів, подивіться роботи, сертифікати та відгуки про роботу. Вибирайте фахівця, який ближче вам по духу, настрою і неодмінно відповідає вашим уявленням про професіоналізм.',
+	text: 'Ми раді представити досвідчених, кваліфікованих і креативних художників, які знають абсолютно все про зміну іміджу!Тут працює команда салону краси «Фурор» — перукарі, стилісти, майстри манікюру, педикюру, пірсингу, перукарі, косметологи, лікарі та естетики. Вивчіть профілі майстрів, подивіться роботи, сертифікати та відгуки про роботу. Вибирайте фахівця, який ближче вам по духу, настрою і неодмінно відповідає вашим уявленням про професіоналізм.',
 	
 };
 

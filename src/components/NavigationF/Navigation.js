@@ -12,7 +12,7 @@ function Navigation() {
 					<li><a href="/goods">Товари</a></li>
 					<li><a href="#"><SVGAvatar fill='white'/></a></li>
 					<li><a href="/stocks">Акції</a></li>
-					<li><a href="/reviews">Блог</a></li>
+					<li><a href="/blog">Блог</a></li>
 					<li><a href="/contacts">Контакти</a></li>
 				</ul>
 			</nav>

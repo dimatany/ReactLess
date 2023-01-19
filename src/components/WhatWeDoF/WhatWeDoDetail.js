@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import dataItems from './DataWWD';
 import styles from './WhatWeDoDetail.module.css';
+import Descriptions from '../DescriptionsF/Descriptions';
 
 function WhatWeDoDetail(props) {
 	const params = useParams();
@@ -16,7 +17,7 @@ function WhatWeDoDetail(props) {
 		<>
 			<div className={styles.wrap}>
 				<h2 className={styles.wrapTitle}>{title}</h2>
-				<p className={styles.wrapDescription}>{description}</p>
+				<Descriptions text={props.text2}/>
 				<div className={styles.infoBlock}>
 					<div className={styles.infoImage}>
 						<img src={image1} alt={alt}/>
@@ -69,7 +70,7 @@ function WhatWeDoDetail(props) {
 						</details>
 					</div>
 				</div>
-				<p className={styles.wrapDescription}>{props.title}</p>
+				<Descriptions text={props.text}/>
 			</div>
 			
 		</>
@@ -77,7 +78,8 @@ function WhatWeDoDetail(props) {
 }
 
 WhatWeDoDetail.defaultProps = {
-	title: 'У нас є багато різних послуг в асортименті - якщо ви хочете зареєструватися на консультацію по номерах або електронній пошті, наданих в капелюсі сайту',
 	currency: 'грн',
+	text: 'У нас є багато різних послуг в асортименті - якщо ви хочете зареєструватися на консультацію по номерах або електронній пошті, наданих в капелюсі сайту',
+	text2: 'Ми надаємо послуги популяції по догляду за волоссям (різання, створення волосся, фарбування, танення та іншого фарбування, стрижки, гоління та стрижки, стрижка та стрижка бороди та вус тощо) в номері обладнаному спеціально для цього.',
 };
 export default WhatWeDoDetail;

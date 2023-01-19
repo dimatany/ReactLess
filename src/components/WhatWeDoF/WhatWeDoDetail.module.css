@@ -13,16 +13,6 @@
   margin-bottom: 10vh;
   line-height: 7vh;
 }
-.wrap .wrapDescription {
-  max-width: 100%;
-  margin: 0 auto 10vh;
-  font-size: 20px;
-  font-weight: lighter;
-  letter-spacing: 1px;
-  color: #edae3b;
-  text-align: center;
-  line-height: 6vh;
-}
 .wrap .infoBlock {
   display: flex;
   flex-direction: row;

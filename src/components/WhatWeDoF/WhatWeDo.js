@@ -23,7 +23,7 @@ function WhatWeDo(props) {
 								<input type="checkbox" checked={checked} onChange={handleChange} />
 							</Link>
 						</span>
-						<p className={styles.test1}>{el.title}</p>
+						<p className={styles.wrapDescr}>{el.title}</p>
 					</div>)}
 			</div>
 		</div>

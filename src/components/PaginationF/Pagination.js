@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from './Pagination.module.css';
+import dataItems from '../../components/GoodsF/DataGoods'
 
 function Pagination() {
-	const [currentPage, setCurrentPage] = React.useState(1);
+	const [currentPage, setCurrentPage] = React.useState(2);
 	const maxPages = 100;
 	let items = [];
 	let leftSide = currentPage - 1;
@@ -19,7 +20,6 @@ function Pagination() {
 			</div>,
 		);
 	}
-	
 	const nextPage = () => {
 		if(currentPage < maxPages){
 			setCurrentPage(currentPage + 1)

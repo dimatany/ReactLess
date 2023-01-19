@@ -1,10 +1,10 @@
 .block {
   padding-top: 20vh;
+  padding-bottom: 3vh;
   width: 90%;
   max-width: 1300px;
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 20vh;
 }
 .block h2 {
   text-align: center;
@@ -27,12 +27,7 @@
   gap: 4vw;
   align-items: center;
   justify-content: center;
-}
-.block .description {
-  max-width: 70vw;
-  margin: 20vh auto 0;
-  font-size: 20px;
-  line-height: 44px;
+  margin-bottom: 10vh;
 }
 
 /*# sourceMappingURL=Masters.module.css.map */

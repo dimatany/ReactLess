@@ -4,12 +4,13 @@ import Navigation from '../NavigationF/Navigation';
 import Loading from '../LoadingF/Loading';
 import GoodsDetail from '../GoodsF/GoodsDetail';
 import WhatWeDoDetail from '../WhatWeDoF/WhatWeDoDetail';
+import Blog from '../BlogF/Blog';
 
 const About = lazy(() => import('../../components/AboutF/About'));
 const Masters = lazy(() => import('../../components/MastersF/Masters'));
 const Goods = lazy(() => import('../../components/GoodsF/Goods'));
 const Stocks = lazy(() => import('../../components/StocksF/Stocks'));
-const Reviews = lazy(() => import('../../components/ReviewsF/Reviews'));
+const Reviews = lazy(() => import('../BlogF/Blog'));
 const Contacts = lazy(() => import('../../components/ContactF/Contacts'));
 const NotFound = lazy(() => import('../../components/ErrorF/NotFound'));
 const renderLoader = () => <Loading/>;
@@ -30,7 +31,7 @@ function Header() {
 							<Route path="/goods" element={<Goods/>}/>
 							<Route path="/goods/:goodsDetail" element={<GoodsDetail/>}/>
 							<Route path="/stocks" element={<Stocks/>}/>
-							<Route path="/reviews" element={<Reviews/>}/>
+							<Route path="/blog" element={<Blog/>}/>
 							<Route path="/contacts" element={<Contacts/>}/>
 							<Route path="*" element={<NotFound/>}/>
 						</Routes>
