@@ -16,7 +16,7 @@ function GoodsFilter(props) {
 			<div className={styles.wrap}>
 				<div className={styles.wrapSelect}>
 					<select className={styles.type} value={value} onChange={handleChange}>
-						<option selected>{props.button1}</option>
+						<option defaultValue>{props.button1}</option>
 						{resultType.map(el =>
 							<option key={el.id} value={el.type}>{el.type}</option>
 						)}
@@ -27,7 +27,7 @@ function GoodsFilter(props) {
 				</div>
 				<div className={styles.wrapSelect}>
 					<select className={styles.type} value={value} onChange={handleChange}>
-						<option selected>{props.button2}</option>
+						<option defaultValue>{props.button2}</option>
 						{resultFor.map(el =>
 							<option key={el.id} value={el.forWhat}>{el.forWhat}</option>
 						)}
