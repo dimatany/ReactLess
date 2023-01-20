@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from './Countdown.module.css';
 
-
 let Countdown = ({ date }) => {
 	const [finishTime] = useState(date.getTime());
 	const [[diffDays, diffH, diffM, diffS], setDiff] = useState([0, 0, 0, 0]);
@@ -16,7 +15,7 @@ let Countdown = ({ date }) => {
 			return;
 		}
 		setDiff([
-			Math.floor(diff / 86400), // дни
+			Math.floor(diff / 6400), // дни
 			Math.floor((diff / 3600) % 24),
 			Math.floor((diff / 60) % 60),
 			Math.floor(diff % 60)
@@ -58,7 +57,5 @@ let Countdown = ({ date }) => {
 		</>
 	);
 };
-
-
 
 export default Countdown;

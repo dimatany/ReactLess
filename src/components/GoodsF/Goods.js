@@ -48,7 +48,6 @@ function Goods(props) {
 				)}
 			</div>
 			<Pagination/>
-			<Comments/>
 		</>
 	);
 }
