@@ -19,10 +19,11 @@ $bright-red: #FE2E2E;
     margin-bottom: 10vh;
     line-height: 7vh;
   }
-  .infoDescr {
+  .infoBlock {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 10vh;
+    width: 100%;
     .infoImage {
       width: 50%;
       margin-bottom: 15vh;
@@ -39,6 +40,7 @@ $bright-red: #FE2E2E;
     }
   }
 }
+
 details > summary {
   padding: 10px;
   color: $white;
@@ -78,9 +80,11 @@ summary:before {
 
 @media screen and (max-width: 900px) {
   .wrap {
-    .infoDescr {
+    .infoBlock {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
+      min-width: 320px;
+      gap: 5vh;
       .infoImage {
         width: 100%;
         margin-bottom: 1vh;
