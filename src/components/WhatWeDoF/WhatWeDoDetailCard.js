@@ -12,6 +12,7 @@ function WhatWeDoDetailCard(props) {
 	
 	const { subtitle1, subtitlePrice1, subSubTitle1 } = currentWWD;
 	
+	
 	return (
 		<>
 			<div className={styles.wrap}>
