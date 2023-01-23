@@ -11,64 +11,29 @@ function WhatWeDoDetail(props) {
 		(el) => el.id === params.whatWeDoDetail
 	);
 	
-	const { title, subtitle1, subtitlePrice1, subSubTitle1, subtitle2, subtitlePrice2, subSubTitle2, subtitle3, subtitlePrice3, subSubTitle3, subtitle4, subtitlePrice4, subSubTitle4, image, image1, image2, image3, image4, alt } = currentWWD;
+	const { title, subtitle1, subtitlePrice1, subSubTitle1 } = currentWWD;
 	
 	return (
 		<>
 			<div className={styles.wrap}>
 				<h2 className={styles.wrapTitle}>{title}</h2>
 				<Descriptions text={props.text2}/>
-				<div className={styles.infoBlock}>
-					<div className={styles.infoImage}>
-						<img src={image1} alt={alt}/>
-					</div>
-					<div className={styles.infoDetails}>
-						<details>
-							<summary>{subtitle1}</summary>
-							<p>{subSubTitle1}</p>
-							<span>{subtitlePrice1}</span>
-							<span className={styles.currency}>{props.currency}</span>
-						</details>
-					</div>
-				</div>
-				<div className={styles.infoBlock}>
-					<div className={styles.infoImage}>
-						<img src={image2} alt={alt}/>
-					</div>
-					<div className={styles.infoDetails}>
-						<details>
-							<summary>{subtitle2}</summary>
-							<p>{subSubTitle2}</p>
-							<span>{subtitlePrice2}</span>
-							<span className={styles.currency}>{props.currency}</span>
-						</details>
-					</div>
-				</div>
-				<div className={styles.infoBlock}>
-					<div className={styles.infoImage}>
-						<img src={image3} alt={alt}/>
-					</div>
-					<div className={styles.infoDetails}>
-						<details>
-							<summary>{subtitle3}</summary>
-							<p>{subSubTitle3}</p>
-							<span>{subtitlePrice3}</span>
-							<span className={styles.currency}>{props.currency}</span>
-						</details>
-					</div>
-				</div>
-				<div className={styles.infoBlock}>
-					<div className={styles.infoImage}>
-						<img src={image4} alt={alt}/>
-					</div>
-					<div className={styles.infoDetails}>
-						<details>
-							<summary>{subtitle4}</summary>
-							<p>{subSubTitle4}</p>
-							<span>{subtitlePrice4}</span>
-							<span className={styles.currency}>{props.currency}</span>
-						</details>
-					</div>
+				<div>
+					{dataItems.map(el =>
+						<div key={el.id} className={styles.infoDescr}>
+							<div className={styles.infoImage} key={el.id}>
+								<img key={el.id} src={el.image} alt={el.alt}/>
+							</div>
+							<div className={styles.infoDetails}>
+								<details>
+									<summary>{subtitle1}</summary>
+									<p>{subSubTitle1}</p>
+									<span>{subtitlePrice1}</span>
+									<span className={styles.currency}>{props.currency}</span>
+								</details>
+							</div>
+						</div>
+					)}
 				</div>
 				<Descriptions text={props.text}/>
 			</div>
