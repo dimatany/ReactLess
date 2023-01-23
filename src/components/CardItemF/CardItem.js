@@ -1,5 +1,4 @@
 import React from 'react';
-import dataMasters from '../../components/MastersF/DataMasters'
 import Modal from '../../components/ModalF/Modal';
 import useModal from '../../components/ModalF/useModal';
 import styles from '../../components/CardItemF/CardItem.module.css';
