@@ -1,4 +1,5 @@
 import React from 'react';
+import dataMasters from '../../components/MastersF/DataMasters'
 import Modal from '../../components/ModalF/Modal';
 import useModal from '../../components/ModalF/useModal';
 import styles from '../../components/CardItemF/CardItem.module.css';
@@ -8,9 +9,10 @@ function CardItem(props) {
 	const {isShowing, toggle} = useModal();
 	return (
 		<>
-			<div className={[styles["first"], styles['card']].join(" ")}>
-				<div className={styles.frame}>
-					<div className={styles.frameName}>{props.post.name}
+			<div className={styles.wrap}>
+				<div className={styles.wrapCard}>
+					<div className={styles.wrapBlock}>
+						<img src={props.post.avatar} alt={props.post.alt}/>
 						<div className={styles.profession}>
 							<span>{props.post.title}</span>
 							<button onClick={toggle}>{props.button}</button>

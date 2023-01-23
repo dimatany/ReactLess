@@ -7,76 +7,54 @@ $soft-blue2: #5383ed;
 $moderate-orange2: rgb(186, 138, 76, .4);
 $dark-salt: #191d1c;
 
-.frame {
-  height: 369px;
-  width: 290px;
-  background: transparent;
-  border-radius: 10px;
-  position: relative;
-  opacity: 0;
-  transition: all 0.8s ease-in-out;
+.wrap {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: flex-start;
   text-align: left;
-  &:hover {
-    border: 1px solid $very-dark-blue;
-    opacity: 1;
-  }
-  .frameName {
-    color: $bright-orange;
-    text-shadow:1px 1px 1px $very-dark-blue;
-    font-size: 30px;
-    font-weight: 700;
-    margin-top: 50%;
-    margin-left: 10px;
-  }
-}
-.card {
-  height: 379px;
-  width: 300px;
-  border-radius: 10px;
-  transition: background 0.8s;
-  overflow: hidden;
-  box-shadow: 0 70px 63px -60px $very-dark-blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.profession {
-  display: flex;
-  flex-direction: column;
-  span {
-    color: $bright-orange;
-    text-shadow: 1px 1px 1px $very-dark-blue;
-    font-size: 20px;
-    font-weight: 700;
-    width: 130px;
-    margin-top: 10%;
-  }
-  button {
-    padding: 10px 0 10px 0;
-    border-radius: 20px;
-    font-size: 20px;
-    width: 171px;
-    color: $white;
-    margin-top: 15%;
-    background: $grayish-blue;
-    box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
-    &:hover {
-      color: $bright-orange;
+  .wrapCard {
+    height: 100%;
+    width: 300px;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    box-shadow: 0 70px 63px -60px $very-dark-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .wrapBlock {
+      position: relative;
+      height: 400px;
+      .profession {
+        position: relative;
+        z-index: 1;
+        top: -180px;
+        left: 30px;
+        display: flex;
+        flex-direction: column;
+        span {
+          color: $bright-orange;
+          text-shadow: 1px 1px 1px $very-dark-blue;
+          font-size: 20px;
+          font-weight: 700;
+          width: 130px;
+          margin-top: 10%;
+        }
+        button {
+          padding: 10px 0 10px 0;
+          border-radius: 20px;
+          font-size: 20px;
+          width: 171px;
+          color: $white;
+          margin-top: 15%;
+          background: $grayish-blue;
+          box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
+          &:hover {
+            color: $bright-orange;
+          }
+        }
+      }
     }
-  }
-}
-.first {
-  background: url("./CI1.png") center center no-repeat;
-  background-size: 379px;
-  transition: all 0.8s ease-in-out;
-  &:hover {
-    background: url('./CI1.png') left center no-repeat;
-    background-size: 600px;
-    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
-    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
   }
 }
