@@ -11,7 +11,7 @@ function WhatWeDoDetail(props) {
 		(el) => el.id === params.whatWeDoDetail
 	);
 	
-	const { title, subtitle1, subtitlePrice1, subSubTitle1, subtitle2, subtitlePrice2, subSubTitle2, subtitle3, subtitlePrice3, subSubTitle3, subtitle4, subtitlePrice4, subSubTitle4, image, image1, image2, image3, image4, alt } = currentWWD;
+	const { title, subtitle1, subtitlePrice1, subSubTitle1, subtitle2, subtitlePrice2, subSubTitle2, subtitle3, subtitlePrice3, subSubTitle3, subtitle4, subtitlePrice4, subSubTitle4, image1, image2, image3, image4, alt } = currentWWD;
 	
 	return (
 		<>
@@ -80,6 +80,6 @@ function WhatWeDoDetail(props) {
 WhatWeDoDetail.defaultProps = {
 	currency: 'грн',
 	text: 'У нас є багато різних послуг в асортименті - якщо ви хочете зареєструватися на консультацію по номерах або електронній пошті, наданих в капелюсі сайту',
-	text2: 'Ми надаємо послуги популяції по догляду за волоссям (різання, упряжування, створення волосся, фарбування, танення та іншого фарбування, стрижки, гоління та стрижки, стрижка та стрижка бороди та вус тощо) в номері обладнаному спеціально для цього.',
+	text2: 'Ми надаємо послуги популяції по догляду за волоссям (різання, створення волосся, фарбування, танення та іншого фарбування, стрижки, гоління та стрижки, стрижка та стрижка бороди та вус тощо) в номері обладнаному спеціально для цього.',
 };
 export default WhatWeDoDetail;

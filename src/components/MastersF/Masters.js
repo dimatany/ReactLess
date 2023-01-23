@@ -15,7 +15,7 @@ function Masters(props) {
 				<span className={styles.explanation}>{props.subtitle}</span>
 				<div className={styles.cardmaster}>
 					{dataMasters.map(el =>
-						<CardItem post={el} key={el.id} style={{backgroundImage: `url(${el.background})`}}/>
+						<CardItem post={el} key={el.id}/>
 					)}
 				</div>
 				<Descriptions text={props.text}/>
