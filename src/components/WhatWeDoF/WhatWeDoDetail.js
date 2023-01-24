@@ -72,7 +72,7 @@ function WhatWeDoDetail(props) {
 				</div>
 				<Descriptions text={props.text}/>
 			</div>
-			
+		
 		</>
 	);
 }

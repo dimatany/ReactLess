@@ -6,33 +6,11 @@ $bright-red: #FE2E2E;
 
 .wrap {
   padding-top: 20vh;
-  width: 90%;
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
   padding-bottom: 3vh;
-  .wrapTitle {
-    text-align: center;
-    font-weight: 700;
-    font-size: 58px;
-    margin-bottom: 10vh;
-    line-height: 7vh;
-  }
-  .infoDescr {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    .infoImage {
-      width: 50%;
-      margin-bottom: 15vh;
-      min-width: 300px;
-      height: 350px;
-      img {
-        border-radius: 10px;
-        box-shadow: 0 8px 32px 0 #5383ed;
-      }
-    }
-  }
   .infoDescr {
     display: flex;
     flex-direction: row;
@@ -66,7 +44,7 @@ details > summary {
   font-size: 18px;
 }
 details > p {
-  padding: 5vh 0 5vh 0;
+  padding: 5vh 0 12vh 0;
   overflow: scroll;
   max-height: 25vh;
   font-size: 16px;
@@ -74,7 +52,7 @@ details > p {
   line-height: 31px;
 }
 details > span {
-  padding: 5vh 0 5vh 0;
+  padding: 5vh 0 2vh 0;
   overflow: scroll;
   font-size: 30px;
   color: $bright-red;
@@ -94,11 +72,9 @@ summary:before {
 
 @media screen and (max-width: 900px) {
   .wrap {
-    .infoBlock {
+    .infoDescr {
       display: flex;
-      flex-wrap: wrap;
-      min-width: 320px;
-      gap: 5vh;
+      flex-direction: column;
       .infoImage {
         width: 100%;
         margin-bottom: 1vh;
@@ -109,6 +85,7 @@ summary:before {
       }
     }
   }
+
   details > p {
     max-height: 35vh;
   }
