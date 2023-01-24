@@ -4,8 +4,8 @@ $dark-salt: #191d1c;
 
 .nav {
   position: fixed;
-  z-index: 1;
-  backdrop-filter: blur(10px);
+  z-index: 100;
+  backdrop-filter: blur(20px);
   max-width: 1600px;
   width: 100%;
   .border {
