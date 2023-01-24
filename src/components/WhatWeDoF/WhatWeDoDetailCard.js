@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import dataItems from './DataWWD';
 import styles from './WhatWeDoDetailCard.module.css';
 
+
 function WhatWeDoDetailCard(props) {
 	const params = useParams();
 	
@@ -34,9 +35,12 @@ function WhatWeDoDetailCard(props) {
 					)}
 				</div>
 			</div>
-		
 		</>
 	);
 }
+
+WhatWeDoDetailCard.defaultProps = {
+	currency: 'грн',
+};
 
 export default WhatWeDoDetailCard;

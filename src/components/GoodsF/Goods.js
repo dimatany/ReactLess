@@ -5,7 +5,6 @@ import styles from './Goods.module.css';
 import Pagination from '../PaginationF/Pagination';
 import SVGTrolley from '../SVG/SVGTrolley';
 import GoodsFilter from './GoodsFilter';
-import Comments from '../CommentsF/Comments';
 
 function Goods(props) {
 	const [checked, setChecked] = React.useState(true);
