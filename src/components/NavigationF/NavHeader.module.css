@@ -1,12 +1,18 @@
-.header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  position: sticky;
-  top: 0;
-  max-width: 100%;
+.wrap {
+  max-width: 1300px;
   margin: 0 auto;
+  background: #202125;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   padding-top: 10px;
-  width: 1300px;
-  backdrop-filter: blur(20px);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  margin: 0 auto;
 }
 .header .logo {
   display: inline-block;
