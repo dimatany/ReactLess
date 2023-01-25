@@ -1,0 +1,111 @@
+.header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  position: sticky;
+  top: 0;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 1300px;
+  backdrop-filter: blur(20px);
+}
+.header .logo {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 60px;
+  margin-left: 10px;
+}
+.header .sideMenu {
+  display: none;
+}
+.header .sideMenu:checked ~ nav {
+  max-height: 100%;
+  position: static;
+}
+.header .sideMenu:checked ~ .hamb .hambLine {
+  background: transparent;
+}
+.header .sideMenu:checked ~ .hamb .hambLine::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+.header .sideMenu:checked ~ .hamb .hambLine::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+.header .hamb {
+  cursor: pointer;
+  float: right;
+  padding: 20px 20px;
+}
+.header .hamb .hambLine {
+  background: #ffffff;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+}
+.header .hamb .hambLine::before, .header .hamb .hambLine::after {
+  background: #ffffff;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+.header .hamb .hambLine::before {
+  top: 5px;
+}
+.header .hamb .hambLine::after {
+  top: -5px;
+}
+
+.nav {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+  line-height: 0;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  background-color: #202125;
+}
+.nav .menu {
+  padding-top: 20px;
+}
+.nav .menu a {
+  display: block;
+  padding: 30px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+}
+
+.menu a:hover {
+  background-color: #434343;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .hamb {
+    display: none;
+  }
+  .nav {
+    max-height: none;
+    top: 0;
+    position: relative;
+    float: right;
+    width: fit-content;
+    background-color: transparent;
+  }
+  .nav .menu li {
+    float: left;
+  }
+  .menu a:hover {
+    background-color: transparent;
+    color: #edae3b;
+    text-decoration: none;
+  }
+}
+
+/*# sourceMappingURL=NavHeader.module.css.map */

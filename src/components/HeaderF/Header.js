@@ -5,6 +5,7 @@ import Loading from '../LoadingF/Loading';
 import GoodsDetail from '../GoodsF/GoodsDetail';
 import WhatWeDoDetail from '../WhatWeDoF/WhatWeDoDetail';
 import Blog from '../BlogF/Blog';
+import NavHeader from '../NavigationF/NavHeader';
 
 const About = lazy(() => import('../../components/AboutF/About'));
 const Masters = lazy(() => import('../../components/MastersF/Masters'));
@@ -18,7 +19,7 @@ function Header() {
 	return (
 		<>
 			<header>
-				<Navigation/>
+				<NavHeader/>
 			</header>
 			<main>
 				<Suspense fallback={renderLoader()}>
