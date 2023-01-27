@@ -34,9 +34,6 @@
 .section .contacts ul li a, .section .mode ul li a, .section .social ul li a {
   text-decoration: none;
 }
-.section .contacts ul li a:hover, .section .mode ul li a:hover, .section .social ul li a:hover {
-  color: #edae3b;
-}
 .section .contacts {
   text-align: center;
 }

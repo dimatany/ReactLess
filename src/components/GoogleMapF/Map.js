@@ -1,7 +1,8 @@
 import React, {useRef} from 'react';
-import {GoogleMap, Marker} from '@react-google-maps/api';
+import {GoogleMap} from '@react-google-maps/api';
 import styles from './Map.module.css'
 import Theme from './Theme'
+import SvgLocation from '../SVG/SVGLocation';
 
 const containerStyle = {
 	width: '100%',
@@ -17,7 +18,7 @@ const defaultOptions = {
 	rotateControl: false,
 	clickableIcons: false,
 	keyboardShortcuts: false,
-	scrollwheel: false,
+	scrollwheel: true,
 	disableDoubleClickZoom: false,
 	fullscreenControl: false,
 	styles: Theme,
@@ -36,6 +37,7 @@ function Map({center}) {
 	return (
 		<>
 			<div className={styles.container}>
+				<p className={[styles["text"], styles['containerSignature']].join(" ")}>Наш офіс</p>
 				<GoogleMap
 					mapContainerStyle={containerStyle}
 					center={center}
@@ -44,15 +46,19 @@ function Map({center}) {
 					onUnmount={onUnmount}
 					options={defaultOptions}
 				>
-					<Marker position={center}/>
 				</GoogleMap>
+				<div className={styles.wrap}>
+					<div>
+						<SvgLocation fill='#191d1c'/>
+					</div>
+					<div>
+						<p className={[styles["text"], styles['containerAddress']].join(" ")}>Григорій Ващенко 5, Київ, Україна</p>
+						<p className={styles.text}>3 этаж 35 кабинет</p>
+					</div>
+				</div>
 			</div>
 		</>
 	);
 }
-
-Map.defaultProps = {
-	title: 'Контакти',
-};
 
 export default Map;

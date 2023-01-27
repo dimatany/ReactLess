@@ -1,7 +1,31 @@
 .container {
-  width: 70vw;
-  height: 70vh;
+  width: 60vw;
+  height: 60vh;
   margin: 0 auto;
+  padding: 110px 50px;
+  background: #4fa19d;
+  border-radius: 20px;
+  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+.container .wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.container .text {
+  text-align: left;
+  margin-bottom: 10px;
+  color: #191d1c;
+  font-weight: 700;
+  font-size: 20px;
+}
+.container .containerSignature {
+  margin-bottom: 20px;
+  margin-top: -40px;
+}
+.container .containerAddress {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=Map.module.css.map */

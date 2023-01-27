@@ -16,13 +16,14 @@ $lime-green: #4fa19d;
   margin-bottom: 5vh;
   .input {
     padding: 10px 15px;
-    border: 2px solid $dark-blue;
+    border: 2px solid $lime-green;
     font-size: 1rem;
     font-weight: 700;
     min-width: 320px;
     border-radius: 10px;
+    background: $white;
     &:focus {
-      border-color: $soft-blue2;
+      border-color: $bright-red;
       outline: none;
     }
   }
