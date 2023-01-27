@@ -5,7 +5,6 @@ import usePlacesAutocomplete, {
 } from "use-places-autocomplete";
 import useOnclickOutside from "react-cool-onclickoutside";
 import styles from './Autocomplete.module.css'
-import {cleanup} from '@testing-library/react';
 
 function Autocomplete({isLoaded, onSelect}) {
 	

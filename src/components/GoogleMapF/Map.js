@@ -43,7 +43,6 @@ function Map({center}) {
 					onLoad={onLoad}
 					onUnmount={onUnmount}
 					options={defaultOptions}
-					style={{borderRadius: '10px'}}
 				>
 					<Marker position={center}/>
 				</GoogleMap>
