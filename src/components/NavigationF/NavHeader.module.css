@@ -85,11 +85,15 @@
   color: #ffffff;
   text-align: center;
   font-size: 18px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .menu a:hover {
-  background-color: #434343;
+  background-color: #191d1c;
   text-decoration: none;
+  width: 90%;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {

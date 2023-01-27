@@ -1,0 +1,41 @@
+.wrap {
+  position: relative;
+  margin-bottom: 5vh;
+}
+.wrap .input {
+  padding: 10px 15px;
+  border: 2px solid #202125;
+  font-size: 1rem;
+  font-weight: 700;
+  min-width: 320px;
+  border-radius: 10px;
+}
+.wrap .input:focus {
+  border-color: #5383ed;
+  outline: none;
+}
+
+.suggestion {
+  position: absolute;
+  top: 0;
+  transform: translateY(39px);
+  background: #ffffff;
+  border: 2px solid #202125;
+  width: 100%;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.listItem {
+  padding: 10px 15px;
+  cursor: pointer;
+  color: black;
+}
+.listItem:hover {
+  background: #ffffff;
+}
+
+/*# sourceMappingURL=Autocomplete.module.css.map */

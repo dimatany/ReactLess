@@ -96,12 +96,16 @@ $lime-green: #4fa19d;
       color: $white;
       text-align: center;
       font-size: 18px;
+      width: 90%;
+      margin: 0 auto;
     }
   }
 }
-.menu a:hover{
-  background-color: $grayish-blue;
+.menu a:hover {
+  background-color: $dark-salt;
   text-decoration: none;
+  width: 90%;
+  margin: 0 auto;
 }
 
 

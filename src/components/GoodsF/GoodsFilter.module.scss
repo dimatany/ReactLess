@@ -16,9 +16,10 @@ $lime-green: #4fa19d;
   flex-direction: row;
   background: $bright-orange;
   padding: 20px;
-  margin: 2vh;
   border-radius: 10px;
   gap: 2vh;
+  max-width: 1250px;
+  margin: 2vh auto;
   .wrapSelect {
     display: flex;
     flex-direction: column;
