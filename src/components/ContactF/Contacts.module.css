@@ -17,6 +17,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  gap: 40px;
 }
 .wrapper .wrapBlock .wrapMap {
   border-radius: 10px;
@@ -76,7 +77,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     height: 30px;
-    gap: 10px;
+    gap: 25px;
+    margin-bottom: 10vh;
   }
 }
 

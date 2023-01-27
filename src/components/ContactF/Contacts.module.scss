@@ -29,6 +29,7 @@ $lime-green: #4fa19d;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    gap: 40px;
     .wrapMap {
       border-radius: 10px;
       .addressSearchContainer{
@@ -88,7 +89,8 @@ $lime-green: #4fa19d;
         flex-direction: row;
         flex-wrap: wrap;
         height: 30px;
-        gap: 10px;
+        gap: 25px;
+        margin-bottom: 10vh;
       }
     }
   }
