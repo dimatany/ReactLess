@@ -15,7 +15,7 @@ function WhatWeDo(props) {
 			<h2>{props.title}</h2>
 			<div className={styles.card}>
 				{dataItems.map(el =>
-					<div key={el.id} className={styles.shadow}>
+					<div className={styles.shadow} key={el.id}>
 						<img key={el.id} src={el.image} alt={el.alt}/>
 						<span>
 							<Link key={el.id} to={el.id}>
@@ -24,7 +24,8 @@ function WhatWeDo(props) {
 							</Link>
 						</span>
 						<p className={styles.wrapDescr}>{el.title}</p>
-					</div>)}
+					</div>
+				)}
 			</div>
 		</div>
 	);

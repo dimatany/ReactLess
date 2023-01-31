@@ -14,8 +14,7 @@ function WhatWeDoDetail(props) {
 	const { title, subtitle1, subtitlePrice1, subSubTitle1, subtitle2, subtitlePrice2, subSubTitle2, subtitle3, subtitlePrice3, subSubTitle3, subtitle4, subtitlePrice4, subSubTitle4, image1, image2, image3, image4, alt } = currentWWD;
 	
 	return (
-		<>
-			<div className={styles.wrap}>
+		<div className={styles.wrap}>
 				<h2 className={styles.wrapTitle}>{title}</h2>
 				<Descriptions text={props.text2}/>
 				<div className={styles.infoBlock}>
@@ -72,8 +71,6 @@ function WhatWeDoDetail(props) {
 				</div>
 				<Descriptions text={props.text}/>
 			</div>
-		
-		</>
 	);
 }
 

@@ -1,0 +1,20 @@
+.wrap {
+  background-color: #93ff2d;
+}
+.wrap .wrapBlock {
+  background-color: #5383ed;
+}
+.wrap .wrapBlock .wrapTitle {
+  background-color: #24ecff;
+}
+.wrap .wrapBlock .wrapDescription {
+  background-color: #111111;
+}
+.wrap .wrapBlock .wrapDescription .descriptionImg {
+  background-color: #e41cf8;
+}
+.wrap .wrapBlock .wrapDescription .descriptionText {
+  background-color: #BA8A4C;
+}
+
+/*# sourceMappingURL=MasterDetail.module.css.map */

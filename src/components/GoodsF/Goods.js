@@ -20,8 +20,8 @@ function Goods(props) {
 			<GoodsFilter/>
 			<div className={styles.wrapper}>
 				{dataItems.map(el =>
-					<div key={el.id} className={styles.container}>
-						<div key={el.id} className={styles.productDetails}>
+					<div className={styles.container} key={el.id}>
+						<div className={styles.productDetails} key={el.id}>
 							<h4>{el.name}</h4>
 							<div className={styles.wrapBlock}>
 								<p>{el.description}</p>

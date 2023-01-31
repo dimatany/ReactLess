@@ -30,4 +30,60 @@
   margin-bottom: 10vh;
 }
 
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  text-align: left;
+}
+.wrap .wrapCard {
+  height: 100%;
+  width: 300px;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  box-shadow: 0 70px 63px -60px #202125;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.wrap .wrapCard .wrapBlock {
+  position: relative;
+  height: 400px;
+}
+.wrap .wrapCard .wrapBlock .profession {
+  position: relative;
+  z-index: 1;
+  top: -180px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.wrap .wrapCard .wrapBlock .profession .reference {
+  color: #edae3b;
+  text-shadow: 1px 1px 1px #202125;
+  font-size: 20px;
+  font-weight: 700;
+  width: 130px;
+  margin-top: 10%;
+  margin-left: 20px;
+}
+.wrap .wrapCard .wrapBlock .profession .professionRef {
+  padding: 10px 0 10px 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  width: 171px;
+  color: #ffffff;
+  margin-top: 15%;
+  background: #434343;
+  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+.wrap .wrapCard .wrapBlock .profession .professionRef:hover {
+  color: #edae3b;
+}
+.wrap .wrapCard .wrapBlock .profession .professionRef a {
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=Masters.module.css.map */
