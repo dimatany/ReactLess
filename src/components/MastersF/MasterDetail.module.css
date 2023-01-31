@@ -1,20 +1,30 @@
 .wrap {
-  background-color: #93ff2d;
+  padding-top: 25vh;
+  width: 1300px;
+  margin: 0 auto;
 }
 .wrap .wrapBlock {
-  background-color: #5383ed;
+  width: 100%;
 }
 .wrap .wrapBlock .wrapTitle {
-  background-color: #24ecff;
+  width: 100%;
 }
 .wrap .wrapBlock .wrapDescription {
-  background-color: #111111;
+  width: 100%;
 }
 .wrap .wrapBlock .wrapDescription .descriptionImg {
-  background-color: #e41cf8;
+  width: 100%;
+}
+.wrap .wrapBlock .wrapDescription .descriptionImg img {
+  width: 300px;
+  height: 300px;
 }
 .wrap .wrapBlock .wrapDescription .descriptionText {
-  background-color: #BA8A4C;
+  width: 100%;
+}
+.wrap .wrapBlock .wrapDescription .descriptionText p {
+  font-size: 20px;
+  color: #e41cf8;
 }
 
 /*# sourceMappingURL=MasterDetail.module.css.map */

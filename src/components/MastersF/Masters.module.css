@@ -6,7 +6,7 @@
   margin: 0 auto;
   text-align: center;
 }
-.block h2 {
+.block .blockTitle {
   text-align: center;
   font-weight: 700;
   font-size: 58px;
@@ -29,14 +29,13 @@
   justify-content: center;
   margin-bottom: 10vh;
 }
-
-.wrap {
+.block .cardmaster .cardmasterWrap {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   text-align: left;
 }
-.wrap .wrapCard {
+.block .cardmaster .cardmasterWrap .wrapCard {
   height: 100%;
   width: 300px;
   border-radius: 10px;
@@ -48,11 +47,11 @@
   align-items: center;
   position: relative;
 }
-.wrap .wrapCard .wrapBlock {
+.block .cardmaster .cardmasterWrap .wrapCard .wrapBlock {
   position: relative;
   height: 400px;
 }
-.wrap .wrapCard .wrapBlock .profession {
+.block .cardmaster .cardmasterWrap .wrapCard .wrapBlock .profession {
   position: relative;
   z-index: 1;
   top: -180px;
@@ -60,7 +59,7 @@
   display: flex;
   flex-direction: column;
 }
-.wrap .wrapCard .wrapBlock .profession .reference {
+.block .cardmaster .cardmasterWrap .wrapCard .wrapBlock .profession .professionTitle {
   color: #edae3b;
   text-shadow: 1px 1px 1px #202125;
   font-size: 20px;
@@ -69,7 +68,7 @@
   margin-top: 10%;
   margin-left: 20px;
 }
-.wrap .wrapCard .wrapBlock .profession .professionRef {
+.block .cardmaster .cardmasterWrap .wrapCard .wrapBlock .profession .professionRef {
   padding: 10px 0 10px 20px;
   border-radius: 20px;
   font-size: 20px;
@@ -79,10 +78,10 @@
   background: #434343;
   box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
-.wrap .wrapCard .wrapBlock .profession .professionRef:hover {
+.block .cardmaster .cardmasterWrap .wrapCard .wrapBlock .profession .professionRef:hover {
   color: #edae3b;
 }
-.wrap .wrapCard .wrapBlock .profession .professionRef a {
+.block .cardmaster .cardmasterWrap .wrapCard .wrapBlock .profession .professionRef a {
   text-decoration: none;
 }
 

@@ -13,16 +13,16 @@ function Masters(props) {
 	
 	return (
 		<div className={styles.block}>
-				<h2>{props.title}</h2>
+				<h2 className={styles.blockTitle}>{props.title}</h2>
 				<span className={styles.explanation}>{props.subtitle}</span>
 				<div className={styles.cardmaster}>
 					{dataMasters.map(el =>
-						<div className={styles.wrap} key={el.id}>
+						<div className={styles.cardmasterWrap} key={el.id}>
 							<div className={styles.wrapCard} key={el.id}>
 								<div className={styles.wrapBlock}>
 									<img key={el.id} src={el.avatar} alt={el.alt}/>
 									<div className={styles.profession}>
-										<p className={styles.reference}>{el.title}</p>
+										<p className={styles.professionTitle}>{el.title}</p>
 										<span className={styles.professionRef}>
 											<Link key={el.id} to={el.id}>
 												<label htmlFor="button">{props.label}</label>

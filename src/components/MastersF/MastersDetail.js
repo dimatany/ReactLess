@@ -14,6 +14,7 @@ function MastersDetail(props) {
 	
 	return (
 		<div className={styles.wrap}>
+			<h2>{props.title}</h2>
 				<div className={styles.wrapBlock}>
 					<h4 className={styles.wrapTitle}>{subTitle1}</h4>
 					<div className={styles.wrapDescription}>
@@ -85,7 +86,7 @@ function MastersDetail(props) {
 }
 
 MastersDetail.defaultProps = {
-	currency: 'грн',
+	title: 'Варианты',
 	text: '',
 	text2: '',
 };

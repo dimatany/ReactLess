@@ -12,19 +12,29 @@ $bright-red: #FE2E2E;
 $lime-green: #4fa19d;
 
 .wrap {
-  background-color: #93ff2d;
+  padding-top: 25vh;
+  width: 1300px;
+  margin: 0 auto;
   .wrapBlock {
-    background-color: #5383ed;
+    width: 100%;
     .wrapTitle {
-      background-color: #24ecff;
+      width: 100%;
     }
     .wrapDescription {
-      background-color: #111111;
+      width: 100%;
       .descriptionImg {
-        background-color: #e41cf8;
+        width: 100%;
+        img {
+          width: 300px;
+          height: 300px;
+        }
       }
       .descriptionText {
-        background-color: #BA8A4C;
+        width: 100%;
+        p {
+          font-size: 20px;
+          color: #e41cf8;
+        }
       }
     }
   }
