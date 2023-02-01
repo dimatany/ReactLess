@@ -11,7 +11,7 @@ const About = lazy(() => import('../../components/AboutF/About'));
 const Masters = lazy(() => import('../../components/MastersF/Masters'));
 const Goods = lazy(() => import('../../components/GoodsF/Goods'));
 const Stocks = lazy(() => import('../../components/StocksF/Stocks'));
-const Reviews = lazy(() => import('../BlogF/Blog'));
+const Reviews = lazy(() => import('../../components/BlogF/Blog'));
 const Contacts = lazy(() => import('../../components/ContactF/Contacts'));
 const NotFound = lazy(() => import('../../components/ErrorF/NotFound'));
 const renderLoader = () => <Loading/>;

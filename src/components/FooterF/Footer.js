@@ -3,7 +3,6 @@ import styles from './Footer.module.css'
 import SVGAvatar from '../SVG/SVGAvatar';
 import SVGInstagram from '../SVG/SVGInstagram';
 
-
 function Footer(props) {
 	return (
 		<>

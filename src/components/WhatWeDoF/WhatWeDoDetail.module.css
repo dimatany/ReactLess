@@ -6,13 +6,6 @@
   text-align: center;
   padding-bottom: 3vh;
 }
-.wrap .wrapTitle {
-  text-align: center;
-  font-weight: 700;
-  font-size: 58px;
-  margin-bottom: 10vh;
-  line-height: 15vh;
-}
 .wrap .infoBlock {
   display: flex;
   flex-direction: row;

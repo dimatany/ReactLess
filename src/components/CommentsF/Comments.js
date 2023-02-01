@@ -1,5 +1,4 @@
 import React from 'react';
-import Goods from '../GoodsF/Goods';
 
 function Comments(props) {
 	const [notes, setNotes] = React.useState([]);

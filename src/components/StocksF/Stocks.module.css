@@ -61,6 +61,7 @@
   border-radius: 20px;
 }
 .transition a {
+  cursor: pointer;
   text-decoration: none;
   font-size: 22px;
 }

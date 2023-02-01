@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import dataItems from './DataWWD';
 import styles from './WhatWeDoDetail.module.css';
 import Descriptions from '../DescriptionsF/Descriptions';
+import Headings from '../HeadingsF/Headings';
 
 function WhatWeDoDetail(props) {
 	const params = useParams();
@@ -15,7 +16,7 @@ function WhatWeDoDetail(props) {
 	
 	return (
 		<div className={styles.wrap}>
-				<h2 className={styles.wrapTitle}>{title}</h2>
+				<Headings heading={title}/>
 				<Descriptions text={props.text2}/>
 				<div className={styles.infoBlock}>
 					<div className={styles.infoImage}>

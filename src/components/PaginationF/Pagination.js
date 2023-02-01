@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Pagination.module.css';
-import dataItems from '../../components/GoodsF/DataGoods'
 
 function Pagination() {
 	const [currentPage, setCurrentPage] = React.useState(2);

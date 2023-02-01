@@ -6,7 +6,6 @@ import Headings from '../HeadingsF/Headings';
 
 function WhatWeDo(props) {
 	const [checked, setChecked] = React.useState(true);
-	
 	function handleChange() {
 		setChecked(!checked);
 	}

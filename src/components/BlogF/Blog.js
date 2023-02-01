@@ -2,8 +2,6 @@ import React from 'react';
 import styles from './Blog.module.css';
 import Headings from '../HeadingsF/Headings';
 
-
-
 function Blog(props) {
 	return (
 		<>
@@ -19,6 +17,5 @@ function Blog(props) {
 Blog.defaultProps = {
 	title: 'Блог статей',
 };
-
 
 export default Blog;

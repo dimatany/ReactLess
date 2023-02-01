@@ -12,28 +12,44 @@ $bright-red: #FE2E2E;
 $lime-green: #4fa19d;
 
 .wrap {
-  padding-top: 25vh;
+  padding-top: 20vh;
   width: 1300px;
   margin: 0 auto;
   .wrapBlock {
     width: 100%;
+    margin: 0 0 10vh 0;
+    h4 {
+      display: flex;
+      justify-content: center;
+      font-size: 27px;
+      margin: 10vh 0;
+      color: $bright-orange;
+    }
     .wrapTitle {
       width: 100%;
     }
     .wrapDescription {
       width: 100%;
+      display: flex;
       .descriptionImg {
-        width: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
         img {
-          width: 300px;
+          width: 400px;
           height: 300px;
+          border-radius: 10px;
         }
       }
       .descriptionText {
-        width: 100%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         p {
           font-size: 20px;
-          color: #e41cf8;
+          overflow: scroll;
+          text-align: center;
         }
       }
     }

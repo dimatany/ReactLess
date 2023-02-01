@@ -6,7 +6,6 @@ import Brands from '../BrandsF/Brands';
 import WhoWeAre from '../WhoWeAreF/WhoWeAre';
 import Descriptions from '../DescriptionsF/Descriptions';
 
-
 function About(props) {
 	return (
 		<>

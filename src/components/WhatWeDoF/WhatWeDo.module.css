@@ -47,6 +47,9 @@
 .shadow span a {
   text-decoration: none;
 }
+.shadow span a label {
+  cursor: pointer;
+}
 .shadow span a:hover {
   color: #f7d775;
 }

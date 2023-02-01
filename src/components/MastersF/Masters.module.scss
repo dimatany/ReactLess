@@ -80,6 +80,9 @@ $bright-orange: #edae3b;
               }
               a {
                 text-decoration: none;
+                label {
+                  cursor: pointer;
+                }
               }
             }
           }

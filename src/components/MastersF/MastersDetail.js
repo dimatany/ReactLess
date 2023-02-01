@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import dataMasters from './DataMasters'
 import styles from '../../components/MastersF/MasterDetail.module.css';
+import Headings from '../HeadingsF/Headings';
 
 function MastersDetail(props) {
 	const params = useParams();
@@ -14,7 +15,7 @@ function MastersDetail(props) {
 	
 	return (
 		<div className={styles.wrap}>
-			<h2>{props.title}</h2>
+			<Headings heading={props.title}/>
 				<div className={styles.wrapBlock}>
 					<h4 className={styles.wrapTitle}>{subTitle1}</h4>
 					<div className={styles.wrapDescription}>
@@ -86,7 +87,7 @@ function MastersDetail(props) {
 }
 
 MastersDetail.defaultProps = {
-	title: 'Варианты',
+	title: 'Варіанти',
 	text: '',
 	text2: '',
 };

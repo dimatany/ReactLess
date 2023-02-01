@@ -2,10 +2,7 @@ import React from 'react';
 import styles from './Stocks.module.css'
 import Countdown from '../CountdownF/Countdown';
 import Video from "./video.mp4";
-
-import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
 import Headings from '../HeadingsF/Headings';
-
 
 function Stocks(props) {
 	return (
@@ -14,7 +11,7 @@ function Stocks(props) {
 				<Headings heading={props.title}/>
 				<p>{props.subtitle}</p>
 			</div>
-			<Countdown date={new Date('Wed, 31 Jan 2023 00:00:00')}/>
+			<Countdown date={new Date('Wed, 31 Dec 2023 00:00:00')}/>
 			<div className={styles.description}>
 				<p>{props.description}</p>
 				<p>{props.period}</p>

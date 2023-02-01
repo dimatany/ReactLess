@@ -45,6 +45,9 @@ $soft-yellow: #f7d775;
     font-weight: 700;
     a {
       text-decoration: none;
+      label {
+        cursor: pointer;
+      }
       &:hover {
         color: $soft-yellow;
       }

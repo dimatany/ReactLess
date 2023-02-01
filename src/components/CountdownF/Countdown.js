@@ -15,7 +15,7 @@ let Countdown = ({ date }) => {
 			return;
 		}
 		setDiff([
-			Math.floor(diff / 6400), // дни
+			Math.floor(diff / 86400), // дни
 			Math.floor((diff / 3600) % 24),
 			Math.floor((diff / 60) % 60),
 			Math.floor(diff % 60)

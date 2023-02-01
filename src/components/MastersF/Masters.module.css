@@ -78,5 +78,8 @@
 .block .cardmaster .cardmasterWrap .wrapCard .wrapBlock .profession .professionRef a {
   text-decoration: none;
 }
+.block .cardmaster .cardmasterWrap .wrapCard .wrapBlock .profession .professionRef a label {
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=Masters.module.css.map */
