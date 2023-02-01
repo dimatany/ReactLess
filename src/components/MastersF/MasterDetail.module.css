@@ -1,10 +1,9 @@
 .wrap {
   padding-top: 20vh;
-  width: 1300px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 .wrap .wrapBlock {
-  width: 100%;
   margin: 0 0 10vh 0;
 }
 .wrap .wrapBlock h4 {
@@ -15,11 +14,12 @@
   color: #edae3b;
 }
 .wrap .wrapBlock .wrapTitle {
-  width: 100%;
+  font-size: 22px;
 }
 .wrap .wrapBlock .wrapDescription {
-  width: 100%;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .wrap .wrapBlock .wrapDescription .descriptionImg {
   width: 50%;
@@ -41,6 +41,30 @@
   font-size: 20px;
   overflow: scroll;
   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .wrap .wrapBlock {
+    margin-bottom: 15vh;
+  }
+  .wrap .wrapBlock .wrapDescription {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .wrap .wrapBlock .wrapDescription .descriptionImg {
+    width: 90%;
+  }
+  .wrap .wrapBlock .wrapDescription .descriptionImg img {
+    margin-bottom: 5vh;
+  }
+  .wrap .wrapBlock .wrapDescription .descriptionText {
+    width: 90%;
+  }
+  .wrap .wrapBlock .wrapDescription .descriptionText p {
+    line-height: 40px;
+  }
 }
 
 /*# sourceMappingURL=MasterDetail.module.css.map */
