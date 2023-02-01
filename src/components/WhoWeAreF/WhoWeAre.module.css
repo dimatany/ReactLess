@@ -24,7 +24,7 @@
 }
 
 .about p:last-child {
-  margin-bottom: 15vh;
+  margin-bottom: 5vh;
 }
 
 @media screen and (max-width: 720px) {

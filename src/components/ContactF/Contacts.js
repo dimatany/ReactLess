@@ -9,6 +9,7 @@ import SvgFacebook from '../SVG/SVGFacebook';
 import SvgTelefon from '../SVG/SVGTelefon';
 import Descriptions from '../DescriptionsF/Descriptions';
 import SVGDivision from '../SVG/SVGDivision';
+import Headings from '../HeadingsF/Headings';
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 
@@ -39,7 +40,7 @@ function Contacts(props) {
 	return (
 		<>
 			<div className={styles.wrapper}>
-				<h2>{props.title}</h2>
+				<Headings heading={props.title}/>
 				<div className={styles.wrapBlock}>
 					<div className={styles.wrapMap}>
 						<div className={styles.addressSearchContainer}>

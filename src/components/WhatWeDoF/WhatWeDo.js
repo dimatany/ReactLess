@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import dataItems from './DataWWD';
 import styles from './WhatWeDo.module.css';
+import Headings from '../HeadingsF/Headings';
 
 function WhatWeDo(props) {
 	const [checked, setChecked] = React.useState(true);
@@ -12,7 +13,7 @@ function WhatWeDo(props) {
 	
 	return (
 		<div className={[styles["services"], styles['wrap']].join(" ")}>
-			<h2>{props.title}</h2>
+			<Headings heading={props.title}/>
 			<div className={styles.card}>
 				{dataItems.map(el =>
 					<div className={styles.shadow} key={el.id}>

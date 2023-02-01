@@ -1,5 +1,6 @@
 import React from 'react';
 import './Tabs.css';
+import Headings from '../HeadingsF/Headings';
 
 class Tabs extends React.Component {
 	constructor (props) {
@@ -49,7 +50,7 @@ class App extends React.Component {
 		return (
 			<section className="section">
 				<div className="tabs wrap">
-					<h2>Наші роботи</h2>
+					<Headings heading={'Приклади'}/>
 					<Tabs>
 						<Tab label="Показати все">
 							<ul>

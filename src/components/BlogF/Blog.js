@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Blog.module.css';
+import Headings from '../HeadingsF/Headings';
 
 
 
@@ -8,7 +9,7 @@ function Blog(props) {
 		<>
 			<div className={styles.wrapper}>
 				<div className={styles.block}>
-					<h2>{props.title}</h2>
+					<Headings heading={props.title}/>
 				</div>
 			</div>
 		</>

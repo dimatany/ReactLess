@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import dataMasters from './DataMasters'
 import styles from '../../components/MastersF/Masters.module.css';
 import Descriptions from '../DescriptionsF/Descriptions';
+import Headings from '../HeadingsF/Headings';
 
 function Masters(props) {
 	const [checked, setChecked] = React.useState(true);
@@ -13,30 +14,30 @@ function Masters(props) {
 	
 	return (
 		<div className={styles.block}>
-				<h2 className={styles.blockTitle}>{props.title}</h2>
-				<span className={styles.explanation}>{props.subtitle}</span>
-				<div className={styles.cardmaster}>
-					{dataMasters.map(el =>
-						<div className={styles.cardmasterWrap} key={el.id}>
-							<div className={styles.wrapCard} key={el.id}>
-								<div className={styles.wrapBlock}>
-									<img key={el.id} src={el.avatar} alt={el.alt}/>
-									<div className={styles.profession}>
-										<p className={styles.professionTitle}>{el.title}</p>
-										<span className={styles.professionRef}>
+			<Headings heading={props.title}/>
+			<span className={styles.explanation}>{props.subtitle}</span>
+			<div className={styles.cardmaster}>
+				{dataMasters.map(el =>
+					<div className={styles.cardmasterWrap} key={el.id}>
+						<div className={styles.wrapCard} key={el.id}>
+							<div className={styles.wrapBlock}>
+								<img key={el.id} src={el.avatar} alt={el.alt}/>
+								<div className={styles.profession}>
+									<p className={styles.professionTitle}>{el.title}</p>
+									<span className={styles.professionRef}>
 											<Link key={el.id} to={el.id}>
 												<label htmlFor="button">{props.label}</label>
 												<input type="checkbox" checked={checked} onChange={handleChange} />
 											</Link>
 										</span>
-									</div>
 								</div>
 							</div>
 						</div>
-					)}
-				</div>
-				<Descriptions text={props.text}/>
+					</div>
+				)}
 			</div>
+			<Descriptions text={props.text}/>
+		</div>
 	);
 }
 

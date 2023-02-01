@@ -5,6 +5,7 @@ import styles from './Goods.module.css';
 import Pagination from '../PaginationF/Pagination';
 import SVGTrolley from '../SVG/SVGTrolley';
 import GoodsFilter from './GoodsFilter';
+import Headings from '../HeadingsF/Headings';
 
 function Goods(props) {
 	const [checked, setChecked] = React.useState(true);
@@ -15,7 +16,7 @@ function Goods(props) {
 	return (
 		<>
 			<div className={styles.block}>
-				<h2>{props.title}</h2>
+				<Headings heading={props.title}/>
 			</div>
 			<GoodsFilter/>
 			<div className={styles.wrapper}>

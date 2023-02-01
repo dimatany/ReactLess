@@ -4,13 +4,14 @@ import Countdown from '../CountdownF/Countdown';
 import Video from "./video.mp4";
 
 import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
+import Headings from '../HeadingsF/Headings';
 
 
 function Stocks(props) {
 	return (
 		<>
 			<div className={styles.block}>
-				<h2>{props.title}</h2>
+				<Headings heading={props.title}/>
 				<p>{props.subtitle}</p>
 			</div>
 			<Countdown date={new Date('Wed, 31 Jan 2023 00:00:00')}/>

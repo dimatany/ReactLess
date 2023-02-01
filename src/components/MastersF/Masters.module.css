@@ -6,12 +6,6 @@
   margin: 0 auto;
   text-align: center;
 }
-.block .blockTitle {
-  text-align: center;
-  font-weight: 700;
-  font-size: 58px;
-  margin-bottom: 5vh;
-}
 .block .explanation {
   display: block;
   color: #edae3b;
