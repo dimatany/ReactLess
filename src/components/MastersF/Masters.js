@@ -19,7 +19,7 @@ function Masters(props) {
 			<div className={styles.cardmaster}>
 				{dataMasters.map(el =>
 					<div className={styles.cardmasterWrap} key={el.id}>
-						<div className={styles.wrapCard} key={el.id}>
+						<div className={styles.wrapCard}>
 							<div className={styles.wrapBlock}>
 								<img key={el.id} src={el.avatar} alt={el.alt}/>
 								<div className={styles.profession}>

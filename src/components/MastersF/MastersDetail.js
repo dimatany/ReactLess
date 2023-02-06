@@ -88,7 +88,5 @@ function MastersDetail(props) {
 
 MastersDetail.defaultProps = {
 	title: 'Варіанти',
-	text: '',
-	text2: '',
 };
 export default MastersDetail;
