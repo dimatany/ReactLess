@@ -13,10 +13,80 @@
   text-align: center;
   padding-bottom: 10vh;
 }
-.block h2 {
-  text-align: center;
-  font-weight: 700;
-  font-size: 58px;
+.block .wrapBlock {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card {
+  perspective: 150rem;
+  position: relative;
+  height: 30rem;
+  min-width: 320px;
+  margin: 2rem;
+  box-shadow: none;
+  background: none;
+}
+
+.cardSide {
+  height: 25rem;
+  border-radius: 15px;
+  transition: all 0.8s ease;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  padding: 2rem;
+  color: white;
+}
+.cardSide .title {
+  font-size: 35px;
+  font-weight: bold;
+  padding: 5vh 15vh;
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  line-height: 40px;
+  overflow: scroll;
+  color: #edae3b;
+  text-shadow: 2px 2px 2px #191d1c;
+}
+.cardSide .question {
+  margin-bottom: 7vh;
+  min-height: 80px;
+  overflow: scroll;
+}
+.cardSide .handSVG {
+  height: 20vh;
+}
+
+.cardSide.back {
+  transform: rotateY(-180deg);
+  background-color: #5383ed;
+  background-image: linear-gradient(43deg, #5383ed 0%, #FE2E2E 46%, #edae3b 100%);
+  overflow: scroll;
+  font-size: 18px;
+  text-shadow: 2px 2px 2px #191d1c;
+}
+
+.cardSide.front {
+  font-size: 20px;
+  text-shadow: 2px 2px 2px #191d1c;
+  background-color: #5383ed;
+  background-image: linear-gradient(225deg, #4fa19d, #5383ed);
+}
+
+.card:hover .cardSide.front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .cardSide.back {
+  transform: rotateY(0deg);
 }
 
 /*# sourceMappingURL=Blog.module.css.map */

@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Loading from '../LoadingF/Loading';
 import GoodsDetail from '../GoodsF/GoodsDetail';
 import WhatWeDoDetail from '../WhatWeDoF/WhatWeDoDetail';
-import Blog from '../BlogF/Blog';
+
 import NavHeader from '../NavigationF/NavHeader';
 import MastersDetail from '../MastersF/MastersDetail';
 
@@ -11,7 +11,7 @@ const About = lazy(() => import('../../components/AboutF/About'));
 const Masters = lazy(() => import('../../components/MastersF/Masters'));
 const Goods = lazy(() => import('../../components/GoodsF/Goods'));
 const Stocks = lazy(() => import('../../components/StocksF/Stocks'));
-const Reviews = lazy(() => import('../../components/BlogF/Blog'));
+const Blog = lazy(() => import('../../components/BlogF/Blog'));
 const Contacts = lazy(() => import('../../components/ContactF/Contacts'));
 const NotFound = lazy(() => import('../../components/ErrorF/NotFound'));
 const renderLoader = () => <Loading/>;

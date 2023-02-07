@@ -55,4 +55,16 @@
   transition-delay: 200ms;
 }
 
+@media screen and (max-width: 800px) {
+  .boxTitle {
+    width: 80%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .boxTitle a {
+    font-size: 35px;
+    width: content-box;
+  }
+}
+
 /*# sourceMappingURL=Headings.module.css.map */

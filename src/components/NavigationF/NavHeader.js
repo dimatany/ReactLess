@@ -20,7 +20,7 @@ function NavHeader(props) {
 							<li><a href="/masters">Майстри</a></li>
 							<li><a href="/goods">Товари</a></li>
 							<li><a href="/stocks">Акції</a></li>
-							<li><a href="/blog">Блог</a></li>
+							<li><a href="/blog">Відповіді</a></li>
 							<li><a href="/contacts">Контакти</a></li>
 						</ul>
 					</nav>

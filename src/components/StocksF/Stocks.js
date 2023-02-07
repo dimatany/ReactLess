@@ -3,6 +3,7 @@ import styles from './Stocks.module.css'
 import Countdown from '../CountdownF/Countdown';
 import Video from "./video.mp4";
 import Headings from '../HeadingsF/Headings';
+import SVGHand from '../SVG/SVGHand';
 
 function Stocks(props) {
 	return (

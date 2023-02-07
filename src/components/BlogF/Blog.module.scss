@@ -1,3 +1,16 @@
+$dark-blue: #202125;
+$dark-salt: #191d1c;
+$grayish-blue: #434343;
+$white: #ffffff;
+$soft-blue: #8ab4f8;
+$soft-blue2: #5383ed;
+$silver: rgba(255, 255, 255, .5);
+$soft-yellow: #f7d775;
+$bright-orange: #edae3b;
+$moderate-orange2: rgb(186, 138, 76, .4);
+$bright-red: #FE2E2E;
+$lime-green: #4fa19d;
+
 .wrapper {
   display: flex;
   flex-direction: row;
@@ -11,9 +24,76 @@
   margin: 0 auto;
   text-align: center;
   padding-bottom: 10vh;
-  h2 {
-    text-align: center;
-    font-weight: 700;
-    font-size: 58px;
+  .wrapBlock {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
   }
+}
+
+.card {
+  perspective: 150rem;
+  position: relative;
+  height: 30rem;
+  min-width: 320px;
+  margin: 2rem;
+  box-shadow: none;
+  background: none;
+}
+
+.cardSide {
+  height: 25rem;
+  border-radius: 15px;
+  transition: all 0.8s ease;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  padding:2rem;
+  color: white;
+  .title {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 5vh 15vh;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    line-height: 40px;
+    overflow: scroll;
+    color: $bright-orange;
+    text-shadow:2px 2px 2px $dark-salt;
+  }
+  .question {
+    margin-bottom: 7vh;
+    min-height: 80px;
+    overflow: scroll;
+  }
+  .handSVG {
+    height: 20vh;
+  }
+}
+
+.cardSide.back {
+  transform: rotateY(-180deg);
+  background-color: $soft-blue2;
+  background-image: linear-gradient(43deg, $soft-blue2 0%,$bright-red 46%, $bright-orange 100%);
+  overflow: scroll;
+  font-size: 18px;
+  text-shadow:2px 2px 2px $dark-salt;
+}
+.cardSide.front {
+  font-size: 20px;
+  text-shadow:2px 2px 2px $dark-salt;
+  background-color: $soft-blue2;
+  background-image: linear-gradient(225deg, $lime-green, $soft-blue2);
+}
+.card:hover .cardSide.front {
+  transform: rotateY(180deg);
+}
+.card:hover .cardSide.back {
+  transform: rotateY(0deg);
 }
