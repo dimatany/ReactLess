@@ -13,35 +13,48 @@ $lime-green: #4fa19d;
 
 .wrapper {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  flex-direction: column;
   margin: 0 3vh 5vh 3vh;
-}
-.block {
-  padding-top: 20vh;
-  width: 90%;
-  max-width: 1300px;
-  margin: 0 auto;
-  text-align: center;
-  padding-bottom: 10vh;
-  .wrapBlock {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  .block {
+    padding-top: 20vh;
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 10vh;
+    .wrapBlock {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+      margin: 0 auto;
+      .card {
+        perspective: 150rem;
+        position: relative;
+        height: 30rem;
+        max-width: 320px;
+        margin: 2rem;
+        box-shadow: none;
+        background: none;
+      }
+    }
+  }
+  .pagination {
+    width: 200px;
+    margin: 0 auto 7vh;
+  }
+  h3 {
+    max-width: 100%;
     width: 100%;
     margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: $bright-orange;
+    text-shadow: 2px 2px 2px $grayish-blue;
   }
-}
-
-.card {
-  perspective: 150rem;
-  position: relative;
-  height: 30rem;
-  min-width: 320px;
-  margin: 2rem;
-  box-shadow: none;
-  background: none;
 }
 
 .cardSide {
@@ -53,7 +66,7 @@ $lime-green: #4fa19d;
   top: 0;
   left: 0;
   width: 80%;
-  padding:2rem;
+  padding: 2rem;
   color: white;
   .title {
     font-size: 35px;
@@ -76,14 +89,13 @@ $lime-green: #4fa19d;
     height: 20vh;
   }
 }
-
 .cardSide.back {
   transform: rotateY(-180deg);
-  background-color: $soft-blue2;
-  background-image: linear-gradient(43deg, $soft-blue2 0%,$bright-red 46%, $bright-orange 100%);
+  background-color: $grayish-blue;
   overflow: scroll;
   font-size: 18px;
   text-shadow:2px 2px 2px $dark-salt;
+  box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
 }
 .cardSide.front {
   font-size: 20px;
@@ -107,7 +119,6 @@ $lime-green: #4fa19d;
     transform: scale(1.15);
   }
 }
-
 @keyframes hue {
   from{
     filter: hue-rotate(0);
@@ -116,7 +127,6 @@ $lime-green: #4fa19d;
     filter: hue-rotate(360deg);
   }
 }
-
 .card:hover .cardSide.front {
   transform: rotateY(180deg);
 }

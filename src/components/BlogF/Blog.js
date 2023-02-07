@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from './Blog.module.css';
-import Headings from '../HeadingsF/Headings';
 import blogFaq from './BlogFaq';
+import Headings from '../HeadingsF/Headings';
 import SVGHand from '../SVG/SVGHand';
+import Pagination from '../PaginationF/Pagination';
 
 function Blog(props) {
 	return (
@@ -28,6 +29,10 @@ function Blog(props) {
 						)}
 					</div>
 				</div>
+				<div className={styles.pagination}>
+					<Pagination/>
+				</div>
+				<h3>{props.subtitle}</h3>
 			</div>
 		</>
 	);
@@ -35,6 +40,7 @@ function Blog(props) {
 
 Blog.defaultProps = {
 	title: 'Запитання та відповіді',
+	subtitle: 'Можливо, у вас виникли питання?',
 };
 
 export default Blog;
