@@ -29,14 +29,10 @@
   box-shadow: none;
   background: none;
 }
-.wrapper .pagination {
-  width: 200px;
-  margin: 0 auto 7vh;
-}
 .wrapper h3 {
   max-width: 100%;
   width: 100%;
-  margin: 0 auto;
+  margin: 10vh auto;
   text-align: center;
   font-size: 30px;
   font-weight: bold;
