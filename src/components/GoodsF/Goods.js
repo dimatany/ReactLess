@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import dataItems from './DataGoods';
 import styles from './Goods.module.css';
-import Pagination from '../PaginationF/Pagination';
 import SVGTrolley from '../SVG/SVGTrolley';
 import GoodsFilter from './GoodsFilter';
 import Headings from '../HeadingsF/Headings';
@@ -47,7 +46,6 @@ function Goods(props) {
 					</div>
 				)}
 			</div>
-			<Pagination/>
 		</>
 	);
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Blog.module.css';
 import Headings from '../HeadingsF/Headings';
-import Test from '../PaginationF/Test';
+import Pagination from '../PaginationF/Pagination';
 
 function Blog(props) {
 	return (
@@ -11,7 +11,7 @@ function Blog(props) {
 					<Headings heading={props.title}/>
 				</div>
 				<h3>{props.subtitle}</h3>
-				<Test/>
+				<Pagination/>
 			</div>
 		</>
 	);

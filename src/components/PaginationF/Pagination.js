@@ -1,45 +1,58 @@
-import React from 'react';
+import React, { useState } from "react";
 import styles from './Pagination.module.css';
+import blogFaq from '../BlogF/BlogFaq';
+import ReactPaginate from "react-paginate";
+import SVGHand from '../SVG/SVGHand';
 
 function Pagination() {
-	const [currentPage, setCurrentPage] = React.useState(2);
-	const maxPages = 100;
-	let items = [];
-	let leftSide = currentPage - 1;
-	if(leftSide <= 0 ) leftSide = 1;
-	let rightSide = currentPage + 1;
-	if(rightSide > maxPages) rightSide = maxPages;
+	const [users, setUsers] = useState(blogFaq.slice(0, 100));
+	const [pageNumber, setPageNumber] = useState(0);
 	
-	for (let number = leftSide; number <= rightSide; number++) {
-		items.push(
-			<div key={number}
-			     className={(number === currentPage ? [styles['roundEffect'], styles['active']].join(" ") : styles.roundEffect)}
-			     onClick={()=>{ setCurrentPage(number)}}>
-				{number}
-			</div>,
+	const usersPerPage = 3;
+	const pagesVisited = pageNumber * usersPerPage;
+	
+	const displayUsers = users
+	.slice(pagesVisited, pagesVisited + usersPerPage)
+	.map((el) => {
+		return (
+			<>
+				<div className={styles.wrapBlock}>
+					<div className={styles.card}>
+						<div className={[styles['cardSide'], styles['front']].join(" ")}>
+							<p className={styles.title}>{el.title}</p>
+							<p className={styles.question}>{el.header}</p>
+							<div className={styles.handSVG}>
+								<SVGHand fill='#191d1c'/>
+							</div>
+						</div>
+						<div className={[styles['cardSide'], styles['back']].join(" ")}>
+							<p>{el.text}</p>
+						</div>
+					</div>
+				</div>
+			</>
 		);
-	}
-	const nextPage = () => {
-		if(currentPage < maxPages){
-			setCurrentPage(currentPage + 1)
-		}
-	}
-	const prevPage = () => {
-		if(currentPage > 1){
-			setCurrentPage(currentPage - 1)
-		}
-	}
+	});
+	
+	const pageCount = Math.ceil(users.length / usersPerPage);
+	
+	const changePage = ({ selected }) => {
+		setPageNumber(selected);
+	};
 	
 	return (
-		<>
-			<div className={styles.flexContainer}>
-				<div className={styles.paginateCtn}>
-					<div className={styles.roundEffect} onClick={prevPage}> &lsaquo; </div>
-					{items}
-					<div className={styles.roundEffect} onClick={nextPage}> &rsaquo; </div>
-				</div>
-			</div>
-		</>
+		<div className={styles.wrapPagination}>
+			{displayUsers}
+			<ReactPaginate
+				previousLabel={" ‹ "}
+				nextLabel={" › "}
+				pageCount={pageCount}
+				onPageChange={changePage}
+				containerClassName={styles.paginationButton}
+				disabledClassName={styles.paginationDisabled}
+				activeClassName={styles.paginationActive}
+			/>
+		</div>
 	);
 }
 
