@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import dataMasters from './DataMasters'
 import styles from '../../components/MastersF/MasterDetail.module.css';
 import Headings from '../HeadingsF/Headings';
+import DetailPost from './DetailPost';
 
 function MastersDetail(props) {
 	const params = useParams();
@@ -16,73 +17,13 @@ function MastersDetail(props) {
 	return (
 		<div className={styles.wrap}>
 			<Headings heading={props.title}/>
-				<div className={styles.wrapBlock}>
-					<h4 className={styles.wrapTitle}>{subTitle1}</h4>
-					<div className={styles.wrapDescription}>
-						<div className={styles.descriptionImg}>
-							<img src={image1} alt={altImage}/>
-						</div>
-						<div className={styles.descriptionText}>
-							<p>{text1}</p>
-						</div>
-					</div>
-				</div>
-				<div className={styles.wrapBlock}>
-					<h4 className={styles.wrapTitle}>{subTitle2}</h4>
-					<div className={styles.wrapDescription}>
-						<div className={styles.descriptionImg}>
-							<img src={image2} alt={altImage}/>
-						</div>
-						<div className={styles.descriptionText}>
-							<p>{text2}</p>
-						</div>
-					</div>
-				</div>
-				<div className={styles.wrapBlock}>
-					<h4 className={styles.wrapTitle}>{subTitle3}</h4>
-					<div className={styles.wrapDescription}>
-						<div className={styles.descriptionImg}>
-							<img src={image3} alt={altImage}/>
-						</div>
-						<div className={styles.descriptionText}>
-							<p>{text3}</p>
-						</div>
-					</div>
-				</div>
-				<div className={styles.wrapBlock}>
-					<h4 className={styles.wrapTitle}>{subTitle4}</h4>
-					<div className={styles.wrapDescription}>
-						<div className={styles.descriptionImg}>
-							<img src={image4} alt={altImage}/>
-						</div>
-						<div className={styles.descriptionText}>
-							<p>{text4}</p>
-						</div>
-					</div>
-				</div>
-				<div className={styles.wrapBlock}>
-					<h4 className={styles.wrapTitle}>{subTitle5}</h4>
-					<div className={styles.wrapDescription}>
-						<div className={styles.descriptionImg}>
-							<img src={image5} alt={altImage}/>
-						</div>
-						<div className={styles.descriptionText}>
-							<p>{text5}</p>
-						</div>
-					</div>
-				</div>
-				<div className={styles.wrapBlock}>
-					<h4 className={styles.wrapTitle}>{subTitle6}</h4>
-					<div className={styles.wrapDescription}>
-						<div className={styles.descriptionImg}>
-							<img src={image6} alt={altImage}/>
-						</div>
-						<div className={styles.descriptionText}>
-							<p>{text6}</p>
-						</div>
-					</div>
-				</div>
-			</div>
+			<DetailPost subTitle={subTitle1} image={image1} alt={altImage} text={text1}/>
+			<DetailPost subTitle={subTitle2} image={image2} alt={altImage} text={text2}/>
+			<DetailPost subTitle={subTitle3} image={image3} alt={altImage} text={text3}/>
+			<DetailPost subTitle={subTitle4} image={image4} alt={altImage} text={text4}/>
+			<DetailPost subTitle={subTitle5} image={image5} alt={altImage} text={text5}/>
+			<DetailPost subTitle={subTitle6} image={image6} alt={altImage} text={text6}/>
+		</div>
 	);
 }
 

@@ -4,7 +4,7 @@ import blogFaq from '../BlogF/BlogFaq';
 import ReactPaginate from "react-paginate";
 import SVGHand from '../SVG/SVGHand';
 
-function Pagination() {
+function Pagination(props) {
 	const [users, setUsers] = useState(blogFaq.slice(0, 100));
 	const [pageNumber, setPageNumber] = useState(0);
 	
@@ -35,7 +35,6 @@ function Pagination() {
 	});
 	
 	const pageCount = Math.ceil(users.length / usersPerPage);
-	
 	const changePage = ({ selected }) => {
 		setPageNumber(selected);
 	};

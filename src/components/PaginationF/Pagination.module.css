@@ -94,6 +94,8 @@
 }
 .cardSide .handSVG {
   height: 20vh;
+  width: 115px;
+  margin: 0 auto;
 }
 
 .cardSide.back {
