@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from '../../components/ModalF/Modal';
 import useModal from '../../components/ModalF/useModal';
-import styles from '../../components/CardItemF/CardItem.module.css';
+import styles from './/CardItem.module.css';
 import '../../components/ModalF/Modal.module.css';
 
 function CardItem(props) {

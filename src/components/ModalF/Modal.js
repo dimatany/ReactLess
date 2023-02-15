@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import styles from '../ModalF/Modal.module.css';
-import Slider from '../../components/SliderF/Slider';
 import SVGChange from '../SVG/SVGChange';
 
 const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
@@ -18,9 +17,6 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
 				</div>
 				<div className={styles.section}>
 					<h3>Кращі твори нашого майстра</h3>
-					<div>
-						<Slider/>
-					</div>
 				</div>
 			</div>
 		</div>
