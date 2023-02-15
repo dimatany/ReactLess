@@ -3,7 +3,6 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Loading from '../LoadingF/Loading';
 import GoodsDetail from '../GoodsF/GoodsDetail';
 import WhatWeDoDetail from '../WhatWeDoF/WhatWeDoDetail';
-
 import NavHeader from '../NavigationF/NavHeader';
 import MastersDetail from '../MastersF/MastersDetail';
 

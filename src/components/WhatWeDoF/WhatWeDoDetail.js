@@ -4,6 +4,7 @@ import dataItems from './DataWWD';
 import styles from './WhatWeDoDetail.module.css';
 import Descriptions from '../DescriptionsF/Descriptions';
 import Headings from '../HeadingsF/Headings';
+import DetailBlock from './DetailBlock';
 
 function WhatWeDoDetail(props) {
 	const params = useParams();
@@ -16,67 +17,38 @@ function WhatWeDoDetail(props) {
 	
 	return (
 		<div className={styles.wrap}>
-				<Headings heading={title}/>
-				<Descriptions text={props.text2}/>
-				<div className={styles.infoBlock}>
-					<div className={styles.infoImage}>
-						<img src={image1} alt={alt}/>
-					</div>
-					<div className={styles.infoDetails}>
-						<details>
-							<summary>{subtitle1}</summary>
-							<p>{subSubTitle1}</p>
-							<span>{subtitlePrice1}</span>
-							<span className={styles.currency}>{props.currency}</span>
-						</details>
-					</div>
-				</div>
-				<div className={styles.infoBlock}>
-					<div className={styles.infoImage}>
-						<img src={image2} alt={alt}/>
-					</div>
-					<div className={styles.infoDetails}>
-						<details>
-							<summary>{subtitle2}</summary>
-							<p>{subSubTitle2}</p>
-							<span>{subtitlePrice2}</span>
-							<span className={styles.currency}>{props.currency}</span>
-						</details>
-					</div>
-				</div>
-				<div className={styles.infoBlock}>
-					<div className={styles.infoImage}>
-						<img src={image3} alt={alt}/>
-					</div>
-					<div className={styles.infoDetails}>
-						<details>
-							<summary>{subtitle3}</summary>
-							<p>{subSubTitle3}</p>
-							<span>{subtitlePrice3}</span>
-							<span className={styles.currency}>{props.currency}</span>
-						</details>
-					</div>
-				</div>
-				<div className={styles.infoBlock}>
-					<div className={styles.infoImage}>
-						<img src={image4} alt={alt}/>
-					</div>
-					<div className={styles.infoDetails}>
-						<details>
-							<summary>{subtitle4}</summary>
-							<p>{subSubTitle4}</p>
-							<span>{subtitlePrice4}</span>
-							<span className={styles.currency}>{props.currency}</span>
-						</details>
-					</div>
-				</div>
-				<Descriptions text={props.text}/>
-			</div>
+			<Headings heading={title}/>
+			<Descriptions text={props.text2}/>
+			<DetailBlock
+				image={image1}
+				alt={alt}
+				subTitle={subtitle1}
+				subTitle2={subSubTitle1}
+				subTitlePrice={subtitlePrice1}/>
+			<DetailBlock
+				image={image2}
+				alt={alt}
+				subTitle={subtitle2}
+				subTitle2={subSubTitle2}
+				subTitlePrice={subtitlePrice2}/>
+			<DetailBlock
+				image={image3}
+				alt={alt}
+				subTitle={subtitle3}
+				subTitle2={subSubTitle3}
+				subTitlePrice={subtitlePrice3}/>
+			<DetailBlock
+				image={image4}
+				alt={alt}
+				subTitle={subtitle4}
+				subTitle2={subSubTitle4}
+				subTitlePrice={subtitlePrice4}/>
+			<Descriptions text={props.text}/>
+		</div>
 	);
 }
 
 WhatWeDoDetail.defaultProps = {
-	currency: 'грн',
 	text: 'У нас є багато різних послуг в асортименті - якщо ви хочете зареєструватися на консультацію по номерах або електронній пошті, наданих в капелюсі сайту',
 	text2: 'Ми надаємо послуги популяції по догляду за волоссям (різання, створення волосся, фарбування, танення та іншого фарбування, стрижки, гоління та стрижки, стрижка та стрижка бороди та вус тощо) в номері обладнаному спеціально для цього.',
 };
