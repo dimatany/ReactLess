@@ -2,6 +2,7 @@
   display: flex;
 }
 .wrap .wrapButton {
+  transition: 0.3s linear;
   background-color: #434343;
   bottom: 44px;
   cursor: pointer;
@@ -11,18 +12,19 @@
   border-radius: 50%;
   box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
+.wrap .wrapButton:hover {
+  background-color: #ffffff;
+}
 .wrap .wrapButton .buttonAria {
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
-}
-.wrap .wrapButton .buttonAria .buttonPosition {
   height: 60px;
   overflow: hidden;
   align-items: center;
 }
-.wrap .wrapButton .buttonAria .buttonPosition .buttonWrapSVG {
+.wrap .wrapButton .buttonAria .buttonWrapSVG {
   width: 20px;
   height: 20px;
   padding-top: 20px;

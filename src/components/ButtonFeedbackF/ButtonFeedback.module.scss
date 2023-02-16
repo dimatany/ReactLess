@@ -1,11 +1,10 @@
-$dark-blue: #202125;
-$dark-salt: #191d1c;
 $grayish-blue: #434343;
-$soft-blue2: #5383ed;
+$white: #ffffff;
 
 .wrap {
   display: flex;
   .wrapButton{
+    transition: 0.3s linear;
     background-color: $grayish-blue;
     bottom: 44px;
     cursor: pointer;
@@ -14,20 +13,21 @@ $soft-blue2: #5383ed;
     z-index: 3;
     border-radius: 50%;
     box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
+    &:hover {
+      background-color: $white;
+    }
     .buttonAria {
       padding-left: 20px;
       padding-right: 20px;
       margin-left: auto;
       margin-right: auto;
-      .buttonPosition {
-        height: 60px;
-        overflow: hidden;
-        align-items: center;
-        .buttonWrapSVG {
-          width: 20px;
-          height: 20px;
-          padding-top: 20px;
-        }
+      height: 60px;
+      overflow: hidden;
+      align-items: center;
+      .buttonWrapSVG {
+        width: 20px;
+        height: 20px;
+        padding-top: 20px;
       }
     }
   }
