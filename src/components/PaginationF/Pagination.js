@@ -15,8 +15,7 @@ function Pagination(props) {
 	.slice(pagesVisited, pagesVisited + usersPerPage)
 	.map((el) => {
 		return (
-			<>
-				<div className={styles.wrapBlock}>
+			<section className={styles.wrapBlock}>
 					<div className={styles.card}>
 						<div className={[styles['cardSide'], styles['front']].join(" ")}>
 							<p className={styles.title}>{el.title}</p>
@@ -29,8 +28,7 @@ function Pagination(props) {
 							<p>{el.text}</p>
 						</div>
 					</div>
-				</div>
-			</>
+				</section>
 		);
 	});
 	

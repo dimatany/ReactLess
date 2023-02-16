@@ -15,10 +15,10 @@ function Comments(props) {
 		setNotes([...notes.slice(0, index), ...notes.slice(index + 1)]);
 	}
 	return (
-		<div>{result}
+		<section>{result}
 			<input value={value} onChange={event => setValue(event.target.value)} />
 			<button onClick={() => setNotes([...notes, value])}>add</button>
-		</div>
+		</section>
 	)
 }
 

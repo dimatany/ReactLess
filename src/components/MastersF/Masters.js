@@ -13,7 +13,7 @@ function Masters(props) {
 	}
 	
 	return (
-		<div className={styles.block}>
+		<section className={styles.block}>
 			<Headings heading={props.title}/>
 			<span className={styles.explanation}>{props.subtitle}</span>
 			<div className={styles.cardmaster}>
@@ -37,7 +37,7 @@ function Masters(props) {
 				)}
 			</div>
 			<Descriptions text={props.text}/>
-		</div>
+		</section>
 	);
 }
 

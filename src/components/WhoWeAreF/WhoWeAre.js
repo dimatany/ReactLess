@@ -4,14 +4,14 @@ import SVGDivision from '../SVG/SVGDivision';
 
 function WhoWeAre(props) {
 	return (
-		<div className={[styles["about"], styles['wrap']].join(" ")}>
+		<section className={[styles["about"], styles['wrap']].join(" ")}>
 			<span>
 				<SVGDivision fill="white"/>
 			</span>
 			<p>{props.explanation1}</p>
 			<p>{props.explanation2}</p>
 			<p>{props.explanation3}</p>
-		</div>
+		</section>
 	);
 }
 

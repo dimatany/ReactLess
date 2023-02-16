@@ -35,29 +35,27 @@ function Map({center}) {
 	}, [])
 	
 	return (
-		<>
-			<div className={styles.container}>
-				<p className={[styles["text"], styles['containerSignature']].join(" ")}>Наш офіс</p>
-				<GoogleMap
-					mapContainerStyle={containerStyle}
-					center={center}
-					zoom={15}
-					onLoad={onLoad}
-					onUnmount={onUnmount}
-					options={defaultOptions}
-				>
-				</GoogleMap>
-				<div className={styles.wrap}>
-					<div>
-						<SvgLocation fill='#191d1c'/>
-					</div>
-					<div>
-						<p className={[styles["text"], styles['containerAddress']].join(" ")}>Григорій Ващенко 5, Київ, Україна</p>
-						<p className={styles.text}>3 этаж 35 кабинет</p>
-					</div>
+		<section className={styles.container}>
+			<p className={[styles["text"], styles['containerSignature']].join(" ")}>Наш офіс</p>
+			<GoogleMap
+				mapContainerStyle={containerStyle}
+				center={center}
+				zoom={15}
+				onLoad={onLoad}
+				onUnmount={onUnmount}
+				options={defaultOptions}
+			>
+			</GoogleMap>
+			<div className={styles.wrap}>
+				<div>
+					<SvgLocation fill='#191d1c'/>
+				</div>
+				<div>
+					<p className={[styles["text"], styles['containerAddress']].join(" ")}>Григорій Ващенко 5, Київ, Україна</p>
+					<p className={styles.text}>3 этаж 35 кабинет</p>
 				</div>
 			</div>
-		</>
+		</section>
 	);
 }
 

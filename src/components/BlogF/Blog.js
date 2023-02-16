@@ -5,15 +5,13 @@ import Pagination from '../PaginationF/Pagination';
 
 function Blog(props) {
 	return (
-		<>
-			<div className={styles.wrapper}>
-				<div className={styles.block}>
-					<Headings heading={props.title}/>
-				</div>
-				<h3>{props.subtitle}</h3>
-				<Pagination/>
+		<section className={styles.wrapper}>
+			<div className={styles.block}>
+				<Headings heading={props.title}/>
 			</div>
-		</>
+			<h3>{props.subtitle}</h3>
+			<Pagination/>
+		</section>
 	);
 }
 

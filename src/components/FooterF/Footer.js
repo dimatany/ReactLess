@@ -5,41 +5,39 @@ import SVGInstagram from '../SVG/SVGInstagram';
 
 function Footer(props) {
 	return (
-		<>
-			<footer>
-				<div className={[styles["section"], styles['wrap'], styles['border']].join(" ")}>
-					<div className={styles.svg}>
-						<SVGAvatar fill='white'/>
-					</div>
-					<div className={styles.contacts}>
-						<span>{props.title1}</span>
-						<ul>
-							<li><a href="mailto:cheize2020@gmail.com?subject=contact for joint work"></a>{props.email}</li>
-							<li><a href="tel:+380670000000"></a>{props.number}</li>
-						</ul>
-					</div>
-					<div className={styles.mode}>
-						<span>{props.title2}</span>
-						<ul>
-							<li>{props.mode1}</li>
-							<li>{props.mode2}</li>
-						</ul>
-					</div>
-					<div className={styles.social}>
-						<span>{props.title3}</span>
-						<a href="https://www.instagram.com/cheize20/?hl=ru"
-						   target="_blank"
-						   rel="noopener noreferrer nofollow"
-						   title="instagram">
-							<SVGInstagram fill='white' stroke='white'/>
-						</a>
-					</div>
+		<footer>
+			<div className={[styles["section"], styles['wrap'], styles['border']].join(" ")}>
+				<div className={styles.svg}>
+					<SVGAvatar fill='white'/>
 				</div>
-				<div className={styles.copyright}>
-					<span>{props.copyright}</span>
+				<div className={styles.contacts}>
+					<span>{props.title1}</span>
+					<ul>
+						<li><a href="mailto:cheize2020@gmail.com?subject=contact for joint work"></a>{props.email}</li>
+						<li><a href="tel:+380670000000"></a>{props.number}</li>
+					</ul>
 				</div>
-			</footer>
-		</>
+				<div className={styles.mode}>
+					<span>{props.title2}</span>
+					<ul>
+						<li>{props.mode1}</li>
+						<li>{props.mode2}</li>
+					</ul>
+				</div>
+				<div className={styles.social}>
+					<span>{props.title3}</span>
+					<a href="https://www.instagram.com/cheize20/?hl=ru"
+					   target="_blank"
+					   rel="noopener noreferrer nofollow"
+					   title="instagram">
+						<SVGInstagram fill='white' stroke='white'/>
+					</a>
+				</div>
+			</div>
+			<div className={styles.copyright}>
+				<span>{props.copyright}</span>
+			</div>
+		</footer>
 	);
 }
 

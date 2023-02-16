@@ -11,7 +11,7 @@ function WhatWeDo(props) {
 	}
 	
 	return (
-		<div className={[styles["services"], styles['wrap']].join(" ")}>
+		<section className={[styles["services"], styles['wrap']].join(" ")}>
 			<Headings heading={props.title}/>
 			<div className={styles.card}>
 				{dataItems.map(el =>
@@ -27,7 +27,7 @@ function WhatWeDo(props) {
 					</div>
 				)}
 			</div>
-		</div>
+		</section>
 	);
 }
 

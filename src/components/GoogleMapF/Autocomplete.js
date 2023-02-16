@@ -63,18 +63,16 @@ function Autocomplete({isLoaded, onSelect}) {
 	
 	
 	return (
-		<>
-			<div className={styles.wrap} ref={ref}>
-				<input
-					className={styles.input}
-					type="text"
-					value={value}
-					onChange={handleInput}
-					disabled={!ready}
-					placeholder="Куди потрібно йти?"/>
-				{status === "OK" && <ul className={styles.suggestion}>{renderSuggestions()}</ul>}
-			</div>
-		</>
+		<section className={styles.wrap} ref={ref}>
+			<input
+				className={styles.input}
+				type="text"
+				value={value}
+				onChange={handleInput}
+				disabled={!ready}
+				placeholder="Куди потрібно йти?"/>
+			{status === "OK" && <ul className={styles.suggestion}>{renderSuggestions()}</ul>}
+		</section>
 	);
 }
 

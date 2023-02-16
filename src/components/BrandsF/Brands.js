@@ -7,14 +7,14 @@ import './logoBrand4.png';
 
 function Brands() {
 	return (
-		<div className={styles.partners}>
+		<section className={styles.partners}>
 			<ul>
 				<li><img src={require("./logoBrand1.png")}  alt='logo of partners'/></li>
 				<li><img src={require("./logoBrand2.png")}  alt='logo of partners'/></li>
 				<li><img src={require("./logoBrand3.png")}  alt='logo of partners'/></li>
 				<li><img src={require("./logoBrand4.png")}  alt='logo of partners'/></li>
 			</ul>
-		</div>
+		</section>
 	);
 }
 
