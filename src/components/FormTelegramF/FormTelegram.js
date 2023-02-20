@@ -54,6 +54,23 @@ function FormTelegram(props) {
 			<div className={styles.error}>
 				{errors?.lastName && <p>{errors?.lastName?.message || 'Error!'}</p>}
 			</div>
+			
+			<label>Your Telefon 38067 674 23 76:
+				<input
+					{...register('telefon', {
+						required: 'Це поле потрібно заповнити!',
+						minLength: {
+							value: 12,
+							message: 'Потрібно не менше 12 цифр в позначеному форматі',
+						},
+						
+					})} type="number"/>
+			</label>
+			<div className={styles.error}>
+				{errors?.telefon && <p>{errors?.telefon?.message || 'Error!'}</p>}
+			</div>
+			
+			
 			<label>Your message:
 				<textarea
 					{...register('textMessage', {
