@@ -15,9 +15,6 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
 						</span>
 					</button>
 				</div>
-				<div className={styles.section}>
-					<h3>Кращі твори нашого майстра</h3>
-				</div>
 			</div>
 		</div>
 	</>, document.body

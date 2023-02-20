@@ -5,6 +5,7 @@ import WhatWeDo from '../WhatWeDoF/WhatWeDo';
 import Brands from '../BrandsF/Brands';
 import WhoWeAre from '../WhoWeAreF/WhoWeAre';
 import Descriptions from '../DescriptionsF/Descriptions';
+import FormTelegram from '../FormTelegramF/FormTelegram';
 
 function About(props) {
 	return (
@@ -15,6 +16,7 @@ function About(props) {
 			<Brands/>
 			<Tabs/>
 			<Descriptions text={props.text}/>
+			<FormTelegram/>
 		</>
 	);
 }
