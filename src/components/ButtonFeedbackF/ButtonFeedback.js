@@ -1,20 +1,25 @@
 import React from 'react';
 import styles from './ButtonFeedback.module.css'
 import SVGLetter from '../SVG/SVGLetter';
-import Modal from '../ModalF/Modal';
-import useModal from '../ModalF/useModal';
+import ModalWindow from '../ModalF/ModalWindow';
+import FormTelegram from '../FormTelegramF/FormTelegram';
 
 function ButtonFeedback(props) {
-	const {isShowing, toggle} = useModal();
+	const [isModal, setModal] = React.useState(false);
 	return (
 		<section className={styles.wrap}>
-			<div role="button" onClick={toggle} tabIndex="0" className={styles.wrapButton}>
+			<div className={styles.wrapButton}>
 				<div className={styles.buttonAria}>
-					<div className={styles.buttonWrapSVG}>
+					<div onClick={() => setModal(true)} className={styles.buttonWrapSVG}>
 						<SVGLetter fill='#5383ed'/>
 					</div>
 				</div>
-				<Modal isShowing={isShowing} hide={toggle}/>
+				<ModalWindow
+					isVisible={isModal}
+					title="Modal Title"
+					content={<p><FormTelegram/></p>}
+					onClose={() => setModal(false)}
+				/>
 			</div>
 		</section>
 	);

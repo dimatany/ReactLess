@@ -11,12 +11,10 @@ function FormTelegram(props) {
 	} = useForm({
 		mode: 'onBlur',
 	});
-	
 	const onSubmit = (data) => {
 		alert(JSON.stringify(data));
 		reset();
 	}
-	
 	return (
 		<form onSubmit={handleSubmit(onSubmit)}>
 			<label>Your First Name:
@@ -33,9 +31,9 @@ function FormTelegram(props) {
 						},
 				})} type="text"/>
 			</label>
-			<div className={styles.error}>
+			<span className={styles.error}>
 				{errors?.firstName && <p>{errors?.firstName?.message || 'Error!'}</p>}
-			</div>
+			</span>
 			<label>Your Last Name:
 				<input
 					{...register('lastName', {
@@ -50,9 +48,9 @@ function FormTelegram(props) {
 						},
 					})} type="text"/>
 			</label>
-			<div className={styles.error}>
+			<span className={styles.error}>
 				{errors?.lastName && <p>{errors?.lastName?.message || 'Error!'}</p>}
-			</div>
+			</span>
 			<label>Your Telefon: 380676742376
 				<input
 					{...register('telefon', {
@@ -67,9 +65,9 @@ function FormTelegram(props) {
 						},
 					})} type="number"/>
 			</label>
-			<div className={styles.error}>
+			<span className={styles.error}>
 				{errors?.telefon && <p>{errors?.telefon?.message || 'Error!'}</p>}
-			</div>
+			</span>
 			<label>Your message:
 				<textarea
 					{...register('textMessage', {
@@ -84,9 +82,9 @@ function FormTelegram(props) {
 						},
 					})}/>
 			</label>
-			<div className={styles.error}>
+			<span className={styles.error}>
 				{errors?.textMessage && <p>{errors?.textMessage?.message || 'Error!'}</p>}
-			</div>
+			</span>
 			<input type="submit" disabled={!isValid} value={props.text}/>
 		</form>
 	);

@@ -10,8 +10,8 @@ form {
     line-height: 2;
     text-align: left;
     display: block;
-    margin-bottom: 13px;
-    margin-top: 20px;
+    margin-bottom: 6px;
+    margin-top: 10px;
     color: $white;
     font-size: 14px;
     font-weight: 200;
@@ -33,6 +33,7 @@ textarea {
   width: 320px;
   min-height: 100px;
   margin: 0 auto;
+  padding: 10px;
   border-radius: 20px;
   resize: none;
   overflow: scroll;
@@ -62,6 +63,7 @@ input[type="submit"] {
   text-transform: uppercase;
   border: none;
   margin-top: 20px;
+  margin-bottom: 60px;
   padding: 10px;
   font-size: 16px;
   letter-spacing: 10px;
