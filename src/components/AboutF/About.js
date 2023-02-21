@@ -16,7 +16,6 @@ function About(props) {
 			<Brands/>
 			<Tabs/>
 			<Descriptions text={props.text}/>
-			<FormTelegram/>
 		</>
 	);
 }

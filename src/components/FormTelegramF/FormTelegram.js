@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { useForm } from "react-hook-form";
 import styles from './FormTelegram.module.css'
 
@@ -54,8 +53,7 @@ function FormTelegram(props) {
 			<div className={styles.error}>
 				{errors?.lastName && <p>{errors?.lastName?.message || 'Error!'}</p>}
 			</div>
-			
-			<label>Your Telefon 38067 674 23 76:
+			<label>Your Telefon: 380676742376
 				<input
 					{...register('telefon', {
 						required: 'Це поле потрібно заповнити!',
@@ -63,14 +61,15 @@ function FormTelegram(props) {
 							value: 12,
 							message: 'Потрібно не менше 12 цифр в позначеному форматі',
 						},
-						
+						maxLength: {
+							value: 12,
+							message: 'Потрібно не більше 12 цифр в позначеному форматі',
+						},
 					})} type="number"/>
 			</label>
 			<div className={styles.error}>
 				{errors?.telefon && <p>{errors?.telefon?.message || 'Error!'}</p>}
 			</div>
-			
-			
 			<label>Your message:
 				<textarea
 					{...register('textMessage', {
@@ -88,9 +87,14 @@ function FormTelegram(props) {
 			<div className={styles.error}>
 				{errors?.textMessage && <p>{errors?.textMessage?.message || 'Error!'}</p>}
 			</div>
-			<input type="submit" disabled={!isValid}/>
+			<input type="submit" disabled={!isValid} value={props.text}/>
 		</form>
 	);
 }
+
+FormTelegram.defaultProps = {
+	text: 'Відправити',
+	
+};
 
 export default FormTelegram;
