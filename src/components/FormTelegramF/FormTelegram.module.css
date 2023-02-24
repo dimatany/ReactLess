@@ -1,6 +1,7 @@
 @charset "UTF-8";
 form {
   max-width: 320px;
+  width: 100%;
   margin: 0 auto;
 }
 form label {
@@ -26,13 +27,14 @@ form .error p::before {
 }
 
 textarea {
-  width: 320px;
-  min-height: 100px;
+  width: 100%;
+  min-width: 320px;
+  min-height: 80px;
   margin: 0 auto;
-  padding: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
   resize: none;
   overflow: scroll;
+  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
 textarea:hover {
   border: 1px solid #4fa19d;
@@ -40,11 +42,12 @@ textarea:hover {
 
 input {
   display: block;
+  min-width: 320px;
   box-sizing: border-box;
   width: 100%;
   border-radius: 20px;
   border: 1px solid #ffffff;
-  padding: 10px 15px;
+  padding: 7px 10px;
   margin-bottom: 10px;
   font-size: 14px;
   box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);

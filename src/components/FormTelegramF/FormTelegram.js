@@ -1,22 +1,32 @@
-import React from "react";
+import React, { useRef } from 'react';
 import { useForm } from "react-hook-form";
+import emailjs from '@emailjs/browser';
 import styles from './FormTelegram.module.css'
 
 function FormTelegram(props) {
+	const form = useRef();
+	
 	const {
 		register,
 		formState: {errors, isValid},
-		handleSubmit,
 		reset,
 	} = useForm({
 		mode: 'onBlur',
 	});
-	const onSubmit = (data) => {
-		alert(JSON.stringify(data));
+	const sendEmail = (e) => {
+		e.preventDefault(); // prevents the page from reloading when you hit “Send”
+		
+		emailjs.sendForm('service_s8rt1yt', 'template_k49zeit', form.current, 'MMSRppZb4YlpmEjqY')
+		.then((result) => {
+			alert('Ваше повідомлення успішно доставлено!');
+		}, (error) => {
+			alert('Помилка - Будь ласка, спробуйте ще раз!');
+		});
 		reset();
-	}
+	};
+	
 	return (
-		<form onSubmit={handleSubmit(onSubmit)}>
+		<form ref={form} onSubmit={sendEmail}>
 			<label>Your First Name:
 				<input
 					{...register('firstName', {
@@ -44,12 +54,25 @@ function FormTelegram(props) {
 						},
 						maxLength: {
 							value: 10,
-							message: 'Это слишком длинное имя',
+							message: 'Це занадто довге ім\'я',
 						},
 					})} type="text"/>
 			</label>
 			<span className={styles.error}>
 				{errors?.lastName && <p>{errors?.lastName?.message || 'Error!'}</p>}
+			</span>
+			<label>Your Email: name@gmail.com
+				<input
+					{...register('email', {
+						required: 'Це поле потрібно заповнити!',
+						pattern: {
+							value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+							message: "Додайте адресу у встановленому форматі!"
+						}
+					})} type="text"/>
+			</label>
+			<span className={styles.error}>
+				{errors?.email && <p>{errors?.email?.message || 'Error!'}</p>}
 			</span>
 			<label>Your Telefon: 380676742376
 				<input
