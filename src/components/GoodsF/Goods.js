@@ -26,7 +26,7 @@ function Goods(props) {
 							<div className={styles.wrapBlock}>
 								<p>{el.description}</p>
 							</div>
-							<Link key={el.id} to={el.id}>
+							<Link key={el.id} to={el.id} className={styles.Link}>
 								<label htmlFor="button">{props.label}</label>
 								<input type="checkbox" checked={checked} onChange={handleChange} />
 							</Link>

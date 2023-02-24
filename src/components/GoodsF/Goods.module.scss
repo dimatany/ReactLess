@@ -40,19 +40,18 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked + .wrapBlock {
   height: auto;
 }
+.Link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
 label {
   order: 1;
   color: $soft-blue2;
   font-size: 18px;
   cursor: pointer;
-  background: linear-gradient(to right, transparent, transparent), linear-gradient(to right, $bright-red, $bright-orange, $lime-green);
-  background-size: 100% 3px, 0 3px;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 400ms;
-  &:hover {
-    background-size: 0 3px, 100% 3px;
-  }
+  text-decoration: none;
 }
 
 .container {
