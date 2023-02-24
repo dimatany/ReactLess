@@ -3,7 +3,7 @@ $soft-blue: #8ab4f8;
 $soft-blue2: #5383ed;
 $lime-green: #4fa19d;
 
-form {
+.form {
   max-width: 320px;
   width: 100%;
   margin: 0 auto;
@@ -30,7 +30,7 @@ form {
   }
 }
 
-textarea {
+.form textarea {
   width: 100%;
   min-width: 320px;
   min-height: 80px;
@@ -44,7 +44,7 @@ textarea {
   }
 }
 
-input {
+.form input {
   display: block;
   min-width: 320px;
   box-sizing: border-box;
@@ -60,7 +60,7 @@ input {
   }
 }
 
-input[type="submit"] {
+.form input[type="submit"] {
   background: $soft-blue;
   color: $white;
   text-transform: uppercase;
@@ -85,13 +85,13 @@ input[type="submit"] {
 }
 
 // убираем чертовы стрелочки со всех браузеров
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+.form input[type="number"]::-webkit-outer-spin-button,
+.form input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-input[type='number'],
-input[type="number"]:hover,
-input[type="number"]:focus {
+.form input[type='number'],
+.form input[type="number"]:hover,
+.form input[type="number"]:focus {
   appearance: none;
   -moz-appearance: textfield;
 }

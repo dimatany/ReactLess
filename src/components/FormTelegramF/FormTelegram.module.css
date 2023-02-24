@@ -1,10 +1,10 @@
 @charset "UTF-8";
-form {
+.form {
   max-width: 320px;
   width: 100%;
   margin: 0 auto;
 }
-form label {
+.form label {
   line-height: 2;
   text-align: left;
   display: block;
@@ -14,19 +14,19 @@ form label {
   font-size: 14px;
   font-weight: 200;
 }
-form .error {
+.form .error {
   height: 35px;
 }
-form .error p {
+.form .error p {
   color: #5383ed;
   overflow: scroll;
 }
-form .error p::before {
+.form .error p::before {
   display: inline;
   content: "⚠ ";
 }
 
-textarea {
+.form textarea {
   width: 100%;
   min-width: 320px;
   min-height: 80px;
@@ -36,11 +36,11 @@ textarea {
   overflow: scroll;
   box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
-textarea:hover {
+.form textarea:hover {
   border: 1px solid #4fa19d;
 }
 
-input {
+.form input {
   display: block;
   min-width: 320px;
   box-sizing: border-box;
@@ -52,11 +52,11 @@ input {
   font-size: 14px;
   box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
-input:hover {
+.form input:hover {
   border: 1px solid #4fa19d;
 }
 
-input[type=submit] {
+.form input[type=submit] {
   background: #8ab4f8;
   color: #ffffff;
   text-transform: uppercase;
@@ -67,27 +67,27 @@ input[type=submit] {
   font-size: 16px;
   letter-spacing: 10px;
 }
-input[type=submit]:hover {
+.form input[type=submit]:hover {
   background: #5383ed;
 }
-input[type=submit]:active {
+.form input[type=submit]:active {
   transition: 0.3s all;
   transform: translateY(3px);
   border: 1px solid transparent;
   opacity: 0.8;
 }
-input[type=submit]:disabled {
+.form input[type=submit]:disabled {
   opacity: 0.4;
 }
 
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
+.form input[type=number]::-webkit-outer-spin-button,
+.form input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-input[type=number],
-input[type=number]:hover,
-input[type=number]:focus {
+.form input[type=number],
+.form input[type=number]:hover,
+.form input[type=number]:focus {
   appearance: none;
   -moz-appearance: textfield;
 }

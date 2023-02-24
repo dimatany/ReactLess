@@ -26,7 +26,7 @@ function FormTelegram(props) {
 	};
 	
 	return (
-		<form ref={form} onSubmit={sendEmail}>
+		<form ref={form} onSubmit={sendEmail} className={styles.form}>
 			<label>Your First Name:
 				<input
 					{...register('firstName', {
