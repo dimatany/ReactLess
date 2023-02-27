@@ -7,7 +7,7 @@ function NavHeader(props) {
 		<>
 			<header className={styles.header}>
 				<div className={styles.wrap}>
-					<a href="#" className={styles.logo}>
+					<a href="/about" className={styles.logo}>
 						<SVGAvatar fill='white'/>
 					</a>
 					<input className={styles.sideMenu} type="checkbox" id="sideMenu"/>
