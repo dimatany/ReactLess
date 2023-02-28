@@ -1,4 +1,5 @@
 import React from 'react';
+import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
 import styles from './Blog.module.css';
 import Headings from '../HeadingsF/Headings';
 import Pagination from '../PaginationF/Pagination';
@@ -10,7 +11,9 @@ function Blog(props) {
 				<Headings heading={props.title}/>
 			</div>
 			<h3>{props.subtitle}</h3>
-			<Pagination/>
+			<ErrorBoundary>
+				<Pagination/>
+			</ErrorBoundary>
 		</section>
 	);
 }

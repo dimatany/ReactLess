@@ -1,29 +1,31 @@
 import React from 'react';
+import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
 import styles from './Stocks.module.css'
 import Countdown from '../CountdownF/Countdown';
 import Video from "./video.mp4";
 import Headings from '../HeadingsF/Headings';
-import SVGHand from '../SVG/SVGHand';
 
 function Stocks(props) {
 	return (
 		<>
-			<div className={styles.block}>
-				<Headings heading={props.title}/>
-				<p>{props.subtitle}</p>
-			</div>
-			<Countdown date={new Date('Wed, 31 Dec 2023 00:00:00')}/>
-			<div className={styles.description}>
-				<p>{props.description}</p>
-				<p>{props.period}</p>
-				<p>{props.reference}</p>
-			</div>
-			<div className={styles.video}>
-				<video src={Video} width="600" height="300" controls="controls" autoPlay="true"/>
-			</div>
-			<div className={styles.transition}>
-				<a href="/goods">{props.transition}</a>
-			</div>
+			<ErrorBoundary>
+				<div className={styles.block}>
+					<Headings heading={props.title}/>
+					<p>{props.subtitle}</p>
+				</div>
+				<Countdown date={new Date('Wed, 31 Dec 2023 00:00:00')}/>
+				<div className={styles.description}>
+					<p>{props.description}</p>
+					<p>{props.period}</p>
+					<p>{props.reference}</p>
+				</div>
+				<div className={styles.video}>
+					<video src={Video} width="600" height="300" controls="controls" autoPlay="true"/>
+				</div>
+				<div className={styles.transition}>
+					<a href="/goods">{props.transition}</a>
+				</div>
+			</ErrorBoundary>
 		</>
 	)
 }

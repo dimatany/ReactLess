@@ -1,6 +1,7 @@
 import React, {useCallback, useState} from 'react';
 import { useJsApiLoader } from '@react-google-maps/api';
 import Map from '../GoogleMapF/Map';
+import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
 import Autocomplete from '../GoogleMapF/Autocomplete';
 import styles from './Contacts.module.css';
 import SVGInstagram from '../SVG/SVGInstagram';
@@ -41,42 +42,44 @@ function Contacts(props) {
 		<section>
 			<div className={styles.wrapper}>
 				<Headings heading={props.title}/>
-				<div className={styles.wrapBlock}>
-					<div className={styles.wrapMap}>
-						<div className={styles.addressSearchContainer}>
-							<Autocomplete isLoaded={isLoaded} onSelect={onPlaceSelect}/>
+				<ErrorBoundary>
+					<div className={styles.wrapBlock}>
+						<div className={styles.wrapMap}>
+							<div className={styles.addressSearchContainer}>
+								<Autocomplete isLoaded={isLoaded} onSelect={onPlaceSelect}/>
+							</div>
+							{isLoaded ? <Map center={center}/> : <p>Loading</p>}
 						</div>
-						{isLoaded ? <Map center={center}/> : <p>Loading</p>}
+						<div className={styles.wrapNetwork}>
+							<div className={styles.networkComponent}>
+								<a href="https://telegram.me/+Lecz3Fu-4MIwNjI6"
+								   target="_blank"
+								   rel="noopener noreferrer nofollow"
+								   title="telegram">
+									<SvgTelegram fill='#ffffff'/></a>
+							</div>
+							<div className={styles.networkComponent}>
+								<a href="tel:+380670000000">
+									<SvgTelefon fill='#ffffff'/></a>
+							</div>
+							<div className={styles.networkComponent}>
+								<a href="https://www.facebook.com/"
+								   target="_blank"
+								   rel="noopener noreferrer nofollow"
+								   title="facebook">
+									<SvgFacebook fill='#ffffff'/></a>
+							</div>
+							<div className={styles.networkComponent}>
+								<a href="https://instagram.com/ideality.beauty.studio?igshid=YmMyMTA2M2Y="
+								   target="_blank"
+								   rel="noopener noreferrer nofollow"
+								   title="instagram">
+									<SVGInstagram fill='#ffffff'/>
+								</a>
+							</div>
+						</div>
 					</div>
-					<div className={styles.wrapNetwork}>
-						<div className={styles.networkComponent}>
-							<a href="https://telegram.me/+Lecz3Fu-4MIwNjI6"
-							   target="_blank"
-							   rel="noopener noreferrer nofollow"
-							   title="telegram">
-							   <SvgTelegram fill='#ffffff'/></a>
-						</div>
-						<div className={styles.networkComponent}>
-							<a href="tel:+380670000000">
-							   <SvgTelefon fill='#ffffff'/></a>
-						</div>
-						<div className={styles.networkComponent}>
-							<a href="https://www.facebook.com/"
-							   target="_blank"
-							   rel="noopener noreferrer nofollow"
-							   title="facebook">
-								<SvgFacebook fill='#ffffff'/></a>
-						</div>
-						<div className={styles.networkComponent}>
-							<a href="https://instagram.com/ideality.beauty.studio?igshid=YmMyMTA2M2Y="
-							   target="_blank"
-							   rel="noopener noreferrer nofollow"
-							   title="instagram">
-								<SVGInstagram fill='#ffffff'/>
-							</a>
-						</div>
-					</div>
-				</div>
+				</ErrorBoundary>
 			</div>
 			<span className={styles.test}><SVGDivision fill="white"/></span>
 			<Descriptions text={props.text}/>

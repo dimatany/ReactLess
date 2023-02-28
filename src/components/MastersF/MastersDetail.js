@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
 import dataMasters from './DataMasters'
 import styles from '../../components/MastersF/MasterDetail.module.css';
 import Headings from '../HeadingsF/Headings';
@@ -17,12 +18,14 @@ function MastersDetail(props) {
 	return (
 		<section className={styles.wrap}>
 			<Headings heading={props.title}/>
-			<DetailPost subTitle={subTitle1} image={image1} alt={altImage} text={text1}/>
-			<DetailPost subTitle={subTitle2} image={image2} alt={altImage} text={text2}/>
-			<DetailPost subTitle={subTitle3} image={image3} alt={altImage} text={text3}/>
-			<DetailPost subTitle={subTitle4} image={image4} alt={altImage} text={text4}/>
-			<DetailPost subTitle={subTitle5} image={image5} alt={altImage} text={text5}/>
-			<DetailPost subTitle={subTitle6} image={image6} alt={altImage} text={text6}/>
+			<ErrorBoundary>
+				<DetailPost subTitle={subTitle1} image={image1} alt={altImage} text={text1}/>
+				<DetailPost subTitle={subTitle2} image={image2} alt={altImage} text={text2}/>
+				<DetailPost subTitle={subTitle3} image={image3} alt={altImage} text={text3}/>
+				<DetailPost subTitle={subTitle4} image={image4} alt={altImage} text={text4}/>
+				<DetailPost subTitle={subTitle5} image={image5} alt={altImage} text={text5}/>
+				<DetailPost subTitle={subTitle6} image={image6} alt={altImage} text={text6}/>
+			</ErrorBoundary>
 		</section>
 	);
 }

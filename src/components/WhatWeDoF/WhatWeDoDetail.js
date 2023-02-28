@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
 import dataItems from './DataWWD';
 import styles from './WhatWeDoDetail.module.css';
 import Descriptions from '../DescriptionsF/Descriptions';
@@ -19,30 +20,32 @@ function WhatWeDoDetail(props) {
 		<div className={styles.wrap}>
 			<Headings heading={title}/>
 			<Descriptions text={props.text2}/>
-			<DetailBlock
-				image={image1}
-				alt={alt}
-				subTitle={subtitle1}
-				subTitle2={subSubTitle1}
-				subTitlePrice={subtitlePrice1}/>
-			<DetailBlock
-				image={image2}
-				alt={alt}
-				subTitle={subtitle2}
-				subTitle2={subSubTitle2}
-				subTitlePrice={subtitlePrice2}/>
-			<DetailBlock
-				image={image3}
-				alt={alt}
-				subTitle={subtitle3}
-				subTitle2={subSubTitle3}
-				subTitlePrice={subtitlePrice3}/>
-			<DetailBlock
-				image={image4}
-				alt={alt}
-				subTitle={subtitle4}
-				subTitle2={subSubTitle4}
-				subTitlePrice={subtitlePrice4}/>
+			<ErrorBoundary>
+				<DetailBlock
+					image={image1}
+					alt={alt}
+					subTitle={subtitle1}
+					subTitle2={subSubTitle1}
+					subTitlePrice={subtitlePrice1}/>
+				<DetailBlock
+					image={image2}
+					alt={alt}
+					subTitle={subtitle2}
+					subTitle2={subSubTitle2}
+					subTitlePrice={subtitlePrice2}/>
+				<DetailBlock
+					image={image3}
+					alt={alt}
+					subTitle={subtitle3}
+					subTitle2={subSubTitle3}
+					subTitlePrice={subtitlePrice3}/>
+				<DetailBlock
+					image={image4}
+					alt={alt}
+					subTitle={subtitle4}
+					subTitle2={subSubTitle4}
+					subTitlePrice={subtitlePrice4}/>
+			</ErrorBoundary>
 			<Descriptions text={props.text}/>
 		</div>
 	);

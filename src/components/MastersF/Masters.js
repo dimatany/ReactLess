@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
 import dataMasters from './DataMasters'
 import styles from '../../components/MastersF/Masters.module.css';
 import Descriptions from '../DescriptionsF/Descriptions';
@@ -16,26 +17,28 @@ function Masters(props) {
 		<section className={styles.block}>
 			<Headings heading={props.title}/>
 			<span className={styles.explanation}>{props.subtitle}</span>
-			<div className={styles.cardmaster}>
-				{dataMasters.map(el =>
-					<div className={styles.cardmasterWrap} key={el.id}>
-						<div className={styles.wrapCard}>
-							<div className={styles.wrapBlock}>
-								<img key={el.id} src={el.avatar} alt={el.alt}/>
-								<div className={styles.profession}>
-									<p className={styles.professionTitle}>{el.title}</p>
-									<span className={styles.professionRef}>
+			<ErrorBoundary>
+				<div className={styles.cardmaster}>
+					{dataMasters.map(el =>
+						<div className={styles.cardmasterWrap} key={el.id}>
+							<div className={styles.wrapCard}>
+								<div className={styles.wrapBlock}>
+									<img key={el.id} src={el.avatar} alt={el.alt}/>
+									<div className={styles.profession}>
+										<p className={styles.professionTitle}>{el.title}</p>
+										<span className={styles.professionRef}>
 											<Link key={el.id} to={el.id}>
 												<label htmlFor="button">{props.label}</label>
 												<input type="checkbox" checked={checked} onChange={handleChange} />
 											</Link>
 										</span>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				)}
-			</div>
+					)}
+				</div>
+			</ErrorBoundary>
 			<Descriptions text={props.text}/>
 		</section>
 	);

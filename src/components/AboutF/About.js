@@ -1,4 +1,5 @@
 import React from 'react';
+import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
 import Tabs from '../TabsC/Tabs';
 import Title from '../../components/TitleF/Title';
 import WhatWeDo from '../WhatWeDoF/WhatWeDo';
@@ -11,9 +12,9 @@ function About(props) {
 		<>
 			<Title/>
 			<WhoWeAre/>
-			<WhatWeDo/>
+			<ErrorBoundary><WhatWeDo/></ErrorBoundary>
 			<Brands/>
-			<Tabs/>
+			<ErrorBoundary><Tabs/></ErrorBoundary>
 			<Descriptions text={props.text}/>
 		</>
 	);
