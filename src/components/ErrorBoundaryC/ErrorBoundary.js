@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import styles from './ErrorBoundary.module.css'
 class ErrorBoundary extends Component {
 	state = {
 		error: null,
@@ -11,9 +12,9 @@ class ErrorBoundary extends Component {
 		
 		if (error) {
 			return (
-				<div>
-					<p>Виявляється, сталася помилка!</p>
-					<p>{error.message}</p>
+				<div className={styles.wrap}>
+					<p className={styles.message}>Виявляється, сталася помилка!</p>
+					<p className={styles.error}>{error.message}</p>
 				</div>
 			);
 		}

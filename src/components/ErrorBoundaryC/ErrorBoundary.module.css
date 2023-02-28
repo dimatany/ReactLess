@@ -1,0 +1,19 @@
+.wrap {
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+  border: 1px solid #5383ed;
+  border-radius: 10px;
+}
+.wrap .message {
+  font-size: 22px;
+  color: #FE2E2E;
+  text-align: center;
+}
+.wrap .error {
+  font-size: 18px;
+  color: #4fa19d;
+  text-align: center;
+}
+
+/*# sourceMappingURL=ErrorBoundary.module.css.map */
