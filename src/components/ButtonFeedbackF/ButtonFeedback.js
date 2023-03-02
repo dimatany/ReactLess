@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './ButtonFeedback.module.css'
 import SVGLetter from '../SVG/SVGLetter';
 import Modal from '../../components/ModalAllF/Modal';
-import Form from '../FormTelegramF/Form';
+import Form from '../FormF/Form';
 
 
 function ButtonFeedback(props) {

@@ -11,9 +11,7 @@ function Pagination(props) {
 	const usersPerPage = 3;
 	const pagesVisited = pageNumber * usersPerPage;
 	
-	const displayUsers = users
-	.slice(pagesVisited, pagesVisited + usersPerPage)
-	.map((el) => {
+	const displayUsers = users.slice(pagesVisited, pagesVisited + usersPerPage).map((el) => {
 		return (
 			<section className={styles.wrapBlock} key={el.id}>
 					<div className={styles.card}>
