@@ -1,10 +1,11 @@
 import React, { lazy, Suspense } from 'react';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Loading from '../LoadingF/Loading';
 import GoodsDetail from '../GoodsF/GoodsDetail';
 import WhatWeDoDetail from '../WhatWeDoF/WhatWeDoDetail';
 import NavHeader from '../NavigationF/NavHeader';
 import MastersDetail from '../MastersF/MastersDetail';
+import ButtonFeedback from '../ButtonFeedbackF/ButtonFeedback';
 
 const About = lazy(() => import('../../components/AboutF/About'));
 const Masters = lazy(() => import('../../components/MastersF/Masters'));
@@ -22,22 +23,23 @@ function Header() {
 			</header>
 			<main>
 				<Suspense fallback={renderLoader()}>
-					<Router>
+					<BrowserRouter>
 						<Routes>
 							<Route index element={<About/>} />
-							<Route path="/about" element={<About/>}/>
-							<Route path="/about/:whatWeDoDetail" element={<WhatWeDoDetail/>}/>
-							<Route path="/masters" element={<Masters/>}/>
-							<Route path="/masters/:mastersDetail" element={<MastersDetail/>}/>
-							<Route path="/goods" element={<Goods/>}/>
-							<Route path="/goods/:goodsDetail" element={<GoodsDetail/>}/>
-							<Route path="/stocks" element={<Stocks/>}/>
-							<Route path="/blog" element={<Blog/>}/>
-							<Route path="/contacts" element={<Contacts/>}/>
+							<Route path="about" element={<About/>}/>
+							<Route path="about/:whatWeDoDetail" element={<WhatWeDoDetail/>}/>
+							<Route path="masters" element={<Masters/>}/>
+							<Route path="masters/:mastersDetail" element={<MastersDetail/>}/>
+							<Route path="goods" element={<Goods/>}/>
+							<Route path="goods/:goodsDetail" element={<GoodsDetail/>}/>
+							<Route path="stocks" element={<Stocks/>}/>
+							<Route path="blog" element={<Blog/>}/>
+							<Route path="contacts" element={<Contacts/>}/>
 							<Route path="*" element={<NotFound/>}/>
 						</Routes>
-					</Router>
+					</BrowserRouter>
 				</Suspense>
+				<ButtonFeedback/>
 			</main>
 		</>
 	);

@@ -50,7 +50,6 @@ label {
 .container {
   display: flex;
   flex-direction: row;
-  box-shadow: 0 15px 30px 1px #434343;
   background: #ffffff;
   text-align: center;
   border-radius: 10px;

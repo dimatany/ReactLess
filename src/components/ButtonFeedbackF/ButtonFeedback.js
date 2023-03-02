@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './ButtonFeedback.module.css'
 import SVGLetter from '../SVG/SVGLetter';
 import Modal from '../../components/ModalAllF/Modal';
-import FormTelegram from '../FormTelegramF/FormTelegram';
+import Form from '../FormTelegramF/Form';
 
 
 function ButtonFeedback(props) {
@@ -18,7 +18,7 @@ function ButtonFeedback(props) {
 				{modalOpen && (
 					<Modal
 						isVisible={modalOpen}
-						content={<p><FormTelegram/></p>}
+						content={<span><Form/></span>}
 						onClose={() => setModalOpen(false)}
 					/>
 				)}

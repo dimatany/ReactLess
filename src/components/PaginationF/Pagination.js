@@ -15,9 +15,9 @@ function Pagination(props) {
 	.slice(pagesVisited, pagesVisited + usersPerPage)
 	.map((el) => {
 		return (
-			<section className={styles.wrapBlock}>
+			<section className={styles.wrapBlock} key={el.id}>
 					<div className={styles.card}>
-						<div className={[styles['cardSide'], styles['front']].join(" ")}>
+						<div className={[styles['cardSide'], styles['front']].join(" ")} key={el.id}>
 							<p className={styles.title}>{el.title}</p>
 							<p className={styles.question}>{el.header}</p>
 							<div className={styles.handSVG}>

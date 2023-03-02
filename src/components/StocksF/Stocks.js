@@ -20,7 +20,7 @@ function Stocks(props) {
 					<p>{props.reference}</p>
 				</div>
 				<div className={styles.video}>
-					<video src={Video} width="600" height="300" controls="controls" autoPlay="true"/>
+					<video src={Video} width="600" height="300" controls="controls" autoPlay={true}/>
 				</div>
 				<div className={styles.transition}>
 					<a href="/goods">{props.transition}</a>

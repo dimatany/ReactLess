@@ -1,9 +1,9 @@
 import React, { useRef } from 'react';
 import { useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser';
-import styles from './FormTelegram.module.css'
+import styles from './Form.module.css'
 
-function FormTelegram(props) {
+function Form(props) {
 	const form = useRef();
 	
 	const {
@@ -113,9 +113,9 @@ function FormTelegram(props) {
 	);
 }
 
-FormTelegram.defaultProps = {
+Form.defaultProps = {
 	text: 'Відправити',
 	
 };
 
-export default FormTelegram;
+export default Form;
