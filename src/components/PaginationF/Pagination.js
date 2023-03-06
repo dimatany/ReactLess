@@ -14,19 +14,19 @@ function Pagination(props) {
 	const displayUsers = users.slice(pagesVisited, pagesVisited + usersPerPage).map((el) => {
 		return (
 			<section className={styles.wrapBlock} key={el.id}>
-					<div className={styles.card}>
-						<div className={[styles['cardSide'], styles['front']].join(" ")} key={el.id}>
-							<p className={styles.title}>{el.title}</p>
-							<p className={styles.question}>{el.header}</p>
-							<div className={styles.handSVG}>
-								<SVGHand fill='#191d1c'/>
-							</div>
-						</div>
-						<div className={[styles['cardSide'], styles['back']].join(" ")}>
-							<p>{el.text}</p>
+				<div className={styles.card}>
+					<div className={[styles['cardSide'], styles['front']].join(" ")} key={el.id}>
+						<p className={styles.title}>{el.title}</p>
+						<p className={styles.question}>{el.header}</p>
+						<div className={styles.handSVG}>
+							<SVGHand fill='#191d1c'/>
 						</div>
 					</div>
-				</section>
+					<div className={[styles['cardSide'], styles['back']].join(" ")}>
+						<p>{el.text}</p>
+					</div>
+				</div>
+			</section>
 		);
 	});
 	
