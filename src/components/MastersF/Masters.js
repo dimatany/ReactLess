@@ -1,18 +1,11 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
-import dataMasters from './DataMasters'
 import styles from '../../components/MastersF/Masters.module.css';
 import Descriptions from '../DescriptionsF/Descriptions';
 import Headings from '../HeadingsF/Headings';
 import MasterCard from './MasterCard';
 
 function Masters(props) {
-	const [checked, setChecked] = React.useState(true);
-	
-	function handleChange() {
-		setChecked(!checked);
-	}
 	
 	return (
 		<section className={styles.block}>
