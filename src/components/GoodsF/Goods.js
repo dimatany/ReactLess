@@ -12,7 +12,9 @@ function Goods(props) {
 			<div className={styles.block}>
 				<Headings heading={props.title}/>
 			</div>
-			<GoodsFilter/>
+			<ErrorBoundary>
+				<GoodsFilter/>
+			</ErrorBoundary>
 			<ErrorBoundary>
 				<GoodsCard/>
 			</ErrorBoundary>
