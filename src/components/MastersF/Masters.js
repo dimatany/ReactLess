@@ -1,6 +1,6 @@
 import React from 'react';
 import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
-import styles from '../../components/MastersF/Masters.module.css';
+import styles from './Masters.module.css';
 import Descriptions from '../DescriptionsF/Descriptions';
 import Headings from '../HeadingsF/Headings';
 import MasterCard from './MasterCard';
