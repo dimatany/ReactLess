@@ -5,7 +5,7 @@ import Modal from '../../components/ModalAllF/Modal';
 import Form from '../FormF/Form';
 
 
-function ButtonFeedback(props) {
+function ButtonFeedback() {
 	const [modalOpen, setModalOpen] = React.useState(false);
 	return (
 		<section className={styles.wrap}>

@@ -1,4 +1,5 @@
 $dark-blue: #202125;
+$dark-blue-rgba: rgba(32, 33, 37, .9);
 $dark-salt: #191d1c;
 $grayish-blue: #434343;
 $white: #ffffff;
@@ -14,8 +15,7 @@ $lime-green: #4fa19d;
 .wrap {
   max-width: 1300px;
   margin: 0 auto;
-  background: $dark-blue;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  background: $dark-blue-rgba;
   padding-top: 10px;
 }
 .header{
@@ -25,6 +25,8 @@ $lime-green: #4fa19d;
   width:100%;
   z-index: 3;
   margin: 0 auto;
+  border-bottom: 1px solid $dark-blue;
+  box-shadow: 0 10px 10px -10px $soft-blue2;
   .logo{
     display: inline-block;
     color: $white;
