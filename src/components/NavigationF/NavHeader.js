@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './NavHeader.module.css';
 import SVGAvatar from '../SVG/SVGAvatar';
+import { NavLink} from 'react-router-dom';
 
 function NavHeader(props) {
 	return (
@@ -16,12 +17,12 @@ function NavHeader(props) {
 					</label>
 					<nav className={styles.nav}>
 						<ul className={styles.menu}>
-							<li><a href="/about">Головна</a></li>
-							<li><a href="/masters">Майстри</a></li>
-							<li><a href="/goods">Товари</a></li>
-							<li><a href="/stocks">Акції</a></li>
-							<li><a href="/blog">Відповіді</a></li>
-							<li><a href="/contacts">Контакти</a></li>
+							<li><NavLink to="/about">Головна</NavLink></li>
+							<li><NavLink to="/masters">Майстри</NavLink></li>
+							<li><NavLink to="/goods">Товари</NavLink></li>
+							<li><NavLink to="/stocks">Акції</NavLink></li>
+							<li><NavLink to="/blog">Відповіді</NavLink></li>
+							<li><NavLink to="/contacts">Контакти</NavLink></li>
 						</ul>
 					</nav>
 				</div>

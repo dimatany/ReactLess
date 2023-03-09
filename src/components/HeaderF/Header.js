@@ -18,29 +18,29 @@ const renderLoader = () => <Loading/>;
 function Header() {
 	return (
 		<>
-			<header>
-				<NavHeader/>
-			</header>
-			<main>
-				<Suspense fallback={renderLoader()}>
-					<BrowserRouter>
-						<Routes>
-							<Route index element={<About/>} />
-							<Route path="about" element={<About/>}/>
-							<Route path="about/:whatWeDoDetail" element={<WhatWeDoDetail/>}/>
-							<Route path="masters" element={<Masters/>}/>
-							<Route path="masters/:mastersDetail" element={<MastersDetail/>}/>
-							<Route path="goods" element={<Goods/>}/>
-							<Route path="goods/:goodsDetail" element={<GoodsDetail/>}/>
-							<Route path="stocks" element={<Stocks/>}/>
-							<Route path="blog" element={<Blog/>}/>
-							<Route path="contacts" element={<Contacts/>}/>
-							<Route path="*" element={<NotFound/>}/>
-						</Routes>
-					</BrowserRouter>
-				</Suspense>
-				<ButtonFeedback/>
-			</main>
+		<Suspense fallback={renderLoader()}>
+			<BrowserRouter>
+				<header>
+					<NavHeader/>
+				</header>
+				<main>
+					<Routes>
+						<Route index element={<About/>} />
+						<Route path="about" element={<About/>}/>
+						<Route path="about/:whatWeDoDetail" element={<WhatWeDoDetail/>}/>
+						<Route path="masters" element={<Masters/>}/>
+						<Route path="masters/:mastersDetail" element={<MastersDetail/>}/>
+						<Route path="goods" element={<Goods/>}/>
+						<Route path="goods/:goodsDetail" element={<GoodsDetail/>}/>
+						<Route path="stocks" element={<Stocks/>}/>
+						<Route path="blog" element={<Blog/>}/>
+						<Route path="contacts" element={<Contacts/>}/>
+						<Route path="*" element={<NotFound/>}/>
+					</Routes>
+					<ButtonFeedback/>
+				</main>
+			</BrowserRouter>
+		</Suspense>
 		</>
 	);
 }
