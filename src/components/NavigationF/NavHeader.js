@@ -17,12 +17,18 @@ function NavHeader(props) {
 					</label>
 					<nav className={styles.nav}>
 						<ul className={styles.menu}>
-							<li><NavLink to="/about">Головна</NavLink></li>
-							<li><NavLink to="/masters">Майстри</NavLink></li>
-							<li><NavLink to="/goods">Товари</NavLink></li>
-							<li><NavLink to="/stocks">Акції</NavLink></li>
-							<li><NavLink to="/blog">Відповіді</NavLink></li>
-							<li><NavLink to="/contacts">Контакти</NavLink></li>
+							<li><NavLink  style={({ isActive }) =>
+								(isActive ? {color: '#FE2E2E'} : {color: '#ffffff'})} to="/about">Головна</NavLink></li>
+							<li><NavLink  style={({ isActive }) =>
+								(isActive ? {color: '#FE2E2E'} : {color: '#ffffff'})} to="/masters">Майстри</NavLink></li>
+							<li><NavLink  style={({ isActive }) =>
+								(isActive ? {color: '#FE2E2E'} : {color: '#ffffff'})} to="/goods">Товари</NavLink></li>
+							<li><NavLink  style={({ isActive }) =>
+								(isActive ? {color: '#FE2E2E'} : {color: '#ffffff'})} to="/stocks">Акції</NavLink></li>
+							<li><NavLink  style={({ isActive }) =>
+								(isActive ? {color: '#FE2E2E'} : {color: '#ffffff'})} to="/blog">Відповіді</NavLink></li>
+							<li><NavLink  style={({ isActive }) =>
+								(isActive ? {color: '#FE2E2E'} : {color: '#ffffff'})} to="/contacts">Контакти</NavLink></li>
 						</ul>
 					</nav>
 				</div>
@@ -30,5 +36,4 @@ function NavHeader(props) {
 		</>
 	);
 }
-
 export default NavHeader;
