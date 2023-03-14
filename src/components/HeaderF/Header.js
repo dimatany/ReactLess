@@ -6,6 +6,7 @@ import WhatWeDoDetail from '../WhatWeDoF/WhatWeDoDetail';
 import NavHeader from '../NavigationF/NavHeader';
 import MastersDetail from '../MastersF/MastersDetail';
 import ButtonFeedback from '../ButtonFeedbackF/ButtonFeedback';
+import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
 
 const About = lazy(() => import('../../components/AboutF/About'));
 const Masters = lazy(() => import('../../components/MastersF/Masters'));
@@ -20,9 +21,11 @@ function Header() {
 		<>
 		<Suspense fallback={renderLoader()}>
 			<BrowserRouter>
-				<header>
-					<NavHeader/>
-				</header>
+				<ErrorBoundary>
+					<header>
+						<NavHeader/>
+					</header>
+				</ErrorBoundary>
 				<main>
 					<Routes>
 						<Route index element={<About/>} />

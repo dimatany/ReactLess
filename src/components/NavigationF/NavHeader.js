@@ -3,7 +3,7 @@ import styles from './NavHeader.module.css';
 import SVGAvatar from '../SVG/SVGAvatar';
 import { NavLink} from 'react-router-dom';
 
-function NavHeader(props) {
+function NavHeader() {
 	return (
 		<>
 			<header className={styles.header}>
