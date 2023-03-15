@@ -1,13 +1,13 @@
 import React from 'react';
 import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
 import { useParams } from 'react-router-dom';
-import dataItems from '../../BLL/DataGoods';
+import dataGoods from '../../BLL/DataGoods';
 import styles from './GoodsDetail.module.css';
 
 function GoodsDetail(props) {
 	const params = useParams();
 	
-	const currentGoods = dataItems.find(
+	const currentGoods = dataGoods.find(
 		(el) => el.id === params.goodsDetail
 	);
 	

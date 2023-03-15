@@ -1,4 +1,4 @@
-const dataItems = [
+const dataWWD = [
 	{
 		id: 'hair',
 		title: 'Перукарські послуги',
@@ -139,4 +139,4 @@ const dataItems = [
 	},
 ];
 
-export default dataItems;
+export default dataWWD;

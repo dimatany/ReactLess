@@ -1,4 +1,4 @@
-const dataItems = [
+const dataGoods = [
 	{
 		id: 'Shampoo1',
 		article: '123456789',
@@ -316,4 +316,4 @@ const dataItems = [
 	},
 ];
 
-export default dataItems;
+export default dataGoods;

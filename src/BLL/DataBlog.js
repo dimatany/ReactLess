@@ -1,4 +1,4 @@
-const blogFaq = [
+const dataBlog = [
 	{
 		id: 'topic1',
 		title: 'Лазерна епіляція',
@@ -61,4 +61,4 @@ const blogFaq = [
 	},
 ]
 
-export default blogFaq;
+export default dataBlog;
