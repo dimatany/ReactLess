@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import dataItems from './DataWWD';
+import dataItems from '../../BLL/DataWWD';
 import styles from './WhatWeDo.module.css';
 import Headings from '../HeadingsF/Headings';
 

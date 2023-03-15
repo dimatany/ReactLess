@@ -1,5 +1,5 @@
 import React from 'react';
-import dataItems from './DataGoods';
+import dataItems from '../../BLL/DataGoods';
 import styles from './GoodsFilter.module.css'
 
 function GoodsFilter(props) {

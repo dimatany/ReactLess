@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './GoodsCard.module.css';
-import dataItems from './DataGoods';
+import dataItems from '../../BLL/DataGoods';
 import {Link} from 'react-router-dom';
 import SVGTrolley from '../SVG/SVGTrolley';
 

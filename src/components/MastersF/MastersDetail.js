@@ -1,8 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
-import dataMasters from './DataMasters'
-import styles from '../../components/MastersF/MasterDetail.module.css';
+import dataMasters from '../../BLL/DataMasters'
+import styles from '../MastersF/MasterDetail.module.css';
 import Headings from '../HeadingsF/Headings';
 import DetailPost from './DetailPost';
 

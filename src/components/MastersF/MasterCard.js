@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './MasterCard.module.css';
-import dataMasters from './DataMasters';
+import dataMasters from '../../BLL/DataMasters';
 import {Link} from 'react-router-dom';
 
 

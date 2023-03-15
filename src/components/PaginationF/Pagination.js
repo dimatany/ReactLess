@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from './Pagination.module.css';
-import blogFaq from '../BlogF/BlogFaq';
+import blogFaq from '../../BLL/BlogFaq';
 import ReactPaginate from "react-paginate";
 import SVGHand from '../SVG/SVGHand';
 

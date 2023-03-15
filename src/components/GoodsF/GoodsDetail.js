@@ -1,7 +1,7 @@
 import React from 'react';
 import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
 import { useParams } from 'react-router-dom';
-import dataItems from './DataGoods';
+import dataItems from '../../BLL/DataGoods';
 import styles from './GoodsDetail.module.css';
 
 function GoodsDetail(props) {

@@ -8,13 +8,13 @@ import MastersDetail from '../MastersF/MastersDetail';
 import ButtonFeedback from '../ButtonFeedbackF/ButtonFeedback';
 import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
 
-const About = lazy(() => import('../../components/AboutF/About'));
-const Masters = lazy(() => import('../../components/MastersF/Masters'));
-const Goods = lazy(() => import('../../components/GoodsF/Goods'));
-const Stocks = lazy(() => import('../../components/StocksF/Stocks'));
-const Blog = lazy(() => import('../../components/BlogF/Blog'));
-const Contacts = lazy(() => import('../../components/ContactF/Contacts'));
-const NotFound = lazy(() => import('../../components/ErrorF/NotFound'));
+const About = lazy(() => import('../AboutF/About'));
+const Masters = lazy(() => import('../MastersF/Masters'));
+const Goods = lazy(() => import('../GoodsF/Goods'));
+const Stocks = lazy(() => import('../StocksF/Stocks'));
+const Blog = lazy(() => import('../BlogF/Blog'));
+const Contacts = lazy(() => import('../ContactF/Contacts'));
+const NotFound = lazy(() => import('../ErrorF/NotFound'));
 const renderLoader = () => <Loading/>;
 function Header() {
 	return (

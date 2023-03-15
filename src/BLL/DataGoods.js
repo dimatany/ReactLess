@@ -9,7 +9,7 @@ const dataItems = [
 		application: 'нанесіть невелику кількість шампуню на попередньо змочену шкіру голови і коріння волосся, помасажуйте голову і змийте великою кількістю теплої води. Процедуру можна повторити.',
 		composition: 'Water, Cocoamidopropyl Betaine, Disodium Laureth Sulfosuccinate, lauramine oxide, Glycerine, Butylene Glycol, TEA-Cocoyl Glutamate, Cocamide DEA, PEG-120 Methyl Glucose Dioleate, PPG-3 Caprylyl Ether, PEG-7 Glyceryl Cocoate, Betaine, Hydroxypropyl Chitosan , Trehalose, Hydrolyzed Wheat Protein, Hydrolized Corn Protein, Hydrolized Soy Protein, Hydrolyzed Silk, Sodium Hyaluronate, Dipropylene Glycol, Zein, Argania Spinosa Kernel Oil, Avocado Oil, Camellia Japonica Seed Oil, Simmondsia Chinensis (Jojoba) Seed Oil, Citric Acid, Polyquaternium-10, Hydroxyacetophenone, Sodium Benzoate, Fragrance.',
 		prise: 275,
-		image: require("../../components/GoodsF/img/1g.jpg"),
+		image: require("../components/GoodsF/img/1g.jpg"),
 		alt: 'is top image',
 	},
 	{
@@ -22,7 +22,7 @@ const dataItems = [
 		application: 'нанесіть невелику кількість шампуню на попередньо змочену шкіру голови та коріння волосся, помасажуйте голову і змийте великою кількістю теплої води. Процедуру можна повторити.',
 		composition: 'Water, Cocoamidopropyl Betaine, Disodium Laureth Sulfosuccinate, lauramine oxide, Glycerine, Butylene Glycol, TEA-Cocoyl Glutamate, Cocamide DEA, PEG-120 Methyl Glucose Dioleate, PPG-3 Caprylyl Ether, PEG-7 Glyceryl Cocoate, Betaine, Hydroxypropyl Chitosan, Trehalose, Hydrolyzed Wheat Protein, Hydrolized Corn Protein, Hydrolized Soy Protein, Hydrolyzed Silk, Sodium Hyaluronate, Dipropylene Glycol, Zein, Argania Spinosa Kernel Oil, Avocado Oil, Camellia Japonica Seed Oil, Simmondsia Chinensis (Jojoba) Seed Oil, Citric Acid, Polyquaternium- 10, Hydroxyacetophenone, Sodium Benzoate, Fragrance.',
 		prise: 699,
-		image: require("../../components/GoodsF/img/2g.jpg"),
+		image: require("../components/GoodsF/img/2g.jpg"),
 		alt: 'is top image',
 	},
 	{
@@ -35,7 +35,7 @@ const dataItems = [
 		application: 'вміст ампули змішати з холодною водою в пропорції 1: 1. Використовувати тільки керамічну місткість. Ретельно перемішати рідину і нанести отриманий склад на чисте, сухе волосся по всій довжині. Залишити на 15-20 хвилин. Для кращого ефекту використовувати термошапочку або прогріти феном. Змити теплою водою.',
 		composition: ' Alcohol, Propylene Glycol, Cetrimonium Chloride, Benzyl Glycol, Ethylhexylglycerin, Raspberry Ketone, Hydrolyzed Keratin, Hydrolyzed Collagen, Hydrolyzed Silk, Ceramide NP, PEG-12 Dimethicone, Glycerin, Octyldodeceth-20, Octyldodeceth-16, Glyoxyloyl Carbocysteine, Glyoxyloyl Keratin Amino Acids, Butylene Glycol, Phyllanthus Emblica Extract, Polyquaternium-92, Citric Acid, Fragrance',
 		prise: 380,
-		image: require("../../components/GoodsF/img/3g.jpg"),
+		image: require("../components/GoodsF/img/3g.jpg"),
 		alt: 'is top image',
 	},
 	{
@@ -48,7 +48,7 @@ const dataItems = [
 		application: 'вміст ампули змішати з холодною водою в пропорції 1: 1. Використовувати тільки керамічну місткість. Ретельно перемішати рідину і нанести отриманий склад на чисте, сухе волосся по всій довжині. Залишити на 15-20 хвилин. Для кращого ефекту використовувати термошапочку або прогріти феном. Змити теплою водою.',
 		composition: ' Alcohol, Propylene Glycol, Cetrimonium Chloride, Benzyl Glycol, Ethylhexylglycerin, Raspberry Ketone, Hydrolyzed Keratin, Hydrolyzed Collagen, Hydrolyzed Silk, Ceramide NP, PEG-12 Dimethicone, Glycerin, Octyldodeceth-20, Octyldodeceth-16, Glyoxyloyl Carbocysteine, Glyoxyloyl Keratin Amino Acids, Butylene Glycol, Phyllanthus Emblica Extract, Polyquaternium-92, Citric Acid, Fragrance',
 		prise: 80,
-		image: require("../../components/GoodsF/img/4g.jpg"),
+		image: require("../components/GoodsF/img/4g.jpg"),
 		alt: 'is top image',
 	},
 	{
@@ -61,7 +61,7 @@ const dataItems = [
 		application: 'на вологе волосся нанести потрібну кількість шампуню, помасувати, ретельно змити, за потреби повторити.',
 		composition: 'water, sodium C14-16 olefinsulfonate, coco-betaine, glycerin, butylene glycol, decyl glucoside, MEA cocamide, caprylhydroxamic acid, methylpropanediol, cinanhuma extract, hydroxypropyltrimonium chloride, guarodium hydroxypropyltrimonium chloride, panthenol, salicylic acid, citric acid, EDTA disodium, niacinamide, ethylhexylglycerin, arginine, leucine, tryptophan, lizin, threonine, methionine, hydride stidine, asparagine, allanine, proline, glutamic acid, glutamine, glycine, valine, phenylalanine, aspartic acid, tyrosine, serine, cystine, rhemania root extract, lycarian dogwood extract, Japanese dioscorea root extract, aquatic plantain bulby extract, coconut porium extract, pivonia root extract, witch hazel leaf extract, sage leaf extract, melisi liquor leaf extract, pepper juice extract, lavender flower extract, hautunii extract, eucalyptus globulus leaf extract, soy bean extract.',
 		prise: 699,
-		image: require("../../components/GoodsF/img/5g.jpg"),
+		image: require("../components/GoodsF/img/5g.jpg"),
 		alt: 'is top image',
 	},
 	{
@@ -74,7 +74,7 @@ const dataItems = [
 		application: 'нанести засіб на корені волосся, легкими, масажними рухами розтерти по шкірі голови, змити теплою водою.',
 		composition: 'Water, Sodium C14-16 Olefinsulfonate, Coco-Betaine, Glycerin, Butylene Glycol, Decyl Glucoside, MEA Cocamide, Caprilhydroxamic Acid, Methylpropanediol, Cinanhuma Extract, Hydroxypropyltriol Guaric Hydroxypropyltrimonium Chloride, Panthenol, Salicylic Acid, Citric Acid, Sodium EDTA, Niacinamide, Ethylhexylglycerin, Arginine, Leucine, Tryptophan, Lizine, Isoleucine, Threionine Methionine, Histidine, Asparagine, Alanine, Proline, Glutamic Acid, Glutamine, Glycine, Valine, Phenylalanine, Aspartic Acid, Tyrosine, Serine, Cystine, Root Extract, Likarsky Dogwood Extract, Japanese Dioskor Root Extract, Water Plantain Bulby Extract, Coconut Leek Extract, Pivonia Root Extract, Hamamelis Listieu Extract, Sage Leaf Extract, Sage Extract.',
 		prise: 305,
-		image: require("../../components/GoodsF/img/6g.jpg"),
+		image: require("../components/GoodsF/img/6g.jpg"),
 		alt: 'is top image',
 	},
 	{
@@ -87,7 +87,7 @@ const dataItems = [
 		application: 'нанести засіб на чисте вологе волосся, потримати 10-15 хвилин, потім змити теплою водою.',
 		composition: 'Water, Sodium C14-16 Olefinsulfonate, Coco-Betaine, Glycerin, Butylene Glycol, Decyl Glucoside, MEA Cocamide, Caprilhydroxamic Acid, Methylpropanediol, Cinanhuma Extract, Hydroxypropyltriol Guaric Hydroxypropyltrimonium Chloride, Panthenol, Salicylic Acid, Citric Acid, Sodium EDTA, Niacinamide, Ethylhexylglycerin, Arginine, Leucine, Tryptophan, Lizine, Isoleucine, Threionine Methionine.',
 		prise: 865,
-		image: require("../../components/GoodsF/img/7g.jpg"),
+		image: require("../components/GoodsF/img/7g.jpg"),
 		alt: 'is top image',
 	},
 	{
@@ -100,7 +100,7 @@ const dataItems = [
 		application: 'нанести засіб на чисте вологе волосся, потримати 10-15 хвилин, потім змити теплою водою.',
 		composition: 'Water, cethearilovi alcohol, Propipringle, Amnopropy Dimethicon, C13-15 Alcana, Steatrimoni Chlorid, Dimethicon, Cetrimoni Chlorid, Cetylovius Alcohol, Stearamid Ekstrak Ekhpertil Dimetiliye-7, Amodinniytni Vinograd, Oil Nasiynni Vinograd, Oil Kotrok of Argan, Glizeril Ekrak Eviye ',
 		prise: 389,
-		image: require("../../components/GoodsF/img/8g.jpg"),
+		image: require("../components/GoodsF/img/8g.jpg"),
 		alt: 'is top image',
 	},
 	{
@@ -114,7 +114,7 @@ const dataItems = [
 		composition: 'Water, Hydrolyzed Silk, Cetearyl Alcohol, Butylene Glycol, Propylene Glycol, Glycerin, Behentrimonium Chloride, Dimethicone, Macadamia Ternifolia Seed Oil, Phytantriol, Aloe Barbadensis Leaf Extract, Ceramide NP, Sodium Benzoate, Arginine, Leucine, Tryptophan, Lysine, Isoleucine, Threonine, Methionine, Histidine, Asparagine, Alanine, Proline, Glutamic Acid, Glutamine, Glycine, Valine, Phenylalanine, Aspartic Acid, Tyrosine, Serine, Cystine, Benzyl Benzoate, Benzyl Salicylate, Citronellol, Geraniol, Hexyl Cinnamal, Limonene, Linalool, Fragrance\n' +
 			'\n',
 		prise: 735,
-		image: require("../../components/GoodsF/img/9g.jpg"),
+		image: require("../components/GoodsF/img/9g.jpg"),
 		alt: 'is top image',
 	},
 	{
@@ -129,7 +129,7 @@ const dataItems = [
 		composition: 'Water, Dimethicone, Cetearyl Alcohol, Behentrimonium Chloride, Butylene Glycol, Propylene Glycol, Amodimethicone, C12-14 Sec-Pareth-7, Hydrolyzed Silk, Aloe Barbadensis Leaf Extract, Ceramide NP, Arginine, Leucine, Tryptophan, Lysine, Isoleucine, Threonine, Methionine, Histidine, Asparagine, Alanine, Proline, Glutamic Acid, Glutamine, Glycine, Valine, Phenylalanine, Aspartic Acid, Tyrosine, Serine, Cystine, Benzyl Benzoate, Benzyl Salicylate, Hexyl Cinnamal, Linalool, Fragrance\n' +
 			'\n',
 		prise: 849,
-		image: require("../../components/GoodsF/img/10g.jpg"),
+		image: require("../components/GoodsF/img/10g.jpg"),
 		alt: 'is top image',
 	},
 	{
@@ -142,7 +142,7 @@ const dataItems = [
 		application: 'нанесіть невелику кількість шампуню на попередньо змочену шкіру голови та коріння волосся, помасажуйте голову і змийте великою кількістю теплої води. Процедуру можна повторити',
 		composition: 'Water, Lauryl Glucoside, Decyl Glucoside, Cocodimonium Hydroxypropyl Hydrolyzed Wheat Protein Polyquaternium-10, Disodium Cocoyl Glutamate, Sodium Cocoyl Glutamate, L-Menthol, Salicylic Acid, Dexpanthenol, 1,2-Hexanediol, Propylene Glycol, Hyaluronic Acid, Citrus Aurantium Dulcis (Orange) Oil, Lavandula Angustifolia (Lavender) Oil, Cymbopogon Schoenanthus Oil, Abies Sibirica Oil, Amyris Balsamifera Bark Oil, Salvia Sclarea (Clary) Oil, Sophora Flavescens Root Extract, Capsicum Annuum Fruit Extract, Lycium Chinense Fruit Extract',
 		prise: 999,
-		image: require("../../components/GoodsF/img/11g.jpg"),
+		image: require("../components/GoodsF/img/11g.jpg"),
 		alt: 'is top image',
 	},
 	{
@@ -155,7 +155,7 @@ const dataItems = [
 		application: 'нанесіть невелику кількість кондиціонера на попередньо вимите волосся, відступаючи від кореня. Залиште на волоссі на кілька хвилин. Змийте теплою водою.',
 		composition: 'Water, Cetearyl Alcohol, Behenyl Trimethyl Ammonium Chloride, Paraffin Wax,Glycerin, PPG-3 Caprylyl Ether, Butylene Glycol, Saponaria Officinalis Leaf Extract, Lavandula Angustifolia (Lavender) Flower Extract, Monarda Didyma Leaf Extract, Mentha Piperita (Peppermint) Leaf Extract',
 		prise: 609,
-		image: require("../../components/GoodsF/img/12g.jpg"),
+		image: require("../components/GoodsF/img/12g.jpg"),
 		alt: 'is top image',
 	},
 	{
@@ -168,7 +168,7 @@ const dataItems = [
 		application: 'нанесіть невелику кількість шампуню на попередньо змочену шкіру голови та коріння волосся, помасажуйте голову і змийте великою кількістю теплої води. Процедуру можна повторити.',
 		composition: 'Water, Lauryl Glucoside, Cocamidopropyl Betaine, Disodium Laureth Sulfosuccinate, TEA-Cocoyl Glutamate, Sodium Chloride, Citric Acid, Hydroxyacetophenone, Polyquaternium-7, Polyquaternium-10, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Olea Europaea (Olive) Fruit Oil, Ribes Nigrum (Black Currant) Leaf Extract, Curcuma Longa (Turmeric) Root Extract, Zanthoxylum Schinifolium Leaf Extract, Pulsatilla Koreana Extract',
 		prise: 789,
-		image: require("../../components/GoodsF/img/13g.jpg"),
+		image: require("../components/GoodsF/img/13g.jpg"),
 		alt: 'is top image',
 	},
 	{
@@ -181,7 +181,7 @@ const dataItems = [
 		application: 'нанесіть невелику кількість маски на попередньо вимите волосся, відступаючи від кореня. Залиште на волоссі на кілька хвилин. Змийте теплою водою.',
 		composition: 'Water, Cetearyl Alcohol, Benzyl Alcohol, Olea Europaea (Olive) Fruit Oil, Simmondsia Chinensis (Jojoba) Seed Oil, Oleyl Alcohol, Daucus Carota Sativa (Carrot) Root Extract, Stearamidopropyl Dimethylamine, Citric Acid, Lactic Acid, Benzophenone-9, Hydrolyzed Collagen, C12-18 Dialkyldimonium Chloride, Panthenol, Benzyl Glycol, Ethylhexylglycerin, Raspberry Ketone, Glycerin, Octyldodeceth-20, Octyldodeceth-16, Fragrance, Benzyl Salicylate, Cinnamyl Alcohol, Citronellol, Geraniol, Hexyl Cinnamal, Hydroxycitronellal',
 		prise: 249,
-		image: require("../../components/GoodsF/img/14g.jpg"),
+		image: require("../components/GoodsF/img/14g.jpg"),
 		alt: 'is top image',
 	},
 	{
@@ -194,7 +194,7 @@ const dataItems = [
 		application: 'нанесіть невелику кількість шампуню на попередньо змочену шкіру голови та коріння волосся, помасажуйте голову і змийте великою кількістю теплої води. Процедуру можна повторити.',
 		composition: 'Water, Sodium Laureth Sulfate, Sodium Lauryl Sulfate, Cocamidopropyl Betaine, Sodium Chloride, Cocamide MEA, Glycol Distearate, Polyquaternium-10, Sodium Benzoate, Hydroxyacetophenone, Piroctone Olamine, Disodium EDTA, Citric Acid, PPG-3 Caprylyl Ether, Quaternium-80, Polyquaternium-7, Saponaria Officinalis Leaf Extract, Butylene Glycol, Acrylamidopropyltrimonium Chloride/Acrylamide Copolymer, Propylene Glycol, Lavandula Angustifolia (Lavender) Flower Extract, Monarda Didyma Leaf Extract, Mentha Piperita (Peppermint) Leaf Extract, Freesia Refracta Extract, Chamomilla Recutita (Matricaria) Flower Extract, Rosmarinus Officinalis (Rosemary) Leaf Extract, 1,2-Hexanediol, Ethylhexylglycerin, Fragrance, Alpha-Isomethyl Ionone, Citronellol, Hexyl Cinnamal',
 		prise: 576,
-		image: require("../../components/GoodsF/img/15g.jpg"),
+		image: require("../components/GoodsF/img/15g.jpg"),
 		alt: 'is top image',
 	},
 	{
@@ -207,7 +207,7 @@ const dataItems = [
 		application: 'нанесіть невелику кількість шампуню на попередньо змочену шкіру голови та коріння волосся, помасажуйте голову і змийте піну великою кількістю теплої води. Процедуру можна повторити. Пам\'ятайте, що шампунь не потрібно наносити на всю довжину волосся, а тільки на корені',
 		composition: 'Water, sodium Laureth Sulfate, Cocamidopropyl Betaine, Lauramide DEA, sodium Lauryl Sulfate, Argania spinosa Kernel oil, Disodium EDTA, Polyquaternium-10, Citric Acid, Climbazole, Sodium Benzoate, Phenoxyethanol, Cl 19140, fragrance',
 		prise: 699,
-		image: require("../../components/GoodsF/img/16g.jpg"),
+		image: require("../components/GoodsF/img/16g.jpg"),
 		alt: 'is top image',
 	},
 	{
@@ -220,7 +220,7 @@ const dataItems = [
 		application: 'нанесіть невелику кількість шампуню на попередньо змочену шкіру голови та коріння волосся, помасажуйте голову і змийте піну великою кількістю теплої води. Процедуру можна повторити. Пам\'ятайте, що шампунь не потрібно наносити на всю довжину волосся, а тільки на корені.',
 		composition: 'Water, Lauryl Glucoside, Cocamidopropyl Betaine, Disodium Laureth Sulfosuccinate, TEA-Cocoyl Glutamate, Polyquaternium-7, Guar Hydroxypropyltrimonium Chloride, Sodium Chloride, Lavandula Angustifolia (Lavender) Oil, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Camellia Sinesis Callus Culture Extract, Ribes Nigrum (Black Currant) Leaf Extract, Curcuma Longa (Turmeric) Root Extract, Citrus Limon (Lemon) Fruit Oil, Zanthoxylum Schinifolium Leaf Extract, Pulsatilla Koreana Extract, Citric Acid',
 		prise: 275,
-		image: require("../../components/GoodsF/img/17g.jpg"),
+		image: require("../components/GoodsF/img/17g.jpg"),
 		alt: 'is top image',
 	},
 	{
@@ -233,7 +233,7 @@ const dataItems = [
 		application: 'міст використовується як 5-ий, останній етап догляду за волоссям. Його необхідно струсити перед використанням і наносити на вологе або сухе волосся з відстані 10-15 см. Не потребує змивання. Процедуру можна повторювати протягом дня.',
 		composition: 'Hippophae Rhamnoides Fruit Extract, Cyclopentasiloxane, Hydroxypropyltrimonium Hydrolyzed Silk, Dimethicone, Polyquaternium-6, Polyquaternium-53, Dimethiconol, PEG-60 Hydrogenated Castor Oil, Trideceth-10, Caprylic/Capric Triglyceride, Steartrimonium Chloride, Caprylyl Glycol, Polysorbate 60, Lavandula Angustifolia (Lavender) Extract, Rosmarinus Officinalis (Rosemary) Extract, Thymus Vulgaris (Thyme) Extract, Mentha Arvensis Leaf Extract, Borago Officinalis Extract, Salvia Officinalis (Sage) Leaf Extract, Jasminum Officinale (Jasmine) Extract, Anthemis Nobilis Flower Extract, Disodium EDTA, Fragrance, Alpha-Isomethyl Ionone, Limonene, Butylphenyl Methylpropional',
 		prise: 415,
-		image: require("../../components/GoodsF/img/18g.jpg"),
+		image: require("../components/GoodsF/img/18g.jpg"),
 		alt: 'is top image',
 	},
 	{
@@ -246,7 +246,7 @@ const dataItems = [
 		application: 'змішати в не металевому посуді склад з водою в пропорції 1: 1, нанести на чисте, злегка вологе волосся. Розподілити по всій довжині, особливо на посічені кінчики. Через 20 хвилин змити теплою водою.',
 		composition: 'Water, Steartrimonium Chloride, Alcohol, Hydrolyed Keratin, Hydrolyzed Collagen, Hydrolyzed Silk, Ceramide3ceramide NP, Sodium Benzoate, Hydroxyacetophenone, Fragrance.',
 		prise: 480,
-		image: require("../../components/GoodsF/img/19g.jpg"),
+		image: require("../components/GoodsF/img/19g.jpg"),
 		alt: 'is top image',
 	},
 	{
@@ -259,7 +259,7 @@ const dataItems = [
 		application: 'Нанести шампунь на вологе волосся і шкіру голови, помасажувати протягом 2-3 хвилин, потім змити теплою водою. При необхідності повторити процедуру.',
 		composition: 'Water, Sodium C14-16 Olefin Sulfonate, Cocamidopropyl Betaine, Lauryl Glucoside, Glycerine, Lauramide DEA, PPG-3 Caprylyl Ether, Hydrolyzed Keratin, Hydrolyzed Wheat Protein, Panthenol, Butylene Glycol, Glycyrrhiza Glabra (Licorice) Root Extract, Polygonum Multiflorum Root Extract , Camellia Sinensis Leaf Extract, Angelica Gigas Root Extract, Panax Ginseng Root Extract, Portulaca Oleracea Extract, Rheum Palmatum Root Extract, Silkworm Extract, Bletilla Striata Root Extract, Carthamus Tinctorius (Safflower) Flower Extract, Hydroxyacetophenone, Climbazole, Salicylic Acid, Menthol, Citric acid, Dimethyl sulfone, Allantoin, Polyquaternium-10, betaine, Disodium EDTA, Fragrance',
 		prise: 570,
-		image: require("../../components/GoodsF/img/20g.jpg"),
+		image: require("../components/GoodsF/img/20g.jpg"),
 		alt: 'is top image',
 	},
 	{
@@ -272,7 +272,7 @@ const dataItems = [
 		application: 'змішати в не металевому посуді склад з водою в пропорції 1: 1, нанести на чисте, злегка вологе волосся. Розподілити по всій довжині, особливо на посічені кінчики. Через 20 хвилин змити теплою водою',
 		composition: 'Water, Steartrimonium Chloride, Alcohol, Hydrolyed Keratin, Hydrolyzed Collagen, Hydrolyzed Silk, Ceramide3ceramide NP, Sodium Benzoate, Hydroxyacetophenone, Fragrance.',
 		prise: 879,
-		image: require("../../components/GoodsF/img/21g.jpg"),
+		image: require("../components/GoodsF/img/21g.jpg"),
 		alt: 'is top image',
 	},
 	{
@@ -285,7 +285,7 @@ const dataItems = [
 		application: 'потрусити балончик перед використанням. Розпилити на волосся на відстані 10-15 см.',
 		composition: 'Water, Butylene Glycol, Polyglyceryl-10 Laurate, Hydrolyzed Collagen, Polyglyceryl-4 Laurate, Polyglycerin-3, Benzyl Glycol, Caprylyl/Capryl Glucoside, Silicone Quaternium-22, Quaternium-81, Arginine, PCA, Cetrimonium Chloride, Polyglyceryl-3 Caprate, Dipropylene Glycol, Propylene Glycol, Viola Mandshurica Flower Extract, Gardenia Florida Fruit Extract, Raspberry Ketone, Benzophenone-5, Hydrolyzed Soy Protein, Hydrolyzed Wheat Protein, Hydrolyzed Corn Protein, Aphanothece Sacrum Polysaccharides, Glycine, Serine, Glutamic Acid, Aspartic Acid, Leucine, Alanine, Lysine, Tyrosine, Phenylalanine, Threonine, Proline, Valine, Isoleucine, Histidine, Methionine, Cysteine, Ethylhexylglycerin, 1,2-Hexanediol, Disodium EDTA, Fragrance, Hexyl Cinnamal',
 		prise: 515,
-		image: require("../../components/GoodsF/img/22g.jpg"),
+		image: require("../components/GoodsF/img/22g.jpg"),
 		alt: 'is top image',
 	},
 	{
@@ -298,7 +298,7 @@ const dataItems = [
 		application: 'нанести засіб на корені волосся, легкими, масажними рухами розтерти по шкірі голови, змити теплою водою',
 		composition: 'Water, Sodium Laureth Sulfate, Ammonium Lauryl Sulfate, Cocamidopropyl Betaine, Disodium Cocoamphodiactate, Dimethicone, Glycol Distearate. Cocamide Mea, Polyquaternium07, Dipropylene Glucol, Polyquaternium-10, Guar Hydroxypropyltrimonium Chloride, Hydroxyethyl Urea. Sodium Hyaluronate, Hydrolyzed Keratin, Lawsonia Inermis Extract, Pisim Sativum Yl Hexapeptide-8, Copper Tripeptide-1, Palmitoyl Pentapeptide-4, Tripeptide-1, Hexapeptide-9, Polyglyceryl-10 Laurate, Citric Acid, C12-15 Pareth-3, Aphanothece Sacrum Polysaccharides, Hydroxyacetophenone, Fragrance.',
 		prise: 749,
-		image: require("../../components/GoodsF/img/23g.jpg"),
+		image: require("../components/GoodsF/img/23g.jpg"),
 		alt: 'is top image',
 	},
 	{
@@ -311,7 +311,7 @@ const dataItems = [
 		application: 'нанесіть невелику кількість шампуню на попередньо змочену шкіру голови і коріння волосся, помасажуйте голову і змийте великою кількістю теплої води. Процедуру можна повторити.',
 		composition: 'Cocoamidopropyl Betaine, Disodium Laureth Sulfosuccinate, lauramine oxide, Glycerine, Butylene Glycol, TEA-Cocoyl Glutamate, Cocamide DEA, PEG-120 Methyl Glucose Dioleate, PPG-3 Caprylyl Ether, PEG-7 Glyceryl Cocoate, Betaine, Hydroxypropyl Chitosan , Trehalose, Hydrolyzed Wheat Protein, Hydrolized Corn Protein, Hydrolized Soy Protein, Hydrolyzed Silk, Sodium Hyaluronate, Dipropylene Glycol, Zein, Argania Spinosa Kernel Oil, Avocado Oil, Camellia Japonica Seed Oil, Simmondsia Chinensis (Jojoba) Seed Oil, Citric Acid, Polyquaternium-10, Hydroxyacetophenone, Sodium Benzoate, Fragrance.',
 		prise: 249,
-		image: require("../../components/GoodsF/img/24g.jpg"),
+		image: require("../components/GoodsF/img/24g.jpg"),
 		alt: 'is top image',
 	},
 ];

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
-import dataItems from './DataWWD';
+import dataItems from '../../BLL/DataWWD';
 import styles from './WhatWeDoDetail.module.css';
 import Descriptions from '../DescriptionsF/Descriptions';
 import Headings from '../HeadingsF/Headings';
