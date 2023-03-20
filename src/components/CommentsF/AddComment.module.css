@@ -19,6 +19,10 @@
   font-size: 16px;
   resize: none;
 }
+.wrap .commentText::placeholder {
+  font-size: 1rem;
+  color: red;
+}
 
 .comment {
   width: 100%;

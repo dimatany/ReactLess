@@ -7,9 +7,12 @@ function AddComment(props) {
 	const result = notes.map((note, index) => {
 		return (
 			<>
-				<section className={styles.wrapper} key={index}>
-					<div className={styles.comment} key={index}>{note}</div>
-					<button className={styles.button} onClick={() => remItem(index)}>{props.delButton}</button>
+				<section className={styles.wrapper}>
+					<div className={styles.comment}
+					     key={index}>{note}</div>
+					<button className={styles.button}
+					        onClick={() => remItem(index)}>{props.delButton}
+					</button>
 				</section>
 			</>
 		)
@@ -23,7 +26,9 @@ function AddComment(props) {
 			          placeholder={props.value}
 			          value={value}
 			          onChange={event => setValue(event.target.value)} />
-			<button className={styles.button} onClick={() => setNotes([...notes, value])}>{props.addButton}</button>
+			<button className={styles.button}
+			        onClick={() => setNotes([...notes, value])}>{props.addButton}
+			</button>
 		</section>
 	)
 }
