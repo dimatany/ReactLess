@@ -4,7 +4,7 @@ import styles from './Descriptions.module.css'
 function Descriptions({text}) {
 	return (
 		<>
-			<p className={styles.wrapDescription}>{text}</p>
+			<section className={styles.wrapDescription}>{text}</section>
 		</>
 	);
 }

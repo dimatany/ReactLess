@@ -683,7 +683,6 @@ export let addPost = (PostMessage) => {
 		message: postMessage,
 		likesCount: 0,
 	};
-	state.profilePage.posts.push(newPost);
 }
 
 export default data;
