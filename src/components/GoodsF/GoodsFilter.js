@@ -1,11 +1,11 @@
 import React from 'react';
-import dataGoods from '../../BLL/DataGoods';
+import data from '../../BLL/Data';
 import styles from './GoodsFilter.module.css'
 
 function GoodsFilter(props) {
 	const [value, setValue] = React.useState('');
 	const newDataItems = [];
-	const resultType = dataGoods.filter(({type}) =>(!newDataItems[type] && (newDataItems[type] = 1)));
+	const resultType = data.dataGoods.filter(({type}) =>(!newDataItems[type] && (newDataItems[type] = 1)));
 	function handleChange(event) {
 		setValue(event.target.value);
 	}

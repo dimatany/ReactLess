@@ -5,7 +5,7 @@
 }
 
 .background {
-  background: url("../AboutF/Hbg.png") center/cover no-repeat;
+  background: url("../../BLL/img/General/Hbg.png") center/cover no-repeat;
   height: 75vh;
   width: 100%;
   position: relative;

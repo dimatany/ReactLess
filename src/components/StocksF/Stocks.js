@@ -2,7 +2,7 @@ import React from 'react';
 import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
 import styles from './Stocks.module.css'
 import Countdown from '../CountdownF/Countdown';
-import Video from "./video.mp4";
+import Video from "../../BLL/video/video.mp4";
 import Headings from '../HeadingsF/Headings';
 
 function Stocks(props) {

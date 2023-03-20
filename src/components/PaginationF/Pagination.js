@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import styles from './Pagination.module.css';
-import dataBlog from '../../BLL/DataBlog';
+import data from '../../BLL/Data';
 import ReactPaginate from "react-paginate";
 import SVGHand from '../SVG/SVGHand';
 
 function Pagination(props) {
-	const [users, setUsers] = useState(dataBlog.slice(0, 100));
+	const [users, setUsers] = useState(data.dataBlog.slice(0, 100));
 	const [pageNumber, setPageNumber] = useState(0);
 	
 	const usersPerPage = 3;

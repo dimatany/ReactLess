@@ -54,55 +54,55 @@ class App extends React.Component {
 					<Tabs>
 						<Tab label="Показати все">
 							<ul>
-								<li><img src={require("./tabM1.png")}  alt='example of makeup'/></li>
-								<li><img src={require("./tabM2.png")}  alt='example of makeup'/></li>
-								<li><img src={require("./tabM3.png")}  alt='example of makeup'/></li>
-								<li><img src={require("./tabM4.png")}  alt='example of makeup'/></li>
-								<li><img src={require("./tabM5.png")}  alt='example of makeup'/></li>
-								<li><img src={require("./tabM6.png")}  alt='example of makeup'/></li>
-								<li><img src={require("./tabP1.jpg")}  alt='example of makeup'/></li>
-								<li><img src={require("./tabP2.jpg")}  alt='example of makeup'/></li>
-								<li><img src={require("./tabP3.jpg")}  alt='example of makeup'/></li>
-								<li><img src={require("./tabP4.jpg")}  alt='example of makeup'/></li>
-								<li><img src={require("./tabP5.jpg")}  alt='example of makeup'/></li>
-								<li><img src={require("./tabP6.jpg")}  alt='example of makeup'/></li>
-								<li><img src={require("./tab1.png")}  alt='example of makeup'/></li>
-								<li><img src={require("./tab2.png")}  alt='example of makeup'/></li>
-								<li><img src={require("./tab3.jpg")}  alt='example of makeup'/></li>
-								<li><img src={require("./tab4.jpg")}  alt='example of makeup'/></li>
-								<li><img src={require("./tab5.jpg")}  alt='example of makeup'/></li>
-								<li><img src={require("./tab6.jpg")}  alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabM1.png")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabM2.png")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabM3.png")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabM4.png")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabM5.png")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabM6.png")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabP1.jpg")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabP2.jpg")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabP3.jpg")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabP4.jpg")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabP5.jpg")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabP6.jpg")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tab1.png")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tab2.png")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tab3.jpg")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tab4.jpg")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tab5.jpg")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tab6.jpg")} alt='example of makeup'/></li>
 								
 							</ul>
 						</Tab>
 						<Tab label="Перукарські послуги">
 							<ul>
-								<li><img src={require("./tabP1.jpg")}  alt='example of makeup'/></li>
-								<li><img src={require("./tabP2.jpg")}  alt='example of makeup'/></li>
-								<li><img src={require("./tabP3.jpg")}  alt='example of makeup'/></li>
-								<li><img src={require("./tabP4.jpg")}  alt='example of makeup'/></li>
-								<li><img src={require("./tabP5.jpg")}  alt='example of makeup'/></li>
-								<li><img src={require("./tabP6.jpg")}  alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabP1.jpg")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabP2.jpg")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabP3.jpg")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabP4.jpg")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabP5.jpg")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabP6.jpg")} alt='example of makeup'/></li>
 							</ul>
 						</Tab>
 						<Tab label="Макіяж">
 							<ul>
-								<li><img src={require("./tabM1.png")}  alt='example of makeup'/></li>
-								<li><img src={require("./tabM2.png")}  alt='example of makeup'/></li>
-								<li><img src={require("./tabM3.png")}  alt='example of makeup'/></li>
-								<li><img src={require("./tabM4.png")}  alt='example of makeup'/></li>
-								<li><img src={require("./tabM5.png")}  alt='example of makeup'/></li>
-								<li><img src={require("./tabM6.png")}  alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabM1.png")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabM2.png")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabM3.png")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabM4.png")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabM5.png")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tabM6.png")} alt='example of makeup'/></li>
 							</ul>
 						</Tab>
 						<Tab label="Манікюр">
 							<ul>
-								<li><img src={require("./tab1.png")}  alt='example of makeup'/></li>
-								<li><img src={require("./tab2.png")}  alt='example of makeup'/></li>
-								<li><img src={require("./tab3.jpg")}  alt='example of makeup'/></li>
-								<li><img src={require("./tab4.jpg")}  alt='example of makeup'/></li>
-								<li><img src={require("./tab5.jpg")}  alt='example of makeup'/></li>
-								<li><img src={require("./tab6.jpg")}  alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tab1.png")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tab2.png")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tab3.jpg")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tab4.jpg")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tab5.jpg")} alt='example of makeup'/></li>
+								<li><img src={require("../../BLL/img/Tabs/tab6.jpg")} alt='example of makeup'/></li>
 							</ul>
 						</Tab>
 					</Tabs>

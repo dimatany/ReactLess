@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import dataWWD from '../../BLL/DataWWD';
+import data from '../../BLL/Data';
 import styles from './WhatWeDo.module.css';
 import Headings from '../HeadingsF/Headings';
 
@@ -14,7 +14,7 @@ function WhatWeDo(props) {
 		<section className={[styles["services"], styles['wrap']].join(" ")}>
 			<Headings heading={props.title}/>
 			<div className={styles.card}>
-				{dataWWD.map(el =>
+				{data.dataWWD.map(el =>
 					<div className={styles.shadow} key={el.id}>
 						<img key={el.id} src={el.image} alt={el.alt}/>
 						<span>
