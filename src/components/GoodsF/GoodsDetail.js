@@ -3,6 +3,7 @@ import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
 import { useParams } from 'react-router-dom';
 import dataGoods from '../../BLL/DataGoods';
 import styles from './GoodsDetail.module.css';
+import AddComment from '../CommentsF/AddComment';
 
 function GoodsDetail(props) {
 	const params = useParams();
@@ -40,6 +41,7 @@ function GoodsDetail(props) {
 					<span>{props.title6}</span>
 					<p className={styles.composition}>{composition}</p>
 				</div>
+				<AddComment/>
 			</ErrorBoundary>
 		</>
 	);
