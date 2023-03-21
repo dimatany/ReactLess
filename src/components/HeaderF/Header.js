@@ -8,6 +8,7 @@ import MastersDetail from '../MastersF/MastersDetail';
 import ButtonFeedback from '../ButtonFeedbackF/ButtonFeedback';
 import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
 import data from '../../BLL/Data';
+import SVGLetter from '../SVG/SVGLetter';
 
 const About = lazy(() => import('../AboutF/About'));
 const Masters = lazy(() => import('../MastersF/Masters'));
@@ -42,7 +43,9 @@ function Header() {
 						<Route path="contacts" element={<Contacts/>}/>
 						<Route path="*" element={<NotFound/>}/>
 					</Routes>
-					<ButtonFeedback/>
+					<ButtonFeedback>
+						<SVGLetter fill='#5383ed'/>
+					</ButtonFeedback>
 				</main>
 			</BrowserRouter>
 		</Suspense>
