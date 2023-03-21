@@ -35,8 +35,8 @@ function AddComment(props) {
 
 AddComment.defaultProps = {
 	value: 'напишіть коментар',
-	addButton: 'Додати коментар',
-	delButton: 'Видалити коментар'
+	addButton: 'Додати',
+	delButton: 'Видалити'
 };
 
 export default AddComment;

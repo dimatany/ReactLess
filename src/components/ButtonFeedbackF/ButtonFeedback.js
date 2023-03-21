@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './ButtonFeedback.module.css'
-import Modal from '../../components/ModalAllF/Modal';
+import Modal from '../ModalF/Modal';
 import Form from '../FormF/Form';
 
 

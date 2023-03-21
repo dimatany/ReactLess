@@ -3,7 +3,7 @@ import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
 import { useParams } from 'react-router-dom';
 import data from '../../BLL/Data';
 import styles from './GoodsDetail.module.css';
-import AddComment from '../CommentsF/AddComment';
+import AddComment from '../AddCommentF/AddComment';
 
 function GoodsDetail(props) {
 	const params = useParams();

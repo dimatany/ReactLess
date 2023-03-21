@@ -3,7 +3,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Loading from '../LoadingF/Loading';
 import GoodsDetail from '../GoodsF/GoodsDetail';
 import WhatWeDoDetail from '../WhatWeDoF/WhatWeDoDetail';
-import NavHeader from '../NavigationF/NavHeader';
+import NavHeader from '../NavHeaderF/NavHeader';
 import MastersDetail from '../MastersF/MastersDetail';
 import ButtonFeedback from '../ButtonFeedbackF/ButtonFeedback';
 import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
@@ -16,7 +16,7 @@ const Goods = lazy(() => import('../GoodsF/Goods'));
 const Stocks = lazy(() => import('../StocksF/Stocks'));
 const Blog = lazy(() => import('../BlogF/Blog'));
 const Contacts = lazy(() => import('../ContactF/Contacts'));
-const NotFound = lazy(() => import('../ErrorF/NotFound'));
+const NotFound = lazy(() => import('../NotFoundF/NotFound'));
 const renderLoader = () => <Loading/>;
 function Header() {
 	return (
