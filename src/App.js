@@ -5,7 +5,7 @@ import './index.css';
 import Loading from '../../land/src/components/LoadingF/Loading';
 import GoodsDetail from '../../land/src/components/GoodsF/GoodsDetail';
 import WhatWeDoDetail from '../../land/src/components/WhatWeDoF/WhatWeDoDetail';
-import NavHeader from '../../land/src/components/NavHeaderF/NavHeader';
+import Header from './components/HeaderF/Header';
 import MastersDetail from '../../land/src/components/MastersF/MastersDetail';
 import ButtonFeedback from '../../land/src/components/ButtonFeedbackF/ButtonFeedback';
 import ErrorBoundary from '../../land/src/components/ErrorBoundaryC/ErrorBoundary';
@@ -28,7 +28,7 @@ function App(props) {
               <BrowserRouter>
                   <ErrorBoundary>
                       <header>
-                          <NavHeader/>
+                          <Header/>
                       </header>
                   </ErrorBoundary>
                   <ErrorBoundary>

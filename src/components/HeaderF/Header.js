@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './NavHeader.module.css';
+import styles from './Header.module.css';
 import SVGAvatar from '../SVG/SVGAvatar';
 import { NavLink} from 'react-router-dom';
 
-function NavHeader() {
+function Header() {
 	return (
 		<>
 			<div className={styles.header}>
@@ -36,4 +36,4 @@ function NavHeader() {
 		</>
 	);
 }
-export default NavHeader;
+export default Header;
