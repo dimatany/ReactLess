@@ -39,7 +39,7 @@ function Contacts(props) {
 	
 	
 	return (
-		<section>
+		<div>
 			<div className={styles.wrapper}>
 				<Headings heading={props.title}/>
 				<ErrorBoundary>
@@ -85,7 +85,7 @@ function Contacts(props) {
 			<Descriptions text={props.text}/>
 			<span className={styles.test}><SVGDivision fill="white"/></span>
 			<Descriptions text={props.text2}/>
-		</section>
+		</div>
 	);
 }
 

@@ -5,7 +5,7 @@ import SVGInstagram from '../SVG/SVGInstagram';
 
 function Footer(props) {
 	return (
-		<footer>
+		<>
 			<address className={[styles["section"], styles['wrap'], styles['border']].join(" ")}>
 				<div className={styles.svg}>
 					<SVGAvatar fill='white'/>
@@ -37,7 +37,7 @@ function Footer(props) {
 			<div className={styles.copyright}>
 				<span>{props.copyright}</span>
 			</div>
-		</footer>
+		</>
 	);
 }
 

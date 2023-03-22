@@ -7,7 +7,7 @@ import Form from '../FormF/Form';
 function ButtonFeedback(props) {
 	const [modalOpen, setModalOpen] = React.useState(false);
 	return (
-		<section className={styles.wrap}>
+		<div className={styles.wrap}>
 			<div className={styles.wrapButton}>
 				<div className={styles.buttonAria}>
 					<div onClick={() => setModalOpen(true)}
@@ -23,7 +23,7 @@ function ButtonFeedback(props) {
 					/>
 				)}
 			</div>
-		</section>
+		</div>
 	);
 }
 

@@ -6,7 +6,7 @@ import Pagination from '../PaginationF/Pagination';
 
 function Blog(props) {
 	return (
-		<section className={styles.wrapper}>
+		<div className={styles.wrapper}>
 			<div className={styles.block}>
 				<Headings heading={props.title}/>
 			</div>
@@ -14,7 +14,7 @@ function Blog(props) {
 			<ErrorBoundary>
 				<Pagination/>
 			</ErrorBoundary>
-		</section>
+		</div>
 	);
 }
 

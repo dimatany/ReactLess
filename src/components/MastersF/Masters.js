@@ -8,14 +8,14 @@ import MasterCard from './MasterCard';
 function Masters(props) {
 	
 	return (
-		<section className={styles.block}>
+		<div className={styles.block}>
 			<Headings heading={props.title}/>
 			<span className={styles.explanation}>{props.subtitle}</span>
 			<ErrorBoundary>
 				<MasterCard/>
 			</ErrorBoundary>
 			<Descriptions text={props.text}/>
-		</section>
+		</div>
 	);
 }
 

@@ -48,7 +48,7 @@ class Tab extends React.Component {
 class App extends React.Component {
 	render () {
 		return (
-			<section className="section">
+			<div className="section">
 				<div className="tabs wrap">
 					<Headings heading={'Приклади'}/>
 					<Tabs>
@@ -107,7 +107,7 @@ class App extends React.Component {
 						</Tab>
 					</Tabs>
 				</div>
-			</section>
+			</div>
 		)
 	}
 }

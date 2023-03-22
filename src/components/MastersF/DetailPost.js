@@ -3,7 +3,7 @@ import styles from './DetailPost.module.css';
 
 function DetailPost(props) {
 	return (
-		<section className={styles.wrapBlock}>
+		<div className={styles.wrapBlock}>
 			<h4 className={styles.wrapTitle}>{props.subTitle}</h4>
 			<div className={styles.wrapDescription}>
 				<div className={styles.descriptionImg}>
@@ -13,7 +13,7 @@ function DetailPost(props) {
 					<p>{props.text}</p>
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 }
 

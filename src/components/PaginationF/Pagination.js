@@ -13,7 +13,7 @@ function Pagination(props) {
 	
 	const displayUsers = users.slice(pagesVisited, pagesVisited + usersPerPage).map((el) => {
 		return (
-			<section className={styles.wrapBlock} key={el.id}>
+			<div className={styles.wrapBlock} key={el.id}>
 				<div className={styles.card}>
 					<div className={[styles['cardSide'], styles['front']].join(" ")} key={el.id}>
 						<p className={styles.title}>{el.title}</p>
@@ -26,7 +26,7 @@ function Pagination(props) {
 						<p>{el.text}</p>
 					</div>
 				</div>
-			</section>
+			</div>
 		);
 	});
 	

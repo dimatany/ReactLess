@@ -11,7 +11,7 @@ function WhatWeDo(props) {
 	}
 	
 	return (
-		<section className={[styles["services"], styles['wrap']].join(" ")}>
+		<div className={[styles["services"], styles['wrap']].join(" ")}>
 			<Headings heading={props.title}/>
 			<div className={styles.card}>
 				{data.dataWWD.map(el =>
@@ -27,7 +27,7 @@ function WhatWeDo(props) {
 					</div>
 				)}
 			</div>
-		</section>
+		</div>
 	);
 }
 

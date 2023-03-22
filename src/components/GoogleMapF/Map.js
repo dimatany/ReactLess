@@ -35,7 +35,7 @@ function Map({center}) {
 	}, [])
 	
 	return (
-		<section className={styles.container}>
+		<div className={styles.container}>
 			<p className={[styles["text"], styles['containerSignature']].join(" ")}>Наш офіс</p>
 			<GoogleMap
 				mapContainerStyle={containerStyle}
@@ -55,7 +55,7 @@ function Map({center}) {
 					<p className={styles.text}>3 этаж 35 кабинет</p>
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 }
 

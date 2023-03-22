@@ -7,13 +7,13 @@ function AddComment(props) {
 	const result = notes.map((note, index) => {
 		return (
 			<>
-				<section className={styles.wrapper}>
+				<div className={styles.wrapper}>
 					<div className={styles.comment}
 					     key={index}>{note}</div>
 					<button className={styles.button}
 					        onClick={() => remItem(index)}>{props.delButton}
 					</button>
-				</section>
+				</div>
 			</>
 		)
 	});
@@ -21,7 +21,7 @@ function AddComment(props) {
 		setNotes([...notes.slice(0, index), ...notes.slice(index + 1)]);
 	}
 	return (
-		<section className={styles.wrap}>{result}
+		<div className={styles.wrap}>{result}
 			<textarea className={styles.commentText}
 			          placeholder={props.value}
 			          value={value}
@@ -29,7 +29,7 @@ function AddComment(props) {
 			<button className={styles.button}
 			        onClick={() => setNotes([...notes, value])}>{props.addButton}
 			</button>
-		</section>
+		</div>
 	)
 }
 

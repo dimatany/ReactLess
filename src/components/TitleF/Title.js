@@ -3,9 +3,9 @@ import styles from './Title.module.css'
 
 function Title(props) {
 	return (
-		<section className={[styles["background"], styles['wrap']].join(" ")}>
+		<div className={[styles["background"], styles['wrap']].join(" ")}>
 			<h1>{props.title}</h1>
-		</section>
+		</div>
 	);
 }
 
