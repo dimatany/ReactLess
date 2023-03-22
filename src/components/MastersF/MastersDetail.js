@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
-import data from '../../BLL/Data'
+import data from '../../BLL/Data';
 import styles from '../MastersF/MasterDetail.module.css';
 import Headings from '../HeadingsF/Headings';
 import DetailPost from './DetailPost';
