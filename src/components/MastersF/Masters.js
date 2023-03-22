@@ -12,7 +12,7 @@ function Masters(props) {
 			<Headings heading={props.title}/>
 			<span className={styles.explanation}>{props.subtitle}</span>
 			<ErrorBoundary>
-				<MasterCard/>
+				<MasterCard dataMasters={props.dataMasters}/>
 			</ErrorBoundary>
 			<Descriptions text={props.text}/>
 		</div>

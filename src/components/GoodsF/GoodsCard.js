@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './GoodsCard.module.css';
-import data from '../../BLL/Data';
 import {Link} from 'react-router-dom';
 import SVGTrolley from '../SVG/SVGTrolley';
 
@@ -13,7 +12,7 @@ function GoodsCard(props) {
 	return (
 		<>
 			<div className={styles.wrapper}>
-				{data.dataGoods.map(el =>
+				{props.dataGoods.map(el =>
 					<div className={styles.container} key={el.id}>
 						<div className={styles.productDetails} key={el.id}>
 							<h4>{el.name}</h4>

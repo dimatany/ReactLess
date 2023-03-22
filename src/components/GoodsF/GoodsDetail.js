@@ -1,14 +1,13 @@
 import React from 'react';
 import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
 import { useParams } from 'react-router-dom';
-import data from '../../BLL/Data';
 import styles from './GoodsDetail.module.css';
 import AddComment from '../AddCommentF/AddComment';
 
 function GoodsDetail(props) {
 	const params = useParams();
 	
-	const currentGoods = data.dataGoods.find(
+	const currentGoods = props.dataGoods.find(
 		(el) => el.id === params.goodsDetail
 	);
 	

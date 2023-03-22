@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './MasterCard.module.css';
-import data from '../../BLL/Data';
 import {Link} from 'react-router-dom';
 
 
@@ -13,7 +12,7 @@ function MasterCard(props) {
 	return (
 		<>
 			<div className={styles.cardmaster}>
-				{data.dataMasters.map(el =>
+				{props.dataMasters.map(el =>
 					<div className={styles.cardmasterWrap} key={el.id}>
 						<div className={styles.wrapCard}>
 							<div className={styles.wrapBlock}>

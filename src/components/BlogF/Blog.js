@@ -12,7 +12,7 @@ function Blog(props) {
 			</div>
 			<h3>{props.subtitle}</h3>
 			<ErrorBoundary>
-				<Pagination/>
+				<Pagination dataBlog={props.dataBlog}/>
 			</ErrorBoundary>
 		</div>
 	);

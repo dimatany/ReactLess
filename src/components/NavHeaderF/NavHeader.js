@@ -6,7 +6,7 @@ import { NavLink} from 'react-router-dom';
 function NavHeader() {
 	return (
 		<>
-			<header className={styles.header}>
+			<div className={styles.header}>
 				<div className={styles.wrap}>
 					<a href="/about" className={styles.logo}>
 						<SVGAvatar fill='white'/>
@@ -32,7 +32,7 @@ function NavHeader() {
 						</ul>
 					</nav>
 				</div>
-			</header>
+			</div>
 		</>
 	);
 }

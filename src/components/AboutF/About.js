@@ -13,7 +13,7 @@ function About(props) {
 			<Title/>
 			<WhoWeAre/>
 			<ErrorBoundary>
-				<WhatWeDo />
+				<WhatWeDo dataWWD={props.dataWWD}/>
 			</ErrorBoundary>
 			<Brands/>
 			<ErrorBoundary>

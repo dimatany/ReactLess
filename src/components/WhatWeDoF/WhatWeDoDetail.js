@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
-import data from '../../BLL/Data';
 import styles from './WhatWeDoDetail.module.css';
 import Descriptions from '../DescriptionsF/Descriptions';
 import Headings from '../HeadingsF/Headings';
@@ -10,7 +9,7 @@ import DetailBlock from './DetailBlock';
 function WhatWeDoDetail(props) {
 	const params = useParams();
 	
-	const currentWWD = data.dataWWD.find(
+	const currentWWD = props.dataWWD.find(
 		(el) => el.id === params.whatWeDoDetail
 	);
 	

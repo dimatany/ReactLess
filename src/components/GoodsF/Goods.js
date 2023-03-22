@@ -13,10 +13,10 @@ function Goods(props) {
 				<Headings heading={props.title}/>
 			</div>
 			<ErrorBoundary>
-				<GoodsFilter/>
+				<GoodsFilter dataGoods={props.dataGoods}/>
 			</ErrorBoundary>
 			<ErrorBoundary>
-				<GoodsCard/>
+				<GoodsCard dataGoods={props.dataGoods}/>
 			</ErrorBoundary>
 		</>
 	);
