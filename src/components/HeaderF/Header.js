@@ -7,7 +7,6 @@ import NavHeader from '../NavHeaderF/NavHeader';
 import MastersDetail from '../MastersF/MastersDetail';
 import ButtonFeedback from '../ButtonFeedbackF/ButtonFeedback';
 import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
-import data from '../../BLL/Data';
 import SVGLetter from '../SVG/SVGLetter';
 
 const About = lazy(() => import('../AboutF/About'));
@@ -18,7 +17,7 @@ const Blog = lazy(() => import('../BlogF/Blog'));
 const Contacts = lazy(() => import('../ContactF/Contacts'));
 const NotFound = lazy(() => import('../NotFoundF/NotFound'));
 const renderLoader = () => <Loading/>;
-function Header() {
+function Header(props) {
 	return (
 		<>
 		<Suspense fallback={renderLoader()}>
@@ -30,16 +29,15 @@ function Header() {
 				</ErrorBoundary>
 				<main>
 					<Routes>
-						{/* dataWWD={data.dataWWD} - можно удалить?*/}
 						<Route index element={<About/>} />
 						<Route path="about" element={<About/>}/>
-						<Route path="about/:whatWeDoDetail" element={<WhatWeDoDetail dataWWD={data.dataWWD}/>}/>
+						<Route path="about/:whatWeDoDetail" element={<WhatWeDoDetail/>}/>
 						<Route path="masters" element={<Masters/>}/>
-						<Route path="masters/:mastersDetail" element={<MastersDetail dataMasters={data.dataMasters}/>}/>
-						<Route path="goods" element={<Goods dataGoods={data.dataGoods}/>}/>
-						<Route path="goods/:goodsDetail" element={<GoodsDetail dataGoods={data.dataGoods}/>}/>
+						<Route path="masters/:mastersDetail" element={<MastersDetail/>}/>
+						<Route path="goods" element={<Goods/>}/>
+						<Route path="goods/:goodsDetail" element={<GoodsDetail/>}/>
 						<Route path="stocks" element={<Stocks/>}/>
-						<Route path="blog" element={<Blog dataBlog={data.dataBlog}/>}/>
+						<Route path="blog" element={<Blog/>}/>
 						<Route path="contacts" element={<Contacts/>}/>
 						<Route path="*" element={<NotFound/>}/>
 					</Routes>

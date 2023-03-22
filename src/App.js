@@ -3,7 +3,7 @@ import './index.css';
 import Header from './components/HeaderF/Header';
 import Footer from './components/FooterF/Footer';
 
-function App() {
+function App(props) {
   return (
       <div className="container">
           <Header/>

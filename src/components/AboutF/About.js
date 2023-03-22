@@ -12,9 +12,13 @@ function About(props) {
 		<>
 			<Title/>
 			<WhoWeAre/>
-			<ErrorBoundary><WhatWeDo/></ErrorBoundary>
+			<ErrorBoundary>
+				<WhatWeDo />
+			</ErrorBoundary>
 			<Brands/>
-			<ErrorBoundary><Tabs/></ErrorBoundary>
+			<ErrorBoundary>
+				<Tabs/>
+			</ErrorBoundary>
 			<Descriptions text={props.text}/>
 		</>
 	);
