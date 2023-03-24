@@ -7,6 +7,7 @@ import Brands from '../BrandsF/Brands';
 import WhoWeAre from '../WhoWeAreF/WhoWeAre';
 import Descriptions from '../DescriptionsF/Descriptions';
 import Comments from '../AddCommentF/Comments';
+import {updateNewCommentText} from '../../BLL/Data';
 
 function About(props) {
 	return (
@@ -22,7 +23,9 @@ function About(props) {
 			</ErrorBoundary>
 			<Descriptions text={props.text}/>
 			<Comments addComment={props.addComment}
+			          updateNewCommentText={props.updateNewCommentText}
 			          dataComment={props.dataComment}
+			          newCommentText={props.newCommentText}
 			/>
 		</>
 	);

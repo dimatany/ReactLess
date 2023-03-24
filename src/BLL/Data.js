@@ -682,15 +682,22 @@ const data = {
 		id:1,
 		message:'гребаный тест',
 		likesCount: 1,
-	}]
+	}],
+	newCommentText: 'test222',
 }
-export let addComment = (commentMessage) => {
+export let addComment = () => {
 	let newComment = {
 		id: 5,
-		message: commentMessage,
+		message: data.newCommentText,
 		likesCount: 0,
 	};
 	data.dataComment.push(newComment);
+	data.newCommentText = '';
+	rerenderEntireTree(data);
+}
+
+export let updateNewCommentText = (newCommentMessage) => {
+	data.newCommentText = newCommentMessage;
 	rerenderEntireTree(data);
 }
 

@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import ReactDOM from 'react-dom/client';
 import './Reset.css';
 import './index.css';
-import {addComment}  from './BLL/Data';
+import {addComment, updateNewCommentText} from './BLL/Data';
 import App from './App';
 
 
@@ -13,6 +13,7 @@ export let rerenderEntireTree = (data) => {
 			<App
 				appData={data}
 				addComment={addComment}
+				updateNewCommentText={updateNewCommentText}
 			/>
 		</StrictMode>
 	);

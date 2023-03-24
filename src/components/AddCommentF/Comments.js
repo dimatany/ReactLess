@@ -1,12 +1,16 @@
 import React from 'react';
+import {updateNewCommentText} from '../../BLL/Data';
 
 function Comments(props) {
 	
 	let newCommentElement = React.createRef();
 	let addComment = () => {
+		props.addComment();
+	}
+	
+	let onCommentChange = () => {
 		let text = newCommentElement.current.value;
-			props.addComment(text);
-			newCommentElement.current.value = '';
+		props.updateNewCommentText(text);
 	}
 	
 	return (
@@ -20,7 +24,10 @@ function Comments(props) {
 				)}
 			</div>
 			<div>
-				<textarea ref={newCommentElement}/>
+				<textarea ref={newCommentElement}
+				          value={props.newCommentText}
+				          onChange={onCommentChange}
+				/>
 			</div>
 			<div>
 				<button onClick={addComment}>add comment</button>

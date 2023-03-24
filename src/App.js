@@ -11,7 +11,7 @@ import ButtonFeedback from '../../land/src/components/ButtonFeedbackF/ButtonFeed
 import ErrorBoundary from '../../land/src/components/ErrorBoundaryC/ErrorBoundary';
 import SVGLetter from '../../land/src/components/SVG/SVGLetter';
 import Footer from './components/FooterF/Footer';
-import {addComment} from './BLL/Data';
+import {updateNewCommentText} from './BLL/Data';
 
 const About = lazy(() => import('../../land/src/components/AboutF/About'));
 const Masters = lazy(() => import('../../land/src/components/MastersF/Masters'));
@@ -39,7 +39,9 @@ function App(props) {
                               <Route path="about" element={<About
                                   dataWWD={props.appData.dataWWD}
                                   dataComment={props.appData.dataComment}
-                                  addComment={props.addComment}/>}
+                                  addComment={props.addComment}
+                                  updateNewCommentText={props.updateNewCommentText}
+                                  newCommentText={props.appData.newCommentText}/>}
                               />
                               <Route path="about/:whatWeDoDetail" element={<WhatWeDoDetail
                                   dataWWD={props.appData.dataWWD}/>}
