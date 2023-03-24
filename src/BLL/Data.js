@@ -1,3 +1,5 @@
+import {rerenderEntireTree} from '../render';
+
 const data = {
 	dataBlog: [
 		{
@@ -676,13 +678,20 @@ const data = {
 			alt: 'is top image',
 		},
 	],
+	dataComment: [{
+		id:1,
+		message:'гребаный тест',
+		likesCount: 1,
+	}]
 }
-export let addPost = (PostMessage) => {
-	let newPost = {
+export let addComment = (commentMessage) => {
+	let newComment = {
 		id: 5,
-		message: postMessage,
+		message: commentMessage,
 		likesCount: 0,
 	};
+	data.dataComment.push(newComment);
+	rerenderEntireTree(data);
 }
 
 export default data;

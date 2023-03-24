@@ -6,6 +6,7 @@ import WhatWeDo from '../WhatWeDoF/WhatWeDo';
 import Brands from '../BrandsF/Brands';
 import WhoWeAre from '../WhoWeAreF/WhoWeAre';
 import Descriptions from '../DescriptionsF/Descriptions';
+import Comments from '../AddCommentF/Comments';
 
 function About(props) {
 	return (
@@ -20,6 +21,9 @@ function About(props) {
 				<Tabs/>
 			</ErrorBoundary>
 			<Descriptions text={props.text}/>
+			<Comments addComment={props.addComment}
+			          dataComment={props.dataComment}
+			/>
 		</>
 	);
 }

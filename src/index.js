@@ -1,13 +1,13 @@
-import { StrictMode } from "react";
-import ReactDOM from 'react-dom/client';
-import './Reset.css';
-import './index.css';
-import data from '../src/BLL/Data'
-import App from './App';
+import {rerenderEntireTree} from './render';
+import data from './BLL/Data';
 
+
+rerenderEntireTree(data);
+{/* //удалить потом //
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render (
   <StrictMode>
-    <App appData={data}/>
+    <App appData={data} addComment={addComment}/>
   </StrictMode>
 );
+ */}
