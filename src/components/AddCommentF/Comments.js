@@ -1,5 +1,4 @@
 import React from 'react';
-import {updateNewCommentText} from '../../BLL/Data';
 
 function Comments(props) {
 	

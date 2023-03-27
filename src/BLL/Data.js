@@ -1,4 +1,6 @@
-import {rerenderEntireTree} from '../render';
+let rerenderEntireTree = () => {
+	console.log('state changed');
+}
 
 const data = {
 	dataBlog: [
@@ -685,7 +687,7 @@ const data = {
 	}],
 	newCommentText: 'test222',
 }
-export let addComment = () => {
+export const addComment = () => {
 	let newComment = {
 		id: 5,
 		message: data.newCommentText,
@@ -695,10 +697,12 @@ export let addComment = () => {
 	data.newCommentText = '';
 	rerenderEntireTree(data);
 }
-
-export let updateNewCommentText = (newCommentMessage) => {
+export const updateNewCommentText = (newCommentMessage) => {
 	data.newCommentText = newCommentMessage;
 	rerenderEntireTree(data);
+}
+export const subscribe = (observer) => {
+	rerenderEntireTree = observer;
 }
 
 export default data;

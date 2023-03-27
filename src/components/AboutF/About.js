@@ -7,7 +7,6 @@ import Brands from '../BrandsF/Brands';
 import WhoWeAre from '../WhoWeAreF/WhoWeAre';
 import Descriptions from '../DescriptionsF/Descriptions';
 import Comments from '../AddCommentF/Comments';
-import {updateNewCommentText} from '../../BLL/Data';
 
 function About(props) {
 	return (

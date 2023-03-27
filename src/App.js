@@ -11,7 +11,6 @@ import ButtonFeedback from '../../land/src/components/ButtonFeedbackF/ButtonFeed
 import ErrorBoundary from '../../land/src/components/ErrorBoundaryC/ErrorBoundary';
 import SVGLetter from '../../land/src/components/SVG/SVGLetter';
 import Footer from './components/FooterF/Footer';
-import {updateNewCommentText} from './BLL/Data';
 
 const About = lazy(() => import('../../land/src/components/AboutF/About'));
 const Masters = lazy(() => import('../../land/src/components/MastersF/Masters'));
