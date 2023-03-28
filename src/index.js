@@ -1,10 +1,9 @@
 import React from 'react';
-import data, {subscribe} from './BLL/Data';
+import store from './BLL/Data';
 import { StrictMode } from "react";
 import ReactDOM from 'react-dom/client';
 import './Reset.css';
 import './index.css';
-import {addComment, updateNewCommentText} from './BLL/Data';
 import App from './App';
 
 
@@ -14,12 +13,12 @@ let rerenderEntireTree = (data) => {
 		<StrictMode>
 			<App
 				appData={data}
-				addComment={addComment}
-				updateNewCommentText={updateNewCommentText}
+				addComment={store.addComment.bind(store)}
+				updateNewCommentText={store.updateNewCommentText.bind(store)}
 			/>
 		</StrictMode>
 	);
 }
 
-rerenderEntireTree(data);
-subscribe(rerenderEntireTree);
+rerenderEntireTree(store.getData());
+store.subscribe(rerenderEntireTree);
