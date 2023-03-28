@@ -684,12 +684,12 @@ let store = {
 		}],
 		newCommentText: 'test222',
 	},
-	getData() {
-		return this._data;
-	} ,
 	_callSubscriber() {
 		console.log('data changed');
 	},
+	getData() {
+		return this._data;
+	} ,
 	addComment() {
 		let newComment = {
 			id: 5,

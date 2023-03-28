@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Gilroy Light";
+  src: local("Gilroy Light"), url("./BLL/fonts/Gilroy/Gilroy-Light.woff") format("truetype");
+}
 body {
   background-color: #202125;
   color: #ffffff;

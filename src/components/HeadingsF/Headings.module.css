@@ -5,6 +5,7 @@
   align-items: center;
   gap: clamp(1rem, 3vw, 2rem);
   margin-bottom: 2vh;
+  font-family: "Gilroy Light", serif;
 }
 .boxTitle a {
   position: relative;
