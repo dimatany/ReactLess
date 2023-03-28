@@ -38,9 +38,9 @@ function App(props) {
                               <Route path="about" element={<About
                                   dataWWD={props.appData.dataWWD}
                                   dataComment={props.appData.dataComment}
-                                  addComment={props.addComment}
-                                  updateNewCommentText={props.updateNewCommentText}
-                                  newCommentText={props.appData.newCommentText}/>}
+                                  newCommentText={props.appData.newCommentText}
+                                  dispatch={props.dispatch}
+                                  />}
                               />
                               <Route path="about/:whatWeDoDetail" element={<WhatWeDoDetail
                                   dataWWD={props.appData.dataWWD}/>}

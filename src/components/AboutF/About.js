@@ -14,17 +14,21 @@ function About(props) {
 			<Title/>
 			<WhoWeAre/>
 			<ErrorBoundary>
-				<WhatWeDo dataWWD={props.dataWWD}/>
+				<WhatWeDo
+					dataWWD={props.dataWWD}
+				/>
 			</ErrorBoundary>
 			<Brands/>
 			<ErrorBoundary>
 				<Tabs/>
 			</ErrorBoundary>
-			<Descriptions text={props.text}/>
-			<Comments addComment={props.addComment}
-			          updateNewCommentText={props.updateNewCommentText}
-			          dataComment={props.dataComment}
-			          newCommentText={props.newCommentText}
+			<Descriptions
+				text={props.text}
+			/>
+			<Comments
+				dataComment={props.dataComment}
+				newCommentText={props.newCommentText}
+				dispatch={props.dispatch}
 			/>
 		</>
 	);

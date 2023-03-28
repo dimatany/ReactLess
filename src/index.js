@@ -14,8 +14,7 @@ let rerenderEntireTree = (data) => {
 		<StrictMode>
 			<App
 				appData={data}
-				addComment={store.addComment.bind(store)}
-				updateNewCommentText={store.updateNewCommentText.bind(store)}
+				dispatch={store.dispatch.bind(store)}
 			/>
 		</StrictMode>
 	);

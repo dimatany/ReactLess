@@ -1,3 +1,6 @@
+const ADD_COMMENT = 'ADD-COMMENT';
+const UPDATE_NEW_COMMENT_TEXT = 'UPDATE-NEW-COMMENT-TEXT';
+
 let store = {
 	_data: {
 		dataBlog: [
@@ -687,27 +690,38 @@ let store = {
 	_callSubscriber() {
 		console.log('data changed');
 	},
+	
 	getData() {
 		return this._data;
-	} ,
-	addComment() {
-		let newComment = {
-			id: 5,
-			message: this._data.newCommentText,
-			likesCount: 0,
-		};
-		this._data.dataComment.push(newComment);
-		this._data.newCommentText = '';
-		this._callSubscriber(this._data);
-	},
-	updateNewCommentText(newCommentMessage) {
-		this._data.newCommentText = newCommentMessage;
-		this._callSubscriber(this._data);
 	},
 	subscribe(observer) {
 		this._callSubscriber = observer;
 	},
+	
+	dispatch(action) {
+		if (action.type === ADD_COMMENT) {
+			let newComment = {
+				id: 5,
+				message: this._data.newCommentText,
+				likesCount: 0,
+			};
+			this._data.dataComment.push(newComment);
+			this._data.newCommentText = '';
+			this._callSubscriber(this._data);
+		} else if (action.type === UPDATE_NEW_COMMENT_TEXT) {
+			this._data.newCommentText = action.newCommentMessage;
+			this._callSubscriber(this._data);
+			
+		}
+	}
 }
+
+export const addCommentActionCreator = () => ({type: ADD_COMMENT});
+export const updateNewCommentTextActionCreator = (text) => ({
+	type: UPDATE_NEW_COMMENT_TEXT,
+	newCommentMessage: text
+})
+
 
 export default store;
 window.store = store;
