@@ -40,6 +40,12 @@ function App(props) {
                                   dataComment={props.appData.dataComment}
                                   newCommentText={props.appData.newCommentText}
                                   dispatch={props.dispatch}
+                                  
+                                  ///
+                                  dataDialogsPage={props.appData.dataDialogsPage}
+                                  store={props.store}
+                                  ///
+                                  
                                   />}
                               />
                               <Route path="about/:whatWeDoDetail" element={<WhatWeDoDetail

@@ -15,6 +15,7 @@ let rerenderEntireTree = (data) => {
 			<App
 				appData={data}
 				dispatch={store.dispatch.bind(store)}
+				store={store}
 			/>
 		</StrictMode>
 	);

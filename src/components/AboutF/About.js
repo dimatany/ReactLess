@@ -7,6 +7,7 @@ import Brands from '../BrandsF/Brands';
 import WhoWeAre from '../WhoWeAreF/WhoWeAre';
 import Descriptions from '../DescriptionsF/Descriptions';
 import Comments from '../AddCommentF/Comments';
+import Dialogs from '../DialogsF/Dialogs';
 
 function About(props) {
 	return (
@@ -25,11 +26,20 @@ function About(props) {
 			<Descriptions
 				text={props.text}
 			/>
-			<Comments
-				dataComment={props.dataComment}
-				newCommentText={props.newCommentText}
-				dispatch={props.dispatch}
-			/>
+			<ErrorBoundary>
+				<Comments
+					dispatch={props.dispatch}
+					dataComment={props.dataComment}
+					newCommentText={props.newCommentText}
+				/>
+			</ErrorBoundary>
+			<ErrorBoundary>
+				<Dialogs
+					dispatch={props.dispatch}
+					dataDialogsPage={props.dataDialogsPage}
+					store={props.store}
+				/>
+			</ErrorBoundary>
 		</>
 	);
 }

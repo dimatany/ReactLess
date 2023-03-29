@@ -1,0 +1,14 @@
+.wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid white;
+}
+.wrapDialogs {
+  border: 1px solid green;
+}
+.wrapMessages {
+  border: 1px solid red;
+}

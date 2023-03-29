@@ -1,6 +1,11 @@
 const ADD_COMMENT = 'ADD-COMMENT';
 const UPDATE_NEW_COMMENT_TEXT = 'UPDATE-NEW-COMMENT-TEXT';
 
+//////////////
+const SEND_MESSAGE = 'SEND-MESSAGE';
+const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
+
+
 let store = {
 	_data: {
 		dataBlog: [
@@ -685,19 +690,35 @@ let store = {
 			message:'гребаный тест',
 			likesCount: 1,
 		}],
-		newCommentText: 'test222',
+		newCommentText: '',
+		
+		////////
+		dataDialogsPage: {
+			dialogs: [
+				{id:1, name: 'Dima'},
+				{id:2, name: 'Andrew'},
+				{id:3, name: 'Svetlana'},
+			],
+			messages: [
+				{id:1, message: 'Hi'},
+				{id:2, message: 'Yo'},
+				{id:3, message: 'Yeh'},
+			],
+			newMessageText: '',
+		}
+		
+		///////
+		
 	},
 	_callSubscriber() {
 		console.log('data changed');
 	},
-	
 	getData() {
 		return this._data;
 	},
 	subscribe(observer) {
 		this._callSubscriber = observer;
 	},
-	
 	dispatch(action) {
 		if (action.type === ADD_COMMENT) {
 			let newComment = {
@@ -711,7 +732,15 @@ let store = {
 		} else if (action.type === UPDATE_NEW_COMMENT_TEXT) {
 			this._data.newCommentText = action.newCommentMessage;
 			this._callSubscriber(this._data);
-			
+			////////////////
+		} else if (action.type === UPDATE_NEW_MESSAGE_TEXT) {
+			this._data.dataDialogsPage.newMessageText = action.newMessage;
+			this._callSubscriber(this._data);
+		} else if (action.type === SEND_MESSAGE) {
+			let newMessage = this._data.dataDialogsPage.newMessageText;
+			this._data.dataDialogsPage.newMessageText = '';
+			this._data.dataDialogsPage.messages.push({id:4, message: newMessage},);
+			this._callSubscriber(this._data);
 		}
 	}
 }
@@ -721,6 +750,14 @@ export const updateNewCommentTextActionCreator = (text) => ({
 	type: UPDATE_NEW_COMMENT_TEXT,
 	newCommentMessage: text
 })
+
+//////////
+export const sendMessageCreator = () => ({type: SEND_MESSAGE});
+export const updateNewMessageTextCreator = (textMessage) => ({
+	type: UPDATE_NEW_MESSAGE_TEXT,
+	newMessage: textMessage
+})
+
 
 
 export default store;
