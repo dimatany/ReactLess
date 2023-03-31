@@ -706,7 +706,6 @@ let store = {
 			],
 			newMessageText: '',
 		}
-		
 		///////
 		
 	},
