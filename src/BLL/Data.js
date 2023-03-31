@@ -1,7 +1,8 @@
+import commentReducer from './reducers/commentReducer';
+import dialogsReducer from './reducers/dialogsReducer';
+
 const ADD_COMMENT = 'ADD-COMMENT';
 const UPDATE_NEW_COMMENT_TEXT = 'UPDATE-NEW-COMMENT-TEXT';
-
-//////////////
 const SEND_MESSAGE = 'SEND-MESSAGE';
 const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
 
@@ -685,14 +686,12 @@ let store = {
 				alt: 'is top image',
 			},
 		],
-		dataComment: [{
-			id:1,
-			message:'гребаный тест',
-			likesCount: 1,
-		}],
-		newCommentText: '',
-		
-		////////
+		dataCommentPage: {
+			dataComments: [
+				{id:1, message:'гребаный тест', likesCount: 1,}
+			],
+			newCommentText: '',
+		},
 		dataDialogsPage: {
 			dialogs: [
 				{id:1, name: 'Dima'},
@@ -706,8 +705,6 @@ let store = {
 			],
 			newMessageText: '',
 		}
-		///////
-		
 	},
 	_callSubscriber() {
 		console.log('data changed');
@@ -719,28 +716,9 @@ let store = {
 		this._callSubscriber = observer;
 	},
 	dispatch(action) {
-		if (action.type === ADD_COMMENT) {
-			let newComment = {
-				id: 5,
-				message: this._data.newCommentText,
-				likesCount: 0,
-			};
-			this._data.dataComment.push(newComment);
-			this._data.newCommentText = '';
-			this._callSubscriber(this._data);
-		} else if (action.type === UPDATE_NEW_COMMENT_TEXT) {
-			this._data.newCommentText = action.newCommentMessage;
-			this._callSubscriber(this._data);
-			////////////////
-		} else if (action.type === UPDATE_NEW_MESSAGE_TEXT) {
-			this._data.dataDialogsPage.newMessageText = action.newMessage;
-			this._callSubscriber(this._data);
-		} else if (action.type === SEND_MESSAGE) {
-			let newMessage = this._data.dataDialogsPage.newMessageText;
-			this._data.dataDialogsPage.newMessageText = '';
-			this._data.dataDialogsPage.messages.push({id:4, message: newMessage},);
-			this._callSubscriber(this._data);
-		}
+		this._data.dataCommentPage = commentReducer(this._data.dataCommentPage, action);
+		this._data.dataDialogsPage = dialogsReducer(this._data.dataDialogsPage, action);
+		this._callSubscriber(this._data);
 	}
 }
 
@@ -750,14 +728,11 @@ export const updateNewCommentTextActionCreator = (text) => ({
 	newCommentMessage: text
 })
 
-//////////
 export const sendMessageCreator = () => ({type: SEND_MESSAGE});
 export const updateNewMessageTextCreator = (textMessage) => ({
 	type: UPDATE_NEW_MESSAGE_TEXT,
 	newMessage: textMessage
 })
-
-
 
 export default store;
 window.store = store;

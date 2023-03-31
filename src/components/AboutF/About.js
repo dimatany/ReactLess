@@ -29,8 +29,8 @@ function About(props) {
 			<ErrorBoundary>
 				<Comments
 					dispatch={props.dispatch}
-					dataComment={props.dataComment}
-					newCommentText={props.newCommentText}
+					dataCommentPage={props.dataCommentPage}
+					store={props.store}
 				/>
 			</ErrorBoundary>
 			<ErrorBoundary>
