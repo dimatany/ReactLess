@@ -1,5 +1,5 @@
 import React from 'react';
-import store from './BLL/reduxStore';//store вернуть
+import store from './BLL/reduxStore';
 import { StrictMode } from "react";
 import ReactDOM from 'react-dom/client';
 import './Reset.css';
