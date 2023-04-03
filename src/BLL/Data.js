@@ -1,11 +1,6 @@
 import commentReducer from './reducers/commentReducer';
 import dialogsReducer from './reducers/dialogsReducer';
 
-const ADD_COMMENT = 'ADD-COMMENT';
-const UPDATE_NEW_COMMENT_TEXT = 'UPDATE-NEW-COMMENT-TEXT';
-const SEND_MESSAGE = 'SEND-MESSAGE';
-const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
-
 
 let store = {
 	_data: {
@@ -722,17 +717,6 @@ let store = {
 	}
 }
 
-export const addCommentActionCreator = () => ({type: ADD_COMMENT});
-export const updateNewCommentTextActionCreator = (text) => ({
-	type: UPDATE_NEW_COMMENT_TEXT,
-	newCommentMessage: text
-})
-
-export const sendMessageCreator = () => ({type: SEND_MESSAGE});
-export const updateNewMessageTextCreator = (textMessage) => ({
-	type: UPDATE_NEW_MESSAGE_TEXT,
-	newMessage: textMessage
-})
 
 export default store;
 window.store = store;

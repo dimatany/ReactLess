@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Dialogs.module.css';
-import {sendMessageCreator, updateNewMessageTextCreator} from '../../BLL/Data';
+import {sendMessageCreator, updateNewMessageTextCreator} from '../../BLL/reducers/dialogsReducer';
 
 function Dialogs(props) {
 	

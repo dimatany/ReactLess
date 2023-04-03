@@ -1,5 +1,5 @@
 import React from 'react';
-import {addCommentActionCreator, updateNewCommentTextActionCreator,} from '../../BLL/Data';
+import {addCommentActionCreator, updateNewCommentTextActionCreator,} from '../../BLL/reducers/commentReducer';
 
 function Comments(props) {
 	
