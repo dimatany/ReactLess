@@ -29,7 +29,6 @@ function Comments(props) {
 				<textarea
 					onChange={onNewCommentChange}
 					value={newCommentText}
-					
 				/>
 			</div>
 			<div>
