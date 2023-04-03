@@ -704,7 +704,7 @@ let store = {
 	_callSubscriber() {
 		console.log('data changed');
 	},
-	getData() {
+	getState() {
 		return this._data;
 	},
 	subscribe(observer) {

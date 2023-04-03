@@ -1,5 +1,5 @@
 import React from 'react';
-import store from './BLL/Data';
+import store from './BLL/reduxStore';//store вернуть
 import { StrictMode } from "react";
 import ReactDOM from 'react-dom/client';
 import './Reset.css';
@@ -22,5 +22,8 @@ let rerenderEntireTree = (data) => {
 	);
 }
 
-rerenderEntireTree(store.getData());
-store.subscribe(rerenderEntireTree);
+rerenderEntireTree(store.getState());
+store.subscribe(() => {
+	let state = store.getState();
+	rerenderEntireTree(state);
+});

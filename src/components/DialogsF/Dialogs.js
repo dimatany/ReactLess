@@ -4,7 +4,7 @@ import {sendMessageCreator, updateNewMessageTextCreator} from '../../BLL/reducer
 
 function Dialogs(props) {
 	
-	let data = props.store.getData().dataDialogsPage;
+	let data = props.store.getState().dataDialogsPage;
 	let newMessageText = data.newMessageText;
 	let onSendMessageClick = () => {
 		props.store.dispatch(sendMessageCreator());

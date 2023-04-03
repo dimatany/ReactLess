@@ -1,7 +1,13 @@
 const ADD_COMMENT = 'ADD-COMMENT';
 const UPDATE_NEW_COMMENT_TEXT = 'UPDATE-NEW-COMMENT-TEXT';
 
-const commentReducer = (data, action) => {
+let initialState = {
+	dataComments: [
+		{id:1, message:'гребаный тест', likesCount: 1,}
+	],
+	newCommentText: '',
+};
+const commentReducer = (data = initialState, action) => {
 	switch (action.type) {
 		case UPDATE_NEW_COMMENT_TEXT:
 			data.newCommentText = action.newCommentMessage;

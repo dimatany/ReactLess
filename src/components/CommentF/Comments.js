@@ -3,7 +3,7 @@ import {addCommentActionCreator, updateNewCommentTextActionCreator,} from '../..
 
 function Comments(props) {
 	
-	let data = props.store.getData().dataCommentPage;
+	let data = props.store.getState().dataCommentPage;
 	let newCommentText = data.newCommentText;
 	
 	let addComments = () => {
