@@ -2,6 +2,10 @@
   font-family: "Gilroy Light";
   src: local("Gilroy Light"), url("./BLL/fonts/Gilroy/Gilroy-Light.woff") format("truetype");
 }
+@font-face {
+  font-family: "Dahlia";
+  src: local("Dahlia"), url("./BLL/fonts/Dahlia/Dahlia.ttf") format("truetype");
+}
 body {
   background-color: #202125;
   color: #ffffff;

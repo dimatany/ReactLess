@@ -22,6 +22,7 @@
   line-height: 120%;
   font-size: 85px;
   max-width: 60%;
+  font-family: "Dahlia", serif;
 }
 
 @media screen and (max-width: 720px) {
