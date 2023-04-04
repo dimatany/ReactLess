@@ -7,19 +7,19 @@ let initialState = {
 	],
 	newCommentText: '',
 };
-const commentReducer = (data = initialState, action) => {
+const commentReducer = (state = initialState, action) => {
 	switch (action.type) {
 		case UPDATE_NEW_COMMENT_TEXT:
-			data.newCommentText = action.newCommentMessage;
+			state.newCommentText = action.newCommentMessage;
 			break;
 		case ADD_COMMENT:
-			let newCommentMessage = data.newCommentText;
-			data.newCommentText = '';
-			data.dataComments.push(
+			let newCommentMessage = state.newCommentText;
+			state.newCommentText = '';
+			state.dataComments.push(
 				{id: 2, message: newCommentMessage, likesCount: 3});
 			break;
 	}
-	return data;
+	return state;
 }
 
 export const addCommentActionCreator = () => ({type: ADD_COMMENT});

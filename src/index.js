@@ -10,11 +10,11 @@ import './BLL/fonts/Dahlia/Dahlia.ttf';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-let rerenderEntireTree = (data) => {
+let rerenderEntireTree = (state) => {
 	root.render (
 		<StrictMode>
 			<App
-				appData={data}
+				appData={state}
 				dispatch={store.dispatch.bind(store)}
 				store={store}
 			/>
