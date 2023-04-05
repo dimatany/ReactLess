@@ -23,9 +23,7 @@ function About(props) {
 			<ErrorBoundary>
 				<Tabs/>
 			</ErrorBoundary>
-			<Descriptions
-				text={props.text}
-			/>
+			<Descriptions text={props.text}/>
 			<ErrorBoundary>
 				<Comments
 					store={props.store}
@@ -42,7 +40,6 @@ function About(props) {
 
 About.defaultProps = {
 	text: 'Приходьте на «новим» обличчям, бездоганним манікюром і макіяжем, ефектним волоссям, цілющим масажем та гарним настроем!',
-	
 };
 
 export default About;
