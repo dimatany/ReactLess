@@ -3,8 +3,8 @@ import {addCommentActionCreator, updateNewCommentTextActionCreator,} from '../..
 
 function Comments(props) {
 	
-	let data = props.store.getState().dataCommentPage;
-	let newCommentText = data.newCommentText;
+	let state = props.store.getState().dataCommentPage;
+	let newCommentText = state.newCommentText;
 	
 	let addComments = () => {
 		props.store.dispatch(addCommentActionCreator());
@@ -18,7 +18,7 @@ function Comments(props) {
 	return (
 		<>
 			<div>
-				{props.dataCommentPage.dataComments.map(el =>
+				{state.dataComments.map(el =>
 				<div key={el.id}>
 					<span>{el.message}</span>
 					<span>{el.likesCount}</span>

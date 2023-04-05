@@ -35,33 +35,42 @@ function App(props) {
                       <main>
                           <Routes>
                               <Route index element={<About/>} />
-                              <Route path="about" element={<About
-                                  dataWWD={props.appData.dataWWD}
-                                  dispatch={props.dispatch}
-                                  
-                                  dataDialogsPage={props.appData.dataDialogsPage}
-                                  dataCommentPage={props.appData.dataCommentPage}
-                                  store={props.store}
+                              <Route path="about" element={
+                                  <About
+                                      dataWWD={props.appData.dataWWD}
+                                      store={props.store}
                                   />}
                               />
-                              <Route path="about/:whatWeDoDetail" element={<WhatWeDoDetail
-                                  dataWWD={props.appData.dataWWD}/>}
+                              <Route path="about/:whatWeDoDetail" element={
+                                  <WhatWeDoDetail
+                                      dataWWD={props.appData.dataWWD}
+                                  />}
                               />
-                              <Route path="masters" element={<Masters
-                                  dataMasters={props.appData.dataMasters}/>}
+                              <Route path="masters" element={
+                                  <Masters
+                                      dataMasters={props.appData.dataMasters}
+                                  />}
                               />
-                              <Route path="masters/:mastersDetail" element={<MastersDetail
-                                  dataMasters={props.appData.dataMasters}/>}
+                              <Route path="masters/:mastersDetail" element={
+                                  <MastersDetail
+                                      dataMasters={props.appData.dataMasters}
+                                  />}
                               />
-                              <Route path="goods" element={<Goods
-                                  dataGoods={props.appData.dataGoods}/>}
+                              <Route path="goods" element={
+                                  <Goods
+                                      dataGoods={props.appData.dataGoods}
+                                  />}
                               />
-                              <Route path="goods/:goodsDetail" element={<GoodsDetail
-                                  dataGoods={props.appData.dataGoods}/>}
+                              <Route path="goods/:goodsDetail" element={
+                                  <GoodsDetail
+                                      dataGoods={props.appData.dataGoods}
+                                  />}
                               />
                               <Route path="stocks" element={<Stocks/>}/>
-                              <Route path="blog" element={<Blog
-                                  dataBlog={props.appData.dataBlog}/>}
+                              <Route path="blog" element={
+                                  <Blog
+                                      dataBlog={props.appData.dataBlog}
+                                  />}
                               />
                               <Route path="contacts" element={<Contacts/>}/>
                               <Route path="*" element={<NotFound/>}/>

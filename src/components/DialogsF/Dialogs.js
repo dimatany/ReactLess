@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './Dialogs.module.css';
 import {sendMessageCreator, updateNewMessageTextCreator} from '../../BLL/reducers/dialogsReducer';
-
 function Dialogs(props) {
 	
-	let data = props.store.getState().dataDialogsPage;
-	let newMessageText = data.newMessageText;
+	let state = props.store.getState().dataDialogsPage;
+	let newMessageText = state.newMessageText;
+	
 	let onSendMessageClick = () => {
 		props.store.dispatch(sendMessageCreator());
 	}
@@ -14,10 +14,11 @@ function Dialogs(props) {
 		props.store.dispatch(updateNewMessageTextCreator(textMessage));
 	}
 	
+	
 	return (
 		<div className={styles.wrap}>
 			<div className={styles.wrapDialogs}>
-				{data.dialogs.map(el =>
+				{state.dialogs.map(el =>
 					<div key={el.id}>
 						<div>{el.name}</div>
 					</div>
@@ -25,7 +26,7 @@ function Dialogs(props) {
 			</div>
 			<div className={styles.wrapMessages}>
 				<div>
-					{data.messages.map(el =>
+					{state.messages.map(el =>
 						<div key={el.id}>
 							<div>{el.message}</div>
 						</div>

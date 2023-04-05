@@ -28,15 +28,11 @@ function About(props) {
 			/>
 			<ErrorBoundary>
 				<Comments
-					dispatch={props.dispatch}
-					dataCommentPage={props.dataCommentPage}
 					store={props.store}
 				/>
 			</ErrorBoundary>
 			<ErrorBoundary>
 				<Dialogs
-					dispatch={props.dispatch}
-					dataDialogsPage={props.dataDialogsPage}
 					store={props.store}
 				/>
 			</ErrorBoundary>
