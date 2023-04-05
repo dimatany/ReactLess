@@ -7,16 +7,19 @@ import './index.css';
 import App from './App';
 import './BLL/fonts/Gilroy/Gilroy-Light.woff';
 import './BLL/fonts/Dahlia/Dahlia.ttf';
+import {Provider} from 'react-redux';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let rerenderEntireTree = (state) => {
 	root.render (
 		<StrictMode>
-			<App
-				appData={state}
-				store={store}
-			/>
+			<Provider store={store}>
+				<App
+					appData={state}
+					store={store}
+				/>
+			</Provider>
 		</StrictMode>
 	);
 }

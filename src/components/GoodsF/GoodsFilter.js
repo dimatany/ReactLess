@@ -2,29 +2,36 @@ import React from 'react';
 import styles from './GoodsFilter.module.css'
 
 function GoodsFilter(props) {
-	const [value, setValue] = React.useState('');
-	const newDataItems = [];
-	const resultType = props.dataGoods.filter(({type}) =>(!newDataItems[type] && (newDataItems[type] = 1)));
-	function handleChange(event) {
-		setValue(event.target.value);
+	
+	let [users, setUsers] = React.useState(props.dataGoods);
+	
+	function onSelectionChange(e) {
+		const sortDirection = e.target.value;
+		const copyArray = [...users]; // create a new array & not mutate state
+		
+		copyArray.sort((a, b) => {
+			return sortDirection === "0" ? a.prise - b.prise : b.prise - a.prise;
+		});
+		setUsers(copyArray);
 	}
 	
 	return (
 		<>
-			<div className={styles.wrap}>
-				<div className={styles.wrapSelect}>
-					<select className={styles.type} value={value} onChange={handleChange}>
-						<option defaultValue>{props.button1}</option>
-						{resultType.map(el =>
-							<option key={el.id} value={el.type}>{el.type}</option>
-						)}
-					</select>
-					<p>
-						Выбрана опция: {value}
-					</p>
+			<div className="App">
+				<select defaultValue={0} onChange={onSelectionChange}>
+					<option value={0}>от меньшего</option>
+					<option value={1}>от большего</option>
+				</select>
+				<div>
+					{users.map(el =>
+						<div key={el.id}>
+							<div>{el.type}</div>
+							<div>{el.prise}</div>
+						</div>
+					)}
 				</div>
 			</div>
-			
+		
 		</>
 	);
 }
