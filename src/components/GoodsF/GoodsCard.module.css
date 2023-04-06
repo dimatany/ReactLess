@@ -50,6 +50,7 @@ label {
 .container {
   display: flex;
   flex-direction: row;
+  box-shadow: 0 5px 5px 1px rgba(255, 255, 255, 0.5);
   background: #ffffff;
   text-align: center;
   border-radius: 10px;
@@ -246,6 +247,41 @@ label {
   .container .control {
     left: 30%;
   }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  background: #edae3b;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 2vh;
+  max-width: 1250px;
+  margin: 2vh auto;
+}
+.form .label {
+  display: block;
+  order: 0;
+  padding-left: 20px;
+  color: #202125;
+  font-weight: bold;
+}
+.form .select {
+  width: 33%;
+  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+  appearance: none;
+  overflow: hidden;
+  background: #434343 url("../../BLL/img/Goods/arrow.svg") no-repeat 98% 10px;
+  background-size: 20px auto;
+}
+.form .select option {
+  position: absolute;
+  top: 20px;
+  margin-top: 200px;
 }
 
 /*# sourceMappingURL=GoodsCard.module.css.map */

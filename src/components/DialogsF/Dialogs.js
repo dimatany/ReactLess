@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './Dialogs.module.css';
 import {sendMessageCreator, updateNewMessageTextCreator} from '../../BLL/reducers/dialogsReducer';
 function Dialogs(props) {
-	
 	let state = props.store.getState().dataDialogsPage;
 	let newMessageText = state.newMessageText;
 	

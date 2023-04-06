@@ -33,7 +33,6 @@ $lime-green: #4fa19d;
   overflow: hidden;
   order: 0;
 }
-
 input[type="checkbox"] {
   display: none;
 }
@@ -53,11 +52,10 @@ label {
   cursor: pointer;
   text-decoration: none;
 }
-
 .container {
   display: flex;
   flex-direction: row;
-  //box-shadow: 0 15px 30px 1px $grayish-blue;
+  box-shadow: 0 5px 5px 1px $silver;
   background: $white;
   text-align: center;
   border-radius: 10px;
@@ -210,7 +208,6 @@ label {
 .btn:hover .shoppingCart {
   transform: translateX(0%);
 }
-
 @media screen and (max-width: 720px) {
   .container {
     display: flex;
@@ -249,5 +246,40 @@ label {
   }
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  background: $bright-orange;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 2vh;
+  max-width: 1250px;
+  margin: 2vh auto;
+  .label {
+    display: block;
+    order: 0;
+    padding-left: 20px;
+    color: $dark-blue;
+    font-weight: bold;
+  }
+  .select {
+    width: 33%;
+    box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+    color: $white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    appearance: none;
+    overflow: hidden;
+    background: $grayish-blue url('../../BLL/img/Goods/arrow.svg') no-repeat 98% 10px;
+    background-size: 20px auto;
+    option {
+      position: absolute;
+      top: 20px;
+      margin-top: 200px;
+    }
+  }
+}
 
 
