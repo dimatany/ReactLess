@@ -278,10 +278,5 @@ label {
   background: #434343 url("../../BLL/img/Goods/arrow.svg") no-repeat 98% 10px;
   background-size: 20px auto;
 }
-.form .select option {
-  position: absolute;
-  top: 20px;
-  margin-top: 200px;
-}
 
 /*# sourceMappingURL=GoodsCard.module.css.map */
