@@ -272,6 +272,12 @@ label {
   font-weight: bold;
   width: 100%;
 }
+.form fieldset .iconWrap {
+  position: relative;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+}
 .form fieldset .selectSort {
   width: 100%;
   box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
@@ -284,15 +290,27 @@ label {
   overflow: hidden;
   background: #434343 url("../../BLL/img/Goods/arrow.svg") no-repeat 98% 10px;
   background-size: 20px auto;
+  outline: none;
+}
+.form fieldset .selectSort:active, .form fieldset .selectSort :hover, .form fieldset .selectSort :focus {
+  outline: 0;
+  outline-offset: 0;
 }
 .form fieldset .selectSearch {
-  background: #434343;
   box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
   border: none;
   float: left;
   color: #ffffff;
-  padding: 10px 20px;
   border-radius: 10px;
+  outline: none;
+  background-image: url("../../BLL/img/Goods/search.svg");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+.form fieldset .selectSearch:active, .form fieldset .selectSearch :hover, .form fieldset .selectSearch :focus {
+  outline: 0;
+  outline-offset: 0;
 }
 
 /*# sourceMappingURL=GoodsCard.module.css.map */

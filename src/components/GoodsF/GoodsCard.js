@@ -3,6 +3,7 @@ import { useState } from "react";
 import styles from './GoodsCard.module.css';
 import {Link} from 'react-router-dom';
 import SVGTrolley from '../SVG/SVGTrolley';
+import SVGSearch from '../SVG/SVGSearch';
 
 function GoodsCard(props) {
 	const [checked, setChecked] = useState(true);
