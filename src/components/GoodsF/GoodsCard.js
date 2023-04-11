@@ -5,35 +5,58 @@ import {Link} from 'react-router-dom';
 import SVGTrolley from '../SVG/SVGTrolley';
 
 function GoodsCard(props) {
-	//нужно разделить логику фильтрации и вывода
-	// карточки с линком по разным компонентам
-	//лучше сделать это все через store и reducers
 	const [checked, setChecked] = useState(true);
-	const [items, setItems] = useState(props.dataGoods);
 	function handleChange() {
 		setChecked(!checked);
 	}
 	
-	function onSelectionChange(e) {
-		const sortDirection = e.target.value;
+	////////////////////////////////////////////////////
+	const [items, setItems] = useState(props.dataGoods);
+	function onSelectChange(event) {
+		const sortDirection = event.target.value;
 		// создать новый массив и не мутировать состояние
 		const copyArray = [...items];
-		
 		copyArray.sort((a, b) => {
 			return sortDirection === "0" ? a.prise - b.prise : b.prise - a.prise;
 		});
 		setItems(copyArray);
 	}
 	
+	//////////////////////////////////////////////////для поиска
+	const [searchField, setSearchField] = useState("");
+	const handleChange2 = event => {
+		setSearchField(event.target.value);
+	};
+	
+	const filteredSearchData = props.dataGoods.filter(el => {
+			return (
+				el.name.toLowerCase().includes(searchField.toLowerCase()) ||
+				el.type.toLowerCase().includes(searchField.toLowerCase())
+			);
+		}
+	);
+	
+	/////////////////////////////////////////////////
+	
 	return (
 		<>
 			<form className={styles.form}>
-				<label className={styles.label}>{props.select}</label>
-				<select className={styles.select} onChange={onSelectionChange}>
-					<option defaultValue={0}>выбери значение</option>
-					<option value={0}>ціна за зростанням</option>
-					<option value={1}>ціна за спаданням</option>
-				</select>
+				<fieldset>
+					<label className={styles.label}>{props.select}</label>
+					<select className={styles.select} onChange={onSelectChange}>
+						<option defaultValue={0}>выбери значение</option>
+						<option value={0}>ціна за зростанням</option>
+						<option value={1}>ціна за спаданням</option>
+					</select>
+				</fieldset>
+				<fieldset>
+					<label className={styles.label}>{props.select2}</label>
+					<input
+						onChange = {handleChange2}
+						type = "search"
+						placeholder = "Search People"
+					/>
+				</fieldset>
 			</form>
 			<div className={styles.wrapper}>
 				{items.map(el =>
@@ -63,6 +86,15 @@ function GoodsCard(props) {
 					</div>
 				)}
 			</div>
+			<div>
+				{filteredSearchData.map( el =>
+					<div>
+						<h2>{el.name}</h2>
+						<p>{el.type}</p>
+						<p>{el.forWhat}</p>
+					</div>
+				)}
+			</div>
 		</>
 	);
 }
@@ -73,6 +105,7 @@ GoodsCard.defaultProps = {
 	label: 'дізнайтеся більше',
 	currency: 'грн',
 	select: 'Сортування',
+	select2: 'Пошук',
 };
 
 export default GoodsCard;
