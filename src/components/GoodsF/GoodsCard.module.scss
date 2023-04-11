@@ -294,19 +294,19 @@ label {
       }
     }
     .selectSearch {
-      //background: $grayish-blue;
+      background: $grayish-blue;
       box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
       border: none;
       float: left;
       color: $white;
-     // padding: 10px 20px;
+      padding: 10px 20px 11px 45px;
       border-radius: 10px;
       outline:none;
-
-      background-image: url('../../BLL/img/Goods/search.svg');
-      background-position: 10px 10px;
-      background-repeat: no-repeat;
-      padding-left: 40px;
+      position: relative;
+      appearance: none;
+      overflow: hidden;
+      background: $grayish-blue url('../../BLL/img/Goods/search.svg') no-repeat 5% 12px;
+      background-size: 20px auto;
       &:active, :hover, :focus {
         outline: 0;
         outline-offset: 0;
@@ -314,4 +314,10 @@ label {
     }
   }
 }
-
+[type="search"]::-webkit-search-cancel-button {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background: url('../../BLL/img/Goods/cross.svg') no-repeat;
+  background-size: 30px 30px;
+}
