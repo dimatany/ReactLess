@@ -22,6 +22,7 @@
   max-height: 100px;
   overflow: hidden;
   order: 0;
+  margin-bottom: 10px;
 }
 
 input[type=checkbox] {
@@ -44,7 +45,8 @@ label {
   color: #5383ed;
   font-size: 18px;
   cursor: pointer;
-  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .container {
@@ -302,14 +304,13 @@ label {
   border: none;
   float: left;
   color: #ffffff;
-  padding: 10px 20px 11px 45px;
+  padding: 10px 10px 11px 20px;
   border-radius: 10px;
   outline: none;
   position: relative;
-  appearance: none;
-  overflow: hidden;
-  background: #434343 url("../../BLL/img/Goods/search.svg") no-repeat 5% 12px;
-  background-size: 20px auto;
+}
+.form fieldset .selectSearch::placeholder {
+  color: #ffffff;
 }
 .form fieldset .selectSearch:active, .form fieldset .selectSearch :hover, .form fieldset .selectSearch :focus {
   outline: 0;
@@ -322,6 +323,16 @@ label {
   width: 20px;
   background: url("../../BLL/img/Goods/cross.svg") no-repeat;
   background-size: 30px 30px;
+}
+
+@media screen and (max-width: 720px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form fieldset {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=GoodsCard.module.css.map */

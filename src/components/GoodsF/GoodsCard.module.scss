@@ -32,6 +32,7 @@ $lime-green: #4fa19d;
   max-height: 100px;
   overflow: hidden;
   order: 0;
+  margin-bottom: 10px;
 }
 input[type="checkbox"] {
   display: none;
@@ -50,7 +51,8 @@ label {
   color: $soft-blue2;
   font-size: 18px;
   cursor: pointer;
-  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
 }
 .container {
   display: flex;
@@ -229,6 +231,8 @@ label {
     }
   }
 }
+
+
 @media screen and (max-width: 500px) {
   .container {
     .productImage {
@@ -299,14 +303,13 @@ label {
       border: none;
       float: left;
       color: $white;
-      padding: 10px 20px 11px 45px;
+      padding: 10px 10px 11px 20px;
       border-radius: 10px;
       outline:none;
       position: relative;
-      appearance: none;
-      overflow: hidden;
-      background: $grayish-blue url('../../BLL/img/Goods/search.svg') no-repeat 5% 12px;
-      background-size: 20px auto;
+      &::placeholder {
+        color: $white;
+      }
       &:active, :hover, :focus {
         outline: 0;
         outline-offset: 0;
@@ -320,4 +323,13 @@ label {
   width: 20px;
   background: url('../../BLL/img/Goods/cross.svg') no-repeat;
   background-size: 30px 30px;
+}
+@media screen and (max-width: 720px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    fieldset {
+      width: 100%;
+    }
+  }
 }

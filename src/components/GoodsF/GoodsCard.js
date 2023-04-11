@@ -3,7 +3,6 @@ import { useState } from "react";
 import styles from './GoodsCard.module.css';
 import {Link} from 'react-router-dom';
 import SVGTrolley from '../SVG/SVGTrolley';
-import SVGSearch from '../SVG/SVGSearch';
 
 function GoodsCard(props) {
 	const [checked, setChecked] = useState(true);
@@ -44,9 +43,9 @@ function GoodsCard(props) {
 				<fieldset>
 					<label className={styles.label}>{props.select}</label>
 					<select className={styles.selectSort} onChange={onSelectSort}>
-						<option defaultValue={0}>выбери значение</option>
-						<option value={0}>ціна за зростанням</option>
-						<option value={1}>ціна за спаданням</option>
+						<option defaultValue={0}>{props.optionDefaultValue}</option>
+						<option value={0}>{props.optionValue0}</option>
+						<option value={1}>{props.optionValue1}</option>
 					</select>
 				</fieldset>
 				<fieldset>
@@ -91,13 +90,16 @@ function GoodsCard(props) {
 }
 
 GoodsCard.defaultProps = {
-	title: 'Товари',
-	button: 'Купити',
+	title: 'товари',
+	button: 'купити',
 	label: 'дізнайтеся більше',
 	currency: 'грн',
-	select: 'Сортування',
-	select2: 'Пошук',
-	placeholder: 'Пошук по товарам'
+	select: 'сортування',
+	select2: 'пошук',
+	placeholder: 'пошук по товарам',
+	optionDefaultValue: 'виберіть значення',
+	optionValue0: 'ціна за зростанням',
+	optionValue1: 'ціна за спаданням',
 };
 
 export default GoodsCard;
