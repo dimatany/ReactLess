@@ -10,9 +10,9 @@ function GoodsCard(props) {
 		setChecked(!checked);
 	}
 	
-	////////////////////////////////////////////////////
-	const [items, setItems] = useState(props.dataGoods);
-	function onSelectChange(event) {
+	
+	let [items, setItems] = useState(props.dataGoods);
+	function onSelectSort(event) {
 		const sortDirection = event.target.value;
 		// создать новый массив и не мутировать состояние
 		const copyArray = [...items];
@@ -22,13 +22,13 @@ function GoodsCard(props) {
 		setItems(copyArray);
 	}
 	
-	//////////////////////////////////////////////////для поиска
+	
 	const [searchField, setSearchField] = useState("");
-	const handleChange2 = event => {
+	const onSelectSearch = event => {
 		setSearchField(event.target.value);
 	};
 	
-	const filteredSearchData = props.dataGoods.filter(el => {
+	items = items.filter(el => {
 			return (
 				el.name.toLowerCase().includes(searchField.toLowerCase()) ||
 				el.type.toLowerCase().includes(searchField.toLowerCase())
@@ -36,14 +36,13 @@ function GoodsCard(props) {
 		}
 	);
 	
-	/////////////////////////////////////////////////
 	
 	return (
 		<>
 			<form className={styles.form}>
 				<fieldset>
 					<label className={styles.label}>{props.select}</label>
-					<select className={styles.select} onChange={onSelectChange}>
+					<select className={styles.selectSort} onChange={onSelectSort}>
 						<option defaultValue={0}>выбери значение</option>
 						<option value={0}>ціна за зростанням</option>
 						<option value={1}>ціна за спаданням</option>
@@ -51,10 +50,10 @@ function GoodsCard(props) {
 				</fieldset>
 				<fieldset>
 					<label className={styles.label}>{props.select2}</label>
-					<input
-						onChange = {handleChange2}
+					<input className={styles.selectSearch}
+						onChange = {onSelectSearch}
 						type = "search"
-						placeholder = "Search People"
+						placeholder={props.placeholder}
 					/>
 				</fieldset>
 			</form>
@@ -86,15 +85,6 @@ function GoodsCard(props) {
 					</div>
 				)}
 			</div>
-			<div>
-				{filteredSearchData.map( el =>
-					<div>
-						<h2>{el.name}</h2>
-						<p>{el.type}</p>
-						<p>{el.forWhat}</p>
-					</div>
-				)}
-			</div>
 		</>
 	);
 }
@@ -106,6 +96,7 @@ GoodsCard.defaultProps = {
 	currency: 'грн',
 	select: 'Сортування',
 	select2: 'Пошук',
+	placeholder: 'Пошук по товарам'
 };
 
 export default GoodsCard;
