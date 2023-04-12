@@ -18,9 +18,11 @@
 }
 
 .about p {
-  line-height: 25px;
   padding-bottom: 10vh;
-  font-size: 18px;
+  font-size: 20px;
+  overflow: scroll;
+  letter-spacing: 1px;
+  line-height: 1.6;
 }
 
 .about p:last-child {

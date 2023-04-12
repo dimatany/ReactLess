@@ -2,6 +2,7 @@ $white: #ffffff;
 $soft-blue: #8ab4f8;
 $soft-blue2: #5383ed;
 $lime-green: #4fa19d;
+$bright-red: #FE2E2E;
 
 .form {
   max-width: 320px;
@@ -20,7 +21,7 @@ $lime-green: #4fa19d;
   .error {
     height: 35px;
     p {
-      color: $soft-blue2;
+      color: $bright-red;
       overflow: scroll;
       &::before {
         display: inline;
@@ -61,7 +62,7 @@ $lime-green: #4fa19d;
 }
 
 .form input[type="submit"] {
-  background: $soft-blue;
+  background: $bright-red;
   color: $white;
   text-transform: uppercase;
   border: none;

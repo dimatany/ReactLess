@@ -57,6 +57,8 @@ $lime-green: #4fa19d;
   font-size: 20px;
   width: 90%;
   margin: 0 auto 15vh;
+  overflow: scroll;
+  line-height: 1.6;
   span {
     color: $bright-red;
     font-size: 18px;

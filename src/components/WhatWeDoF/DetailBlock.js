@@ -11,8 +11,10 @@ function DetailBlock(props) {
 					<details>
 						<summary>{props.subTitle}</summary>
 						<p>{props.subTitle2}</p>
-						<span>{props.subTitlePrice}</span>
-						<span className={styles.currency}>{props.currency}</span>
+						<div className={styles.price}>
+							<span>{props.subTitlePrice}</span>
+							<span className={styles.currency}>{props.currency}</span>
+						</div>
 					</details>
 				</div>
 			</div>

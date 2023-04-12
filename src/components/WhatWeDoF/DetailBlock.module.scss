@@ -37,14 +37,20 @@ details > summary {
   font-size: 18px;
 }
 details > p {
-  padding: 5vh 0 7vh 0;
+  padding: 20px 0 120px 0;
   overflow: scroll;
   max-height: 25vh;
-  font-size: 16px;
-  color: $silver;
-  line-height: 31px;
+  font-size: 20px;
+  color: $white;
+  line-height: 1.6;
+  text-align: center;
 }
-details > span {
+.price {
+  margin: 0 auto;
+  max-width: 300px;
+  text-align: center;
+}
+.price > span {
   padding: 5vh 0 2vh 0;
   overflow: scroll;
   font-size: 30px;
@@ -64,7 +70,6 @@ summary:before {
 }
 
 @media screen and (max-width: 900px) {
-
     .infoBlock {
       display: flex;
       flex-wrap: wrap;
