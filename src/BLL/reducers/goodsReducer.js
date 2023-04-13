@@ -11,6 +11,23 @@ let initialState = [
 		prise: 275,
 		image: require("../../BLL/img/Goods/1g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'discount',
+				slug: 'discount',
+			},
+			{
+				id: '2',
+				title: 'shampoo',
+				slug: 'shampoo',
+			},
+			{
+				id: '3',
+				title: 'cleaning',
+				slug: 'cleaning',
+			},
+		],
 	},
 	{
 		id: '2',
@@ -24,6 +41,23 @@ let initialState = [
 		prise: 699,
 		image: require("../../BLL/img/Goods/2g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'full price',
+				slug: 'full price',
+			},
+			{
+				id: '2',
+				title: 'shampoo',
+				slug: 'shampoo',
+			},
+			{
+				id: '3',
+				title: 'cleaning',
+				slug: 'cleaning',
+			},
+		],
 	},
 	{
 		id: '3',
@@ -37,6 +71,23 @@ let initialState = [
 		prise: 380,
 		image: require("../../BLL/img/Goods/3g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'full price',
+				slug: 'full price',
+			},
+			{
+				id: '2',
+				title: 'filler',
+				slug: 'filler',
+			},
+			{
+				id: '3',
+				title: 'renewal',
+				slug: 'renewal',
+			},
+		],
 	},
 	{
 		id: '4',
@@ -50,6 +101,23 @@ let initialState = [
 		prise: 80,
 		image: require("../../BLL/img/Goods/4g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'discount',
+				slug: 'discount',
+			},
+			{
+				id: '2',
+				title: 'filler',
+				slug: 'filler',
+			},
+			{
+				id: '3',
+				title: 'renewal',
+				slug: 'renewal',
+			},
+		],
 	},
 	{
 		id: '5',
@@ -63,6 +131,23 @@ let initialState = [
 		prise: 699,
 		image: require("../../BLL/img/Goods/5g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'discount',
+				slug: 'discount',
+			},
+			{
+				id: '2',
+				title: 'shampoo',
+				slug: 'shampoo',
+			},
+			{
+				id: '3',
+				title: 'cleaning',
+				slug: 'cleaning',
+			},
+		],
 	},
 	{
 		id: '6',
@@ -76,6 +161,23 @@ let initialState = [
 		prise: 305,
 		image: require("../../BLL/img/Goods/6g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'discount',
+				slug: 'discount',
+			},
+			{
+				id: '2',
+				title: 'shampoo',
+				slug: 'shampoo',
+			},
+			{
+				id: '3',
+				title: 'cleaning',
+				slug: 'cleaning',
+			},
+		],
 	},
 	{
 		id: '7',
@@ -89,6 +191,23 @@ let initialState = [
 		prise: 865,
 		image: require("../../BLL/img/Goods/7g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'full price',
+				slug: 'full price',
+			},
+			{
+				id: '2',
+				title: 'mask',
+				slug: 'mask',
+			},
+			{
+				id: '3',
+				title: 'moisturizing',
+				slug: 'moisturizing',
+			},
+		],
 	},
 	{
 		id: '8',
@@ -102,6 +221,23 @@ let initialState = [
 		prise: 389,
 		image: require("../../BLL/img/Goods/8g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'discount',
+				slug: 'discount',
+			},
+			{
+				id: '2',
+				title: 'mask',
+				slug: 'mask',
+			},
+			{
+				id: '3',
+				title: 'moisturizing',
+				slug: 'moisturizing',
+			},
+		],
 	},
 	{
 		id: '9',
@@ -116,6 +252,23 @@ let initialState = [
 		prise: 735,
 		image: require("../../BLL/img/Goods/9g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'full price',
+				slug: 'full price',
+			},
+			{
+				id: '2',
+				title: 'balm',
+				slug: 'balm',
+			},
+			{
+				id: '3',
+				title: 'moisturizing',
+				slug: 'moisturizing',
+			},
+		],
 	},
 	{
 		id: '10',
@@ -124,13 +277,30 @@ let initialState = [
 		description: 'La\'dor Wonder Tear Бальзам-маска для волосся з протеїнами шовку, 250 мл - універсальний засіб для локонів, що працює відразу в трьох напрямках: зміцнює волосся, зволожує їх і надає їм помітний об\'єм. Бальзам-маска не вимагає довгих маніпуляцій і може значно поліпшити стан волосся менше ніж за 1 хвилину. Варто зазначити, що цей продукт застосовують для професійного догляду, тому ви можете отримати ефект справжньої салонної процедури в домашніх умовах. \n' +
 			'\n',
 		forWhat: 'зволоження і живлення',
-		type: 'маска',
+		type: 'бальзам',
 		application: 'для експрес-догляду нанесіть невелику кількість продукту на попередньо вимите волосся, відступаючи від кореня. Залиште на волоссі на 1 хвилину і змийте теплою водою. Для інтенсивного впливу бальзам-маску можна залишати на 5-10 хвилин. Використовувати 1-2 рази в тиждень.',
 		composition: 'Water, Dimethicone, Cetearyl Alcohol, Behentrimonium Chloride, Butylene Glycol, Propylene Glycol, Amodimethicone, C12-14 Sec-Pareth-7, Hydrolyzed Silk, Aloe Barbadensis Leaf Extract, Ceramide NP, Arginine, Leucine, Tryptophan, Lysine, Isoleucine, Threonine, Methionine, Histidine, Asparagine, Alanine, Proline, Glutamic Acid, Glutamine, Glycine, Valine, Phenylalanine, Aspartic Acid, Tyrosine, Serine, Cystine, Benzyl Benzoate, Benzyl Salicylate, Hexyl Cinnamal, Linalool, Fragrance\n' +
 			'\n',
 		prise: 849,
 		image: require("../../BLL/img/Goods/10g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'full price',
+				slug: 'full price',
+			},
+			{
+				id: '2',
+				title: 'balm',
+				slug: 'balm',
+			},
+			{
+				id: '3',
+				title: 'moisturizing',
+				slug: 'moisturizing',
+			},
+		],
 	},
 	{
 		id: '11',
@@ -144,6 +314,23 @@ let initialState = [
 		prise: 999,
 		image: require("../../BLL/img/Goods/11g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'full price',
+				slug: 'full price',
+			},
+			{
+				id: '2',
+				title: 'shampoo',
+				slug: 'shampoo',
+			},
+			{
+				id: '3',
+				title: 'cleaning',
+				slug: 'cleaning',
+			},
+		],
 	},
 	{
 		id: '12',
@@ -157,6 +344,23 @@ let initialState = [
 		prise: 609,
 		image: require("../../BLL/img/Goods/12g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'discount',
+				slug: 'discount',
+			},
+			{
+				id: '2',
+				title: 'conditioner',
+				slug: 'conditioner',
+			},
+			{
+				id: '3',
+				title: 'moisturizing',
+				slug: 'moisturizing',
+			},
+		],
 	},
 	{
 		id: '13',
@@ -170,6 +374,23 @@ let initialState = [
 		prise: 789,
 		image: require("../../BLL/img/Goods/13g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'full price',
+				slug: 'full price',
+			},
+			{
+				id: '2',
+				title: 'shampoo',
+				slug: 'shampoo',
+			},
+			{
+				id: '3',
+				title: 'cleaning',
+				slug: 'cleaning',
+			},
+		],
 	},
 	{
 		id: '14',
@@ -183,6 +404,23 @@ let initialState = [
 		prise: 249,
 		image: require("../../BLL/img/Goods/14g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'discount',
+				slug: 'discount',
+			},
+			{
+				id: '2',
+				title: 'mask',
+				slug: 'mask',
+			},
+			{
+				id: '3',
+				title: 'moisturizing',
+				slug: 'moisturizing',
+			},
+		],
 	},
 	{
 		id: '15',
@@ -196,6 +434,23 @@ let initialState = [
 		prise: 576,
 		image: require("../../BLL/img/Goods/15g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'discount',
+				slug: 'discount',
+			},
+			{
+				id: '2',
+				title: 'shampoo',
+				slug: 'shampoo',
+			},
+			{
+				id: '3',
+				title: 'cleaning',
+				slug: 'cleaning',
+			},
+		],
 	},
 	{
 		id: '16',
@@ -209,6 +464,23 @@ let initialState = [
 		prise: 699,
 		image: require("../../BLL/img/Goods/16g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'full price',
+				slug: 'full price',
+			},
+			{
+				id: '2',
+				title: 'shampoo',
+				slug: 'shampoo',
+			},
+			{
+				id: '3',
+				title: 'cleaning',
+				slug: 'cleaning',
+			},
+		],
 	},
 	{
 		id: '17',
@@ -222,6 +494,23 @@ let initialState = [
 		prise: 275,
 		image: require("../../BLL/img/Goods/17g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'full price',
+				slug: 'full price',
+			},
+			{
+				id: '2',
+				title: 'shampoo',
+				slug: 'shampoo',
+			},
+			{
+				id: '3',
+				title: 'cleaning',
+				slug: 'cleaning',
+			},
+		],
 	},
 	{
 		id: '18',
@@ -235,6 +524,23 @@ let initialState = [
 		prise: 415,
 		image: require("../../BLL/img/Goods/18g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'full price',
+				slug: 'full price',
+			},
+			{
+				id: '2',
+				title: 'mist',
+				slug: 'mist',
+			},
+			{
+				id: '3',
+				title: 'moisturizing',
+				slug: 'moisturizing',
+			},
+		],
 	},
 	{
 		id: '19',
@@ -248,6 +554,23 @@ let initialState = [
 		prise: 480,
 		image: require("../../BLL/img/Goods/19g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'full price',
+				slug: 'full price',
+			},
+			{
+				id: '2',
+				title: 'filler',
+				slug: 'filler',
+			},
+			{
+				id: '3',
+				title: 'moisturizing',
+				slug: 'moisturizing',
+			},
+		],
 	},
 	{
 		id: '20',
@@ -261,6 +584,23 @@ let initialState = [
 		prise: 570,
 		image: require("../../BLL/img/Goods/20g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'full price',
+				slug: 'full price',
+			},
+			{
+				id: '2',
+				title: 'shampoo',
+				slug: 'shampoo',
+			},
+			{
+				id: '3',
+				title: 'cleaning',
+				slug: 'cleaning',
+			},
+		],
 	},
 	{
 		id: '21',
@@ -274,6 +614,23 @@ let initialState = [
 		prise: 879,
 		image: require("../../BLL/img/Goods/21g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'full price',
+				slug: 'full price',
+			},
+			{
+				id: '2',
+				title: 'filler',
+				slug: 'filler',
+			},
+			{
+				id: '3',
+				title: 'moisturizing',
+				slug: 'moisturizing',
+			},
+		],
 	},
 	{
 		id: '22',
@@ -287,6 +644,23 @@ let initialState = [
 		prise: 515,
 		image: require("../../BLL/img/Goods/22g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'discount',
+				slug: 'discount',
+			},
+			{
+				id: '2',
+				title: 'protection',
+				slug: 'protection',
+			},
+			{
+				id: '3',
+				title: 'thermalProtection',
+				slug: 'thermalProtection',
+			},
+		],
 	},
 	{
 		id: '23',
@@ -300,6 +674,23 @@ let initialState = [
 		prise: 749,
 		image: require("../../BLL/img/Goods/23g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'discount',
+				slug: 'discount',
+			},
+			{
+				id: '2',
+				title: 'shampoo',
+				slug: 'shampoo',
+			},
+			{
+				id: '3',
+				title: 'cleaning',
+				slug: 'cleaning',
+			},
+		],
 	},
 	{
 		id: '24',
@@ -313,6 +704,23 @@ let initialState = [
 		prise: 249,
 		image: require("../../BLL/img/Goods/24g.jpg"),
 		alt: 'is top image',
+		tags: [
+			{
+				id: '1',
+				title: 'discount',
+				slug: 'discount',
+			},
+			{
+				id: '2',
+				title: 'shampoo',
+				slug: 'shampoo',
+			},
+			{
+				id: '3',
+				title: 'cleaning',
+				slug: 'cleaning',
+			},
+		],
 	},
 ];
 

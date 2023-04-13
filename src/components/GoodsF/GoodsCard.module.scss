@@ -34,10 +34,10 @@ $lime-green: #4fa19d;
   order: 0;
   margin-bottom: 10px;
 }
-input[type="checkbox"] {
+.checkbox {
   display: none;
 }
-input[type="checkbox"]:checked + .wrapBlock {
+.checkbox:checked + .wrapBlock {
   height: auto;
 }
 .Link {
@@ -231,8 +231,6 @@ label {
     }
   }
 }
-
-
 @media screen and (max-width: 500px) {
   .container {
     .productImage {
@@ -333,3 +331,7 @@ label {
     }
   }
 }
+
+/////////////////////////////////////////////
+
+

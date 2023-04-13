@@ -10,7 +10,7 @@ function GoodsCard(props) {
 		setChecked(!checked);
 	}
 	
-	
+	////////////////////////////////
 	let [items, setItems] = useState(props.dataGoods);
 	function onSelectSort(event) {
 		const sortDirection = event.target.value;
@@ -21,13 +21,12 @@ function GoodsCard(props) {
 		});
 		setItems(copyArray);
 	}
-	
+	/////////////////////////////////////
 	
 	const [searchField, setSearchField] = useState("");
 	const onSelectSearch = event => {
 		setSearchField(event.target.value);
 	};
-	
 	items = items.filter(el => {
 			return (
 				el.name.toLowerCase().includes(searchField.toLowerCase()) ||
@@ -35,7 +34,28 @@ function GoodsCard(props) {
 			);
 		}
 	);
+	//////////////////////////////////////
+	const [filterTags, setFilterTags] = useState([]);
 	
+	items = items.filter(el =>
+		filterTags.length > 0
+			? filterTags.every((filterTag) =>
+				el.tags.map((tag) => tag.slug).includes(filterTag)
+			)
+			: props.dataGoods
+	)
+	
+	const filterHandler = (event) => {
+		if (event.target.checked) {
+			setFilterTags([...filterTags, event.target.value])
+		} else {
+			setFilterTags(
+				filterTags.filter((filterTag) => filterTag !== event.target.value)
+			)
+		}
+	}
+	
+	/////////////////////////////////////
 	
 	return (
 		<>
@@ -56,6 +76,100 @@ function GoodsCard(props) {
 						placeholder={props.placeholder}
 					/>
 				</fieldset>
+				
+				<fieldset>
+					<label htmlFor="price">Цена
+						<input
+							type="checkbox"
+							onChange={filterHandler}
+							value="discount"
+							id="discount"
+						/>
+						<span>скидка</span>
+					</label>
+					<label htmlFor="cleaning">Для чого
+						<input
+							type="checkbox"
+							onChange={filterHandler}
+							value="cleaning"
+							id="cleaning"
+						/>
+						<span>очищення</span>
+						<input
+							type="checkbox"
+							onChange={filterHandler}
+							value="renewal"
+							id="renewal"
+						/>
+						<span>відновлення</span>
+						<input
+							type="checkbox"
+							onChange={filterHandler}
+							value="moisturizing"
+							id="moisturizing"
+						/>
+						<span>зволоження і живлення</span>
+						<input
+							type="checkbox"
+							onChange={filterHandler}
+							value="thermalProtection"
+							id="thermalProtection"
+						/>
+						<span>термозахист</span>
+					</label>
+					<label htmlFor="shampoo">Тип товару
+						<input
+							type="checkbox"
+							onChange={filterHandler}
+							value="shampoo"
+							id="shampoo"
+						/>
+						<span>шампунь</span>
+						<input
+							type="checkbox"
+							onChange={filterHandler}
+							value="filler"
+							id="filler"
+						/>
+						<span>філер</span>
+						<input
+							type="checkbox"
+							onChange={filterHandler}
+							value="mask"
+							id="mask"
+						/>
+						<span>маска</span>
+						<input
+							type="checkbox"
+							onChange={filterHandler}
+							value="balm"
+							id="balm"
+						/>
+						<span>бальзам</span>
+						<input
+							type="checkbox"
+							onChange={filterHandler}
+							value="conditioner"
+							id="conditioner"
+						/>
+						<span>кондиціонер</span>
+						<input
+							type="checkbox"
+							onChange={filterHandler}
+							value="mist"
+							id="mist"
+						/>
+						<span>міст</span>
+						<input
+							type="checkbox"
+							onChange={filterHandler}
+							value="protection"
+							id="protection"
+						/>
+						<span>термозахист</span>
+					</label>
+				</fieldset>
+				
 			</form>
 			<div className={styles.wrapper}>
 				{items.map(el =>
@@ -67,7 +181,7 @@ function GoodsCard(props) {
 							</div>
 							<Link key={el.id} to={el.id} className={styles.Link}>
 								<label htmlFor="button">{props.label}</label>
-								<input type="checkbox" checked={checked} onChange={handleChange} />
+								<input className={styles.checkbox} checked={checked} onChange={handleChange} />
 							</Link>
 							<div className={styles.control}>
 								<button className={styles.btn}>
@@ -96,6 +210,7 @@ GoodsCard.defaultProps = {
 	currency: 'грн',
 	select: 'сортування',
 	select2: 'пошук',
+	select3: 'фільтр',
 	placeholder: 'пошук по товарам',
 	optionDefaultValue: 'виберіть значення',
 	optionValue0: 'ціна за зростанням',
