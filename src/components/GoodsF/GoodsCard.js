@@ -57,116 +57,150 @@ function GoodsCard(props) {
 	return (
 		<>
 			<form className={styles.form}>
-				<fieldset>
-					<label className={styles.label}>{props.select}</label>
-					<select className={styles.selectSort} onChange={onSelectSort}>
-						<option defaultValue={0}>{props.optionDefaultValue}</option>
-						<option value={0}>{props.optionValue0}</option>
-						<option value={1}>{props.optionValue1}</option>
-					</select>
-				</fieldset>
-				<fieldset>
-					<label className={styles.label}>{props.select2}</label>
-					<input className={styles.selectSearch}
-						onChange = {onSelectSearch}
-						type = "search"
-						placeholder={props.placeholder}
-					/>
-				</fieldset>
-			</form>
-			<form>
-				<fieldset>
-					<label htmlFor="price">Цена
-						<input
-							type="checkbox"
-							onChange={filterHandler}
-							value="discount"
-							id="discount"
+				<div className={styles.formSortSearch}>
+					<fieldset className={styles.formSort}>
+						<label className={styles.label}>{props.select}</label>
+						<select className={styles.selectSort} onChange={onSelectSort}>
+							<option defaultValue={0}>{props.optionDefaultValue}</option>
+							<option value={0}>{props.optionValue0}</option>
+							<option value={1}>{props.optionValue1}</option>
+						</select>
+					</fieldset>
+					<fieldset className={styles.formSearch}>
+						<label className={styles.label}>{props.select2}</label>
+						<input className={styles.selectSearch}
+						       onChange = {onSelectSearch}
+						       type = "search"
+						       placeholder={props.placeholder}
 						/>
-						<span>скидка</span>
-					</label>
-					<label htmlFor="cleaning">Для чого
-						<input
-							type="checkbox"
-							onChange={filterHandler}
-							value="cleaning"
-							id="cleaning"
-						/>
-						<span>очищення</span>
-						<input
-							type="checkbox"
-							onChange={filterHandler}
-							value="renewal"
-							id="renewal"
-						/>
-						<span>відновлення</span>
-						<input
-							type="checkbox"
-							onChange={filterHandler}
-							value="moisturizing"
-							id="moisturizing"
-						/>
-						<span>зволоження і живлення</span>
-						<input
-							type="checkbox"
-							onChange={filterHandler}
-							value="thermalProtection"
-							id="thermalProtection"
-						/>
-						<span>термозахист</span>
-					</label>
-					<label htmlFor="shampoo">Тип товару
-						<input
-							type="checkbox"
-							onChange={filterHandler}
-							value="shampoo"
-							id="shampoo"
-						/>
-						<span>шампунь</span>
-						<input
-							type="checkbox"
-							onChange={filterHandler}
-							value="filler"
-							id="filler"
-						/>
-						<span>філер</span>
-						<input
-							type="checkbox"
-							onChange={filterHandler}
-							value="mask"
-							id="mask"
-						/>
-						<span>маска</span>
-						<input
-							type="checkbox"
-							onChange={filterHandler}
-							value="balm"
-							id="balm"
-						/>
-						<span>бальзам</span>
-						<input
-							type="checkbox"
-							onChange={filterHandler}
-							value="conditioner"
-							id="conditioner"
-						/>
-						<span>кондиціонер</span>
-						<input
-							type="checkbox"
-							onChange={filterHandler}
-							value="mist"
-							id="mist"
-						/>
-						<span>міст</span>
-						<input
-							type="checkbox"
-							onChange={filterHandler}
-							value="protection"
-							id="protection"
-						/>
-						<span>термозахист</span>
-					</label>
-				</fieldset>
+					</fieldset>
+				</div>
+				<div className={styles.formCheckbox}>
+					<fieldset className={styles.fieldsetCheckbox}>
+						<div className={styles.checkBlockOne}>
+							<div className={styles.checkPrice}>
+								<label className={styles.labelCheckbox} htmlFor="price">{props.select4}
+									<label className={styles.checkLabel}>
+										<input
+											type="checkbox"
+											onChange={filterHandler}
+											value="discount"
+											id="discount"
+										/>
+										<span>скидка</span>
+									</label>
+								</label>
+							</div>
+							<div className={styles.checkForWhat}>
+								<label className={styles.labelCheckbox} htmlFor="cleaning">{props.select5}
+									<label className={styles.checkLabel}>
+										<input
+											type="checkbox"
+											onChange={filterHandler}
+											value="cleaning"
+											id="cleaning"
+										/>
+										<span>очищення</span>
+									</label>
+									<label className={styles.checkLabel}>
+										<input
+											type="checkbox"
+											onChange={filterHandler}
+											value="renewal"
+											id="renewal"
+										/>
+										<span>відновлення</span>
+									</label>
+									<label className={styles.checkLabel}>
+										<input
+											type="checkbox"
+											onChange={filterHandler}
+											value="moisturizing"
+											id="moisturizing"
+										/>
+										<span>зволоження і живлення</span>
+									</label>
+									<label className={styles.checkLabel}>
+										<input
+											type="checkbox"
+											onChange={filterHandler}
+											value="thermalProtection"
+											id="thermalProtection"
+										/>
+										<span>термозахист</span>
+									</label>
+								</label>
+							</div>
+						</div>
+						<div className={styles.checkBlockTwo}>
+							<label className={styles.labelCheckbox} htmlFor="shampoo">{props.select6}
+								<label className={styles.checkLabel}>
+									<input
+										type="checkbox"
+										onChange={filterHandler}
+										value="shampoo"
+										id="shampoo"
+									/>
+									<span>шампунь</span>
+								</label>
+								<label className={styles.checkLabel}>
+									<input
+										type="checkbox"
+										onChange={filterHandler}
+										value="filler"
+										id="filler"
+									/>
+									<span>філер</span>
+								</label>
+								<label className={styles.checkLabel}>
+									<input
+										type="checkbox"
+										onChange={filterHandler}
+										value="mask"
+										id="mask"
+									/>
+									<span>маска</span>
+								</label>
+								<label className={styles.checkLabel}>
+									<input
+										type="checkbox"
+										onChange={filterHandler}
+										value="balm"
+										id="balm"
+									/>
+									<span>бальзам</span>
+								</label>
+								<label className={styles.checkLabel}>
+									<input
+										type="checkbox"
+										onChange={filterHandler}
+										value="conditioner"
+										id="conditioner"
+									/>
+									<span>кондиціонер</span>
+								</label>
+								<label className={styles.checkLabel}>
+									<input
+										type="checkbox"
+										onChange={filterHandler}
+										value="mist"
+										id="mist"
+									/>
+									<span>міст</span>
+								</label>
+								<label className={styles.checkLabel}>
+									<input
+										type="checkbox"
+										onChange={filterHandler}
+										value="protection"
+										id="protection"
+									/>
+									<span>термозахист</span>
+								</label>
+							</label>
+						</div>
+					</fieldset>
+				</div>
 			</form>
 			<div className={styles.wrapper}>
 				{items.map(el =>
@@ -208,6 +242,9 @@ GoodsCard.defaultProps = {
 	select: 'сортування',
 	select2: 'пошук',
 	select3: 'фільтр',
+	select4: 'ціна',
+	select5: 'для чого',
+	select6: 'тип товару',
 	placeholder: 'пошук по товарам',
 	optionDefaultValue: 'виберіть значення',
 	optionValue0: 'ціна за зростанням',

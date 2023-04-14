@@ -4,43 +4,37 @@
   flex-wrap: wrap;
   margin: 0 3vh 5vh 3vh;
 }
-
-.block {
+.wrapper .block {
   padding-top: 20vh;
   width: 90%;
   max-width: 1300px;
   margin: 0 auto;
   text-align: center;
 }
-.block h2 {
+.wrapper .block h2 {
   text-align: center;
   font-weight: 700;
   font-size: 58px;
 }
-
-.wrapBlock {
+.wrapper .wrapBlock {
   max-height: 100px;
   overflow: hidden;
   order: 0;
   margin-bottom: 10px;
 }
-
-.checkbox {
+.wrapper .checkbox {
   display: none;
 }
-
-.checkbox:checked + .wrapBlock {
+.wrapper .checkbox:checked + .wrapBlock {
   height: auto;
 }
-
-.Link {
+.wrapper .Link {
   text-decoration: none;
 }
-.Link:hover {
+.wrapper .Link:hover {
   text-decoration: none;
 }
-
-label {
+.wrapper label {
   order: 1;
   color: #5383ed;
   font-size: 18px;
@@ -48,8 +42,7 @@ label {
   font-weight: bold;
   font-style: italic;
 }
-
-.container {
+.wrapper .container {
   display: flex;
   flex-direction: row;
   box-shadow: 0 5px 5px 1px rgba(255, 255, 255, 0.5);
@@ -62,13 +55,12 @@ label {
   max-width: 600px;
   width: 100%;
 }
-
-.productDetails {
+.wrapper .productDetails {
   width: 50%;
   background: #8ab4f8;
   will-change: transform;
 }
-.productDetails::after {
+.wrapper .productDetails::after {
   content: "";
   position: absolute;
   top: -2px;
@@ -79,7 +71,7 @@ label {
   height: calc(100% + 3px);
   z-index: -1;
 }
-.productDetails h4 {
+.wrapper .productDetails h4 {
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 15px;
@@ -89,7 +81,7 @@ label {
   color: #191d1c;
   overflow: scroll;
 }
-.productDetails p {
+.wrapper .productDetails p {
   margin: 0 10px 0 10px;
   color: #191d1c;
   font-size: 18px;
@@ -97,7 +89,7 @@ label {
   overflow: scroll;
   height: 25vh;
 }
-.productDetails .more {
+.wrapper .productDetails .more {
   padding: 5px;
   border-radius: 10px;
   font-size: 18px;
@@ -112,14 +104,13 @@ label {
   left: 24%;
   top: 60%;
 }
-.productDetails .more svg {
+.wrapper .productDetails .more svg {
   fill: #ffffff;
   width: 20px;
   height: 20px;
   margin: 0 auto;
 }
-
-.productImage {
+.wrapper .productImage {
   transition: all 0.5s ease-out;
   display: inline-block;
   position: relative;
@@ -128,16 +119,16 @@ label {
   float: right;
   width: 50%;
 }
-.productImage img {
+.wrapper .productImage img {
   width: 100%;
   height: 100%;
   transition: all 0.5s ease-out;
   cursor: pointer;
 }
-.productImage img:hover {
+.wrapper .productImage img:hover {
   transform: scale(1.5, 1.5);
 }
-.productImage::after {
+.wrapper .productImage::after {
   content: "";
   position: absolute;
   top: -2px;
@@ -148,18 +139,15 @@ label {
   height: calc(100% + 3px);
   z-index: -1;
 }
-
-.productImage:hover .info {
+.wrapper .productImage:hover .info {
   transform: translateX(0);
 }
-
-.control {
+.wrapper .control {
   position: absolute;
   left: 25%;
   top: 80%;
 }
-
-.btn {
+.wrapper .btn {
   transform: translateY(0px);
   transition: 0.3s linear;
   background: #4fa19d;
@@ -173,29 +161,26 @@ label {
   padding: 0;
   margin-bottom: 20px;
 }
-.btn:hover {
+.wrapper .btn:hover {
   transform: translateY(-4px);
 }
-.btn span {
+.wrapper .btn span {
   transition: transform 0.3s;
   display: inline-block;
   padding: 10px 20px;
   font-size: 1.2em;
   margin: 0;
 }
-
-.btn .price, .shoppingCart {
+.wrapper .btn .price, .wrapper .shoppingCart {
   background: #191d1c;
   border: 0;
   margin: 0;
 }
-
-.btn .price {
+.wrapper .btn .price {
   transform: translateX(-10%);
   padding-right: 10px;
 }
-
-.btn .shoppingCart {
+.wrapper .btn .shoppingCart {
   transform: translateX(-100%);
   position: absolute;
   background: #191d1c;
@@ -203,17 +188,14 @@ label {
   left: 0;
   top: 0;
 }
-
-.btn .buy {
+.wrapper .btn .buy {
   z-index: 3;
   font-weight: bolder;
 }
-
-.btn:hover .price {
+.wrapper .btn:hover .price {
   transform: translateX(-110%);
 }
-
-.btn:hover .shoppingCart {
+.wrapper .btn:hover .shoppingCart {
   transform: translateX(0%);
 }
 
@@ -253,34 +235,38 @@ label {
 .form {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   background: #edae3b;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   gap: 2vh;
-  max-width: 1250px;
-  margin: 2vh auto;
+  margin: 0 60px 60px 60px;
 }
-.form fieldset {
+.form .formSortSearch {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  width: 33%;
+}
+.form .formSortSearch fieldset {
+  display: flex;
+  flex-direction: column;
   border: none;
 }
-.form fieldset .label {
+.form .formSortSearch fieldset .label {
   display: block;
   order: 0;
-  padding-left: 20px;
+  padding-left: 10px;
   color: #202125;
   font-weight: bold;
   width: 100%;
 }
-.form fieldset .iconWrap {
+.form .formSortSearch fieldset .iconWrap {
   position: relative;
   top: 20px;
   width: 20px;
   height: 20px;
 }
-.form fieldset .selectSort {
+.form .formSortSearch fieldset .selectSort {
   width: 100%;
   box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
   color: #ffffff;
@@ -294,11 +280,11 @@ label {
   background-size: 20px auto;
   outline: none;
 }
-.form fieldset .selectSort:active, .form fieldset .selectSort :hover, .form fieldset .selectSort :focus {
+.form .formSortSearch fieldset .selectSort:active, .form .formSortSearch fieldset .selectSort :hover, .form .formSortSearch fieldset .selectSort :focus {
   outline: 0;
   outline-offset: 0;
 }
-.form fieldset .selectSearch {
+.form .formSortSearch fieldset .selectSearch {
   background: #434343;
   box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
   border: none;
@@ -309,12 +295,58 @@ label {
   outline: none;
   position: relative;
 }
-.form fieldset .selectSearch::placeholder {
+.form .formSortSearch fieldset .selectSearch::placeholder {
   color: #ffffff;
 }
-.form fieldset .selectSearch:active, .form fieldset .selectSearch :hover, .form fieldset .selectSearch :focus {
+.form .formSortSearch fieldset .selectSearch:active, .form .formSortSearch fieldset .selectSearch :hover, .form .formSortSearch fieldset .selectSearch :focus {
   outline: 0;
   outline-offset: 0;
+}
+.form .formSortSearch .formSort {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.form .formSortSearch .formSearch {
+  margin-top: 30px;
+}
+.form .formCheckbox {
+  width: 50%;
+  background: #edae3b;
+  padding: 20px;
+  border-radius: 10px;
+}
+.form .formCheckbox .labelCheckbox {
+  color: #202125;
+  padding-left: 20px;
+  font-weight: bold;
+}
+.form .formCheckbox .fieldsetCheckbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: none;
+}
+.form .formCheckbox .fieldsetCheckbox .checkBlockOne, .form .formCheckbox .fieldsetCheckbox .checkBlockTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.form .formCheckbox .fieldsetCheckbox .checkBlockOne .checkPrice, .form .formCheckbox .fieldsetCheckbox .checkBlockTwo .checkPrice {
+  display: block;
+}
+.form .formCheckbox .fieldsetCheckbox .checkBlockOne .checkForWhat, .form .formCheckbox .fieldsetCheckbox .checkBlockTwo .checkForWhat {
+  display: block;
+}
+.form .formCheckbox .fieldsetCheckbox .checkBlockOne .checkLabel, .form .formCheckbox .fieldsetCheckbox .checkBlockTwo .checkLabel {
+  display: flex;
+  color: #ffffff;
+}
+.form .formCheckbox .fieldsetCheckbox .checkBlockOne .checkLabel input, .form .formCheckbox .fieldsetCheckbox .checkBlockTwo .checkLabel input {
+  display: block;
+  margin-right: 10px;
+}
+.form .formCheckbox .fieldsetCheckbox .checkBlockOne .checkLabel span, .form .formCheckbox .fieldsetCheckbox .checkBlockTwo .checkLabel span {
+  display: block;
 }
 
 [type=search]::-webkit-search-cancel-button {
