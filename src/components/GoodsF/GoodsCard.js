@@ -29,14 +29,13 @@ function GoodsCard(props) {
 	};
 	items = items.filter(el => {
 			return (
-				el.name.toLowerCase().includes(searchField.toLowerCase()) ||
+				el.description.toLowerCase().includes(searchField.toLowerCase()) ||
 				el.type.toLowerCase().includes(searchField.toLowerCase())
 			);
 		}
 	);
 	//////////////////////////////////////
 	const [filterTags, setFilterTags] = useState([]);
-	
 	items = items.filter(el =>
 		filterTags.length > 0
 			? filterTags.every((filterTag) =>
@@ -44,7 +43,6 @@ function GoodsCard(props) {
 			)
 			: props.dataGoods
 	)
-	
 	const filterHandler = (event) => {
 		if (event.target.checked) {
 			setFilterTags([...filterTags, event.target.value])
@@ -54,7 +52,6 @@ function GoodsCard(props) {
 			)
 		}
 	}
-	
 	/////////////////////////////////////
 	
 	return (
@@ -76,7 +73,8 @@ function GoodsCard(props) {
 						placeholder={props.placeholder}
 					/>
 				</fieldset>
-				
+			</form>
+			<form>
 				<fieldset>
 					<label htmlFor="price">Цена
 						<input
@@ -169,7 +167,6 @@ function GoodsCard(props) {
 						<span>термозахист</span>
 					</label>
 				</fieldset>
-				
 			</form>
 			<div className={styles.wrapper}>
 				{items.map(el =>
