@@ -67,6 +67,9 @@ $bright-orange: #edae3b;
               label {
                 cursor: pointer;
               }
+              input {
+                opacity: 0;
+              }
             }
           }
         }

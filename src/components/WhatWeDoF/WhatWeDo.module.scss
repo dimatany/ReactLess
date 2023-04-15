@@ -48,6 +48,9 @@ $soft-yellow: #f7d775;
       label {
         cursor: pointer;
       }
+      input {
+        opacity: 0;
+      }
       &:hover {
         color: $soft-yellow;
       }

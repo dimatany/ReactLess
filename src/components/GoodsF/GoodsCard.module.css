@@ -342,7 +342,6 @@
   color: #ffffff;
 }
 .form .formCheckbox .fieldsetCheckbox .checkBlockOne .checkLabel input, .form .formCheckbox .fieldsetCheckbox .checkBlockTwo .checkLabel input {
-  display: block;
   margin-right: 10px;
 }
 .form .formCheckbox .fieldsetCheckbox .checkBlockOne .checkLabel span, .form .formCheckbox .fieldsetCheckbox .checkBlockTwo .checkLabel span {

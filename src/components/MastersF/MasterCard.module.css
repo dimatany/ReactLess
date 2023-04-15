@@ -64,5 +64,8 @@
 .cardmaster .cardmasterWrap .wrapCard .wrapBlock .profession .professionRef a label {
   cursor: pointer;
 }
+.cardmaster .cardmasterWrap .wrapCard .wrapBlock .profession .professionRef a input {
+  opacity: 0;
+}
 
 /*# sourceMappingURL=MasterCard.module.css.map */
