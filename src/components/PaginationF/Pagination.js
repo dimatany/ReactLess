@@ -38,7 +38,10 @@ function Pagination(props) {
 	
 	return (
 		<div className={styles.wrapPagination}>
-			{displayUsers}
+			<div className={styles.paginationBlock}>
+				{displayUsers}
+			</div>
+			
 			<ReactPaginate
 				previousLabel={" ‹ "}
 				nextLabel={" › "}

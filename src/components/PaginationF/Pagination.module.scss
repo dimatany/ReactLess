@@ -15,8 +15,13 @@ $lime-green: #4fa19d;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  flex-direction: column;
   width: 100%;
   max-width: 1300px;
+  margin: 0 auto;
+}
+.paginationBlock {
+  display: flex;
   margin: 0 auto;
 }
 .paginationButton {
@@ -26,7 +31,9 @@ $lime-green: #4fa19d;
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 5vh 0 15vh 0;
+  //margin: 5vh 0 15vh 0;
+  padding: 5vh 0 15vh 0;
+  margin: 0 auto;
   a {
     display: block;
     color: $bright-red;
