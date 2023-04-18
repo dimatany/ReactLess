@@ -10,6 +10,7 @@ $bright-orange: #edae3b;
 $bright-red: #FE2E2E;
 $lime-green: #4fa19d;
 
+
 .wrapper {
   display: flex;
   flex-direction: row;
@@ -164,6 +165,7 @@ $lime-green: #4fa19d;
     background: $lime-green;
     border-radius: 10px;
     position: relative;
+    top: 0;
     overflow: hidden;
     cursor: pointer;
     outline: none;
@@ -211,23 +213,29 @@ $lime-green: #4fa19d;
   }
 }
 @media screen and (max-width: 720px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    .productImage {
-      width: 100%;
-      min-height: 65%;
-    }
-    .productDetails {
-      width: 100%;
-      min-height: 300px;
-      padding-bottom: 30px;
-      .more {
-        left: 34%;
+  .wrapper {
+    .container {
+      display: flex;
+      flex-direction: column;
+      .productImage {
+        width: 100%;
+        min-height: 65%;
+        order: -1;
+      }
+      .productDetails {
+        width: 100%;
+        min-height: 300px;
+        padding-bottom: 30px;
+        .more {
+          left: 34%;
+        }
+      }
+      .control {
+        left: 35%;
       }
     }
-    .control {
-      left: 35%;
+    .btn {
+      top: -30px;
     }
   }
 }
@@ -256,7 +264,6 @@ $lime-green: #4fa19d;
   background: $bright-orange;
   padding: 10px;
   border-radius: 10px;
-  gap: 2vh;
   margin: 0 60px 60px 60px;
   .formSortSearch {
     width: 50%;
@@ -318,8 +325,8 @@ $lime-green: #4fa19d;
       }
     }
     .formSort {
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin-top: 45px;
+      margin-bottom: 30px;
     }
     .formSearch {
       margin-top: 30px;
@@ -353,6 +360,7 @@ $lime-green: #4fa19d;
         .checkLabel {
           display: flex;
           color: $white;
+          margin-bottom: 10px;
           input {
             margin-right: 10px;
           }
@@ -371,15 +379,52 @@ $lime-green: #4fa19d;
   background: url('../../BLL/img/Goods/cross.svg') no-repeat;
   background-size: 30px 30px;
 }
+input[type=checkbox] {
+  position: relative;
+  margin-right: 10px;
+  line-height: 14px;
+  font-size: 25px;
+  cursor: pointer;
+  &:before {
+    position: absolute;
+    top: 4px;
+    content: "";
+    height: 15px;
+    width: 15px;
+    border: 1px solid $grayish-blue;
+    background: $grayish-blue;
+    border-radius: 3px;
+    box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  }
+  &:checked {
+    &:before {
+      content: "✔";
+      color: $white;
+    }
+  }
+  &:hover {
+    &:before {
+      border: 1px solid $white;
+    }
+  }
+}
 @media screen and (max-width: 720px) {
   .form {
     display: flex;
     flex-direction: column;
+    margin: 0 10px 10px 10px;
+    .formSortSearch {
+      width: 100%;
+    }
+    .formCheckbox {
+      width: 90%;
+    }
     fieldset {
       width: 100%;
     }
   }
 }
-//также проверить мобильную медиа
-/////////////////////////////////////////////
+
+
+
 

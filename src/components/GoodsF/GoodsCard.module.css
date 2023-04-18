@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .wrapper {
   display: flex;
   flex-direction: row;
@@ -153,6 +154,7 @@
   background: #4fa19d;
   border-radius: 10px;
   position: relative;
+  top: 0;
   overflow: hidden;
   cursor: pointer;
   outline: none;
@@ -200,24 +202,28 @@
 }
 
 @media screen and (max-width: 720px) {
-  .container {
+  .wrapper .container {
     display: flex;
     flex-direction: column;
   }
-  .container .productImage {
+  .wrapper .container .productImage {
     width: 100%;
     min-height: 65%;
+    order: -1;
   }
-  .container .productDetails {
+  .wrapper .container .productDetails {
     width: 100%;
     min-height: 300px;
     padding-bottom: 30px;
   }
-  .container .productDetails .more {
+  .wrapper .container .productDetails .more {
     left: 34%;
   }
-  .container .control {
+  .wrapper .container .control {
     left: 35%;
+  }
+  .wrapper .btn {
+    top: -30px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -239,7 +245,6 @@
   background: #edae3b;
   padding: 10px;
   border-radius: 10px;
-  gap: 2vh;
   margin: 0 60px 60px 60px;
 }
 .form .formSortSearch {
@@ -303,8 +308,8 @@
   outline-offset: 0;
 }
 .form .formSortSearch .formSort {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 45px;
+  margin-bottom: 30px;
 }
 .form .formSortSearch .formSearch {
   margin-top: 30px;
@@ -340,6 +345,7 @@
 .form .formCheckbox .fieldsetCheckbox .checkBlockOne .checkLabel, .form .formCheckbox .fieldsetCheckbox .checkBlockTwo .checkLabel {
   display: flex;
   color: #ffffff;
+  margin-bottom: 10px;
 }
 .form .formCheckbox .fieldsetCheckbox .checkBlockOne .checkLabel input, .form .formCheckbox .fieldsetCheckbox .checkBlockTwo .checkLabel input {
   margin-right: 10px;
@@ -356,10 +362,43 @@
   background-size: 30px 30px;
 }
 
+input[type=checkbox] {
+  position: relative;
+  margin-right: 10px;
+  line-height: 14px;
+  font-size: 25px;
+  cursor: pointer;
+}
+input[type=checkbox]:before {
+  position: absolute;
+  top: 4px;
+  content: "";
+  height: 15px;
+  width: 15px;
+  border: 1px solid #434343;
+  background: #434343;
+  border-radius: 3px;
+  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+input[type=checkbox]:checked:before {
+  content: "✔";
+  color: #ffffff;
+}
+input[type=checkbox]:hover:before {
+  border: 1px solid #ffffff;
+}
+
 @media screen and (max-width: 720px) {
   .form {
     display: flex;
     flex-direction: column;
+    margin: 0 10px 10px 10px;
+  }
+  .form .formSortSearch {
+    width: 100%;
+  }
+  .form .formCheckbox {
+    width: 90%;
   }
   .form fieldset {
     width: 100%;
