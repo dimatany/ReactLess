@@ -1,7 +1,7 @@
 .wrap {
   max-width: 1300px;
   margin: 0 auto;
-  background: rgba(32, 33, 37, 0.9);
+  background: rgb(32, 33, 37);
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -99,7 +99,7 @@
 }
 
 @media (min-width: 768px) {
-  .hamb {
+  .header .hamb {
     display: none;
   }
   .nav {

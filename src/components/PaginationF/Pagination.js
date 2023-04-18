@@ -4,15 +4,15 @@ import ReactPaginate from "react-paginate";
 import SVGHand from '../SVG/SVGHand';
 
 function Pagination(props) {
-	const [users, setUsers] = useState(props.dataBlog.slice(0, 100));
+	const [items, setItems] = useState(props.dataBlog.slice(0, 100));
 	const [pageNumber, setPageNumber] = useState(0);
 	
 	const usersPerPage = 3;
 	const pagesVisited = pageNumber * usersPerPage;
 	
-	const displayUsers = users
+	const displayItems = items
 	.slice(pagesVisited, pagesVisited + usersPerPage)
-	.map((el) => {
+	.map(el => {
 		return (
 			<div className={styles.wrapBlock} key={el.id}>
 				<div className={styles.card}>
@@ -31,7 +31,7 @@ function Pagination(props) {
 		);
 	});
 	
-	const pageCount = Math.ceil(users.length / usersPerPage);
+	const pageCount = Math.ceil(items.length / usersPerPage);
 	const changePage = ({ selected }) => {
 		setPageNumber(selected);
 	};
@@ -39,9 +39,8 @@ function Pagination(props) {
 	return (
 		<div className={styles.wrapPagination}>
 			<div className={styles.paginationBlock}>
-				{displayUsers}
+				{displayItems}
 			</div>
-			
 			<ReactPaginate
 				previousLabel={" ‹ "}
 				nextLabel={" › "}

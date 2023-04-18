@@ -1,5 +1,5 @@
 $dark-blue: #202125;
-$dark-blue-rgba: rgba(32, 33, 37, .9);
+$dark-blue-rgba: rgba(32, 33, 37);
 $dark-salt: #191d1c;
 $grayish-blue: #434343;
 $white: #ffffff;
@@ -19,7 +19,7 @@ $lime-green: #4fa19d;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.header{
+.header {
   position: fixed;
   top:0;
   left:0;
@@ -111,8 +111,10 @@ $lime-green: #4fa19d;
 }
 
 @media (min-width: 768px) {
-  .hamb{
-    display: none;
+  .header {
+    .hamb{
+      display: none;
+    }
   }
   .nav{
     max-height: none;
