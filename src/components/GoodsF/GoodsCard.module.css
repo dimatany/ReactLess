@@ -87,7 +87,7 @@
   color: #191d1c;
   font-size: 18px;
   width: 95%;
-  overflow: scroll;
+  overflow: hidden;
   height: 25vh;
 }
 .wrapper .productDetails .more {
