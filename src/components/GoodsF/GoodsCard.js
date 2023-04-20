@@ -54,10 +54,6 @@ function GoodsCard(props) {
 	}
 	/////////////////////////////////////
 	
-	
-	
-	/////////////////////////////////////
-	
 	return (
 		<>
 			<form className={styles.form}>
@@ -233,6 +229,7 @@ function GoodsCard(props) {
 						</div>
 					</div>
 				)}
+				<span className={styles.test}></span>
 			</div>
 		</>
 	);

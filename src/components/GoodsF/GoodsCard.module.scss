@@ -16,44 +16,6 @@ $lime-green: #4fa19d;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 3vh 5vh 3vh;
-  .block {
-    padding-top: 20vh;
-    width: 90%;
-    max-width: 1300px;
-    margin: 0 auto;
-    text-align: center;
-    h2 {
-      text-align: center;
-      font-weight: 700;
-      font-size: 58px;
-    }
-  }
-  .wrapBlock {
-    max-height: 100px;
-    overflow: hidden;
-    order: 0;
-    margin-bottom: 10px;
-  }
-  .checkbox {
-    display: none;
-  }
-  .checkbox:checked + .wrapBlock {
-    height: auto;
-  }
-  .Link {
-    text-decoration: none;
-    &:hover {
-      text-decoration: none;
-    }
-  }
-  label {
-    order: 1;
-    color: $soft-blue2;
-    font-size: 18px;
-    cursor: pointer;
-    font-weight: bold;
-    font-style: italic;
-  }
   .container {
     display: flex;
     flex-direction: row;
@@ -66,150 +28,193 @@ $lime-green: #4fa19d;
     min-height: 350px;
     max-width: 600px;
     width: 100%;
-  }
-  .productDetails {
-    width: 50%;
-    background: $soft-blue;
-    will-change: transform;
-    &::after {
-      content: "";
-      position: absolute;
-      top: -2px;
-      left: -2px;
-      background: linear-gradient(30deg, $soft-yellow, $soft-blue2, $bright-red, $lime-green,  $soft-yellow, $soft-blue2, $bright-red, $lime-green);
-      background-size: 300% 300%;
-      width: calc(100% + 3px);
-      height: calc(100% + 3px);
-      z-index: -1;
-    }
-    h4 {
+    .block {
+      padding-top: 20vh;
+      width: 90%;
+      max-width: 1300px;
       margin: 0 auto;
-      padding-top: 20px;
-      padding-bottom: 15px;
-      height: 12vh;
-      width: 95%;
-      font-size: 24px;
-      color: $dark-salt;
-      overflow: scroll;
-    }
-    p {
-      margin: 0 10px 0 10px;
-      color: $dark-salt;
-      font-size: 18px;
-      width: 95%;
-      overflow: hidden;
-      height: 25vh;
-    }
-    .more {
-      padding: 5px;
-      border-radius: 10px;
-      font-size: 18px;
-      width: 75px;
-      background: $dark-salt;
-      box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
-      display: flex;
-      align-items: center;
       text-align: center;
-      margin: 0 auto;
-      position: absolute;
-      left: 24%;
-      top: 60%;
-      svg {
-        fill: $white;
-        width: 20px;
-        height: 20px;
-        margin: 0 auto;
+      h2 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 58px;
       }
     }
-  }
-  .productImage {
-    transition: all 0.5s ease-out;
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    height: 100%;
-    float: right;
-    width: 50%;
-    img {
-      width: 100%;
-      height: 100%;
-      transition: all 0.5s ease-out;
-      cursor: pointer;
+    .wrapBlock {
+      max-height: 100px;
+      overflow: hidden;
+      order: 0;
+      margin-bottom: 10px;
+    }
+    .checkbox {
+      display: none;
+    }
+    .checkbox:checked + .wrapBlock {
+      height: auto;
+    }
+    .Link {
+      text-decoration: none;
       &:hover {
-        transform: scale(1.5, 1.5);
+        text-decoration: none;
       }
     }
-    &::after {
-      content: "";
-      position: absolute;
-      top: -2px;
-      left: -2px;
-      background: linear-gradient(30deg, $soft-yellow, $soft-blue2, $bright-red, $lime-green,  $soft-yellow, $soft-blue2, $bright-red, $lime-green);
-      background-size: 300% 300%;
-      width: calc(100% + 3px);
-      height: calc(100% + 3px);
-      z-index: -1;
+    label {
+      order: 1;
+      color: $soft-blue2;
+      font-size: 18px;
+      cursor: pointer;
+      font-weight: bold;
+      font-style: italic;
     }
-  }
-  .productImage:hover .info {
-    transform: translateX(0);
-  }
-  .control {
-    position: absolute;
-    left: 25%;
-    top: 80%;
-  }
-  .btn {
-    transform: translateY(0px);
-    transition: 0.3s linear;
-    background: $lime-green;
-    border-radius: 10px;
-    position: relative;
-    top: 0;
-    overflow: hidden;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    color: $white;
-    padding: 0;
-    margin-bottom: 20px;
-    &:hover {
-      transform: translateY(-4px);
+    .productDetails {
+      width: 50%;
+      background: $soft-blue;
+      will-change: transform;
+      &::after {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background: linear-gradient(30deg, $soft-yellow, $soft-blue2, $bright-red, $lime-green,  $soft-yellow, $soft-blue2, $bright-red, $lime-green);
+        background-size: 300% 300%;
+        width: calc(100% + 3px);
+        height: calc(100% + 3px);
+        z-index: -1;
+      }
+      h4 {
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        height: 12vh;
+        width: 95%;
+        font-size: 24px;
+        color: $dark-salt;
+        overflow: scroll;
+      }
+      p {
+        margin: 0 10px 0 10px;
+        color: $dark-salt;
+        font-size: 18px;
+        width: 95%;
+        overflow: hidden;
+        height: 25vh;
+      }
+      .more {
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 18px;
+        width: 75px;
+        background: $dark-salt;
+        box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        position: absolute;
+        left: 24%;
+        top: 60%;
+        svg {
+          fill: $white;
+          width: 20px;
+          height: 20px;
+          margin: 0 auto;
+        }
+      }
     }
-    span {
-      transition: transform 0.3s;
+    .productImage {
+      transition: all 0.5s ease-out;
       display: inline-block;
-      padding: 10px 20px;
-      font-size: 1.2em;
-      margin:0;
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+      float: right;
+      width: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s ease-out;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.5, 1.5);
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background: linear-gradient(30deg, $soft-yellow, $soft-blue2, $bright-red, $lime-green,  $soft-yellow, $soft-blue2, $bright-red, $lime-green);
+        background-size: 300% 300%;
+        width: calc(100% + 3px);
+        height: calc(100% + 3px);
+        z-index: -1;
+      }
+    }
+    .productImage:hover .info {
+      transform: translateX(0);
+    }
+    .control {
+      position: absolute;
+      left: 25%;
+      top: 80%;
+    }
+    .btn {
+      transform: translateY(0px);
+      transition: 0.3s linear;
+      background: $lime-green;
+      border-radius: 10px;
+      position: relative;
+      top: 0;
+      overflow: hidden;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      color: $white;
+      padding: 0;
+      margin-bottom: 20px;
+      &:hover {
+        transform: translateY(-4px);
+      }
+      span {
+        transition: transform 0.3s;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        margin:0;
+      }
+    }
+    .btn .price, .shoppingCart{
+      background: $dark-salt;
+      border: 0;
+      margin: 0;
+    }
+    .btn .price {
+      transform: translateX(-10%);
+      padding-right: 10px;
+    }
+    .btn .shoppingCart {
+      transform: translateX(-100%);
+      position: absolute;
+      background: $dark-salt;
+      z-index: 1;
+      left: 0;
+      top: 0;
+    }
+    .btn .buy {
+      z-index: 3;
+      font-weight: bolder;
+    }
+    .btn:hover .price {
+      transform: translateX(-110%);
+    }
+    .btn:hover .shoppingCart {
+      transform: translateX(0%);
     }
   }
-  .btn .price, .shoppingCart{
-    background: $dark-salt;
-    border: 0;
-    margin: 0;
-  }
-  .btn .price {
-    transform: translateX(-10%);
-    padding-right: 10px;
-  }
-  .btn .shoppingCart {
-    transform: translateX(-100%);
-    position: absolute;
-    background: $dark-salt;
-    z-index: 1;
-    left: 0;
-    top: 0;
-  }
-  .btn .buy {
-    z-index: 3;
-    font-weight: bolder;
-  }
-  .btn:hover .price {
-    transform: translateX(-110%);
-  }
-  .btn:hover .shoppingCart {
-    transform: translateX(0%);
+  .test {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
   }
 }
 @media screen and (max-width: 720px) {

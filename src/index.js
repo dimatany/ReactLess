@@ -8,6 +8,7 @@ import App from './App';
 import './BLL/fonts/Gilroy/Gilroy-Light.woff';
 import './BLL/fonts/Dahlia/Dahlia.ttf';
 import {Provider} from 'react-redux';
+import reduxStore from './BLL/reduxStore';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,7 +18,7 @@ let rerenderEntireTree = (state) => {
 			<Provider store={store}>
 				<App
 					appData={state}
-					store={store}
+					store={reduxStore}
 				/>
 			</Provider>
 		</StrictMode>

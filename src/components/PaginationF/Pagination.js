@@ -1,30 +1,25 @@
 import React, { useState } from "react";
 import styles from './Pagination.module.css';
 import ReactPaginate from "react-paginate";
-import SVGHand from '../SVG/SVGHand';
+
 
 function Pagination(props) {
 	const [items, setItems] = useState(props.dataBlog.slice(0, 100));
 	const [pageNumber, setPageNumber] = useState(0);
 	
-	const usersPerPage = 3;
+	
+	const usersPerPage = 2;
 	const pagesVisited = pageNumber * usersPerPage;
 	
-	const displayItems = items
-	.slice(pagesVisited, pagesVisited + usersPerPage)
+	const displayItems = items.slice(pagesVisited, pagesVisited + usersPerPage)
 	.map(el => {
 		return (
-			<div className={styles.wrapBlock} key={el.id}>
-				<div className={styles.card}>
-					<div className={[styles['cardSide'], styles['front']].join(" ")} key={el.id}>
-						<p className={styles.title}>{el.title}</p>
-						<p className={styles.question}>{el.header}</p>
-						<div className={styles.handSVG}>
-							<SVGHand fill='#191d1c'/>
-						</div>
-					</div>
-					<div className={[styles['cardSide'], styles['back']].join(" ")}>
-						<p>{el.text}</p>
+			<div key={el.id} className={styles.wrap}>
+				<div className={styles.wrapPost}>
+					<span className={styles.postNumber}>{el.id}</span>
+					<div className={styles.postContent}>
+						<p className={styles.postContentHeader}>{el.header}</p>
+						<p className={styles.postContentText}>{el.text}</p>
 					</div>
 				</div>
 			</div>
