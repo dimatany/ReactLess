@@ -1,0 +1,55 @@
+.wrap {
+  max-width: 900px;
+  width: 90%;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+.wrap:nth-child(even) {
+  flex-direction: row-reverse;
+  margin-right: -60px;
+  margin-left: 60px;
+  border-radius: 10px;
+}
+.wrap .wrapPost {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  background: #5383ed;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+.wrap .wrapPost span {
+  display: block;
+}
+.wrap .wrapPost .postNumber {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 30px;
+  background: black;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.wrap .wrapPost .postContent {
+  width: 100%;
+  padding: 25px;
+}
+.wrap .wrapPost .postContent .postContentHeader {
+  text-shadow: 1px 1px 1px #434343;
+  letter-spacing: 1px;
+  color: #191d1c;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.wrap .wrapPost .postContent .postContentText {
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+/*# sourceMappingURL=BlogPost.module.css.map */

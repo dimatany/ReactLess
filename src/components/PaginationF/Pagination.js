@@ -1,45 +1,30 @@
 import React, { useState } from "react";
 import styles from './Pagination.module.css';
 import ReactPaginate from "react-paginate";
-import SVGHand from '../SVG/SVGHand';
-
+import Type from '../BlogF/BlogPost';
 
 function Pagination(props) {
-	const [items, setItems] = useState(props.dataBlog);
+	const items = props.dataBlog;
 	const [pageNumber, setPageNumber] = useState(0);
 	
-	
-	const usersPerPage = 2;
-	const pagesVisited = pageNumber * usersPerPage;
-	
-	const displayItems = items.slice(pagesVisited, pagesVisited + usersPerPage)
-	.map(el => {
-		return (
-			<div key={el.id} className={styles.wrap}>
-				<div className={styles.wrapPost}>
-					<span className={styles.postNumber}>{el.id}</span>
-					<div className={styles.postContent}>
-						<p className={styles.postContentHeader}>{el.header}</p>
-						<p className={styles.postContentText}>{el.text}</p>
-					</div>
-				</div>
-			</div>
-		);
-	});
-	
-	const pageCount = Math.ceil(items.length / usersPerPage);
+	const pageSize = 3;
+	const pagesVisited = pageNumber * pageSize;
+	const pageCount = Math.ceil(items.length / pageSize);
 	const changePage = ({ selected }) => {
 		setPageNumber(selected);
 	};
 	
+	let displayItems = items.slice(pagesVisited, pagesVisited + pageSize);
+	
 	return (
 		<div className={styles.wrapPagination}>
 			<div className={styles.paginationBlock}>
-				{displayItems}
+				<Type notes={displayItems}/>
 			</div>
 			<ReactPaginate
 				previousLabel={" ‹ "}
 				nextLabel={" › "}
+				breakLabel={'...'}
 				pageCount={pageCount}
 				onPageChange={changePage}
 				containerClassName={styles.paginationButton}
