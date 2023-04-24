@@ -1,25 +1,25 @@
 import React, { useState } from "react";
 import styles from './Pagination.module.css';
 import ReactPaginate from "react-paginate";
-import Type from '../BlogF/BlogPost';
+import BlogPost from '../BlogF/BlogPost';
 
-function Pagination(props) {
+function Pagination({children, postsPerPage, ...props}) {
 	const items = props.dataBlog;
 	const [pageNumber, setPageNumber] = useState(0);
-	
-	const pageSize = 3;
-	const pagesVisited = pageNumber * pageSize;
-	const pageCount = Math.ceil(items.length / pageSize);
+	// передаем в сам компонент пропсом - const postsPerPage = 3;
+	const pagesVisited = pageNumber * postsPerPage;
+	const pageCount = Math.ceil(items.length / postsPerPage);
 	const changePage = ({ selected }) => {
 		setPageNumber(selected);
 	};
 	
-	let displayItems = items.slice(pagesVisited, pagesVisited + pageSize);
+	let displayItems = items.slice(pagesVisited, pagesVisited + postsPerPage);
 	
 	return (
 		<div className={styles.wrapPagination}>
 			<div className={styles.paginationBlock}>
-				<Type notes={displayItems}/>
+				{props.children}
+				<BlogPost notes={displayItems}/>
 			</div>
 			<ReactPaginate
 				previousLabel={" ‹ "}

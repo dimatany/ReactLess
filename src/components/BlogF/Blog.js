@@ -3,6 +3,7 @@ import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
 import styles from './Blog.module.css';
 import Headings from '../HeadingsF/Headings';
 import Pagination from '../PaginationF/Pagination';
+import BlogPost from './BlogPost';
 
 function Blog(props) {
 	return (
@@ -12,7 +13,7 @@ function Blog(props) {
 			</div>
 			<h3>{props.subtitle}</h3>
 			<ErrorBoundary>
-				<Pagination dataBlog={props.dataBlog}/>
+				<Pagination dataBlog={props.dataBlog} postsPerPage={3}/>
 			</ErrorBoundary>
 		</div>
 	);
