@@ -17,7 +17,7 @@ function BlogPost({ notes, ...props }) {
 						<span className={styles.postNumber}>{el.id}</span>
 						<div className={styles.postContent}>
 							<p className={styles.postContentHeader}>{el.header}</p>
-							<p className={styles.postContentText}>{el.text}
+							<p className={styles.postContentText}>
 								{isTestOpen
 									? el.text
 									: el.text.substring(0, 200) + "..."}
