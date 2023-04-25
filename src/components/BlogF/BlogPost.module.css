@@ -51,5 +51,21 @@
   letter-spacing: 1px;
   line-height: 1.6;
 }
+.wrap .wrapPost .postContent .less {
+  cursor: pointer;
+  color: #191d1c;
+  font-weight: bold;
+  font-size: 16px;
+  text-shadow: 4px 4px 4px #333333;
+  margin-top: 20px;
+}
+.wrap .wrapPost .postContent .more {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  color: #edae3b;
+  text-shadow: 4px 4px 4px #333333;
+  margin-top: 20px;
+}
 
 /*# sourceMappingURL=BlogPost.module.css.map */
