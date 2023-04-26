@@ -200,7 +200,7 @@
 .wrapper .container .btn:hover .shoppingCart {
   transform: translateX(0%);
 }
-.wrapper .test {
+.wrapper .supportingBlock {
   display: flex;
   justify-content: space-between;
   width: 700px;

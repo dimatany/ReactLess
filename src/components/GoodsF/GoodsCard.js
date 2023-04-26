@@ -1,14 +1,16 @@
-import React from 'react';
 import { useState } from "react";
 import styles from './GoodsCard.module.css';
 import {Link} from 'react-router-dom';
 import SVGTrolley from '../SVG/SVGTrolley';
 
+
 function GoodsCard(props) {
+	////////////////////////////////
 	const [checked, setChecked] = useState(true);
 	function handleChange() {
 		setChecked(!checked);
 	}
+	////////////////////////////////
 	
 	////////////////////////////////
 	let [items, setItems] = useState(props.dataGoods);
@@ -21,8 +23,9 @@ function GoodsCard(props) {
 		});
 		setItems(copyArray);
 	}
-	/////////////////////////////////////
+	////////////////////////////////
 	
+	////////////////////////////////
 	const [searchField, setSearchField] = useState("");
 	const onSelectSearch = event => {
 		setSearchField(event.target.value);
@@ -34,15 +37,16 @@ function GoodsCard(props) {
 			);
 		}
 	);
-	//////////////////////////////////////
+	////////////////////////////////
+	
+	////////////////////////////////
 	const [filterTags, setFilterTags] = useState([]);
 	items = items.filter(el =>
 		filterTags.length > 0
 			? filterTags.every((filterTag) =>
 				el.tags.map((tag) => tag.slug).includes(filterTag)
 			)
-			: props.dataGoods
-	)
+			: props.dataGoods)
 	const filterHandler = (event) => {
 		if (event.target.checked) {
 			setFilterTags([...filterTags, event.target.value])
@@ -52,7 +56,11 @@ function GoodsCard(props) {
 			)
 		}
 	}
-	/////////////////////////////////////
+	////////////////////////////////
+	
+	////////////////////////////////
+	
+	////////////////////////////////
 	
 	return (
 		<>
@@ -229,7 +237,7 @@ function GoodsCard(props) {
 						</div>
 					</div>
 				)}
-				<span className={styles.test}></span>
+				<span className={styles.supportingBlock}></span>
 			</div>
 		</>
 	);

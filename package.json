@@ -49,6 +49,7 @@
   },
   "devDependencies": {
     "@emailjs/browser": "^3.10.0",
+    "@tedconf/react-show-more": "^1.1.2",
     "react-paginate": "^8.1.4"
   }
 }
