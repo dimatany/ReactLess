@@ -13,8 +13,8 @@ function Footer(props) {
 				<div className={styles.contacts}>
 					<span>{props.title1}</span>
 					<ul>
-						<li><a href="mailto:cheize2020@gmail.com?subject=contact for joint work"></a>{props.email}</li>
-						<li><a href="tel:+380670000000"></a>{props.number}</li>
+						<li><a href="mailto:cheize2020@gmail.com?subject=contact for joint work">{props.email}</a></li>
+						<li><a href="tel:+380670000000">{props.number}</a></li>
 					</ul>
 				</div>
 				<div className={styles.mode}>

@@ -22,9 +22,9 @@ class Tabs extends React.Component {
 								let style = index === this.state.selectedTab ? 'is-active': ''
 								return (
 									<li className={style} key={index} onClick={() => this.selectTab(index)}>
-										<a>
+										<p>
 											{child.props.label}
-										</a>
+										</p>
 									</li>
 								)
 							})
