@@ -36,11 +36,12 @@ function Dialogs(props) {
 						<textarea
 							placeholder={props.placeholder}
 							onChange={ onNewMessageChange }
-							value={newMessageText}
-						></textarea>
+							value={newMessageText}>
+							
+						</textarea>
 					</div>
 					<div>
-						<button onClick={ onSendMessageClick } >{props.button}</button>
+						<button onClick={ onSendMessageClick }>{props.button}</button>
 					</div>
 				</div>
 			</div>
