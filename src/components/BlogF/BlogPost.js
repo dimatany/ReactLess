@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styles from './BlogPost.module.css';
+import Comments from '../CommentF/Comments';
+import ErrorBoundary from '../ErrorBoundaryC/ErrorBoundary';
 
 
 
@@ -31,6 +33,9 @@ function BlogPost({ notes, ...props }) {
 				</div>
 			);
 			})}
+			<ErrorBoundary>
+				<Comments store={props.store}/>
+			</ErrorBoundary>
 		</>
 	);
 }

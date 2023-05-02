@@ -3,7 +3,7 @@ const UPDATE_NEW_COMMENT_TEXT = 'UPDATE-NEW-COMMENT-TEXT';
 
 let initialState = {
 	dataComments: [
-		{id:1, message:'гребаный тест', likesCount: 1,}
+		{id:1, message:'додайте коментар', likesCount: "",}
 	],
 	newCommentText: '',
 };
@@ -16,7 +16,7 @@ const commentReducer = (state = initialState, action) => {
 			let newCommentMessage = state.newCommentText;
 			state.newCommentText = '';
 			state.dataComments.push(
-				{id: 2, message: newCommentMessage, likesCount: 3});
+				{id: 2, message: newCommentMessage, likesCount: ''});
 			break;
 	}
 	return state;

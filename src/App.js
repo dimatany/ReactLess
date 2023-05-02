@@ -70,6 +70,7 @@ function App(props) {
                               <Route path="blog" element={
                                   <Blog
                                       dataBlog={props.appData.dataBlog}
+                                      store={props.store}
                                   />}
                               />
                               <Route path="contacts" element={<Contacts/>}/>

@@ -1,0 +1,60 @@
+.blockWrap {
+  display: flex;
+  flex-direction: column;
+  background: #4fa19d;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  width: 70%;
+  margin: 40px auto;
+}
+.blockWrap .wrap {
+  color: #8ab4f8;
+  margin-bottom: 10px;
+}
+.blockWrap .wrap .wrapComment {
+  padding: 10px 10px 10px 0;
+  font-weight: bold;
+  font-size: 18px;
+  color: #191d1c;
+}
+.blockWrap .wrap .wrapComment .commentMessage {
+  display: block;
+}
+.blockWrap .wrap .wrapComment .commentLike {
+  display: block;
+}
+.blockWrap .wrapText {
+  margin-bottom: 10px;
+}
+.blockWrap .wrapText textarea {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #edae3b;
+  border-radius: 10px;
+  background-color: #ffffff;
+  font-size: 16px;
+  resize: none;
+  overflow: auto;
+}
+.blockWrap .btn {
+  color: #8ab4f8;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 auto;
+}
+.blockWrap .btn button {
+  cursor: pointer;
+  padding: 10px 0 10px 10px;
+  border-radius: 20px;
+  font-size: 20px;
+  width: 171px;
+  color: #ffffff;
+  background: #434343;
+  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+/*# sourceMappingURL=Comment.module.css.map */

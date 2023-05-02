@@ -25,11 +25,6 @@ function About(props) {
 			</ErrorBoundary>
 			<Descriptions text={props.text}/>
 			<ErrorBoundary>
-				<Comments
-					store={props.store}
-				/>
-			</ErrorBoundary>
-			<ErrorBoundary>
 				<Dialogs
 					store={props.store}
 				/>

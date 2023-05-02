@@ -17,7 +17,7 @@ function Pagination({postsPerPage, ...props}) {
 	return (
 		<div className={styles.wrapPagination}>
 			<div className={styles.paginationBlock}>
-				<BlogPost notes={displayItems}/>
+				<BlogPost notes={displayItems}  store={props.store}/>
 			</div>
 			<ReactPaginate
 				previousLabel={" ‹ "}

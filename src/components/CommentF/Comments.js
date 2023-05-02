@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Comment.module.css'
 import {addCommentActionCreator, updateNewCommentTextActionCreator,} from '../../BLL/reducers/commentReducer';
 
 function Comments(props) {
@@ -16,26 +17,32 @@ function Comments(props) {
 	
 	
 	return (
-		<>
-			<div>
+		<div className={styles.blockWrap}>
+			<div className={styles.wrap}>
 				{state.dataComments.map(el =>
-				<div key={el.id}>
-					<span>{el.message}</span>
-					<span>{el.likesCount}</span>
+				<div className={styles.wrapComment} key={el.id}>
+					<span className={styles.commentMessage}>{el.message}</span>
+					<span className={styles.commentLike}>{el.likesCount}</span>
 				</div>
 				)}
 			</div>
-			<div>
+			<div className={styles.wrapText}>
 				<textarea
 					onChange={onNewCommentChange}
 					value={newCommentText}
 				/>
 			</div>
-			<div>
-				<button onClick={addComments}>add comment</button>
+			<div className={styles.btn}>
+				<button onClick={addComments}>{props.buttonSub}</button>
 			</div>
-		</>
+		</div>
 	);
 }
+
+Comments.defaultProps = {
+	buttonSub: 'додати',
+	subtitle: 'Можливо, у вас виникли питання?',
+};
+
 
 export default Comments;

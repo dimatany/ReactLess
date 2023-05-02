@@ -12,7 +12,7 @@ function Blog(props) {
 			</div>
 			<h3>{props.subtitle}</h3>
 			<ErrorBoundary>
-				<Pagination dataBlog={props.dataBlog} postsPerPage={3}/>
+				<Pagination dataBlog={props.dataBlog} postsPerPage={3}  store={props.store}/>
 			</ErrorBoundary>
 		</div>
 	);
