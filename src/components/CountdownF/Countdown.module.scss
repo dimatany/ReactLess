@@ -5,11 +5,11 @@ $soft-blue2: #5383ed;
 $bright-red: #FE2E2E;
 
 .wrap {
-  padding-top: 3vh;
+  padding-top: 40px;
   width: 90%;
   max-width: 700px;
-  margin: 0 auto 1vh;
-  height: 50vh;
+  margin: 0 auto 10px;
+  height: 300px;
   .timeBox {
     display: flex;
     text-align: center;
@@ -18,7 +18,7 @@ $bright-red: #FE2E2E;
     backdrop-filter: blur(6px);
     border-radius: 10px;
     border: 1px solid $soft-blue;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     padding: 80px;
     .days,
     .hours,
@@ -58,7 +58,7 @@ $bright-red: #FE2E2E;
   .wrap {
     .timeBox {
       max-width: 300px;
-      height: 83vh;
+      height: 300px;
       padding: 20px;
       display: flex;
       flex-direction: column;

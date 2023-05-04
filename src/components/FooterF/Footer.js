@@ -8,7 +8,7 @@ function Footer(props) {
 		<>
 			<address className={[styles["section"], styles['wrap'], styles['border']].join(" ")}>
 				<div className={styles.svg}>
-					<SVGAvatar fill='white'/>
+					<SVGAvatar fill='#5383ed'/>
 				</div>
 				<div className={styles.contacts}>
 					<span>{props.title1}</span>
@@ -30,7 +30,7 @@ function Footer(props) {
 					   target="_blank"
 					   rel="noopener noreferrer nofollow"
 					   title="instagram">
-						<SVGInstagram fill='white' stroke='white'/>
+						<SVGInstagram fill='#5383ed' stroke='#5383ed'/>
 					</a>
 				</div>
 			</address>

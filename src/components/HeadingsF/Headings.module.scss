@@ -17,7 +17,7 @@ $dark-salt: #191d1c;
   font-family: 'Cormorant Garamond', serif;
   p {
     position: relative;
-    color: $white;
+    color: $soft-blue2;
     font-size: 55px;
     text-decoration: none;
     padding-bottom: 0.4em;
@@ -43,7 +43,7 @@ $dark-salt: #191d1c;
       content: "";
       width: 100%;
       height: 0.075em;
-      background-color:  $white;
+      background-color:  $bright-red;
       position: absolute;
       bottom: 0;
       transform: scaleX(0);
@@ -67,7 +67,7 @@ $dark-salt: #191d1c;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 720px) {
   .boxTitle {
     width: 80%;
     max-width: 320px;

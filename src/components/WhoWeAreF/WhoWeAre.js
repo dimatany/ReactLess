@@ -6,7 +6,7 @@ function WhoWeAre(props) {
 	return (
 		<div className={[styles["about"], styles['wrap']].join(" ")}>
 			<span>
-				<SVGDivision fill="white"/>
+				<SVGDivision fill="#5383ed"/>
 			</span>
 			<p>{props.explanation1}</p>
 			<p>{props.explanation2}</p>

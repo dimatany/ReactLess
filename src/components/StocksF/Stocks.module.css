@@ -1,33 +1,23 @@
 .block {
-  padding-top: 20vh;
+  padding-top: 150px;
   width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto 30px;
   text-align: center;
-  padding-bottom: 3vh;
 }
 .block h2 {
   text-align: center;
   font-weight: 700;
   font-size: 58px;
-  margin-bottom: 3vh;
-}
-.block p {
-  display: block;
-  color: #edae3b;
-  text-align: center;
-  font-weight: 700;
-  font-size: 25px;
 }
 
 .description {
   width: 90%;
   max-width: 1000px;
-  margin: 0 auto 1vh;
+  margin: 10px auto 50px;
   text-align: center;
   line-height: 40px;
   font-size: 30px;
-  height: 30vh;
   border-radius: 10px;
   padding: 10px;
   overflow: hidden;
@@ -36,12 +26,15 @@
   font-family: "Lobster", cursive;
   letter-spacing: 2px;
   font-size: 22px;
-  color: #ffffff;
+}
+
+.countdownBlock {
+  margin-bottom: 60px;
 }
 
 .video {
   max-width: 1000px;
-  margin: 0 auto 15vh;
+  margin: 0 auto 100px;
 }
 .video video {
   width: 100%;
@@ -51,11 +44,11 @@
 }
 
 .transition {
-  width: 50%;
-  margin: 10vh auto 10vh;
+  width: 70%;
+  margin: 70px auto 70px;
   text-align: center;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-top: 15px;
+  padding-bottom: 15px;
   position: relative;
   background: #191d1c;
   border-radius: 20px;
@@ -64,6 +57,7 @@
   cursor: pointer;
   text-decoration: none;
   font-size: 22px;
+  color: white;
 }
 
 .transition:before,
@@ -78,7 +72,7 @@
   height: calc(100% + 6px);
   border-radius: 20px;
   z-index: -1;
-  animation: animate 3s ease alternate infinite;
+  animation: animate 5s ease alternate infinite;
 }
 
 .transition:after {
@@ -98,11 +92,11 @@
 }
 @media screen and (max-width: 700px) {
   .description {
-    margin-top: 45vh;
-    margin-bottom: 3vh;
+    margin-top: 80px;
+    margin-bottom: 10px;
   }
   .video {
-    margin-bottom: 3vh;
+    margin-bottom: 10px;
   }
 }
 

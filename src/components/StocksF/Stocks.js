@@ -11,9 +11,13 @@ function Stocks(props) {
 			<ErrorBoundary>
 				<div className={styles.block}>
 					<Headings heading={props.title}/>
+					<div className={styles.description}>
 					<p>{props.subtitle}</p>
+					</div>
 				</div>
-				<Countdown date={new Date('Wed, 31 Dec 2023 00:00:00')}/>
+				<div className={styles.countdownBlock}>
+					<Countdown date={new Date('Wed, 31 Dec 2023 00:00:00')}/>
+				</div>
 				<div className={styles.description}>
 					<p>{props.description}</p>
 					<p>{props.period}</p>

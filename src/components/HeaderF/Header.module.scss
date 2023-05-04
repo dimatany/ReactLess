@@ -13,11 +13,9 @@ $bright-red: #FE2E2E;
 $lime-green: #4fa19d;
 
 .wrap {
-  max-width: 1350px;
   margin: 0 auto;
   background: $dark-blue-rgba;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
 }
 .header {
   position: fixed;
@@ -55,7 +53,7 @@ $lime-green: #4fa19d;
   .hamb{
     cursor: pointer;
     float: right;
-    padding: 20px 20px;
+    padding: 35px 20px;
     .hambLine {
       background: $white;
       display: block;

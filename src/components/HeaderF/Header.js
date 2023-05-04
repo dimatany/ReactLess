@@ -9,7 +9,7 @@ function Header() {
 			<div className={styles.header}>
 				<div className={styles.wrap}>
 					<a href="/about" className={styles.logo}>
-						<SVGAvatar fill='white'/>
+						<SVGAvatar fill='#5383ed'/>
 					</a>
 					<input className={styles.sideMenu} type="checkbox" id="sideMenu"/>
 					<label className={styles.hamb} htmlFor="sideMenu">

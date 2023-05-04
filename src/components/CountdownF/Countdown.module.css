@@ -1,9 +1,9 @@
 .wrap {
-  padding-top: 3vh;
+  padding-top: 40px;
   width: 90%;
   max-width: 700px;
-  margin: 0 auto 1vh;
-  height: 50vh;
+  margin: 0 auto 10px;
+  height: 300px;
 }
 .wrap .timeBox {
   display: flex;
@@ -13,7 +13,7 @@
   backdrop-filter: blur(6px);
   border-radius: 10px;
   border: 1px solid #8ab4f8;
-  margin: 0 auto;
+  margin: 0 auto 40px;
   padding: 80px;
 }
 .wrap .timeBox .days,
@@ -57,7 +57,7 @@
 @media screen and (max-width: 700px) {
   .wrap .timeBox {
     max-width: 300px;
-    height: 83vh;
+    height: 300px;
     padding: 20px;
     display: flex;
     flex-direction: column;

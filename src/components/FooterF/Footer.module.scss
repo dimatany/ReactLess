@@ -1,5 +1,6 @@
 $silver: rgba(255, 255, 255, .5);
 $bright-orange: #edae3b;
+$bright-red: #FE2E2E;
 
 .wrap {
   max-width: 1300px;
@@ -15,8 +16,8 @@ $bright-orange: #edae3b;
   padding-bottom: 30px;
   gap: 30px;
   .svg svg {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     padding-top: 30px;
   }
   .contacts, .mode, .social {
@@ -60,8 +61,8 @@ $bright-orange: #edae3b;
   }
 }
 .border {
-  border-bottom: 1px solid $silver;
-  border-top: 1px solid $silver;
+  border-bottom: 2px solid $bright-red;
+  border-top: 2px solid $bright-red;
   max-width: 1300px;
   width: 100%;
   padding-top: 20px;

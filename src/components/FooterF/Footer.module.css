@@ -14,8 +14,8 @@
   gap: 30px;
 }
 .section .svg svg {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   padding-top: 30px;
 }
 .section .contacts span, .section .mode span, .section .social span {
@@ -55,8 +55,8 @@
 }
 
 .border {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid #FE2E2E;
+  border-top: 2px solid #FE2E2E;
   max-width: 1300px;
   width: 100%;
   padding-top: 20px;

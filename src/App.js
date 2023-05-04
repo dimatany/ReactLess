@@ -11,6 +11,8 @@ import ButtonFeedback from '../../land/src/components/ButtonFeedbackF/ButtonFeed
 import ErrorBoundary from '../../land/src/components/ErrorBoundaryC/ErrorBoundary';
 import SVGLetter from '../../land/src/components/SVG/SVGLetter';
 import Footer from './components/FooterF/Footer';
+import Toggle from './components/Toggle/Toggle';
+import { ThemeContext, themes } from './contexts/ThemeContext';
 
 const About = lazy(() => import('../../land/src/components/AboutF/About'));
 const Masters = lazy(() => import('../../land/src/components/MastersF/Masters'));
@@ -26,6 +28,19 @@ function App(props) {
       <div className="container">
           <Suspense fallback={renderLoader()}>
               <BrowserRouter>
+                  <div className="buttonTheme">
+                      <ThemeContext.Consumer>
+                          {({ theme, setTheme }) => (
+                              <Toggle
+                                  onChange={() => {
+                                      if (theme === themes.light) setTheme(themes.dark)
+                                      if (theme === themes.dark) setTheme(themes.light)
+                                  }}
+                                  value={theme === themes.dark}
+                              />
+                          )}
+                      </ThemeContext.Consumer>
+                  </div>
                   <ErrorBoundary>
                       <header>
                           <Header/>

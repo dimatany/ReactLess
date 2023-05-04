@@ -7,9 +7,8 @@
   src: local("Dahlia"), url("./BLL/fonts/Dahlia/Dahlia.ttf") format("truetype");
 }
 body {
-  background-color: #202125;
-  color: #ffffff;
   font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
 }
 
 body::-webkit-scrollbar {
@@ -31,11 +30,48 @@ body::-webkit-scrollbar-thumb {
   max-width: 1600px;
   margin: 0 auto;
 }
+.container .buttonTheme {
+  top: 50px;
+  right: 85%;
+  cursor: pointer;
+  position: fixed;
+  z-index: 5;
+}
 
 .wrap {
   max-width: 1300px;
   width: 90%;
   margin: 0 auto;
+}
+
+:root[data-theme=light] {
+  --background-color: #fafafa;
+  --color: #191d1c;
+}
+:root[data-theme=light] h1 {
+  --color: #fafafa;
+}
+
+:root[data-theme=dark] {
+  --background-color: #202125;
+  --color: #ffffff;
+}
+:root[data-theme=dark] h1 {
+  --color: #fafafa;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--color);
+}
+body h1 {
+  color: var(--color);
+}
+
+@media screen and (max-width: 720px) {
+  .container .buttonTheme {
+    right: 65%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

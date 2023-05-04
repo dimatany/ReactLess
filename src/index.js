@@ -9,18 +9,19 @@ import './BLL/fonts/Gilroy/Gilroy-Light.woff';
 import './BLL/fonts/Dahlia/Dahlia.ttf';
 import {Provider} from 'react-redux';
 import reduxStore from './BLL/reduxStore';
+import reportWebVitals from './reportWebVitals';
+import ThemeProvider from './providers/ThemeProvider';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let rerenderEntireTree = (state) => {
 	root.render (
 		<StrictMode>
-			<Provider store={store}>
-				<App
-					appData={state}
-					store={reduxStore}
-				/>
-			</Provider>
+			<ThemeProvider>
+				<Provider store={store}>
+					<App appData={state} store={reduxStore}/>
+				</Provider>
+			</ThemeProvider>
 		</StrictMode>
 	);
 }
@@ -30,3 +31,5 @@ store.subscribe(() => {
 	let state = store.getState();
 	rerenderEntireTree(state);
 });
+
+reportWebVitals()
