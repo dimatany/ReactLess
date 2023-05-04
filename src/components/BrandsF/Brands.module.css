@@ -1,10 +1,11 @@
 .partners {
-  max-width: 1300px;
+  max-width: 1100px;
   width: 100%;
   margin: 0 auto 20vh;
 }
 
 .partners ul {
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -12,7 +13,6 @@
   background-color: #202125;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .partners ul li {

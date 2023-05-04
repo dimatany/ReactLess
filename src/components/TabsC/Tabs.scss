@@ -1,7 +1,7 @@
 $highlight-color: #BA8A4C;
 $highlight-color-blur: rgb(186, 138, 76, .4);
 $dark-salt: #191d1c;
-
+$soft-blue: #8ab4f8;
 .tabs {
   h2 {
     margin: 0 auto 80px;
@@ -22,6 +22,7 @@ $dark-salt: #191d1c;
     padding: 10px;
     border-radius: 20px;
     align-items: center;
+    box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
     p {
       font-size: 20px;
       font-weight: 700;
@@ -47,9 +48,10 @@ $dark-salt: #191d1c;
   }
 }
  .is-active {
-   background: $dark-salt;
+   background: $soft-blue;
    padding: 7px;
    border-radius: 10px;
+   box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
  }
 
 @media screen and (max-width: 550px) {
