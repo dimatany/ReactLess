@@ -6,7 +6,6 @@ import WhatWeDo from '../WhatWeDoF/WhatWeDo';
 import Brands from '../BrandsF/Brands';
 import WhoWeAre from '../WhoWeAreF/WhoWeAre';
 import Descriptions from '../DescriptionsF/Descriptions';
-import Comments from '../CommentF/Comments';
 import Dialogs from '../DialogsF/Dialogs';
 
 function About(props) {

@@ -40,7 +40,7 @@ function Comments(props) {
 }
 
 Comments.defaultProps = {
-	buttonSub: 'додати',
+	buttonSub: 'Додати',
 	subtitle: 'Можливо, у вас виникли питання?',
 };
 
