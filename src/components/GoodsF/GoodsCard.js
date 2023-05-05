@@ -218,7 +218,7 @@ function GoodsCard(props) {
 							<div className={styles.wrapBlock}>
 								<p>{el.description}</p>
 							</div>
-							<Link key={el.id} to={el.id} className={styles.Link}>
+							<Link key={el.id} to={el.id} className={styles.link}>
 								<label htmlFor="button">{props.label}</label>
 								<input className={styles.checkbox} checked={checked} onChange={handleChange} />
 							</Link>

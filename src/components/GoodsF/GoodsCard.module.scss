@@ -52,8 +52,10 @@ $lime-green: #4fa19d;
     .checkbox:checked + .wrapBlock {
       height: auto;
     }
-    .Link {
+    .link {
       text-decoration: none;
+      display: block;
+      margin-bottom: 15px;
       &:hover {
         text-decoration: none;
       }
@@ -156,7 +158,6 @@ $lime-green: #4fa19d;
     .control {
       position: absolute;
       left: 25%;
-      top: 80%;
     }
     .btn {
       transform: translateY(0px);

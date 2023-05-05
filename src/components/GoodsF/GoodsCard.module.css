@@ -42,10 +42,12 @@
 .wrapper .container .checkbox:checked + .wrapBlock {
   height: auto;
 }
-.wrapper .container .Link {
+.wrapper .container .link {
   text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
 }
-.wrapper .container .Link:hover {
+.wrapper .container .link:hover {
   text-decoration: none;
 }
 .wrapper .container label {
@@ -146,7 +148,6 @@
 .wrapper .container .control {
   position: absolute;
   left: 25%;
-  top: 80%;
 }
 .wrapper .container .btn {
   transform: translateY(0px);
