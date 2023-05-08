@@ -2,25 +2,25 @@ import React, { lazy, Suspense } from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import './index.css';
 
-import Loading from './components/Loading/Loading';
-import GoodsDetail from './components/GoodsDetail/GoodsDetail';
-import WhatWeDoDetail from './components/WhatWeDoDetail/WhatWeDoDetail';
-import Header from './components/Header/Header';
-import MastersDetail from './components/MastersDetail/MastersDetail';
-import ButtonFeedback from './components/ButtonFeedback/ButtonFeedback';
-import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
-import SVGLetter from '../../land/src/components/SVG/SVGLetter';
-import Footer from './components/Footer/Footer';
-import Toggle from './components/Toggle/Toggle';
-import { ThemeContext, themes } from './contexts/ThemeContext';
+import Loading from './Сomponents/Loading/Loading';
+import GoodsDetail from './Сomponents/GoodsDetail/GoodsDetail';
+import WhatWeDoDetail from './Сomponents/WhatWeDoDetail/WhatWeDoDetail';
+import Header from './Сomponents/Header/Header';
+import MastersDetail from './Сomponents/MastersDetail/MastersDetail';
+import ButtonFeedback from './Сomponents/ButtonFeedback/ButtonFeedback';
+import ErrorBoundary from './Сomponents/ErrorBoundary/ErrorBoundary';
+import SVGLetter from './Сomponents/SVG/SVGLetter';
+import Footer from './Сomponents/Footer/Footer';
+import Toggle from './Сomponents/Toggle/Toggle';
+import { ThemeContext, themes } from './Contexts/ThemeContext';
 
-const About = lazy(() => import('./components/About/About'));
-const Masters = lazy(() => import('./components/Masters/Masters'));
-const Goods = lazy(() => import('./components/Goods/Goods'));
-const Stocks = lazy(() => import('./components/Stocks/Stocks'));
-const Blog = lazy(() => import('./components/Blog/Blog'));
-const Contacts = lazy(() => import('./components/Contact/Contacts'));
-const NotFound = lazy(() => import('./components/NotFound/NotFound'));
+const About = lazy(() => import('./Сomponents/About/About'));
+const Masters = lazy(() => import('./Сomponents/Masters/Masters'));
+const Goods = lazy(() => import('./Сomponents/Goods/Goods'));
+const Stocks = lazy(() => import('./Сomponents/Stocks/Stocks'));
+const Blog = lazy(() => import('./Сomponents/Blog/Blog'));
+const Contacts = lazy(() => import('./Сomponents/Contact/Contacts'));
+const NotFound = lazy(() => import('./Сomponents/NotFound/NotFound'));
 const renderLoader = () => <Loading/>;
 
 function App(props) {

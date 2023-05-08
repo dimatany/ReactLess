@@ -10,7 +10,7 @@ import './BLL/fonts/Dahlia/Dahlia.ttf';
 import {Provider} from 'react-redux';
 import reduxStore from './BLL/reduxStore';
 import reportWebVitals from './reportWebVitals';
-import ThemeProvider from './providers/ThemeProvider';
+import ThemeProvider from './Providers/ThemeProvider';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
