@@ -23,6 +23,7 @@ function Comments(props) {
 				<div className={styles.wrapComment} key={el.id}>
 					<span className={styles.commentMessage}>{el.message}</span>
 					<span className={styles.commentLike}>{el.likesCount}</span>
+					<span className={styles.commentDate}>{el.date}</span>
 				</div>
 				)}
 			</div>

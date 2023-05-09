@@ -24,6 +24,9 @@
 .blockWrap .wrap .wrapComment .commentLike {
   display: block;
 }
+.blockWrap .wrap .wrapComment .commentDate {
+  color: #ffffff;
+}
 .blockWrap .wrapText {
   margin-bottom: 10px;
 }

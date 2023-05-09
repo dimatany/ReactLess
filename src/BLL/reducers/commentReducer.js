@@ -16,7 +16,7 @@ const commentReducer = (state = initialState, action) => {
 			let newCommentMessage = state.newCommentText;
 			state.newCommentText = '';
 			state.dataComments.push(
-				{id: 2, message: newCommentMessage, likesCount: ''});
+				{id: 2, message: newCommentMessage, likesCount: '', date: new Date().toLocaleDateString()});
 			break;
 	}
 	return state;
