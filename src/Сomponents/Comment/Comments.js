@@ -1,6 +1,7 @@
 import React from 'react';
-import styles from './Comment.module.css'
+import styles from './Comments.module.css'
 import {addCommentActionCreator, updateNewCommentTextActionCreator,} from '../../BLL/reducers/commentReducer';
+import ButtonSubmit from '../ButtonSubmit/ButtonSubmit';
 
 function Comments(props) {
 	
@@ -34,7 +35,7 @@ function Comments(props) {
 				/>
 			</div>
 			<div className={styles.btn}>
-				<button onClick={addComments}>{props.buttonSub}</button>
+				<ButtonSubmit onClick={addComments} children={props.buttonSub}/>
 			</div>
 		</div>
 	);

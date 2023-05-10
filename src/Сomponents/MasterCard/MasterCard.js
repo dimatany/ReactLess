@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './MasterCard.module.css';
 import {Link} from 'react-router-dom';
+import ButtonSubmit from '../ButtonSubmit/ButtonSubmit';
 
 
 function MasterCard(props) {
@@ -19,12 +20,9 @@ function MasterCard(props) {
 								<img key={el.id} src={el.avatar} alt={el.alt}/>
 								<div className={styles.profession}>
 									<p className={styles.professionTitle}>{el.title}</p>
-									<span className={styles.professionRef}>
-											<Link key={el.id} to={el.id}>
-												<label htmlFor="button">{props.label}</label>
-												<input type="checkbox" checked={checked} onChange={handleChange} />
-											</Link>
-										</span>
+									<Link key={el.id} to={el.id}>
+										<ButtonSubmit onClick={handleChange} children={props.label}/>
+									</Link>
 								</div>
 							</div>
 						</div>

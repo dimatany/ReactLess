@@ -1,0 +1,15 @@
+.professionRef {
+  padding: 10px 0 10px 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  width: 171px;
+  color: #ffffff;
+  margin-top: 15%;
+  background: #434343;
+  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+.professionRef:hover {
+  color: #edae3b;
+}
+
+/*# sourceMappingURL=ButtonSubmit.module.css.map */
