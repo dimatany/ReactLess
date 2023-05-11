@@ -4,7 +4,7 @@ import { StrictMode } from "react";
 import store from './BLL/reduxStore';
 import './Reset.css';
 import './index.css';
-import App from './App';
+import App from './Сomponents/App/App';
 import './BLL/fonts/Gilroy/Gilroy-Light.woff';
 import './BLL/fonts/Dahlia/Dahlia.ttf';
 import {Provider} from 'react-redux';

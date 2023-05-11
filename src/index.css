@@ -44,6 +44,11 @@ body::-webkit-scrollbar-thumb {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 720px) {
+  .container .buttonTheme {
+    right: 65%;
+  }
+}
 :root[data-theme=light] {
   --background-color: #fafafa;
   --color: #191d1c;
@@ -66,12 +71,6 @@ body {
 }
 body h1 {
   color: var(--color);
-}
-
-@media screen and (max-width: 720px) {
-  .container .buttonTheme {
-    right: 65%;
-  }
 }
 
 /*# sourceMappingURL=index.css.map */

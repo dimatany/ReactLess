@@ -1,3 +1,4 @@
+///////////// - project colours
 $dark-blue: #202125;
 $dark-salt: #191d1c;
 $grayish-blue: #434343;
@@ -11,6 +12,7 @@ $moderate-orange2: rgb(186, 138, 76, .4);
 $bright-red: #FE2E2E;
 $lime-green: #4fa19d;
 
+///////////// - general project rules
 @font-face {
   font-family: 'Gilroy Light';
   src: local('Gilroy Light'),
@@ -53,8 +55,15 @@ body::-webkit-scrollbar-thumb {
   width: 90%;
   margin: 0 auto;
 }
-///////////////////////////
+@media screen and (max-width: 720px) {
+  .container {
+    .buttonTheme {
+      right: 65%;
+    }
+  }
+}
 
+///////////// - color theme rules
 :root[data-theme="light"] {
   --background-color: #fafafa;
   --color: #191d1c;
@@ -77,10 +86,4 @@ body {
   }
 }
 
-@media screen and (max-width: 720px) {
-  .container {
-    .buttonTheme {
-      right: 65%;
-    }
-  }
-}
+///////////// - reset rules

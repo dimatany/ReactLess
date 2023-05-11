@@ -6,7 +6,6 @@ import WhatWeDo from '../WhatWeDo/WhatWeDo';
 import Brands from '../Brands/Brands';
 import WhoWeAre from '../WhoWeAre/WhoWeAre';
 import Descriptions from '../Descriptions/Descriptions';
-import Dialogs from '../Dialogs/Dialogs';
 
 function About(props) {
 	return (
@@ -23,11 +22,6 @@ function About(props) {
 				<Tabs/>
 			</ErrorBoundary>
 			<Descriptions text={props.text}/>
-			<ErrorBoundary>
-				<Dialogs
-					store={props.store}
-				/>
-			</ErrorBoundary>
 		</>
 	);
 }

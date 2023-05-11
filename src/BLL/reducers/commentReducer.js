@@ -23,6 +23,7 @@ const commentReducer = (state = initialState, action) => {
 					date: new Date().toLocaleDateString()
 				});
 			break;
+		default:
 	}
 	return state;
 }
