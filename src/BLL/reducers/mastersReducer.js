@@ -1,8 +1,16 @@
+const FOLLOW = 'FOLLOW';
+const UNFOLLOW = 'UNFOLLOW';
+
 let initialState = [
 	{
 		id: 'hairdresser',
 		title: 'Перукар',
 		name: 'Анна',
+		followed: 'false',
+		clarification: {
+			profession: 'Парикмахер',
+			status: 'Майстер',
+		},
 		avatar: require("../../BLL/img/Masters/CI1.png"),
 		alt: 'avatars of the masters',
 		image1: require("../../BLL/img/Masters/MP1.jpg"),
@@ -29,6 +37,11 @@ let initialState = [
 		id: 'manicure',
 		title: 'Манікюр',
 		name: 'Елена',
+		followed: 'true',
+		clarification: {
+			profession: 'Майстер манікюру',
+			status: 'Спеціаліст',
+		},
 		avatar: require("../../BLL/img/Masters/CI2.png"),
 		alt: 'avatars of the masters',
 		image1: require("../../BLL/img/Masters/MM1.jpg"),
@@ -55,6 +68,11 @@ let initialState = [
 		id: 'pedicure',
 		title: 'Педикюр',
 		name: 'Розанна',
+		followed: 'true',
+		clarification: {
+			profession: 'Майстер педікюру',
+			status: 'Спеціаліст',
+		},
 		avatar: require("../../BLL/img/Masters/CI3.png"),
 		alt: 'avatars of the masters',
 		image1: require("../../BLL/img/Masters/MPP1.jpg"),
@@ -81,6 +99,11 @@ let initialState = [
 		id: 'cosmetologist',
 		title: 'Косметолог',
 		name: 'Вера',
+		followed: 'true',
+		clarification: {
+			profession: 'Косметолог',
+			status: 'Майстер',
+		},
 		avatar: require("../../BLL/img/Masters/CI4.png"),
 		alt: 'avatars of the masters',
 		image1: require("../../BLL/img/Masters/MK1.jpg"),
@@ -107,6 +130,11 @@ let initialState = [
 		id: 'masagist',
 		title: 'Масажист',
 		name: 'Леся',
+		followed: 'true',
+		clarification: {
+			profession: 'Масажист',
+			status: 'Майстер',
+		},
 		avatar: require("../../BLL/img/Masters/CI5.png"),
 		alt: 'avatars of the masters',
 		image1: require("../../BLL/img/Masters/MF1.jpg"),
@@ -133,6 +161,11 @@ let initialState = [
 		id: 'designer',
 		title: 'Візаж',
 		name: 'Тетяна',
+		followed: 'false',
+		clarification: {
+			profession: 'Масажист',
+			status: 'Майстер',
+		},
 		avatar: require("../../BLL/img/Masters/CI6.png"),
 		alt: 'avatars of the masters',
 		image1: require("../../BLL/img/Masters/MV1.jpg"),
@@ -158,7 +191,16 @@ let initialState = [
 ];
 
 const mastersReducer = (state = initialState, action) => {
-	return state;
+	switch (action.type) {
+		case FOLLOW:
+		case UNFOLLOW:
+		default:
+			return state;
+	}
 }
+
+export const followActionCreator = (userId) => ({type: FOLLOW, userId});
+export const unFollowActionCreator = (userId) => ({type: UNFOLLOW, userId});
+
 
 export default mastersReducer;
