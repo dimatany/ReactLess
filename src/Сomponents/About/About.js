@@ -19,7 +19,7 @@ function About(props) {
 			<ErrorBoundary>
 				<Tabs/>
 			</ErrorBoundary>
-			<Descriptions text={props.text}/>{/**/}
+			<Descriptions text={props.text}/>
 		</>
 	);
 }
