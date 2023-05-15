@@ -1,26 +1,27 @@
 import React, { lazy, Suspense } from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import '../../index.css';
+import './index.css';
 
-import Loading from '../Loading/Loading';
-import GoodsDetail from '../GoodsDetail/GoodsDetail';
-import WhatWeDoDetail from '../WhatWeDoDetail/WhatWeDoDetail';
-import Header from '../Header/Header';
-import MastersDetail from '../MastersDetail/MastersDetail';
-import ButtonFeedback from '../ButtonFeedback/ButtonFeedback';
-import ErrorBoundary from '../ErrorBoundary/ErrorBoundary';
-import SVGLetter from '../SVG/SVGLetter';
-import Footer from '../Footer/Footer';
-import Toggle from '../Toggle/Toggle';
-import { ThemeContext, themes } from '../../Contexts/ThemeContext';
 
-const About = lazy(() => import('../About/About'));
-const Masters = lazy(() => import('../Masters/Masters'));
-const Goods = lazy(() => import('../Goods/Goods'));
-const Stocks = lazy(() => import('../Stocks/Stocks'));
-const Blog = lazy(() => import('../Blog/Blog'));
-const Contacts = lazy(() => import('../Contact/Contacts'));
-const NotFound = lazy(() => import('../NotFound/NotFound'));
+import Loading from './Сomponents/Loading/Loading';
+import GoodsDetail from './Сomponents/GoodsDetail/GoodsDetail';
+import WhatWeDoDetail from './Сomponents/WhatWeDoDetail/WhatWeDoDetail';
+import Header from './Сomponents/Header/Header';
+import MastersDetail from './Сomponents/MastersDetail/MastersDetail';
+import ButtonFeedback from './Сomponents/ButtonFeedback/ButtonFeedback';
+import ErrorBoundary from './Сomponents/ErrorBoundary/ErrorBoundary';
+import SVGLetter from './Сomponents/SVG/SVGLetter';
+import Footer from './Сomponents/Footer/Footer';
+import Toggle from './Сomponents/Toggle/Toggle';
+import { ThemeContext, themes } from './Contexts/ThemeContext';
+
+const About = lazy(() => import('./Сomponents/About/About'));
+const Masters = lazy(() => import('./Сomponents/Masters/Masters'));
+const Goods = lazy(() => import('./Сomponents/Goods/Goods'));
+const Stocks = lazy(() => import('./Сomponents/Stocks/Stocks'));
+const Blog = lazy(() => import('./Сomponents/Blog/Blog'));
+const Contacts = lazy(() => import('./Сomponents/Contact/Contacts'));
+const NotFound = lazy(() => import('./Сomponents/NotFound/NotFound'));
 const renderLoader = () => <Loading/>;
 
 function App(props) {
@@ -49,7 +50,7 @@ function App(props) {
                   <ErrorBoundary>
                       <main>
                           <Routes>
-                              <Route index element={<About/>} />
+                              <Route index element={<About/>}/>
                               <Route path="about" element={
                                   <About
                                       dataWWD={props.appData.dataWWD}

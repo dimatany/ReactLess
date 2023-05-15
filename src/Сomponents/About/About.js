@@ -13,15 +13,13 @@ function About(props) {
 			<Title/>
 			<WhoWeAre/>
 			<ErrorBoundary>
-				<WhatWeDo
-					dataWWD={props.dataWWD}
-				/>
+				<WhatWeDo dataWWD={props.dataWWD}/>
 			</ErrorBoundary>
 			<Brands/>
 			<ErrorBoundary>
 				<Tabs/>
 			</ErrorBoundary>
-			<Descriptions text={props.text}/>
+			<Descriptions text={props.text}/>{/**/}
 		</>
 	);
 }
