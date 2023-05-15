@@ -32,7 +32,7 @@ body::-webkit-scrollbar-thumb {
 }
 .container .buttonTheme {
   top: 50px;
-  right: 85%;
+  right: 87%;
   cursor: pointer;
   position: fixed;
   z-index: 5;
