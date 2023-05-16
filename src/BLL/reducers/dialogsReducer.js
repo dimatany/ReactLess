@@ -24,6 +24,8 @@ const dialogsReducer = (state = initialState, action) => {
 			state.newMessageText = '';
 			state.messages.push({id: 5, message: newMessage});
 			break;
+		default:
+			return state;
 	}
 	return state;
 }
