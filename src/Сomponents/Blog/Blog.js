@@ -19,7 +19,7 @@ function Blog(props) {
 }
 
 Blog.defaultProps = {
-	title: 'Запитання та відповіді',
+	title: 'Запитання',
 	subtitle: 'Можливо, у вас виникли питання?',
 };
 

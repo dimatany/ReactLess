@@ -17,7 +17,7 @@
   left: 0;
   z-index: 1;
   overflow: hidden;
-  background-color: #5383ed;
+  background-color: #4fa19d;
   border-radius: 50px;
   cursor: pointer;
   transition: all 1.4s;
@@ -78,7 +78,7 @@
 }
 .wrap input:checked ~ .wave {
   display: block;
-  background-color: #FE2E2E;
+  background-color: #edae3b;
 }
 
 /*# sourceMappingURL=Toggle.module.css.map */

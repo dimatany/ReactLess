@@ -155,10 +155,7 @@ $lime-green: #4fa19d;
     .productImage:hover .info {
       transform: translateX(0);
     }
-    .control {
-      position: absolute;
-      left: 25%;
-    }
+    .control {}
     .btn {
       transform: translateY(0px);
       transition: 0.3s linear;
@@ -223,22 +220,22 @@ $lime-green: #4fa19d;
     .container {
       display: flex;
       flex-direction: column;
+      height: 100%;
+      margin-bottom: 30px;
       .productImage {
         width: 100%;
-        min-height: 65%;
+        height: 65%;
         order: -1;
       }
       .productDetails {
         width: 100%;
         min-height: 300px;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
         .more {
           left: 34%;
         }
       }
-      .control {
-        left: 35%;
-      }
+      .control {}
     }
     .btn {
       top: -30px;
@@ -395,8 +392,8 @@ input[type=checkbox] {
     position: absolute;
     top: 4px;
     content: "";
-    height: 15px;
-    width: 15px;
+    height: 17px;
+    width: 17px;
     border: 1px solid $grayish-blue;
     background: $grayish-blue;
     border-radius: 3px;

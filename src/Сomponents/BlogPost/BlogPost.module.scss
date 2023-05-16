@@ -18,13 +18,11 @@ $lime-green: #4fa19d;
 
 .wrap {
   max-width: 900px;
-  width: 90%;
+  width: 100%;
   color: $white;
   margin-bottom: 60px;
   &:nth-child(even) {
     flex-direction: row-reverse;
-    margin-right: -60px;
-    margin-left: 60px;
     border-radius: 10px;
   }
   .wrapPost {
@@ -82,6 +80,30 @@ $lime-green: #4fa19d;
         font-weight: bold;
         font-size: 18px;
         padding-top: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .wrapPost {
+    display: flex;
+    flex-direction: column;
+    .postNumber {
+      display: none;
+    }
+    .postContent {
+      .postContentHeader {
+        padding: 10px;
+        margin: 0 auto;
+        max-width: 300px;
+        text-align: center;
+      }
+      .postContentText, .less, .more {
+        padding: 10px;
+        margin: 0 auto;
+        max-width: 300px;
+        text-align: center;
       }
     }
   }

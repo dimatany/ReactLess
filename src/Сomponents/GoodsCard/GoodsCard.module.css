@@ -145,10 +145,6 @@
 .wrapper .container .productImage:hover .info {
   transform: translateX(0);
 }
-.wrapper .container .control {
-  position: absolute;
-  left: 25%;
-}
 .wrapper .container .btn {
   transform: translateY(0px);
   transition: 0.3s linear;
@@ -211,22 +207,21 @@
   .wrapper .container {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    margin-bottom: 30px;
   }
   .wrapper .container .productImage {
     width: 100%;
-    min-height: 65%;
+    height: 65%;
     order: -1;
   }
   .wrapper .container .productDetails {
     width: 100%;
     min-height: 300px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
   .wrapper .container .productDetails .more {
     left: 34%;
-  }
-  .wrapper .container .control {
-    left: 35%;
   }
   .wrapper .btn {
     top: -30px;
@@ -379,8 +374,8 @@ input[type=checkbox]:before {
   position: absolute;
   top: 4px;
   content: "";
-  height: 15px;
-  width: 15px;
+  height: 17px;
+  width: 17px;
   border: 1px solid #434343;
   background: #434343;
   border-radius: 3px;
