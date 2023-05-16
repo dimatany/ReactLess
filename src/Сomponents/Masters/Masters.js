@@ -4,7 +4,6 @@ import styles from './Masters.module.css';
 import Descriptions from '../Descriptions/Descriptions';
 import Headings from '../Headings/Headings';
 import MasterCard from '../MasterCard/MasterCard';
-import MastersBlog from '../MastersBlog/MastersBlog';
 
 function Masters(props) {
 	
@@ -16,11 +15,6 @@ function Masters(props) {
 				<MasterCard dataMasters={props.dataMasters}/>
 			</ErrorBoundary>
 			<Descriptions text={props.text}/>
-			{/*
-			 <ErrorBoundary>
-			 <MastersBlog/>
-			 </ErrorBoundary>
-			*/}
 		</div>
 	);
 }
