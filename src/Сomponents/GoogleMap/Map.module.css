@@ -1,8 +1,8 @@
 .container {
   width: 70vw;
-  height: 65vh;
+  height: 70vh;
   margin: 0 auto;
-  padding: 110px 50px;
+  padding: 90px 20px;
   background: #4fa19d;
   border-radius: 20px;
   box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
@@ -26,6 +26,12 @@
 }
 .container .containerAddress {
   margin-top: 20px;
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=Map.module.css.map */

@@ -72,6 +72,9 @@
   .wrapper .wrapBlock .wrapMap {
     margin-bottom: 5vh;
   }
+  .wrapper .wrapBlock .wrapMap .addressSearchContainer {
+    justify-content: center;
+  }
   .wrapper .wrapBlock .wrapNetwork {
     display: flex;
     flex-direction: row;

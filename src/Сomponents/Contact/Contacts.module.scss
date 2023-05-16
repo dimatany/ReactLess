@@ -83,6 +83,9 @@ $lime-green: #4fa19d;
       flex-direction: column;
       .wrapMap {
         margin-bottom: 5vh;
+        .addressSearchContainer{
+          justify-content: center;
+        }
       }
       .wrapNetwork {
         display: flex;
