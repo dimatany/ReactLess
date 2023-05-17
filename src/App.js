@@ -6,7 +6,6 @@ import './index.css';
 import Loading from './Сomponents/Loading/Loading';
 import GoodsDetail from './Сomponents/GoodsDetail/GoodsDetail';
 import WhatWeDoDetail from './Сomponents/WhatWeDoDetail/WhatWeDoDetail';
-import Header from './Сomponents/Header/Header';
 import MastersDetail from './Сomponents/MastersDetail/MastersDetail';
 import ButtonFeedback from './Сomponents/ButtonFeedback/ButtonFeedback';
 import ErrorBoundary from './Сomponents/ErrorBoundary/ErrorBoundary';
@@ -14,6 +13,7 @@ import SVGLetter from './Сomponents/SVG/SVGLetter';
 import Footer from './Сomponents/Footer/Footer';
 import Toggle from './Сomponents/Toggle/Toggle';
 import { ThemeContext, themes } from './Contexts/ThemeContext';
+import NavBurger from './Сomponents/NavBurger/NavBurger';
 
 const About = lazy(() => import('./Сomponents/About/About'));
 const Masters = lazy(() => import('./Сomponents/Masters/Masters'));
@@ -43,9 +43,7 @@ function App(props) {
                       </ThemeContext.Consumer>
                   </div>
                   <ErrorBoundary>
-                      <header>
-                          <Header/>
-                      </header>
+                      <NavBurger/>
                   </ErrorBoundary>
                   <ErrorBoundary>
                       <main>

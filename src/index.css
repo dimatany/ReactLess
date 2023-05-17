@@ -32,7 +32,7 @@ body::-webkit-scrollbar-thumb {
 }
 .container .buttonTheme {
   top: 50px;
-  right: 87%;
+  right: 82%;
   cursor: pointer;
   position: fixed;
   z-index: 5;
@@ -44,9 +44,24 @@ body::-webkit-scrollbar-thumb {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
+  .container .buttonTheme {
+    right: 75%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container .buttonTheme {
+    right: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
   .container .buttonTheme {
     right: 60%;
+  }
+}
+@media screen and (max-width: 370px) {
+  .container .buttonTheme {
+    right: 50%;
   }
 }
 :root[data-theme=light] {
