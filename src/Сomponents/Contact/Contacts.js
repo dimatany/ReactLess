@@ -81,9 +81,9 @@ function Contacts(props) {
 					</div>
 				</ErrorBoundary>
 			</div>
-			<span className={styles.test}><SVGDivision fill="white"/></span>
+			<span className={styles.test}><SVGDivision fill="#5383ed"/></span>
 			<Descriptions text={props.text}/>
-			<span className={styles.test}><SVGDivision fill="white"/></span>
+			<span className={styles.test}><SVGDivision fill="#5383ed"/></span>
 			<Descriptions text={props.text2}/>
 		</div>
 	);
