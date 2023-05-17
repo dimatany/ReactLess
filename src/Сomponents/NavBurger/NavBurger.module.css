@@ -35,6 +35,7 @@
 
 .mobile_btn {
   display: none;
+  color: white;
 }
 
 @media (max-width: 800px) {
@@ -69,4 +70,4 @@
   }
 }
 
-/*# sourceMappingURL=Header.module.css.map */
+/*# sourceMappingURL=NavBurger.module.css.map */

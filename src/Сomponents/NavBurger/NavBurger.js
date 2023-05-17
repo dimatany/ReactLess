@@ -4,7 +4,7 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import {NavLink} from 'react-router-dom';
 import SVGAvatar from '../SVG/SVGAvatar';
 
-function NavBurger(props) {
+function NavBurger() {
 	const [nav, setNav] = useState(false);
 	return (
 		<header className={styles.header}>
