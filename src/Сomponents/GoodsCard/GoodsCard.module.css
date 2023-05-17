@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0 3vh 5vh 3vh;
+  margin: 0 30px 50px 30px;
 }
 .wrapper .container {
   display: flex;
@@ -19,7 +19,7 @@
   width: 100%;
 }
 .wrapper .container .block {
-  padding-top: 20vh;
+  padding-top: 200px;
   width: 90%;
   max-width: 1300px;
   margin: 0 auto;
@@ -78,7 +78,7 @@
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 15px;
-  height: 12vh;
+  height: 120px;
   width: 95%;
   font-size: 24px;
   color: #191d1c;
@@ -90,7 +90,7 @@
   font-size: 18px;
   width: 95%;
   overflow: hidden;
-  height: 25vh;
+  height: 250px;
 }
 .wrapper .container .productDetails .more {
   padding: 5px;
@@ -336,12 +336,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.form .formCheckbox .fieldsetCheckbox .checkBlockOne .checkPrice, .form .formCheckbox .fieldsetCheckbox .checkBlockTwo .checkPrice {
-  display: block;
-}
-.form .formCheckbox .fieldsetCheckbox .checkBlockOne .checkForWhat, .form .formCheckbox .fieldsetCheckbox .checkBlockTwo .checkForWhat {
-  display: block;
 }
 .form .formCheckbox .fieldsetCheckbox .checkBlockOne .checkLabel, .form .formCheckbox .fieldsetCheckbox .checkBlockTwo .checkLabel {
   display: flex;

@@ -16,14 +16,14 @@ $lime-green: #4fa19d;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 25vh 40px 2vh 40px;
+  padding: 200px 40px 30px 40px;
   .illustration {
     img {
       max-height: 500px;
       max-width: 500px;
       border-radius: 10px;
       box-shadow: 0 5px 32px 0 $soft-blue2;
-      margin-bottom: 10vh;
+      margin-bottom: 130px;
     }
   }
   .sinopsis {
@@ -32,21 +32,22 @@ $lime-green: #4fa19d;
     span {
       color: $bright-red;
       font-size: 18px;
+      font-weight: bold;
     }
     .name {
       line-height: 35px;
-      margin-bottom: 7vh;
+      margin-bottom: 100px;
       color: $bright-orange;
       font-size: 35px;
       font-weight: bold;
     }
     .article, .description, .forWhat, .type, .application, .composition  {
-      padding-top: 1vh;
-      margin-bottom: 5vh;
+      padding-top: 10px;
+      margin-bottom: 50px;
     }
     .prise {
       margin-top: 20px;
-      margin-bottom: 15vh;
+      margin-bottom: 100px;
       color: $bright-orange;
       font-size: 30px;
       font-weight: bold;
@@ -56,7 +57,7 @@ $lime-green: #4fa19d;
 .info {
   font-size: 20px;
   width: 90%;
-  margin: 0 auto 15vh;
+  margin: 0 auto 20px;
   overflow: scroll;
   line-height: 1.6;
   span {
@@ -64,8 +65,8 @@ $lime-green: #4fa19d;
     font-size: 18px;
   }
   .description, .application, .composition {
-    padding-top: 1vh;
-    margin-bottom: 5vh;
+    padding-top: 10px;
+    margin-bottom: 50px;
     &::first-line {
       font-weight: bolder;
     }
@@ -74,9 +75,9 @@ $lime-green: #4fa19d;
 
 @media screen and (max-width: 720px) {
   .wrap {
-    padding: 25vh 10px 2vh 10px;
+    padding: 200px 10px 30px 10px;
     .sinopsis {
-      margin-top: 15vh;
+      margin-top: 100px;
       text-align: center;
       width: 100%;
     }

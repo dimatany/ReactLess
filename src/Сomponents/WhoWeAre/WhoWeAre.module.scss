@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 .about {
-  margin: 160px auto 10vh;
+  margin: 160px auto 30px;
   min-width: 320px;
   max-width: 700px;
   width: 90%;
@@ -12,17 +12,17 @@
 }
 .about span {
   display: block;
-  margin-bottom: 10vh;
+  margin-bottom: 30px;
 }
 .about p {
-  padding-bottom: 10vh;
+  padding-bottom: 30px;
   font-size: 20px;
   overflow: scroll;
   letter-spacing: 1px;
   line-height: 1.6;
 }
 .about p:last-child {
-  margin-bottom: 5vh;
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 720px) {

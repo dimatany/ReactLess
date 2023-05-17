@@ -1,12 +1,12 @@
 .title {
-  margin: 20vh auto 20vh;
+  margin: 200px auto 200px;
   max-width: 700px;
   width: 100%;
   text-align: center;
 }
 
 .wrap {
-  margin-bottom: 20vh;
+  margin-bottom: 200px;
 }
 
 .contain {

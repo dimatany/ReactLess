@@ -15,7 +15,7 @@ $lime-green: #4fa19d;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0 3vh 5vh 3vh;
+  margin: 0 30px 50px 30px;
   .container {
     display: flex;
     flex-direction: row;
@@ -29,7 +29,7 @@ $lime-green: #4fa19d;
     max-width: 600px;
     width: 100%;
     .block {
-      padding-top: 20vh;
+      padding-top: 200px;
       width: 90%;
       max-width: 1300px;
       margin: 0 auto;
@@ -87,7 +87,7 @@ $lime-green: #4fa19d;
         margin: 0 auto;
         padding-top: 20px;
         padding-bottom: 15px;
-        height: 12vh;
+        height: 120px;
         width: 95%;
         font-size: 24px;
         color: $dark-salt;
@@ -99,7 +99,7 @@ $lime-green: #4fa19d;
         font-size: 18px;
         width: 95%;
         overflow: hidden;
-        height: 25vh;
+        height: 250px;
       }
       .more {
         padding: 5px;
@@ -354,12 +354,8 @@ $lime-green: #4fa19d;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        .checkPrice {
-          display: block;//убрать потом
-        }
-        .checkForWhat {
-          display: block;//убрать потом
-        }
+        .checkPrice {}
+        .checkForWhat {}
         .checkLabel {
           display: flex;
           color: $white;
@@ -427,8 +423,6 @@ input[type=checkbox] {
     }
   }
 }
-
-///////////////////////////////////////////
 
 
 

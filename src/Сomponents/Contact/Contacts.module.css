@@ -1,16 +1,16 @@
 .wrapper {
-  padding-top: 20vh;
+  padding-top: 200px;
   width: 90%;
   max-width: 1300px;
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 10vh;
+  padding-bottom: 100px;
 }
 .wrapper h2 {
   text-align: center;
   font-weight: 700;
   font-size: 58px;
-  margin-bottom: 10vh;
+  margin-bottom: 100px;
 }
 .wrapper .wrapBlock {
   display: flex;
@@ -70,7 +70,7 @@
     flex-direction: column;
   }
   .wrapper .wrapBlock .wrapMap {
-    margin-bottom: 5vh;
+    margin-bottom: 50px;
   }
   .wrapper .wrapBlock .wrapMap .addressSearchContainer {
     justify-content: center;
@@ -81,7 +81,7 @@
     flex-wrap: wrap;
     height: 30px;
     gap: 25px;
-    margin-bottom: 10vh;
+    margin-bottom: 100px;
   }
 }
 

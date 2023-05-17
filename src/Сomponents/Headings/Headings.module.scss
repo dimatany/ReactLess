@@ -8,12 +8,12 @@ $moderate-orange2: rgb(186, 138, 76, .4);
 $dark-salt: #191d1c;
 
 .boxTitle {
-  height: 15vh;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: clamp(1rem, 3vw, 2rem);
-  margin-bottom: 2vh;
+  margin-bottom: 20px;
   font-family: 'Cormorant Garamond', serif;
   p {
     position: relative;

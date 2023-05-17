@@ -1,11 +1,11 @@
 .wrapBlock {
-  margin: 0 0 10vh 0;
+  margin: 0 0 100px 0;
 }
 .wrapBlock h4 {
   display: flex;
   justify-content: center;
   font-size: 27px;
-  margin: 10vh 0;
+  margin: 10px 0 100px;
   color: #edae3b;
 }
 .wrapBlock .wrapTitle {
@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 800px) {
   .wrapBlock {
-    margin-bottom: 15vh;
+    margin-bottom: 150px;
   }
   .wrapBlock .wrapDescription {
     display: flex;
@@ -54,7 +54,7 @@
     width: 90%;
   }
   .wrapBlock .wrapDescription .descriptionImg img {
-    margin-bottom: 5vh;
+    margin-bottom: 50px;
   }
   .wrapBlock .wrapDescription .descriptionText {
     width: 90%;

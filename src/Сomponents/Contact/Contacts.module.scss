@@ -12,17 +12,17 @@ $bright-red: #FE2E2E;
 $lime-green: #4fa19d;
 
 .wrapper {
-  padding-top: 20vh;
+  padding-top: 200px;
   width: 90%;
   max-width: 1300px;
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 10vh;
+  padding-bottom: 100px;
   h2 {
     text-align: center;
     font-weight: 700;
     font-size: 58px;
-    margin-bottom: 10vh;
+    margin-bottom: 100px;
   }
   .wrapBlock {
     display: flex;
@@ -82,7 +82,7 @@ $lime-green: #4fa19d;
       display: flex;
       flex-direction: column;
       .wrapMap {
-        margin-bottom: 5vh;
+        margin-bottom: 50px;
         .addressSearchContainer{
           justify-content: center;
         }
@@ -93,7 +93,7 @@ $lime-green: #4fa19d;
         flex-wrap: wrap;
         height: 30px;
         gap: 25px;
-        margin-bottom: 10vh;
+        margin-bottom: 100px;
       }
     }
   }

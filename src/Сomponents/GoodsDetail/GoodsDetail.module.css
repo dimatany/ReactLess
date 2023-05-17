@@ -3,14 +3,14 @@
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 25vh 40px 2vh 40px;
+  padding: 200px 40px 30px 40px;
 }
 .wrap .illustration img {
   max-height: 500px;
   max-width: 500px;
   border-radius: 10px;
   box-shadow: 0 5px 32px 0 #5383ed;
-  margin-bottom: 10vh;
+  margin-bottom: 130px;
 }
 .wrap .sinopsis {
   font-size: 20px;
@@ -19,21 +19,22 @@
 .wrap .sinopsis span {
   color: #FE2E2E;
   font-size: 18px;
+  font-weight: bold;
 }
 .wrap .sinopsis .name {
   line-height: 35px;
-  margin-bottom: 7vh;
+  margin-bottom: 100px;
   color: #edae3b;
   font-size: 35px;
   font-weight: bold;
 }
 .wrap .sinopsis .article, .wrap .sinopsis .description, .wrap .sinopsis .forWhat, .wrap .sinopsis .type, .wrap .sinopsis .application, .wrap .sinopsis .composition {
-  padding-top: 1vh;
-  margin-bottom: 5vh;
+  padding-top: 10px;
+  margin-bottom: 50px;
 }
 .wrap .sinopsis .prise {
   margin-top: 20px;
-  margin-bottom: 15vh;
+  margin-bottom: 100px;
   color: #edae3b;
   font-size: 30px;
   font-weight: bold;
@@ -42,7 +43,7 @@
 .info {
   font-size: 20px;
   width: 90%;
-  margin: 0 auto 15vh;
+  margin: 0 auto 20px;
   overflow: scroll;
   line-height: 1.6;
 }
@@ -51,8 +52,8 @@
   font-size: 18px;
 }
 .info .description, .info .application, .info .composition {
-  padding-top: 1vh;
-  margin-bottom: 5vh;
+  padding-top: 10px;
+  margin-bottom: 50px;
 }
 .info .description::first-line, .info .application::first-line, .info .composition::first-line {
   font-weight: bolder;
@@ -60,10 +61,10 @@
 
 @media screen and (max-width: 720px) {
   .wrap {
-    padding: 25vh 10px 2vh 10px;
+    padding: 200px 10px 30px 10px;
   }
   .wrap .sinopsis {
-    margin-top: 15vh;
+    margin-top: 100px;
     text-align: center;
     width: 100%;
   }
