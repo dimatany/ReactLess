@@ -1,7 +1,6 @@
 .wrap {
   margin: 0 auto;
   background: rgb(32, 33, 37);
-  padding: 10px;
 }
 
 .header {
@@ -72,7 +71,7 @@
   overflow: hidden;
   line-height: 0;
   max-height: 0;
-  transition: max-height 0.5s ease-out;
+  transition: max-height 0.3s ease-out;
   background-color: #202125;
 }
 .nav .menu {

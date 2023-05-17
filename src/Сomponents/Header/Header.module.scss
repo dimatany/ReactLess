@@ -15,7 +15,6 @@ $lime-green: #4fa19d;
 .wrap {
   margin: 0 auto;
   background: $dark-blue-rgba;
-  padding: 10px;
 }
 .header {
   position: fixed;
@@ -85,7 +84,7 @@ $lime-green: #4fa19d;
   overflow: hidden;
   line-height: 0;
   max-height: 0;
-  transition: max-height .5s ease-out;
+  transition: max-height .3s ease-out;
   background-color: $dark-blue;
   .menu {
     padding-top: 20px;

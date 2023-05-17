@@ -51,6 +51,7 @@
     "@emailjs/browser": "^3.10.0",
     "@tedconf/react-show-more": "^1.1.2",
     "gh-pages": "^5.0.0",
-    "react-paginate": "^8.1.4"
+    "react-paginate": "^8.1.4",
+    "styled-components": "^6.0.0-rc.1"
   }
 }
