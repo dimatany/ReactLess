@@ -22,7 +22,6 @@ $lime-green: #4fa19d;
   border-bottom: 1px solid $dark-blue;
   box-shadow: 0 10px 10px -10px $soft-blue2;
 }
-
 .wrap {
   height: 80px;
   display: flex;
@@ -31,13 +30,11 @@ $lime-green: #4fa19d;
   background: $dark-blue-rgba;
   padding: 20px;
 }
-
 .logo{
   display: inline-block;
   color: $white;
   font-size: 60px;
 }
-
 .menu {
   display: flex;
   align-items: center;
@@ -46,10 +43,16 @@ $lime-green: #4fa19d;
   line-height: 28px;
   gap: 30px;
 }
-
 .mobile_btn {
   display: none;
   color: white;
+}
+.test {
+  padding: 5px;
+  a {
+    text-decoration: none;
+  }
+
 }
 
 @media (max-width: 800px) {
@@ -61,7 +64,6 @@ $lime-green: #4fa19d;
     cursor: pointer;
     z-index: 10;
   }
-
   .menu {
     display: flex;
     flex-direction: column;
@@ -78,11 +80,9 @@ $lime-green: #4fa19d;
     transition: left 1s;
     padding-top: 50px;
   }
-
   .active {
     left: 0;
   }
-
   .menu a {
     font-size: 25px;
   }

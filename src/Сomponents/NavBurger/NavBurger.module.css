@@ -38,6 +38,13 @@
   color: white;
 }
 
+.test {
+  padding: 5px;
+}
+.test a {
+  text-decoration: none;
+}
+
 @media (max-width: 800px) {
   .mobile_btn {
     display: block;
