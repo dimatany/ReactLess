@@ -15,7 +15,7 @@ function WhatWeDo(props) {
 				{props.dataWWD.map(el =>
 					<div className={styles.shadow} key={el.id}>
 						<img key={el.id} src={el.image} alt={el.alt}/>
-						<Link key={el.id} to={el.id} className={styles.link}>
+						<Link key={el.id} to={`about/${el.id}`} className={styles.link}>
 							<label htmlFor="button">{props.label}</label>
 							<input className={styles.checkbox}  checked={checked} onChange={handleChange} />
 						</Link>
