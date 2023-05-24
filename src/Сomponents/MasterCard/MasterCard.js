@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './MasterCard.module.css';
 import {Link} from 'react-router-dom';
 import ButtonSubmit from '../ButtonSubmit/ButtonSubmit';
 
 
 function MasterCard(props) {
-	const [checked, setChecked] = React.useState(true);
+	const [checked, setChecked] = useState(true);
 	
 	function handleChange() {
 		setChecked(!checked);

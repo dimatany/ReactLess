@@ -51,7 +51,8 @@ function App(props) {
                               <Route index element={
                                   <About
                                       dataWWD={props.appData.dataWWD}
-                                      store={props.store}/>}
+                                      store={props.store}
+                                  />}
                               />
                               <Route path="about" element={
                                   <About
