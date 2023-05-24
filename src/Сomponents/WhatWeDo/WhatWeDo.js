@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import { Link } from "react-router-dom";
 import styles from './WhatWeDo.module.css';
+import { Link } from "react-router-dom";
 import Headings from '../Headings/Headings';
 
 function WhatWeDo(props) {
@@ -8,7 +8,6 @@ function WhatWeDo(props) {
 	function handleChange() {
 		setChecked(!checked);
 	}
-	
 	return (
 		<div className={[styles["services"], styles['wrap']].join(" ")}>
 			<Headings heading={props.title}/>
@@ -16,12 +15,10 @@ function WhatWeDo(props) {
 				{props.dataWWD.map(el =>
 					<div className={styles.shadow} key={el.id}>
 						<img key={el.id} src={el.image} alt={el.alt}/>
-						<span>
-							<Link key={el.id} to={el.id}>
-								<label htmlFor="button">{props.label}</label>
-								<input type="checkbox" checked={checked} onChange={handleChange} />
-							</Link>
-						</span>
+						<Link key={el.id} to={el.id} className={styles.link}>
+							<label htmlFor="button">{props.label}</label>
+							<input className={styles.checkbox}  checked={checked} onChange={handleChange} />
+						</Link>
 						<p className={styles.wrapDescr}>{el.title}</p>
 					</div>
 				)}

@@ -3,33 +3,29 @@ import styles from './MasterCard.module.css';
 import {Link} from 'react-router-dom';
 import ButtonSubmit from '../ButtonSubmit/ButtonSubmit';
 
-
 function MasterCard(props) {
 	const [checked, setChecked] = useState(true);
-	
 	function handleChange() {
 		setChecked(!checked);
 	}
 	return (
-		<>
-			<div className={styles.cardmaster}>
-				{props.dataMasters.map(el =>
-					<div className={styles.cardmasterWrap} key={el.id}>
-						<div className={styles.wrapCard}>
-							<div className={styles.wrapBlock}>
-								<img key={el.id} src={el.avatar} alt={el.alt}/>
-								<div className={styles.profession}>
-									<p className={styles.professionTitle}>{el.title}</p>
-									<Link key={el.id} to={el.id}>
-										<ButtonSubmit onClick={handleChange} children={props.label}/>
-									</Link>
-								</div>
+		<div className={styles.cardmaster}>
+			{props.dataMasters.map(el =>
+				<div className={styles.cardmasterWrap} key={el.id}>
+					<div className={styles.wrapCard}>
+						<div className={styles.wrapBlock}>
+							<img key={el.id} src={el.avatar} alt={el.alt}/>
+							<div className={styles.profession}>
+								<p className={styles.professionTitle}>{el.title}</p>
+								<Link key={el.id} to={el.id}>
+									<ButtonSubmit onClick={handleChange} children={props.label}/>
+								</Link>
 							</div>
 						</div>
 					</div>
-				)}
-			</div>
-		</>
+				</div>
+			)}
+		</div>
 	);
 }
 MasterCard.defaultProps = {

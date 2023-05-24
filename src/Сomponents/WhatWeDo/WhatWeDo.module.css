@@ -35,8 +35,16 @@
   height: 250px;
   border-radius: 20px;
 }
-.shadow span {
+.shadow .checkbox {
+  display: none;
+}
+.shadow .checkbox:checked + .wrapBlock {
+  height: auto;
+}
+.shadow .link {
+  text-decoration: none;
   display: block;
+  margin-bottom: 15px;
   position: absolute;
   top: 110%;
   left: 25%;
@@ -44,17 +52,19 @@
   font-size: 20px;
   font-weight: 700;
 }
-.shadow span a {
-  text-decoration: none;
-}
-.shadow span a label {
+.shadow label {
+  order: 1;
+  color: #5383ed;
+  font-size: 20px;
   cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s linear;
+  text-shadow: 1px 1px 1px #333333;
 }
-.shadow span a input {
-  opacity: 0;
-}
-.shadow span a:hover {
-  color: #f7d775;
+.shadow label:hover {
+  text-decoration: none;
+  color: #edae3b;
+  text-shadow: 1px 1px 1px #333333;
 }
 .shadow .wrapDescr {
   position: relative;
