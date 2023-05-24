@@ -86,17 +86,17 @@ body::-webkit-scrollbar-thumb {
 
 ///////////// - color theme rules
 :root[data-theme="light"] {
-  --background-color: #fafafa;
+  --background-color: #FAEBD7;
   --color: #191d1c;
   h1 {
-    --color: #fafafa;
+    --color: #FAEBD7;
   }
 }
 :root[data-theme="dark"] {
   --background-color: #202125;
-  --color: #ffffff;
+  --color: #FAEBD7;
   h1 {
-    --color: #fafafa;
+    --color: #FAEBD7;
   }
 }
 body {

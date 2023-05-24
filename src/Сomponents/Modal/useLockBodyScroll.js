@@ -1,6 +1,6 @@
 import { useLayoutEffect } from "react";
 
-export default function useLockBodyScroll() {
+ function useLockBodyScroll() {
 	useLayoutEffect(
 		() => {
 			//get original value of body
@@ -13,3 +13,5 @@ export default function useLockBodyScroll() {
 		[]
 	);
 }
+
+export default useLockBodyScroll;

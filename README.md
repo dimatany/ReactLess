@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Pet Project.
+## _The website of the Beauty Salon with the cosmetics store._
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**[Reference to the visual part](https://reactbs1.netlify.app/about)**
 
-## Available Scripts
+The project was created from the first days of study the React Library.
+As I deepen my knowledge, I am changing the code again and again, correct it and amend it.
+I'm going to describe the components that I have already been implemented in the project and those that are still planning to be implemented in the future.
 
-In the project directory, you can run:
 
-### `yarn start`
+## Features
+***Implemented features***
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Tab component** - which consists of adaptive clickable tabs placed next to each other.
+- **Multiple filter** - that helps filter cards with the goods on the Product page.
+- **Countdown component** - which counts the time to the end of the promotion.
+- **Paganization** of articles and a block of comments for clients.
+- **Google Map component** - where you can find accommodation for the arrival point.
+- **Modal window** in button where you can find the **Form of sending messages** to managers of Beauty Salon.
+- **Theme switch button** on the website - from dark to light and revers.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+***Planning features***
+- The **click button** to which I will receive the **translation of the texts** on the website.
+- **Like component** - of the product card or article or commentary on the website.
+- **Form of logging/registration** - of the user on the website.
+- **Store Basket**.
+- **Payment of goods component**.
 
-### `yarn test`
+## Tech
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I used the following libraries during the project:
 
-### `yarn build`
+- [Official EmailJS SDK for Browsers](https://www.npmjs.com/package/@emailjs/browser)
+- [React Show More](https://www.npmjs.com/package/@tedconf/react-show-more)
+- [react-burger-menu](https://www.npmjs.com/package/react-burger-menu)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [ReactJS component to render a pagination.](https://www.npmjs.com/package/react-paginate)
+- [react-google-maps](https://www.npmjs.com/package/@react-google-maps/api)
+- [Redux Toolkit](https://redux-toolkit.js.org)
+- [Axios](https://www.npmjs.com/package/axios)
+- [React Hook Form](https://www.npmjs.com/package/react-hook-form)
+- [React Router DOM](https://www.npmjs.com/package/react-router-dom)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I understand that some libraries might not be used in the project, but my task was to learn how to use libraries as well.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### What I learned during the project.
+> I can write the perfect component - back to the code in a week and say, God, who wrote it?
 
-### `yarn eject`
+> When I was creating this project, all decisions are made on my self, I used Google to help! This is a great skill, since before me, someone has already met a similar problem.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+>I learned to stop in time in the attacks of perfectionism and write the code further. Even if I think the code is not ideal, it works well.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`If you have any questions - be free to contact me!`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
