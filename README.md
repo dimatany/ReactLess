@@ -3,28 +3,29 @@
 
 **[Reference to the visual part](https://reactbs1.netlify.app/about)**
 
-The project was created from the first days of study the React Library.
-As I deepen my knowledge, I am changing the code again and again, correct it and amend it.
-I'm going to describe the components that I have already been implemented in the project and those that are still planning to be implemented in the future.
+
+The project was started during first days of my study of the React Library. 
+As I deepen my knowledge, I am changing the code over and over again, correcting it and modifying it.
+I'm going to describe the components that have already been implemented in the project and those that are still planned to be implemented in the future.
 
 
 ## Features
 ***Implemented features***
 
 - **Tab component** - which consists of adaptive clickable tabs placed next to each other.
-- **Multiple filter** - that helps filter cards with the goods on the Product page.
+- **Multiple item filter** - that helps filtering cards with the goods on the Product page.
 - **Countdown component** - which counts the time to the end of the promotion.
-- **Paganization** of articles and a block of comments for clients.
-- **Google Map component** - where you can find accommodation for the arrival point.
-- **Modal window** in button where you can find the **Form of sending messages** to managers of Beauty Salon.
-- **Theme switch button** on the website - from dark to light and revers.
+- **Pagination** of articles and a section of customer comments.
+- **Google Map component** - where you can find accommodation for the arrival destination.
+- **Modal window** - button where you can find the **Form to send messages** to managers of Beauty Salon.
+- **Theme switch button** - from dark to light and reverse.
 
 ***Planning features***
-- The **click button** to which I will receive the **translation of the texts** on the website.
-- **Like component** - of the product card or article or commentary on the website.
-- **Form of logging/registration** - of the user on the website.
+- **A button to translate the text on the website**.
+- **'Like' component** - for the product card or article or comment on the website.
+- **Login/registration form**.
 - **Store Basket**.
-- **Payment of goods component**.
+- **Payment component**.
 
 ## Tech
 
@@ -42,12 +43,12 @@ I used the following libraries during the project:
 - [React Router DOM](https://www.npmjs.com/package/react-router-dom)
 
 
-I understand that some libraries might not be used in the project, but my task was to learn how to use libraries as well.
+I understand that some libraries might not be needed in the project, but  one of my objectives was to learn how to use these libraries.
 
 ### What I learned during the project.
-> I can write the perfect component - back to the code in a week and say, God, who wrote it?
+> I can write the perfect component, then get  - to the code in a week and say, God, who wrote it?
 
-> When I was creating this project, all decisions are made on my self, I used Google to help! This is a great skill, since before me, someone has already met a similar problem.
+> When I was creating this project, all decisions were made on my own, I used Google to help! This is a great skill, since before me, someone has already met a similar problem.
 
 >I learned to stop in time in the attacks of perfectionism and write the code further. Even if I think the code is not ideal, it works well.
 
