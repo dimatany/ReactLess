@@ -48,7 +48,13 @@ function App(props) {
                   <ErrorBoundary>
                       <main>
                           <Routes>
-                              <Route path="/" element={
+                              <Route index element={
+                                  <About
+                                      dataWWD={props.appData.dataWWD}
+                                      store={props.store}
+                                  />}
+                              />
+                              <Route path="about" element={
                                   <About
                                       dataWWD={props.appData.dataWWD}
                                       store={props.store}
