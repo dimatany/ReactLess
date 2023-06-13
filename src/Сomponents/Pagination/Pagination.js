@@ -22,7 +22,6 @@ function Pagination({postsPerPage, ...props}) {
 			<ReactPaginate
 				previousLabel={" ‹ "}
 				nextLabel={" › "}
-				
 				pageCount={pageCount}
 				onPageChange={changePage}
 				containerClassName={styles.paginationButton}
