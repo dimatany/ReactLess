@@ -1,0 +1,35 @@
+$dark-blue: #202125;
+$dark-salt: #191d1c;
+$grayish-blue: #434343;
+$white: #ffffff;
+$soft-blue: #8ab4f8;
+$soft-blue2: #5383ed;
+$silver: rgba(255, 255, 255, .5);
+$soft-yellow: #f7d775;
+$bright-orange: #edae3b;
+$moderate-orange2: rgb(186, 138, 76, .4);
+$bright-red: #FE2E2E;
+$lime-green: #4fa19d;
+
+.wrap {
+  position: relative;
+  .tooltip {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 7px;
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: 1;
+    z-index: 100;
+    white-space: nowrap;
+
+    color: $white;
+    cursor: pointer;
+    border-radius: 10px;
+    background: $grayish-blue;
+    box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+    text-align: center;
+  }
+}

@@ -5,6 +5,7 @@ import Form from '../Form/Form';
 
 import { flash } from 'react-animations';
 import Radium, {StyleRoot} from 'radium';
+import Tooltip from '../Tooltip/Tooltip';
 
 
 function ButtonFeedback(props) {
@@ -12,7 +13,7 @@ function ButtonFeedback(props) {
 	
 	const style = {
 		flash : {
-			animation: 'infinite 2s',
+			animation: 'infinite 3s',
 			animationName: Radium.keyframes(flash, 'flash'),
 		}
 	};
@@ -21,14 +22,16 @@ function ButtonFeedback(props) {
 		<div className={styles.wrap}>
 			<div className={styles.wrapButton}>
 				<StyleRoot>
-					<div className="test" style={style.flash}>
-						<div className={styles.buttonAria}>
-							<div onClick={() => setModalOpen(true)}
-							     className={styles.buttonWrapSVG}>
-								{props.children}
+					<Tooltip content='Натисніть'>
+						<div className="test" style={style.flash}>
+							<div className={styles.buttonAria}>
+								<div onClick={() => setModalOpen(true)}
+								     className={styles.buttonWrapSVG}>
+									{props.children}
+								</div>
 							</div>
 						</div>
-					</div>
+					</Tooltip>
 				</StyleRoot>
 				{modalOpen && (
 					<Modal

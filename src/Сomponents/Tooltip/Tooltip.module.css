@@ -1,0 +1,23 @@
+.wrap {
+  position: relative;
+}
+.wrap .tooltip {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 7px;
+  font-size: 14px;
+  font-family: sans-serif;
+  line-height: 1;
+  z-index: 100;
+  white-space: nowrap;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 10px;
+  background: #434343;
+  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+/*# sourceMappingURL=Tooltip.module.css.map */

@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './MasterDetailPost.module.css';
 
-import { fadeIn } from 'react-animations';
+import { slideInLeft } from 'react-animations';
 import Radium, {StyleRoot} from 'radium';
 
 const style = {
-	fadeIn  : {
+	slideInLeft  : {
 		animation: 'x 4s',
-		animationName: Radium.keyframes(fadeIn, 'fadeIn'),
+		animationName: Radium.keyframes(slideInLeft, 'slideInLeft'),
 	}
 };
 
@@ -18,7 +18,7 @@ function MasterDetailPost(props) {
 			<div className={styles.wrapDescription}>
 				<div className={styles.descriptionImg}>
 					<StyleRoot>
-						<div className="test" style={style.fadeIn}>
+						<div className="test" style={style.slideInLeft}>
 					<img src={props.image} alt={props.alt}/>
 						</div>
 					</StyleRoot>
