@@ -86,7 +86,7 @@ function GoodsCard(props) {
 				<div className={styles.formCheckbox}>
 					<fieldset className={styles.fieldsetCheckbox}>
 						<div className={styles.checkBlockOne}>
-							<div className={styles.checkPrice}>
+							<div>
 								<label className={styles.labelCheckbox} htmlFor="price">{props.select4}
 									<label className={styles.checkLabel}>
 										<input
@@ -99,7 +99,7 @@ function GoodsCard(props) {
 									</label>
 								</label>
 							</div>
-							<div className={styles.checkForWhat}>
+							<div>
 								<label className={styles.labelCheckbox} htmlFor="cleaning">{props.select5}
 									<label className={styles.checkLabel}>
 										<input

@@ -4,7 +4,7 @@ import styles from './Modal.module.css'
 import SVGChange from '../SVG/SVGChange';
 
 function Modal({ content, onClose }) {
-	//call hook to lock body scroll
+	//call custom hook to lock body scroll
 	useLockBodyScroll();
 	return (
 		<div className={styles.modal} onClick={onClose}>

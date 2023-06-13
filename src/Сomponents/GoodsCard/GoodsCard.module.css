@@ -341,6 +341,7 @@
   display: flex;
   color: #ffffff;
   margin-bottom: 10px;
+  align-items: center;
 }
 .form .formCheckbox .fieldsetCheckbox .checkBlockOne .checkLabel input, .form .formCheckbox .fieldsetCheckbox .checkBlockTwo .checkLabel input {
   margin-right: 10px;
@@ -366,7 +367,6 @@ input[type=checkbox] {
 }
 input[type=checkbox]:before {
   position: absolute;
-  top: 4px;
   content: "";
   height: 17px;
   width: 17px;
