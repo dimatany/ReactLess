@@ -12,8 +12,7 @@ function NavBurger() {
 	
 	const style = {
 		zoomIn : {
-			//animation: 'x 2s',
-			animation: 'infinite 2s',
+			animation: 'infinite 6s',
 			animationName: Radium.keyframes(zoomIn, 'zoomIn'),
 		}
 	};
