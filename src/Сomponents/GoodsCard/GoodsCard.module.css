@@ -377,7 +377,7 @@ input[type=checkbox]:before {
 }
 input[type=checkbox]:checked:before {
   content: "✔";
-  color: #ffffff;
+  color: #FE2E2E;
 }
 input[type=checkbox]:hover:before {
   border: 1px solid #ffffff;

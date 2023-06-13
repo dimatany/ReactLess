@@ -360,7 +360,6 @@ $lime-green: #4fa19d;
           display: flex;
           color: $white;
           margin-bottom: 10px;
-          ///////////////////
           align-items: center;
           input {
             margin-right: 10px;
@@ -388,8 +387,6 @@ input[type=checkbox] {
   cursor: pointer;
   &:before {
     position: absolute;
-    //////////////////
-    //top: 4px;
     content: "";
     height: 17px;
     width: 17px;
@@ -401,7 +398,7 @@ input[type=checkbox] {
   &:checked {
     &:before {
       content: "✔";
-      color: $white;
+      color: $bright-red;
     }
   }
   &:hover {
