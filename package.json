@@ -51,6 +51,8 @@
     "@emailjs/browser": "^3.10.0",
     "@tedconf/react-show-more": "^1.1.2",
     "gh-pages": "^5.0.0",
+    "radium": "^0.26.2",
+    "react-animations": "^1.0.0",
     "react-burger-menu": "^3.0.9",
     "react-icons": "^4.8.0",
     "react-paginate": "^8.1.4",
