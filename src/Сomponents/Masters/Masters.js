@@ -6,7 +6,6 @@ import Headings from '../Headings/Headings';
 import MasterCard from '../MasterCard/MasterCard';
 
 function Masters(props) {
-	
 	return (
 		<div className={styles.block}>
 			<Headings heading={props.title}/>

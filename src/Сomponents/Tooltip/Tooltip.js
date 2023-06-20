@@ -22,7 +22,6 @@ function Tooltip(props) {
 				{props.children}
 				{active && (
 					<div className={styles.tooltip}>
-						{/* Content */}
 						{props.content}
 					</div>
 				)}

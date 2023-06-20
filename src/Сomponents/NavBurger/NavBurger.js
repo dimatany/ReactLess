@@ -34,6 +34,7 @@ function NavBurger() {
 					<li onClick={() => setNav(!nav)} className={styles.test}><NavLink  style={({ isActive }) => (isActive ? {color: '#FE2E2E'} : {color: '#ffffff'})} to="/stocks">Акції</NavLink></li>
 					<li onClick={() => setNav(!nav)} className={styles.test}><NavLink  style={({ isActive }) => (isActive ? {color: '#FE2E2E'} : {color: '#ffffff'})} to="/blog">Блог</NavLink></li>
 					<li onClick={() => setNav(!nav)} className={styles.test}><NavLink  style={({ isActive }) => (isActive ? {color: '#FE2E2E'} : {color: '#ffffff'})} to="/contacts">Контакти</NavLink></li>
+					<li onClick={() => setNav(!nav)} className={styles.test}><NavLink  style={({ isActive }) => (isActive ? {color: '#FE2E2E'} : {color: '#ffffff'})} to="/users">Клієнти</NavLink></li>
 				</ul>
 				<div onClick={() => setNav(!nav)} className={styles.mobile_btn}>
 					{nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}

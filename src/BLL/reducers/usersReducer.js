@@ -5,7 +5,7 @@ const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE ';
 const SET_TOTAL_USERS_COUNT = 'SET_TOTAL_USERS_COUNT';
 
 let initialState = {
-	users: [
+	/*users: [
  {
  "name": "Tetiana",
  "id": 29204,
@@ -126,13 +126,15 @@ let initialState = {
  "status": "Я лучший на свете!",
  "followed": false
  }
- ],
+ ],*/
 	"totalCount": 24212,
 	"error": null,
-	/*users: [],*/
+	users: [],
 	pageSize: 5,
 	totalUsersCount: 0,
 	currentPage: 1,
+	isFetching: false,
+	
 };
 const usersReducer = (state = initialState, action) => {
 	switch (action.type) {
