@@ -2,7 +2,7 @@ import React from 'react';
 import ErrorBoundary from '../ErrorBoundary/ErrorBoundary';
 import styles from './Goods.module.css';
 import Headings from '../Headings/Headings';
-import GoodsCard from '../GoodsCard/GoodsCard';
+import GoodsFilter from '../GoodsFilter/GoodsFilter';
 
 function Goods(props) {
 	return (
@@ -11,7 +11,7 @@ function Goods(props) {
 				<Headings heading={props.title}/>
 			</div>
 			<ErrorBoundary>
-				<GoodsCard dataGoods={props.dataGoods}/>
+				<GoodsFilter dataGoods={props.dataGoods}/>
 			</ErrorBoundary>
 		</>
 	);

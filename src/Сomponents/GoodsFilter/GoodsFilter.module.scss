@@ -1,0 +1,199 @@
+$dark-blue: #202125;
+$dark-salt: #191d1c;
+$grayish-blue: #434343;
+$white: #ffffff;
+$soft-blue: #8ab4f8;
+$soft-blue2: #5383ed;
+$silver: rgba(255, 255, 255, .5);
+$soft-yellow: #f7d775;
+$bright-orange: #edae3b;
+$bright-red: #FE2E2E;
+$lime-green: #4fa19d;
+
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 30px 50px 30px;
+}
+
+///////////////////////////////////////////
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: $bright-orange;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 63px 60px 63px;
+  .formSortSearch {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    fieldset {
+      display: flex;
+      flex-direction: column;
+      border: none;
+      .label {
+        display: block;
+        order: 0;
+        padding-left: 10px;
+        color: $dark-blue;
+        font-weight: bold;
+        width: 100%;
+      }
+      .iconWrap {
+        position: relative;
+        top: 20px;
+        width: 20px;
+        height: 20px;
+      }
+      .selectSort {
+        width: 100%;
+        box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+        color: $white;
+        border-radius: 10px;
+        padding: 10px 40px;
+        cursor: pointer;
+        position: relative;
+        appearance: none;
+        overflow: hidden;
+        background: $grayish-blue url('../../BLL/img/Goods/arrow.svg') no-repeat 2% 13px;
+        background-size: 20px auto;
+        outline:none;
+        &:active, :hover, :focus {
+          outline: 0;
+          outline-offset: 0;
+        }
+        option {
+          padding-left: 20px;
+        }
+      }
+      .selectSearch {
+        width: 100%;
+        box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+        background: $grayish-blue;
+        color: $white;
+        border-radius: 10px;
+        padding: 10px 40px;
+        border: none;
+        float: left;
+        cursor: pointer;
+        position: relative;
+        appearance: none;
+        overflow: hidden;
+        background: $grayish-blue url('../../BLL/img/Goods/search.svg') no-repeat 2% 13px;
+        background-size: 20px auto;
+        outline:none;
+        &::placeholder {
+          color: $white;
+        }
+        &:active, :hover, :focus {
+          outline: 0;
+          outline-offset: 0;
+        }
+      }
+    }
+    .formSort {
+      margin-top: 45px;
+      margin-bottom: 30px;
+    }
+    .formSearch {
+      margin-top: 30px;
+    }
+  }
+  .formCheckbox {
+    width: 50%;
+    background: $bright-orange;
+    padding: 20px;
+    border-radius: 10px;
+    .labelCheckbox {
+      color: $dark-blue;
+      padding-left: 20px;
+      font-weight: bold;
+    }
+    .fieldsetCheckbox {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      border: none;
+      .checkBlockOne, .checkBlockTwo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .checkPrice {}
+        .checkForWhat {}
+        .checkLabel {
+          display: flex;
+          color: $white;
+          margin-bottom: 10px;
+          align-items: center;
+          input {
+            margin-right: 10px;
+          }
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+[type="search"]::-webkit-search-cancel-button {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background: url('../../BLL/img/Goods/cross.svg') no-repeat;
+  background-size: 30px 30px;
+}
+input[type=checkbox] {
+  position: relative;
+  margin-right: 10px;
+  line-height: 14px;
+  font-size: 25px;
+  cursor: pointer;
+  &:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    border: 1px solid $grayish-blue;
+    background: $grayish-blue;
+    border-radius: 3px;
+    box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+    color: white;
+  }
+  &:checked {
+    &:before {
+      content: "✔";
+      color: $bright-red;
+    }
+  }
+  &:hover {
+    &:before {
+      border: 1px solid $white;
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 10px 10px;
+    .formSortSearch {
+      width: 100%;
+    }
+    .formCheckbox {
+      width: 90%;
+    }
+    fieldset {
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+

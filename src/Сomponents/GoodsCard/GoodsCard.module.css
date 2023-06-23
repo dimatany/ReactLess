@@ -1,11 +1,4 @@
-@charset "UTF-8";
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0 30px 50px 30px;
-}
-.wrapper .container {
+.container {
   display: flex;
   flex-direction: row;
   box-shadow: 0 5px 5px 1px rgba(255, 255, 255, 0.5);
@@ -18,39 +11,39 @@
   max-width: 600px;
   width: 100%;
 }
-.wrapper .container .block {
+.container .block {
   padding-top: 200px;
   width: 90%;
   max-width: 1300px;
   margin: 0 auto;
   text-align: center;
 }
-.wrapper .container .block h2 {
+.container .block h2 {
   text-align: center;
   font-weight: 700;
   font-size: 58px;
 }
-.wrapper .container .wrapBlock {
+.container .wrapBlock {
   max-height: 100px;
   overflow: hidden;
   order: 0;
   margin-bottom: 10px;
 }
-.wrapper .container .checkbox {
+.container .checkbox {
   display: none;
 }
-.wrapper .container .checkbox:checked + .wrapBlock {
+.container .checkbox:checked + .wrapBlock {
   height: auto;
 }
-.wrapper .container .link {
+.container .link {
   text-decoration: none;
   display: block;
   margin-bottom: 15px;
 }
-.wrapper .container .link:hover {
+.container .link:hover {
   text-decoration: none;
 }
-.wrapper .container label {
+.container label {
   order: 1;
   color: #5383ed;
   font-size: 18px;
@@ -58,12 +51,12 @@
   font-weight: bold;
   font-style: italic;
 }
-.wrapper .container .productDetails {
+.container .productDetails {
   width: 50%;
   background: #8ab4f8;
   will-change: transform;
 }
-.wrapper .container .productDetails::after {
+.container .productDetails::after {
   content: "";
   position: absolute;
   top: -2px;
@@ -74,7 +67,7 @@
   height: calc(100% + 3px);
   z-index: -1;
 }
-.wrapper .container .productDetails h4 {
+.container .productDetails h4 {
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 15px;
@@ -84,7 +77,7 @@
   color: #191d1c;
   overflow: scroll;
 }
-.wrapper .container .productDetails p {
+.container .productDetails p {
   margin: 0 10px 0 10px;
   color: #191d1c;
   font-size: 18px;
@@ -92,7 +85,7 @@
   overflow: hidden;
   height: 250px;
 }
-.wrapper .container .productDetails .more {
+.container .productDetails .more {
   padding: 5px;
   border-radius: 10px;
   font-size: 18px;
@@ -107,13 +100,13 @@
   left: 24%;
   top: 60%;
 }
-.wrapper .container .productDetails .more svg {
+.container .productDetails .more svg {
   fill: #ffffff;
   width: 20px;
   height: 20px;
   margin: 0 auto;
 }
-.wrapper .container .productImage {
+.container .productImage {
   transition: all 0.5s ease-out;
   display: inline-block;
   position: relative;
@@ -122,16 +115,16 @@
   float: right;
   width: 50%;
 }
-.wrapper .container .productImage img {
+.container .productImage img {
   width: 100%;
   height: 100%;
   transition: all 0.5s ease-out;
   cursor: pointer;
 }
-.wrapper .container .productImage img:hover {
+.container .productImage img:hover {
   transform: scale(1.5, 1.5);
 }
-.wrapper .container .productImage::after {
+.container .productImage::after {
   content: "";
   position: absolute;
   top: -2px;
@@ -142,10 +135,10 @@
   height: calc(100% + 3px);
   z-index: -1;
 }
-.wrapper .container .productImage:hover .info {
+.container .productImage:hover .info {
   transform: translateX(0);
 }
-.wrapper .container .control {
+.container .control {
   display: flex;
   width: 230px;
   margin: 0 auto;
@@ -154,7 +147,7 @@
   height: 30px;
   padding: 20px;
 }
-.wrapper .container .btn {
+.container .btn {
   transform: translateY(0px);
   transition: 0.3s linear;
   background: #4fa19d;
@@ -169,26 +162,26 @@
   padding: 0;
   margin-bottom: 20px;
 }
-.wrapper .container .btn:hover {
+.container .btn:hover {
   transform: translateY(-4px);
 }
-.wrapper .container .btn span {
+.container .btn span {
   transition: transform 0.3s;
   display: inline-block;
   padding: 10px 20px;
   font-size: 1.2em;
   margin: 0;
 }
-.wrapper .container .btn .price, .wrapper .container .shoppingCart {
+.container .btn .price, .container .shoppingCart {
   background: #191d1c;
   border: 0;
   margin: 0;
 }
-.wrapper .container .btn .price {
+.container .btn .price {
   transform: translateX(-10%);
   padding-right: 10px;
 }
-.wrapper .container .btn .shoppingCart {
+.container .btn .shoppingCart {
   transform: translateX(-100%);
   position: absolute;
   background: #191d1c;
@@ -196,46 +189,47 @@
   left: 0;
   top: 0;
 }
-.wrapper .container .btn .buy {
+.container .btn .buy {
   z-index: 3;
   font-weight: bolder;
 }
-.wrapper .container .btn:hover .price {
+.container .btn:hover .price {
   transform: translateX(-110%);
 }
-.wrapper .container .btn:hover .shoppingCart {
+.container .btn:hover .shoppingCart {
   transform: translateX(0%);
 }
-.wrapper .container .likeBtn {
+.container .likeBtn {
   width: 20px;
 }
-.wrapper .supportingBlock {
+
+.supportingBlock {
   display: flex;
   justify-content: space-between;
   width: 700px;
 }
 
 @media screen and (max-width: 720px) {
-  .wrapper .container {
+  .container {
     display: flex;
     flex-direction: column;
     height: 100%;
     margin-bottom: 30px;
   }
-  .wrapper .container .productImage {
+  .container .productImage {
     width: 100%;
     height: 65%;
     order: -1;
   }
-  .wrapper .container .productDetails {
+  .container .productDetails {
     width: 100%;
     min-height: 300px;
     padding-bottom: 50px;
   }
-  .wrapper .container .productDetails .more {
+  .container .productDetails .more {
     left: 34%;
   }
-  .wrapper .btn {
+  .btn {
     top: -30px;
   }
 }
@@ -252,178 +246,8 @@
   }
 }
 @media screen and (max-width: 320px) {
-  .wrapper .container .likeBtn {
+  .container .likeBtn {
     width: 35px;
-  }
-}
-.form {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background: #edae3b;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 0 63px 60px 63px;
-}
-.form .formSortSearch {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-}
-.form .formSortSearch fieldset {
-  display: flex;
-  flex-direction: column;
-  border: none;
-}
-.form .formSortSearch fieldset .label {
-  display: block;
-  order: 0;
-  padding-left: 10px;
-  color: #202125;
-  font-weight: bold;
-  width: 100%;
-}
-.form .formSortSearch fieldset .iconWrap {
-  position: relative;
-  top: 20px;
-  width: 20px;
-  height: 20px;
-}
-.form .formSortSearch fieldset .selectSort {
-  width: 100%;
-  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
-  color: #ffffff;
-  border-radius: 10px;
-  padding: 10px 40px;
-  cursor: pointer;
-  position: relative;
-  appearance: none;
-  overflow: hidden;
-  background: #434343 url("../../BLL/img/Goods/arrow.svg") no-repeat 2% 13px;
-  background-size: 20px auto;
-  outline: none;
-}
-.form .formSortSearch fieldset .selectSort:active, .form .formSortSearch fieldset .selectSort :hover, .form .formSortSearch fieldset .selectSort :focus {
-  outline: 0;
-  outline-offset: 0;
-}
-.form .formSortSearch fieldset .selectSort option {
-  padding-left: 20px;
-}
-.form .formSortSearch fieldset .selectSearch {
-  width: 100%;
-  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
-  background: #434343;
-  color: #ffffff;
-  border-radius: 10px;
-  padding: 10px 40px;
-  border: none;
-  float: left;
-  cursor: pointer;
-  position: relative;
-  appearance: none;
-  overflow: hidden;
-  background: #434343 url("../../BLL/img/Goods/search.svg") no-repeat 2% 13px;
-  background-size: 20px auto;
-  outline: none;
-}
-.form .formSortSearch fieldset .selectSearch::placeholder {
-  color: #ffffff;
-}
-.form .formSortSearch fieldset .selectSearch:active, .form .formSortSearch fieldset .selectSearch :hover, .form .formSortSearch fieldset .selectSearch :focus {
-  outline: 0;
-  outline-offset: 0;
-}
-.form .formSortSearch .formSort {
-  margin-top: 45px;
-  margin-bottom: 30px;
-}
-.form .formSortSearch .formSearch {
-  margin-top: 30px;
-}
-.form .formCheckbox {
-  width: 50%;
-  background: #edae3b;
-  padding: 20px;
-  border-radius: 10px;
-}
-.form .formCheckbox .labelCheckbox {
-  color: #202125;
-  padding-left: 20px;
-  font-weight: bold;
-}
-.form .formCheckbox .fieldsetCheckbox {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border: none;
-}
-.form .formCheckbox .fieldsetCheckbox .checkBlockOne, .form .formCheckbox .fieldsetCheckbox .checkBlockTwo {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.form .formCheckbox .fieldsetCheckbox .checkBlockOne .checkLabel, .form .formCheckbox .fieldsetCheckbox .checkBlockTwo .checkLabel {
-  display: flex;
-  color: #ffffff;
-  margin-bottom: 10px;
-  align-items: center;
-}
-.form .formCheckbox .fieldsetCheckbox .checkBlockOne .checkLabel input, .form .formCheckbox .fieldsetCheckbox .checkBlockTwo .checkLabel input {
-  margin-right: 10px;
-}
-.form .formCheckbox .fieldsetCheckbox .checkBlockOne .checkLabel span, .form .formCheckbox .fieldsetCheckbox .checkBlockTwo .checkLabel span {
-  display: block;
-}
-
-[type=search]::-webkit-search-cancel-button {
-  appearance: none;
-  height: 20px;
-  width: 20px;
-  background: url("../../BLL/img/Goods/cross.svg") no-repeat;
-  background-size: 30px 30px;
-}
-
-input[type=checkbox] {
-  position: relative;
-  margin-right: 10px;
-  line-height: 14px;
-  font-size: 25px;
-  cursor: pointer;
-}
-input[type=checkbox]:before {
-  position: absolute;
-  content: "";
-  height: 17px;
-  width: 17px;
-  border: 1px solid #434343;
-  background: #434343;
-  border-radius: 3px;
-  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
-  color: white;
-}
-input[type=checkbox]:checked:before {
-  content: "✔";
-  color: #FE2E2E;
-}
-input[type=checkbox]:hover:before {
-  border: 1px solid #ffffff;
-}
-
-@media screen and (max-width: 720px) {
-  .form {
-    display: flex;
-    flex-direction: column;
-    margin: 0 10px 10px 10px;
-  }
-  .form .formSortSearch {
-    width: 100%;
-  }
-  .form .formCheckbox {
-    width: 90%;
-  }
-  .form fieldset {
-    width: 100%;
   }
 }
 

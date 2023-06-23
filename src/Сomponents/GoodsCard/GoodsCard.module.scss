@@ -10,247 +10,238 @@ $bright-orange: #edae3b;
 $bright-red: #FE2E2E;
 $lime-green: #4fa19d;
 
-
-.wrapper {
+.container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0 30px 50px 30px;
-  .container {
-    display: flex;
-    flex-direction: row;
-    box-shadow: 0 5px 5px 1px $silver;
-    background: $white;
+  box-shadow: 0 5px 5px 1px $silver;
+  background: $white;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1em auto;
+  min-height: 350px;
+  max-width: 600px;
+  width: 100%;
+  .block {
+    padding-top: 200px;
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
     text-align: center;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 1em auto;
-    min-height: 350px;
-    max-width: 600px;
-    width: 100%;
-    .block {
-      padding-top: 200px;
-      width: 90%;
-      max-width: 1300px;
-      margin: 0 auto;
+    h2 {
       text-align: center;
-      h2 {
-        text-align: center;
-        font-weight: 700;
-        font-size: 58px;
-      }
-    }
-    .wrapBlock {
-      max-height: 100px;
-      overflow: hidden;
-      order: 0;
-      margin-bottom: 10px;
-    }
-    .checkbox {
-      display: none;
-    }
-    .checkbox:checked + .wrapBlock {
-      height: auto;
-    }
-    .link {
-      text-decoration: none;
-      display: block;
-      margin-bottom: 15px;
-      &:hover {
-        text-decoration: none;
-      }
-    }
-    label {
-      order: 1;
-      color: $soft-blue2;
-      font-size: 18px;
-      cursor: pointer;
-      font-weight: bold;
-      font-style: italic;
-    }
-    .productDetails {
-      width: 50%;
-      background: $soft-blue;
-      will-change: transform;
-      &::after {
-        content: "";
-        position: absolute;
-        top: -2px;
-        left: -2px;
-        background: linear-gradient(30deg, $soft-yellow, $soft-blue2, $bright-red, $lime-green,  $soft-yellow, $soft-blue2, $bright-red, $lime-green);
-        background-size: 300% 300%;
-        width: calc(100% + 3px);
-        height: calc(100% + 3px);
-        z-index: -1;
-      }
-      h4 {
-        margin: 0 auto;
-        padding-top: 20px;
-        padding-bottom: 15px;
-        height: 120px;
-        width: 95%;
-        font-size: 24px;
-        color: $dark-salt;
-        overflow: scroll;
-      }
-      p {
-        margin: 0 10px 0 10px;
-        color: $dark-salt;
-        font-size: 18px;
-        width: 95%;
-        overflow: hidden;
-        height: 250px;
-      }
-      .more {
-        padding: 5px;
-        border-radius: 10px;
-        font-size: 18px;
-        width: 75px;
-        background: $dark-salt;
-        box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
-        display: flex;
-        align-items: center;
-        text-align: center;
-        margin: 0 auto;
-        position: absolute;
-        left: 24%;
-        top: 60%;
-        svg {
-          fill: $white;
-          width: 20px;
-          height: 20px;
-          margin: 0 auto;
-        }
-      }
-    }
-    .productImage {
-      transition: all 0.5s ease-out;
-      display: inline-block;
-      position: relative;
-      overflow: hidden;
-      height: 100%;
-      float: right;
-      width: 50%;
-      img {
-        width: 100%;
-        height: 100%;
-        transition: all 0.5s ease-out;
-        cursor: pointer;
-        &:hover {
-          transform: scale(1.5, 1.5);
-        }
-      }
-      &::after {
-        content: "";
-        position: absolute;
-        top: -2px;
-        left: -2px;
-        background: linear-gradient(30deg, $soft-yellow, $soft-blue2, $bright-red, $lime-green,  $soft-yellow, $soft-blue2, $bright-red, $lime-green);
-        background-size: 300% 300%;
-        width: calc(100% + 3px);
-        height: calc(100% + 3px);
-        z-index: -1;
-      }
-    }
-    .productImage:hover .info {
-      transform: translateX(0);
-    }
-    .control {
-      display: flex;
-      width: 230px;
-      margin: 0 auto;
-      justify-content: space-between;
-      align-items: center;
-      height: 30px;
-      padding: 20px;
-    }
-    .btn {
-      transform: translateY(0px);
-      transition: 0.3s linear;
-      background: $lime-green;
-      border-radius: 10px;
-      position: relative;
-      top: 0;
-      overflow: hidden;
-      cursor: pointer;
-      outline: none;
-      border: none;
-      color: $white;
-      padding: 0;
-      margin-bottom: 20px;
-      &:hover {
-        transform: translateY(-4px);
-      }
-      span {
-        transition: transform 0.3s;
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: 1.2em;
-        margin:0;
-      }
-    }
-    .btn .price, .shoppingCart{
-      background: $dark-salt;
-      border: 0;
-      margin: 0;
-    }
-    .btn .price {
-      transform: translateX(-10%);
-      padding-right: 10px;
-    }
-    .btn .shoppingCart {
-      transform: translateX(-100%);
-      position: absolute;
-      background: $dark-salt;
-      z-index: 1;
-      left: 0;
-      top: 0;
-    }
-    .btn .buy {
-      z-index: 3;
-      font-weight: bolder;
-    }
-    .btn:hover .price {
-      transform: translateX(-110%);
-    }
-    .btn:hover .shoppingCart {
-      transform: translateX(0%);
-    }
-    .likeBtn {
-      width: 20px;
+      font-weight: 700;
+      font-size: 58px;
     }
   }
-  .supportingBlock {
+  .wrapBlock {
+    max-height: 100px;
+    overflow: hidden;
+    order: 0;
+    margin-bottom: 10px;
+  }
+  .checkbox {
+    display: none;
+  }
+  .checkbox:checked + .wrapBlock {
+    height: auto;
+  }
+  .link {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  label {
+    order: 1;
+    color: $soft-blue2;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .productDetails {
+    width: 50%;
+    background: $soft-blue;
+    will-change: transform;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background: linear-gradient(30deg, $soft-yellow, $soft-blue2, $bright-red, $lime-green,  $soft-yellow, $soft-blue2, $bright-red, $lime-green);
+      background-size: 300% 300%;
+      width: calc(100% + 3px);
+      height: calc(100% + 3px);
+      z-index: -1;
+    }
+    h4 {
+      margin: 0 auto;
+      padding-top: 20px;
+      padding-bottom: 15px;
+      height: 120px;
+      width: 95%;
+      font-size: 24px;
+      color: $dark-salt;
+      overflow: scroll;
+    }
+    p {
+      margin: 0 10px 0 10px;
+      color: $dark-salt;
+      font-size: 18px;
+      width: 95%;
+      overflow: hidden;
+      height: 250px;
+    }
+    .more {
+      padding: 5px;
+      border-radius: 10px;
+      font-size: 18px;
+      width: 75px;
+      background: $dark-salt;
+      box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+      position: absolute;
+      left: 24%;
+      top: 60%;
+      svg {
+        fill: $white;
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .productImage {
+    transition: all 0.5s ease-out;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    float: right;
+    width: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+      transition: all 0.5s ease-out;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.5, 1.5);
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background: linear-gradient(30deg, $soft-yellow, $soft-blue2, $bright-red, $lime-green,  $soft-yellow, $soft-blue2, $bright-red, $lime-green);
+      background-size: 300% 300%;
+      width: calc(100% + 3px);
+      height: calc(100% + 3px);
+      z-index: -1;
+    }
+  }
+  .productImage:hover .info {
+    transform: translateX(0);
+  }
+  .control {
     display: flex;
+    width: 230px;
+    margin: 0 auto;
     justify-content: space-between;
-    width: 700px;
+    align-items: center;
+    height: 30px;
+    padding: 20px;
+  }
+  .btn {
+    transform: translateY(0px);
+    transition: 0.3s linear;
+    background: $lime-green;
+    border-radius: 10px;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: $white;
+    padding: 0;
+    margin-bottom: 20px;
+    &:hover {
+      transform: translateY(-4px);
+    }
+    span {
+      transition: transform 0.3s;
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      margin:0;
+    }
+  }
+  .btn .price, .shoppingCart{
+    background: $dark-salt;
+    border: 0;
+    margin: 0;
+  }
+  .btn .price {
+    transform: translateX(-10%);
+    padding-right: 10px;
+  }
+  .btn .shoppingCart {
+    transform: translateX(-100%);
+    position: absolute;
+    background: $dark-salt;
+    z-index: 1;
+    left: 0;
+    top: 0;
+  }
+  .btn .buy {
+    z-index: 3;
+    font-weight: bolder;
+  }
+  .btn:hover .price {
+    transform: translateX(-110%);
+  }
+  .btn:hover .shoppingCart {
+    transform: translateX(0%);
+  }
+  .likeBtn {
+    width: 20px;
   }
 }
+.supportingBlock {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+}
 @media screen and (max-width: 720px) {
-  .wrapper {
-    .container {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      margin-bottom: 30px;
-      .productImage {
-        width: 100%;
-        height: 65%;
-        order: -1;
-      }
-      .productDetails {
-        width: 100%;
-        min-height: 300px;
-        padding-bottom: 50px;
-        .more {
-          left: 34%;
-        }
-      }
-      .control {}
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 30px;
+    .productImage {
+      width: 100%;
+      height: 65%;
+      order: -1;
     }
-    .btn {
-      top: -30px;
+    .productDetails {
+      width: 100%;
+      min-height: 300px;
+      padding-bottom: 50px;
+      .more {
+        left: 34%;
+      }
     }
+    .control {}
+  }
+  .btn {
+    top: -30px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -270,190 +261,9 @@ $lime-green: #4fa19d;
   }
 }
 @media screen and (max-width: 320px) {
-  .wrapper {
-    .container {
-      .likeBtn {
-        width: 35px;
-      }
+  .container {
+    .likeBtn {
+      width: 35px;
     }
   }
 }
-///////////////////////////////////////////
-.form {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background: $bright-orange;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 0 63px 60px 63px;
-  .formSortSearch {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    fieldset {
-      display: flex;
-      flex-direction: column;
-      border: none;
-      .label {
-        display: block;
-        order: 0;
-        padding-left: 10px;
-        color: $dark-blue;
-        font-weight: bold;
-        width: 100%;
-      }
-      .iconWrap {
-        position: relative;
-        top: 20px;
-        width: 20px;
-        height: 20px;
-      }
-      .selectSort {
-        width: 100%;
-        box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
-        color: $white;
-        border-radius: 10px;
-        padding: 10px 40px;
-        cursor: pointer;
-        position: relative;
-        appearance: none;
-        overflow: hidden;
-        background: $grayish-blue url('../../BLL/img/Goods/arrow.svg') no-repeat 2% 13px;
-        background-size: 20px auto;
-        outline:none;
-        &:active, :hover, :focus {
-          outline: 0;
-          outline-offset: 0;
-        }
-        option {
-          padding-left: 20px;
-        }
-      }
-      .selectSearch {
-        width: 100%;
-        box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
-        background: $grayish-blue;
-        color: $white;
-        border-radius: 10px;
-        padding: 10px 40px;
-        border: none;
-        float: left;
-        cursor: pointer;
-        position: relative;
-        appearance: none;
-        overflow: hidden;
-        background: $grayish-blue url('../../BLL/img/Goods/search.svg') no-repeat 2% 13px;
-        background-size: 20px auto;
-        outline:none;
-        &::placeholder {
-          color: $white;
-        }
-        &:active, :hover, :focus {
-          outline: 0;
-          outline-offset: 0;
-        }
-      }
-    }
-    .formSort {
-      margin-top: 45px;
-      margin-bottom: 30px;
-    }
-    .formSearch {
-      margin-top: 30px;
-    }
-  }
-  .formCheckbox {
-    width: 50%;
-    background: $bright-orange;
-    padding: 20px;
-    border-radius: 10px;
-    .labelCheckbox {
-      color: $dark-blue;
-      padding-left: 20px;
-      font-weight: bold;
-    }
-    .fieldsetCheckbox {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      border: none;
-      .checkBlockOne, .checkBlockTwo{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        .checkPrice {}
-        .checkForWhat {}
-        .checkLabel {
-          display: flex;
-          color: $white;
-          margin-bottom: 10px;
-          align-items: center;
-          input {
-            margin-right: 10px;
-          }
-          span {
-            display: block;
-          }
-        }
-      }
-    }
-  }
-}
-[type="search"]::-webkit-search-cancel-button {
-  appearance: none;
-  height: 20px;
-  width: 20px;
-  background: url('../../BLL/img/Goods/cross.svg') no-repeat;
-  background-size: 30px 30px;
-}
-input[type=checkbox] {
-  position: relative;
-  margin-right: 10px;
-  line-height: 14px;
-  font-size: 25px;
-  cursor: pointer;
-  &:before {
-    position: absolute;
-    content: "";
-    height: 17px;
-    width: 17px;
-    border: 1px solid $grayish-blue;
-    background: $grayish-blue;
-    border-radius: 3px;
-    box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
-    color: white;
-  }
-  &:checked {
-    &:before {
-      content: "✔";
-      color: $bright-red;
-    }
-  }
-  &:hover {
-    &:before {
-      border: 1px solid $white;
-    }
-  }
-}
-@media screen and (max-width: 720px) {
-  .form {
-    display: flex;
-    flex-direction: column;
-    margin: 0 10px 10px 10px;
-    .formSortSearch {
-      width: 100%;
-    }
-    .formCheckbox {
-      width: 90%;
-    }
-    fieldset {
-      width: 100%;
-    }
-  }
-}
-
-
-
-
-

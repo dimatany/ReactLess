@@ -1,0 +1,180 @@
+@charset "UTF-8";
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 30px 50px 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: #edae3b;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 63px 60px 63px;
+}
+.form .formSortSearch {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.form .formSortSearch fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.form .formSortSearch fieldset .label {
+  display: block;
+  order: 0;
+  padding-left: 10px;
+  color: #202125;
+  font-weight: bold;
+  width: 100%;
+}
+.form .formSortSearch fieldset .iconWrap {
+  position: relative;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+}
+.form .formSortSearch fieldset .selectSort {
+  width: 100%;
+  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 40px;
+  cursor: pointer;
+  position: relative;
+  appearance: none;
+  overflow: hidden;
+  background: #434343 url("../../BLL/img/Goods/arrow.svg") no-repeat 2% 13px;
+  background-size: 20px auto;
+  outline: none;
+}
+.form .formSortSearch fieldset .selectSort:active, .form .formSortSearch fieldset .selectSort :hover, .form .formSortSearch fieldset .selectSort :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.form .formSortSearch fieldset .selectSort option {
+  padding-left: 20px;
+}
+.form .formSortSearch fieldset .selectSearch {
+  width: 100%;
+  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  background: #434343;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 40px;
+  border: none;
+  float: left;
+  cursor: pointer;
+  position: relative;
+  appearance: none;
+  overflow: hidden;
+  background: #434343 url("../../BLL/img/Goods/search.svg") no-repeat 2% 13px;
+  background-size: 20px auto;
+  outline: none;
+}
+.form .formSortSearch fieldset .selectSearch::placeholder {
+  color: #ffffff;
+}
+.form .formSortSearch fieldset .selectSearch:active, .form .formSortSearch fieldset .selectSearch :hover, .form .formSortSearch fieldset .selectSearch :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.form .formSortSearch .formSort {
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+.form .formSortSearch .formSearch {
+  margin-top: 30px;
+}
+.form .formCheckbox {
+  width: 50%;
+  background: #edae3b;
+  padding: 20px;
+  border-radius: 10px;
+}
+.form .formCheckbox .labelCheckbox {
+  color: #202125;
+  padding-left: 20px;
+  font-weight: bold;
+}
+.form .formCheckbox .fieldsetCheckbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: none;
+}
+.form .formCheckbox .fieldsetCheckbox .checkBlockOne, .form .formCheckbox .fieldsetCheckbox .checkBlockTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.form .formCheckbox .fieldsetCheckbox .checkBlockOne .checkLabel, .form .formCheckbox .fieldsetCheckbox .checkBlockTwo .checkLabel {
+  display: flex;
+  color: #ffffff;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.form .formCheckbox .fieldsetCheckbox .checkBlockOne .checkLabel input, .form .formCheckbox .fieldsetCheckbox .checkBlockTwo .checkLabel input {
+  margin-right: 10px;
+}
+.form .formCheckbox .fieldsetCheckbox .checkBlockOne .checkLabel span, .form .formCheckbox .fieldsetCheckbox .checkBlockTwo .checkLabel span {
+  display: block;
+}
+
+[type=search]::-webkit-search-cancel-button {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background: url("../../BLL/img/Goods/cross.svg") no-repeat;
+  background-size: 30px 30px;
+}
+
+input[type=checkbox] {
+  position: relative;
+  margin-right: 10px;
+  line-height: 14px;
+  font-size: 25px;
+  cursor: pointer;
+}
+input[type=checkbox]:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  border: 1px solid #434343;
+  background: #434343;
+  border-radius: 3px;
+  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+input[type=checkbox]:checked:before {
+  content: "✔";
+  color: #FE2E2E;
+}
+input[type=checkbox]:hover:before {
+  border: 1px solid #ffffff;
+}
+
+@media screen and (max-width: 720px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 10px 10px;
+  }
+  .form .formSortSearch {
+    width: 100%;
+  }
+  .form .formCheckbox {
+    width: 90%;
+  }
+  .form fieldset {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=GoodsFilter.module.css.map */
