@@ -308,15 +308,21 @@
   outline-offset: 0;
 }
 .form .formSortSearch fieldset .selectSearch {
-  background: #434343;
+  width: 100%;
   box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  background: #434343;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 20px;
   border: none;
   float: left;
-  color: #ffffff;
-  padding: 10px 10px 11px 20px;
-  border-radius: 10px;
-  outline: none;
+  cursor: pointer;
   position: relative;
+  appearance: none;
+  overflow: hidden;
+  background: #434343 url("../../BLL/img/Goods/search.svg") no-repeat 98% 10px;
+  background-size: 20px auto;
+  outline: none;
 }
 .form .formSortSearch fieldset .selectSearch::placeholder {
   color: #ffffff;
