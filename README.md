@@ -19,10 +19,10 @@ I'm going to describe the components that have already been implemented in the p
 - **Google Map component** - where you can find accommodation for the arrival destination.
 - **Modal window** - button where you can find the **Form to send messages** to managers of Beauty Salon.
 - **Theme switch button** - from dark to light and reverse.
+- - **'Like' component** - for the product card or article or comment on the website.
 
 ***Planning features***
 - **A button to translate the text on the website**.
-- **'Like' component** - for the product card or article or comment on the website.
 - **Login/registration form**.
 - **Store Basket**.
 - **Payment component**.
