@@ -18,10 +18,12 @@ function Users(props) {
 				<Headings heading={props.title}/>
 				<div className={styles.pagination}>
 					{pages.map(el => {
-						return (
+						return  (
 							<span
+								key={el}
 								className={props.currentPage === el ? styles.active : styles.test}
-								onClick={() => {props.onPageChanged(el);}}>{el}
+								onClick={() => {props.onPageChanged(el);
+								}}>{el}
 							</span>
 						)
 					})}

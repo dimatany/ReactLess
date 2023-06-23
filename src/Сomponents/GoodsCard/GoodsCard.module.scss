@@ -155,7 +155,14 @@ $lime-green: #4fa19d;
     .productImage:hover .info {
       transform: translateX(0);
     }
-    .control {}
+    .control {
+      display: flex;
+      width: 230px;
+      justify-content: space-between;
+      align-items: center;
+      height: 30px;
+      padding: 20px;
+    }
     .btn {
       transform: translateY(0px);
       transition: 0.3s linear;
@@ -207,6 +214,9 @@ $lime-green: #4fa19d;
     }
     .btn:hover .shoppingCart {
       transform: translateX(0%);
+    }
+    .likeBtn {
+      width: 20px;
     }
   }
   .supportingBlock {

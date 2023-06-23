@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from './GoodsCard.module.css';
 import {Link} from 'react-router-dom';
 import SVGTrolley from '../SVG/SVGTrolley';
+import LikeBtn from '../LikeBtn/LikeBtn';
 
 
 function GoodsCard(props) {
@@ -230,6 +231,9 @@ function GoodsCard(props) {
 									</span>
 									<span className={styles.buy}>{props.button}</span>
 								</button>
+								<div className={styles.likeBtn}>
+									<LikeBtn/>
+								</div>
 							</div>
 						</div>
 						<div className={styles.productImage}>

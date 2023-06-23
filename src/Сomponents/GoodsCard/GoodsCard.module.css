@@ -145,6 +145,14 @@
 .wrapper .container .productImage:hover .info {
   transform: translateX(0);
 }
+.wrapper .container .control {
+  display: flex;
+  width: 230px;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding: 20px;
+}
 .wrapper .container .btn {
   transform: translateY(0px);
   transition: 0.3s linear;
@@ -196,6 +204,9 @@
 }
 .wrapper .container .btn:hover .shoppingCart {
   transform: translateX(0%);
+}
+.wrapper .container .likeBtn {
+  width: 20px;
 }
 .wrapper .supportingBlock {
   display: flex;
