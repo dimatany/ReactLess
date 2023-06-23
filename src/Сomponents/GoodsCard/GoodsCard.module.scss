@@ -314,17 +314,20 @@ $lime-green: #4fa19d;
         box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
         color: $white;
         border-radius: 10px;
-        padding: 10px 20px;
+        padding: 10px 40px;
         cursor: pointer;
         position: relative;
         appearance: none;
         overflow: hidden;
-        background: $grayish-blue url('../../BLL/img/Goods/arrow.svg') no-repeat 98% 10px;
+        background: $grayish-blue url('../../BLL/img/Goods/arrow.svg') no-repeat 2% 13px;
         background-size: 20px auto;
         outline:none;
         &:active, :hover, :focus {
           outline: 0;
           outline-offset: 0;
+        }
+        option {
+          padding-left: 20px;
         }
       }
       .selectSearch {
@@ -333,14 +336,14 @@ $lime-green: #4fa19d;
         background: $grayish-blue;
         color: $white;
         border-radius: 10px;
-        padding: 10px 20px;
+        padding: 10px 40px;
         border: none;
         float: left;
         cursor: pointer;
         position: relative;
         appearance: none;
         overflow: hidden;
-        background: $grayish-blue url('../../BLL/img/Goods/search.svg') no-repeat 98% 10px;
+        background: $grayish-blue url('../../BLL/img/Goods/search.svg') no-repeat 2% 13px;
         background-size: 20px auto;
         outline:none;
         &::placeholder {
@@ -419,6 +422,7 @@ input[type=checkbox] {
     background: $grayish-blue;
     border-radius: 3px;
     box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+    color: white;
   }
   &:checked {
     &:before {

@@ -13,7 +13,6 @@ function GoodsCard(props) {
 	function handleChange() {
 		setChecked(!checked);
 	}
-	
 	const style = {
 		flash : {
 			animation: 'infinite 5s',
