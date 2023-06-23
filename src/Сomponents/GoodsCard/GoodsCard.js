@@ -3,6 +3,8 @@ import styles from './GoodsCard.module.css';
 import {Link} from 'react-router-dom';
 import SVGTrolley from '../SVG/SVGTrolley';
 import LikeBtn from '../LikeBtn/LikeBtn';
+import { flash } from 'react-animations';
+import Radium, {StyleRoot} from 'radium';
 
 
 function GoodsCard(props) {
@@ -11,6 +13,13 @@ function GoodsCard(props) {
 	function handleChange() {
 		setChecked(!checked);
 	}
+	
+	const style = {
+		flash : {
+			animation: 'infinite 5s',
+			animationName: Radium.keyframes(flash, 'flash'),
+		}
+	};
 	////////////////////////////////
 	
 	////////////////////////////////
@@ -231,9 +240,11 @@ function GoodsCard(props) {
 									</span>
 									<span className={styles.buy}>{props.button}</span>
 								</button>
-								<div className={styles.likeBtn}>
-									<LikeBtn/>
-								</div>
+								<StyleRoot>
+									<div className={styles.likeBtn} style={style.flash}>
+										<LikeBtn/>
+									</div>
+								</StyleRoot>
 							</div>
 						</div>
 						<div className={styles.productImage}>

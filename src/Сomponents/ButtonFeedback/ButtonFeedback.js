@@ -2,19 +2,19 @@ import React from 'react';
 import styles from './ButtonFeedback.module.css'
 import Modal from '../Modal/Modal';
 import Form from '../Form/Form';
-
-import { flash } from 'react-animations';
+import { headShake } from 'react-animations';
 import Radium, {StyleRoot} from 'radium';
 import Tooltip from '../Tooltip/Tooltip';
+
 
 
 function ButtonFeedback(props) {
 	const [modalOpen, setModalOpen] = React.useState(false);
 	
 	const style = {
-		flash : {
+		headShake : {
 			animation: 'infinite 3s',
-			animationName: Radium.keyframes(flash, 'flash'),
+			animationName: Radium.keyframes(headShake, 'headShake'),
 		}
 	};
 	
@@ -23,7 +23,7 @@ function ButtonFeedback(props) {
 			<div className={styles.wrapButton}>
 				<StyleRoot>
 					<Tooltip content='Натисніть'>
-						<div className="test" style={style.flash}>
+						<div className="test" style={style.headShake}>
 							<div className={styles.buttonAria}>
 								<div onClick={() => setModalOpen(true)}
 								     className={styles.buttonWrapSVG}>
