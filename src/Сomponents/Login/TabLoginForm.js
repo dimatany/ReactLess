@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import styles from './TabLoginForm.css'
+import './TabLoginForm.css'
 
 function TabLoginForm({ data }) {
 	const [selectedTabIndex, setSelectedTabIndex] = useState(0);
