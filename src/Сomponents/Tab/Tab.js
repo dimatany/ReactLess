@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import './TabLoginForm.css'
+import './Tab.css'
 
-function TabLoginForm({ data }) {
+function Tab({ data }) {
 	const [selectedTabIndex, setSelectedTabIndex] = useState(0);
 	
 	return (
@@ -22,5 +22,5 @@ function TabLoginForm({ data }) {
 	);
 }
 
-export default TabLoginForm;
+export default Tab;
 

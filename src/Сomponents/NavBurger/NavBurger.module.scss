@@ -28,7 +28,7 @@ $lime-green: #4fa19d;
   justify-content: space-between;
   margin: 0 auto;
   background: $dark-blue-rgba;
-  padding: 20px;
+  padding: 20px 40px;
 }
 .logo{
   display: inline-block;
@@ -62,7 +62,7 @@ $lime-green: #4fa19d;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1080px) {
   .mobile_btn {
     display: block;
     position: absolute;
@@ -92,6 +92,11 @@ $lime-green: #4fa19d;
   }
   .menu a {
     font-size: 25px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .wrap {
+    padding: 20px 10px;
   }
 }
 

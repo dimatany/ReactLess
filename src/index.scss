@@ -55,17 +55,17 @@ body::-webkit-scrollbar-thumb {
   width: 90%;
   margin: 0 auto;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .container {
     .buttonTheme {
-      right: 75%;
+      right: 70%;
     }
   }
 }
 @media screen and (max-width: 600px) {
   .container {
     .buttonTheme {
-      right: 70%;
+      right: 55%;
     }
   }
 }

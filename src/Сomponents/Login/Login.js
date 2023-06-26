@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Login.module.css'
-import TabLoginForm from './TabLoginForm';
+import Tab from '../Tab/Tab';
 import Headings from '../Headings/Headings';
 
 function Login(props) {
@@ -17,7 +17,7 @@ function Login(props) {
 	return (
 		<div className={styles.wrap}>
 			<Headings heading={props.title}/>
-			<TabLoginForm data={tabData}/>
+			<Tab data={tabData}/>
 		</div>
 	);
 }
