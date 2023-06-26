@@ -1,0 +1,13 @@
+.wrap {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+}
+.wrap p {
+  margin-bottom: 100px;
+}
+
+/*# sourceMappingURL=Login.module.css.map */

@@ -1,0 +1,56 @@
+.generic {
+  padding: 100px;
+  border-radius: 10px;
+  width: 500px;
+  margin: 0 auto;
+  background: linear-gradient(to right, #37bbf7, #2665eb);
+}
+
+.wrapper {
+  font-family: "Inter", sans-serif;
+}
+
+.tabList,
+.tabPanel {
+  display: flex;
+}
+
+.tabPanel {
+  background-color: #4fa19d;
+  border: 1px solid black;
+  margin-bottom: 0.5em;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.activeTab {
+  box-shadow: 0 0 4px #5383ed;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #1d4ed8;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+
+.tabContent {
+  padding: 30px;
+  height: 200px;
+  line-height: 1.2;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.tab {
+  text-align: center;
+  width: 100%;
+  margin: 0.2em 0.2em;
+  padding: 0.6em 0.3em;
+}
+
+.tab:hover, .tab:active {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=TabLoginForm.css.map */

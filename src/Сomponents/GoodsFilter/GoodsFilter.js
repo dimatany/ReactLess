@@ -3,7 +3,6 @@ import styles from './GoodsFilter.module.css';
 import GoodsCard from '../GoodsCard/GoodsCard';
 
 function GoodsFilter(props) {
-	////////////////////////////////
 	let [items, setItems] = useState(props.dataGoods);
 	const onSelectSort = (event) => {
 		const sortDirection = (event.target.value);
@@ -14,7 +13,7 @@ function GoodsFilter(props) {
 		});
 		setItems(copyArray);
 	}
-	////////////////////////////////
+
 	const [searchField, setSearchField] = useState("");
 	const onSelectSearch = (event) => {
 		setSearchField(event.target.value);
@@ -26,7 +25,7 @@ function GoodsFilter(props) {
 			);
 		}
 	);
-	////////////////////////////////
+	
 	const [filterTags, setFilterTags] = useState([]);
 	const onFilterHandler = (event) => {
 		if (event.target.checked) {
@@ -43,8 +42,6 @@ function GoodsFilter(props) {
 				el.tags.map((tag) => tag.slug).includes(filterTag)
 			)
 			: props.dataGoods)
-	////////////////////////////////
-	
 	
 	return (
 		<>
@@ -203,9 +200,6 @@ function GoodsFilter(props) {
 
 GoodsFilter.defaultProps = {
 	title: 'товари',
-	button: 'купити',
-	label: 'дізнайтеся більше',
-	currency: 'грн',
 	select: 'сортування',
 	select2: 'пошук',
 	select3: 'фільтр',

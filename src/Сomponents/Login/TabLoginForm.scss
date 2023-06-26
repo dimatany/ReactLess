@@ -1,0 +1,61 @@
+$dark-blue: #202125;
+$dark-salt: #191d1c;
+$grayish-blue: #434343;
+$white: #ffffff;
+$soft-blue: #8ab4f8;
+$soft-blue2: #5383ed;
+$silver: rgba(255, 255, 255, .5);
+$soft-yellow: #f7d775;
+$bright-orange: #edae3b;
+$moderate-orange2: rgb(186, 138, 76, .4);
+$bright-red: #FE2E2E;
+$lime-green: #4fa19d;
+
+.generic {
+  padding:100px;
+  border-radius:10px;
+  width:500px;
+  margin: 0 auto;
+  background: linear-gradient(to right,#37bbf7,#2665eb)
+}
+
+.wrapper {
+  font-family: "Inter", sans-serif;
+}
+.tabList,
+.tabPanel {
+  display: flex;
+}
+.tabPanel {
+  background-color: $lime-green;
+  border: 1px solid black;
+  margin-bottom: 0.5em;
+  border-radius: 10px;
+  color: $silver;
+}
+.activeTab {
+  box-shadow: 0 0 4px $soft-blue2;
+  background-color: $silver;
+  color: #1d4ed8;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+.tabContent {
+  padding: 30px;
+  height: 200px;
+  line-height: 1.2;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.tab {
+  text-align: center;
+  width: 100%;
+  margin: 0.2em 0.2em;
+  padding: 0.6em 0.3em;
+}
+.tab:hover ,.tab:active{
+  color: #fff;
+  background-color: $silver;
+  border-radius: 10px;
+}

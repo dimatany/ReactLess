@@ -16,12 +16,14 @@ import { ThemeContext, themes } from './Contexts/ThemeContext';
 import NavBurger from './Сomponents/NavBurger/NavBurger';
 import UsersContainer from './Сomponents/Users/UsersContainer';
 
+
 const About = lazy(() => import('./Сomponents/About/About'));
 const Masters = lazy(() => import('./Сomponents/Masters/Masters'));
 const Goods = lazy(() => import('./Сomponents/Goods/Goods'));
 const Stocks = lazy(() => import('./Сomponents/Stocks/Stocks'));
 const Blog = lazy(() => import('./Сomponents/Blog/Blog'));
 const Contacts = lazy(() => import('./Сomponents/Contact/Contacts'));
+const Login = lazy(() => import('./Сomponents/Login/Login'));
 const NotFound = lazy(() => import('./Сomponents/NotFound/NotFound'));
 const renderLoader = () => <Loading/>;
 
@@ -52,13 +54,14 @@ function App(props) {
                               <Route path="/" index element={
                                   <About
                                       dataWWD={props.appData.dataWWD}
-                                      store={props.store}
                                   />}
+                              />
+                              <Route path="login" element={
+                                  <Login/>}
                               />
                               <Route path="about" element={
                                   <About
                                       dataWWD={props.appData.dataWWD}
-                                      store={props.store}
                                   />}
                               />
                               <Route path="about/:whatWeDoDetail" element={

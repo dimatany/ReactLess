@@ -6,7 +6,7 @@ const SET_TOTAL_USERS_COUNT = 'SET_TOTAL_USERS_COUNT';
 const TOGGLE_IS_FETCHING = 'TOGGLE_IS_FETCHING';
 
 let initialState = {
-	/*users: [
+	items: [
  {
  "name": "Tetiana",
  "id": 29204,
@@ -127,7 +127,8 @@ let initialState = {
  "status": "Я лучший на свете!",
  "followed": false
  }
- ],*/
+ ],
+	
 	"totalCount": 24212,
 	"error": null,
 	users: [],

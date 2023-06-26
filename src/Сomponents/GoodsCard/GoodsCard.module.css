@@ -51,6 +51,20 @@
   font-weight: bold;
   font-style: italic;
 }
+.container label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: currentcolor;
+  transform: translateX(-110%);
+  transition: transform 1s ease;
+}
+.container label:hover::before {
+  transform: translateX(110%);
+}
 .container .productDetails {
   width: 50%;
   background: #8ab4f8;

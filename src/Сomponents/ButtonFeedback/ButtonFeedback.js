@@ -22,7 +22,7 @@ function ButtonFeedback(props) {
 		<div className={styles.wrap}>
 			<div className={styles.wrapButton}>
 				<StyleRoot>
-					<Tooltip content='Натисніть'>
+					<Tooltip content={props.button}>
 						<div className="test" style={style.headShake}>
 							<div className={styles.buttonAria}>
 								<div onClick={() => setModalOpen(true)}
@@ -44,5 +44,9 @@ function ButtonFeedback(props) {
 		</div>
 	);
 }
+
+ButtonFeedback.defaultProps = {
+	button: 'Натисніть',
+};
 
 export default ButtonFeedback;

@@ -32,16 +32,23 @@
   line-height: 28px;
   gap: 30px;
 }
+.menu:first-child {
+  margin-left: 50px;
+}
 
 .mobile_btn {
   display: none;
   color: white;
 }
 
-.test {
+.login div {
+  margin-top: 10px;
+}
+
+.navItem {
   padding: 5px;
 }
-.test a {
+.navItem a {
   text-decoration: none;
 }
 
@@ -50,7 +57,7 @@
     display: block;
     position: absolute;
     right: 10px;
-    top: 30px;
+    top: 45px;
     cursor: pointer;
     z-index: 10;
   }

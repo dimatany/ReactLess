@@ -42,17 +42,24 @@ $lime-green: #4fa19d;
   font-size: 20px;
   line-height: 28px;
   gap: 30px;
+  &:first-child {
+    margin-left: 50px;
+  }
 }
 .mobile_btn {
   display: none;
   color: white;
 }
-.test {
+.login {
+  div {
+    margin-top: 10px;
+  }
+}
+.navItem {
   padding: 5px;
   a {
     text-decoration: none;
   }
-
 }
 
 @media (max-width: 800px) {
@@ -60,7 +67,7 @@ $lime-green: #4fa19d;
     display: block;
     position: absolute;
     right: 10px;
-    top: 30px;
+    top: 45px;
     cursor: pointer;
     z-index: 10;
   }
