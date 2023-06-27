@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import "react-tabs/style/react-tabs.css";
-import './Tab.css'
+import './TabForForm.css'
 import SVGAvatar from '../SVG/SVGAvatar';
 import SVGHand from '../SVG/SVGHand';
 
