@@ -1,6 +1,6 @@
 import React from 'react';
 import ErrorBoundary from '../ErrorBoundary/ErrorBoundary';
-import Tabs from '../Tabs/Tabs';
+import Tabs from '../TabForPhoto/TabForPhoto';
 import Title from '../Title/Title';
 import WhatWeDo from '../WhatWeDo/WhatWeDo';
 import Brands from '../Brands/Brands';

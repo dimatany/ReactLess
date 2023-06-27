@@ -1,14 +1,13 @@
 import React, {useState} from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import "react-tabs/style/react-tabs.css";
-import './TabForForm.css'
+import './TabForForm.css';
 import SVGAvatar from '../SVG/SVGAvatar';
 import SVGHand from '../SVG/SVGHand';
 
 
 function TabForForm() {
 	const [tabIndex, setTabIndex] = useState(0);
-	
 	
 	return (
 		<Tabs className='wrapper'

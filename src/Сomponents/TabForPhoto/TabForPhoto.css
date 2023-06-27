@@ -1,0 +1,78 @@
+.wrapper {
+  max-width: 1200px;
+  font-family: "Inter", sans-serif;
+  margin: 0 auto;
+}
+
+.tabPanel {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  background-color: rgba(186, 138, 76, 0.4);
+  margin: 0 auto 1em;
+  border-radius: 10px;
+  color: #ffffff;
+  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  gap: 10px;
+}
+
+.tabContent {
+  padding: 30px;
+  line-height: 1.2;
+  background-color: rgba(186, 138, 76, 0.4);
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+.tabContent .allPhoto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.tabContent .allPhoto li {
+  max-width: 300px;
+  max-height: 300px;
+  width: 100%;
+  height: 100%;
+}
+.tabContent .allPhoto li img {
+  border-radius: 20px;
+  box-shadow: 0 5px 5px 1px rgba(255, 255, 255, 0.5);
+}
+
+.tab {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.6em 0.3em;
+  transition: 0.3s linear;
+}
+
+.tab:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.react-tabs__tab--selected {
+  background-color: #8ab4f8;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .wrapper .tabPanel {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .wrapper .tabPanel .tab {
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=TabForPhoto.css.map */
