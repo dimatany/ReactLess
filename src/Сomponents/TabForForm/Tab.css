@@ -1,42 +1,28 @@
-$dark-blue: #202125;
-$dark-salt: #191d1c;
-$grayish-blue: #434343;
-$white: #ffffff;
-$soft-blue: #8ab4f8;
-$soft-blue2: #5383ed;
-$silver: rgba(255, 255, 255, .5);
-$soft-yellow: #f7d775;
-$bright-orange: #edae3b;
-$moderate-orange2: rgb(186, 138, 76, .4);
-$bright-red: #FE2E2E;
-$lime-green: #4fa19d;
-
 .wrapper {
   font-family: "Inter", sans-serif;
 }
+
 .tabPanel {
   display: flex;
 }
+
 .tabPanel {
-  background-color: $lime-green;
+  background-color: #4fa19d;
   margin-bottom: 0.5em;
   border-radius: 10px;
-  color: $silver;
+  color: rgba(255, 255, 255, 0.5);
   box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
-.activeTab {
-  background-color: $silver;
-  color: $soft-blue2;
-  border-radius: 10px;
-}
+
 .tabContent {
   padding: 30px;
   height: 200px;
   line-height: 1.2;
-  background-color: $soft-blue;
+  background-color: #8ab4f8;
   border-radius: 10px;
   box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
+
 .tab {
   text-align: center;
   width: 100%;
@@ -44,8 +30,17 @@ $lime-green: #4fa19d;
   padding: 0.6em 0.3em;
   transition: 0.3s linear;
 }
-.tab:hover ,.tab:active{
-  color: $white;
-  background-color: $silver;
+
+.tab:hover, .tab:active {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
 }
+
+.react-tabs__tab--selected {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #5383ed;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=TabForForm.css.map */
