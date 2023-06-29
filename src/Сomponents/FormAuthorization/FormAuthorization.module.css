@@ -275,15 +275,20 @@ h4 {
   }
   .centerWrapBlock {
     width: 180px;
+    z-index: 1;
   }
   .frontSubmit {
-    margin-right: 75px;
+    margin-right: -50px;
   }
   .backSubmit {
-    margin-right: 75px;
+    margin-right: -50px;
+  }
+  h4 {
+    margin-left: 35px;
   }
   .wrapLink {
-    margin-left: -60px;
+    margin-left: 25px;
+    width: 100%;
   }
   .formGroup {
     margin-left: -10px;
