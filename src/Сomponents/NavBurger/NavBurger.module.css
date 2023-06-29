@@ -59,7 +59,7 @@
     right: 10px;
     top: 45px;
     cursor: pointer;
-    z-index: 10;
+    z-index: 1000;
   }
   .menu {
     display: flex;
@@ -83,11 +83,13 @@
   }
   .menu a {
     font-size: 25px;
+    z-index: 2000;
   }
 }
 @media screen and (max-width: 500px) {
   .wrap {
     padding: 20px 10px;
+    z-index: 2000;
   }
 }
 
