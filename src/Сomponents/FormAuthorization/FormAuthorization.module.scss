@@ -131,7 +131,6 @@ h4 {
   top: 0;
   left: 0;
   transform-style: preserve-3d;
-  -webkit-transform: translate3d(0, 0, 0);
   transition: all 1s ease-out;
 }
 .cardFront, .cardBack {
@@ -140,12 +139,12 @@ h4 {
   background-color: $grayish-blue;
   box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   border-radius: 10px;
   left: 0;
   top: 0;
   transform-style: preserve-3d;//вот тут проблема!!!! не знаю как решить
-  -webkit-transform: translate3d(0, 0, -1px);
+  //transform-style: flat; с 2д работает но я хочу 3д и в сафари
   backface-visibility: hidden;
 }
 .cardBack {
