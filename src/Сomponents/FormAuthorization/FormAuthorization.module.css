@@ -258,4 +258,27 @@ h6 span:last-child:hover {
   background-color: #4fa19d;
 }
 
+@media screen and (max-width: 720px) {
+  .section {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .frontSubmit {
+    margin-right: 75px;
+  }
+  .backSubmit {
+    margin-right: 75px;
+  }
+  h4 {
+    margin-left: -65px;
+  }
+  .wrapLink {
+    margin-left: -60px;
+  }
+  .formGroup {
+    margin-left: -10px;
+    width: 174px;
+  }
+}
+
 /*# sourceMappingURL=FormAuthorization.module.css.map */

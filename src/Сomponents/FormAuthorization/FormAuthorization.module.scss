@@ -158,7 +158,7 @@ h6 span {
   display: flex;
   flex-direction: column;
 }
-.formGroup{
+.formGroup {
   position: relative;
   display: block;
   margin: 0;
@@ -241,3 +241,28 @@ h6 span {
   }
 }
 
+@media screen and (max-width: 720px) {
+  .section {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .formStyle {
+    //width: 200px;
+  }
+  .frontSubmit {
+    margin-right: 75px;
+  }
+  .backSubmit {
+    margin-right: 75px;
+  }
+  h4 {
+    margin-left: -65px;
+  }
+  .wrapLink {
+    margin-left: -60px;
+  }
+  .formGroup {
+    margin-left: -10px;
+    width: 174px;
+  }
+}
