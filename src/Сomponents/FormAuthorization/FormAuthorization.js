@@ -44,7 +44,7 @@ function FormAuthorization() {
 								</div>
 								<button className={[styles["btn"], styles['frontSubmit']].join(" ")}>submit</button>
 								<p>
-									<a href="#" className={styles.link}>Forgot you password?</a>
+									<a href="https://dimatany.github.io/WorkingExamples/" className={styles.link}>Forgot you password?</a>
 								</p>
 							</div>
 						</div>
