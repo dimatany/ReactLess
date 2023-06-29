@@ -35,6 +35,9 @@ p {
   line-height: 1.7;
   margin-left: 85px;
 }
+.wrapLink {
+  z-index: 1;
+}
 h4 {
   font-weight: 600;
   font-size: 20px;
@@ -45,6 +48,7 @@ h4 {
   margin-top: 100px;
   margin-bottom: 30px;
   color: $bright-orange;
+  z-index: 1;
 }
 .singUp {
   margin-top: 30px;
@@ -162,6 +166,7 @@ h6 span {
 }
 .formGroup {
   position: relative;
+  z-index: 1;
   display: block;
   margin: 0;
   padding: 0;
@@ -218,6 +223,7 @@ h6 span {
   background-color: $soft-blue;
   box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
   color: $dark-salt;
+  z-index: 1;
 }
 .btn:active,
 .btn:focus{
