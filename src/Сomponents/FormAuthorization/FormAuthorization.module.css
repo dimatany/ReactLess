@@ -4,6 +4,22 @@
   margin: 0 auto;
   box-sizing: border-box;
 }
+.section h6 {
+  margin-bottom: 30px;
+}
+.section h6 span {
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 22px;
+  transition: all 1s ease;
+}
+.section h6 span:first-child:hover {
+  color: #edae3b;
+}
+.section h6 span:last-child:hover {
+  color: #4fa19d;
+}
 
 a {
   cursor: pointer;
@@ -44,24 +60,6 @@ h4 {
 .singUp {
   margin-top: 30px;
   margin-bottom: 30px;
-  color: #4fa19d;
-}
-
-h6 {
-  margin-bottom: 30px;
-}
-
-h6 span {
-  padding: 0 20px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 22px;
-  transition: all 1s ease;
-}
-h6 span:first-child:hover {
-  color: #edae3b;
-}
-h6 span:last-child:hover {
   color: #4fa19d;
 }
 
@@ -272,14 +270,17 @@ h6 span:last-child:hover {
     width: 300px;
     margin: 0 auto;
   }
+  .centerWrap {
+    left: 5px;
+  }
+  .centerWrapBlock {
+    width: 180px;
+  }
   .frontSubmit {
     margin-right: 75px;
   }
   .backSubmit {
     margin-right: 75px;
-  }
-  h4 {
-    margin-left: -65px;
   }
   .wrapLink {
     margin-left: -60px;

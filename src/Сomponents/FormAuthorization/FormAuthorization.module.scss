@@ -15,6 +15,22 @@ $lime-green: #4fa19d;
   width: 440px;
   margin: 0 auto;
   box-sizing: border-box;
+  h6 {
+    margin-bottom: 30px;
+    span {
+      padding: 0 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 22px;
+      transition: all 1s ease;
+      &:first-child:hover {
+        color: $bright-orange;
+      }
+      &:last-child:hover {
+        color: $lime-green;
+      }
+    }
+  }
 }
 a {
   cursor: pointer;
@@ -52,22 +68,7 @@ h4 {
   margin-bottom: 30px;
   color: $lime-green;
 }
-h6 {
-  margin-bottom: 30px;
-}
-h6 span {
-  padding: 0 20px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 22px;
-  transition: all 1s ease;
-  &:first-child:hover {
-    color: $bright-orange;
-  }
-  &:last-child:hover {
-    color: $lime-green;
-  }
-}
+
 
 [type="checkbox"]:checked,
 [type="checkbox"]:not(:checked){
@@ -255,6 +256,12 @@ h6 span {
     width: 300px;
     margin: 0 auto;
   }
+  .centerWrap{
+    left: 5px;
+  }
+  .centerWrapBlock {
+    width: 180px;
+  }
   .frontSubmit {
     margin-right: 75px;
   }
@@ -262,7 +269,7 @@ h6 span {
     margin-right: 75px;
   }
   h4 {
-    margin-left: -65px;
+    //margin-left: -65px;
   }
   .wrapLink {
     margin-left: -60px;
