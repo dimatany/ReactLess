@@ -130,6 +130,7 @@ h4 {
   left: 0;
   transform-style: preserve-3d;
   -webkit-transform: translate3d(0px, 0px, 0px);
+  transform: translateZ(22px);
   transition: all 1s ease-out;
 }
 
@@ -145,6 +146,7 @@ h4 {
   top: 0;
   transform-style: preserve-3d;
   backface-visibility: hidden;
+  transform: scale(0.955);
 }
 
 .cardBack {
