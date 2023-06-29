@@ -260,6 +260,7 @@ h6 span:last-child:hover {
 
 @media screen and (max-width: 720px) {
   .section {
+    z-index: 2;
     width: 300px;
     margin: 0 auto;
   }
