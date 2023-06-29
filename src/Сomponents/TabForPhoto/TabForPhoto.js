@@ -81,5 +81,4 @@ function TabForPhoto() {
 		</Tabs>
 	);
 }
-
 export default TabForPhoto
