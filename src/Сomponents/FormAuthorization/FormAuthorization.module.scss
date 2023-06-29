@@ -143,8 +143,8 @@ h4 {
   border-radius: 10px;
   left: 0;
   top: 0;
-  transform-style: preserve-3d;//вот тут проблема!!!! не знаю как решить
-  //transform-style: flat; с 2д работает но я хочу 3д и в сафари
+  transform-style: preserve-3d;//вот тут проблема!!!! не знаю как решить, /transform-style: flat; //с 2д работает но я хочу 3д и в сафари
+  -webkit-transform: translate3d(0,0,0);
   backface-visibility: hidden;
 }
 .cardBack {

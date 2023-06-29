@@ -143,6 +143,7 @@ h4 {
   left: 0;
   top: 0;
   transform-style: preserve-3d;
+  -webkit-transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
 }
 
