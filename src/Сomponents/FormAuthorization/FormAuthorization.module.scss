@@ -118,8 +118,8 @@ h4 {
   width: 440px;
   max-width: 100%;
   height: 400px;
-  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  -webkit-transform: translate3d(0, 0, 0);
   perspective: 800px;
   margin-top: 60px;
 }
@@ -130,7 +130,6 @@ h4 {
   z-index: 1;
   top: 0;
   left: 0;
-  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   transition: all 1s ease-out;
 }
@@ -144,11 +143,8 @@ h4 {
   border-radius: 10px;
   left: 0;
   top: 0;
-  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;//вот тут проблема и она из-за сафари
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
+  -webkit-transform-style: flat;
   backface-visibility: hidden;
 }
 .cardBack {
