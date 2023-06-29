@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Login.module.css'
 import Headings from '../Headings/Headings';
-import TabForForm from '../TabForForm/TabForForm';
+import FormAuthorization from '../FormAuthorization/FormAuthorization';
 
 
 
@@ -9,7 +9,7 @@ function Login(props) {
 	return (
 		<div className={styles.wrap}>
 			<Headings heading={props.title}/>
-			<TabForForm/>
+			<FormAuthorization/>
 		</div>
 	);
 }

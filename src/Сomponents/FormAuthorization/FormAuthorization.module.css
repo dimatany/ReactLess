@@ -1,80 +1,77 @@
-$dark-blue: #202125;
-$dark-salt: #191d1c;
-$grayish-blue: #434343;
-$white: #ffffff;
-$soft-blue: #8ab4f8;
-$soft-blue2: #5383ed;
-$silver: rgba(255, 255, 255, .5);
-$soft-yellow: #f7d775;
-$bright-orange: #edae3b;
-$moderate-orange2: rgb(186, 138, 76, .4);
-$bright-red: #FE2E2E;
-$lime-green: #4fa19d;
-
+@charset "UTF-8";
 .section {
   width: 440px;
   margin: 0 auto;
   box-sizing: border-box;
 }
+
 a {
   cursor: pointer;
   transition: all 200ms linear;
-  &:hover {
-    text-decoration: none;
-  }
 }
+a:hover {
+  text-decoration: none;
+}
+
 .link {
-  color: $white;
-  &:hover {
-    color: $bright-orange;
-  }
+  color: #ffffff;
 }
+.link:hover {
+  color: #edae3b;
+}
+
 p {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.7;
   margin-left: 85px;
 }
+
 h4 {
   font-weight: 600;
   font-size: 20px;
   margin-left: 65px;
   text-transform: uppercase;
 }
+
 .logIn {
   margin-top: 100px;
   margin-bottom: 30px;
-  color: $bright-orange;
+  color: #edae3b;
 }
+
 .singUp {
   margin-top: 30px;
   margin-bottom: 30px;
-  color: $lime-green;
+  color: #4fa19d;
 }
+
 h6 {
   margin-bottom: 30px;
 }
+
 h6 span {
   padding: 0 20px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 22px;
   transition: all 1s ease;
-  &:first-child:hover {
-    color: $bright-orange;
-  }
-  &:last-child:hover {
-    color: $lime-green;
-  }
+}
+h6 span:first-child:hover {
+  color: #edae3b;
+}
+h6 span:last-child:hover {
+  color: #4fa19d;
 }
 
-[type="checkbox"]:checked,
-[type="checkbox"]:not(:checked){
+[type=checkbox]:checked,
+[type=checkbox]:not(:checked) {
   position: absolute;
   left: -9999px;
 }
+
 .checkbox:checked + label,
-.checkbox:not(:checked) + label{
+.checkbox:not(:checked) + label {
   position: relative;
   display: block;
   text-align: center;
@@ -84,19 +81,20 @@ h6 span {
   padding: 0;
   margin: 10px auto;
   cursor: pointer;
-  background-color: $soft-blue;
+  background-color: #8ab4f8;
 }
+
 .checkbox:checked + label:before,
-.checkbox:not(:checked) + label:before{
+.checkbox:not(:checked) + label:before {
   position: absolute;
   display: block;
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  color: $soft-blue;
-  background-color: $grayish-blue;
+  color: #8ab4f8;
+  background-color: #434343;
   box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
-  content: '\2191';
+  content: "↑";
   z-index: 2;
   top: -10px;
   left: -10px;
@@ -105,10 +103,12 @@ h6 span {
   font-size: 24px;
   transition: all 1s ease;
 }
+
 .checkbox:checked + label:before {
   transform: translateX(44px) rotate(-360deg);
 }
-.card-3d-wrap {
+
+.card3dWrap {
   position: relative;
   width: 440px;
   max-width: 100%;
@@ -117,19 +117,21 @@ h6 span {
   perspective: 800px;
   margin-top: 60px;
 }
-.card-3d-wrapper {
+
+.card3dWrapper {
   width: 100%;
   height: 100%;
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 0;
   transform-style: preserve-3d;
   transition: all 1s ease-out;
 }
-.card-front, .card-back {
+
+.cardFront, .cardBack {
   width: 100%;
   height: 100%;
-  background-color: $grayish-blue;
+  background-color: #434343;
   box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
   position: absolute;
   border-radius: 10px;
@@ -138,13 +140,16 @@ h6 span {
   transform-style: preserve-3d;
   backface-visibility: hidden;
 }
-.card-back {
+
+.cardBack {
   transform: rotateY(180deg);
 }
-.checkbox:checked ~ .card-3d-wrap .card-3d-wrapper {
+
+.checkbox:checked ~ .card3dWrap .card3dWrapper {
   transform: rotateY(180deg);
 }
-.center-wrap{
+
+.centerWrap {
   position: absolute;
   padding: 0 35px;
   top: 50%;
@@ -153,21 +158,24 @@ h6 span {
   z-index: 20;
   display: block;
 }
-.center-wrap-block {
+
+.centerWrapBlock {
   width: 300px;
   display: flex;
   flex-direction: column;
 }
-.form-group{
+
+.formGroup {
   position: relative;
   display: block;
   margin: 0;
   padding: 0;
-  input {
-    margin-bottom: 10px;
-  }
 }
-.form-style {
+.formGroup input {
+  margin-bottom: 10px;
+}
+
+.formStyle {
   padding: 13px 20px 0 55px;
   height: 48px;
   width: 100%;
@@ -177,32 +185,37 @@ h6 span {
   line-height: 22px;
   letter-spacing: 0.5px;
   outline: none;
-  color: $white;
-  background-color: $dark-blue;
+  color: #ffffff;
+  background-color: #202125;
   border: none;
   transition: all 200ms linear;
-  box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+  box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
 }
-.form-style:focus,
-.form-style:active {
+
+.formStyle:focus,
+.formStyle:active {
   border: none;
   outline: none;
-  box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+  box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
 }
-.input-icon {
+
+.inputIcon {
   position: absolute;
   top: 20px;
   left: 20px;
 }
+
 .emailIcon div svg {
   width: 30px;
   height: 30px;
   margin-top: 5px;
 }
+
 .backUserIcon div svg {
   width: 27px;
   height: 27px;
 }
+
 .btn {
   border-radius: 10px;
   height: 44px;
@@ -212,32 +225,37 @@ h6 span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: $soft-blue;
+  background-color: #8ab4f8;
   box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
-  color: $dark-salt;
+  color: #191d1c;
 }
+
 .btn:active,
-.btn:focus{
-  background-color: $bright-orange;
-  color: $white;
+.btn:focus {
+  background-color: #edae3b;
+  color: #ffffff;
   box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
-.btn:hover{
-  background-color: $bright-orange;
-  color: $white;
+
+.btn:hover {
+  background-color: #edae3b;
+  color: #ffffff;
   box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
+
 .frontSubmit {
   margin-top: 30px;
   margin-bottom: 10px;
   margin-right: -75px;
 }
+
 .backSubmit {
   margin-bottom: 20px;
   margin-right: -75px;
   margin-top: 20px;
-  &:hover {
-    background-color: $lime-green;
-  }
+}
+.backSubmit:hover {
+  background-color: #4fa19d;
 }
 
+/*# sourceMappingURL=FormAuthorization.module.css.map */
