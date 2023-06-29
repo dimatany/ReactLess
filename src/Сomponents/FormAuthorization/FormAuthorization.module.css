@@ -155,7 +155,7 @@ h6 span:last-child:hover {
   top: 50%;
   left: 0;
   transform: translate3d(0, -50%, 35px) perspective(100px);
-  z-index: 20;
+  z-index: 2;
   display: block;
 }
 
