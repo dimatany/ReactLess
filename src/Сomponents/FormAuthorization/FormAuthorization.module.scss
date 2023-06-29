@@ -97,7 +97,7 @@ h6 span {
   background-color: $grayish-blue;
   box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
   content: '\2191';
-  //z-index: 2;
+  z-index: 2;
   top: -10px;
   left: -10px;
   line-height: 36px;
@@ -150,7 +150,7 @@ h6 span {
   top: 50%;
   left: 0;
   transform: translate3d(0, -50%, 35px) perspective(100px);
-  //z-index: 2;
+  z-index: 2;
   display: block;
 }
 .centerWrapBlock {
@@ -243,7 +243,7 @@ h6 span {
 
 @media screen and (max-width: 720px) {
   .section {
-    //z-index: 2;
+    z-index: 2;
     width: 300px;
     margin: 0 auto;
   }
