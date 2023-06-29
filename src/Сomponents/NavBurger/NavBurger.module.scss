@@ -69,13 +69,14 @@ $lime-green: #4fa19d;
     right: 10px;
     top: 45px;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 3;
   }
   .menu {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     position: fixed;
+    z-index: 3;
     left: -100%;
     right: 0;
     top: 100px;
@@ -83,17 +84,17 @@ $lime-green: #4fa19d;
     width: 100%;
     height: 100%;
     background-color: $dark-blue;
-    z-index: 1000;
+
     transition: left 1s;
     padding-top: 50px;
   }
   .active {
     left: 0;
-    z-index: 2000;
+    z-index: 3;
   }
   .menu a {
     font-size: 25px;
-    z-index: 2000;
+    z-index: 3;
   }
 }
 @media screen and (max-width: 500px) {
