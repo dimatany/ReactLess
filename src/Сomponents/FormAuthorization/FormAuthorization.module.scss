@@ -131,6 +131,7 @@ h4 {
   top: 0;
   left: 0;
   transform-style: preserve-3d;
+  -webkit-transform: translate3d(0px, 0px, 0px);//добавила
   transition: all 1s ease-out;
 }
 .cardFront, .cardBack {
@@ -144,7 +145,7 @@ h4 {
   left: 0;
   top: 0;
   transform-style: preserve-3d;//вот тут проблема и она из-за сафари
-  -webkit-transform-style: flat;
+  //-webkit-transform-style: flat;
   backface-visibility: hidden;
 }
 .cardBack {
