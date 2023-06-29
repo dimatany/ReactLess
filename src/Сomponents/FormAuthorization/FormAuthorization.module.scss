@@ -142,7 +142,7 @@ h4 {
   border-radius: 10px;
   left: 0;
   top: 0;
-  //transform-style: preserve-3d;
+  transform-style: preserve-3d;//вот тут проблема!!!! не знаю как решить
   backface-visibility: hidden;
 }
 .cardBack {
