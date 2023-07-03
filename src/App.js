@@ -15,6 +15,7 @@ import Toggle from './Сomponents/Toggle/Toggle';
 import { ThemeContext, themes } from './Contexts/ThemeContext';
 import NavBurger from './Сomponents/NavBurger/NavBurger';
 import UsersContainer from './Сomponents/Users/UsersContainer';
+import FormSingUp from './Сomponents/FormSingUp/FormSingUp';
 
 
 const About = lazy(() => import('./Сomponents/About/About'));
@@ -102,7 +103,9 @@ function App(props) {
                                       dataUsers={props.appData.dataUsers}
                                   />}
                               />
-                              
+                              <Route path="registration" element={
+                                  <FormSingUp/>}
+                              />
                               <Route path="*" element={<NotFound/>}/>
                           </Routes>
                           <ButtonFeedback>

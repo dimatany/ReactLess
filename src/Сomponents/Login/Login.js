@@ -1,22 +1,20 @@
 import React from 'react';
 import styles from './Login.module.css'
 import Headings from '../Headings/Headings';
-import FormAuthorization from '../FormAuthorization/FormAuthorization';
-
-
+import FormLogin from '../FormLogin/FormLogin';
 
 
 function Login(props) {
 	return (
 		<div className={styles.wrap}>
 			<Headings heading={props.title}/>
-			<FormAuthorization/>
+			<FormLogin/>
 		</div>
 	);
 }
 
 Login.defaultProps = {
-	title: 'Форма',
+	title: 'Авторизація',
 };
 
 export default Login;

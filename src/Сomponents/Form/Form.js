@@ -15,7 +15,6 @@ function Form(props) {
 	});
 	const sendEmail = (e) => {
 		e.preventDefault(); // prevents the page from reloading when you hit “Send”
-		
 		emailjs.sendForm('service_s8rt1yt', 'template_k49zeit', form.current, 'MMSRppZb4YlpmEjqY')
 		.then((result) => {
 			alert('Ваше повідомлення успішно доставлено!');
