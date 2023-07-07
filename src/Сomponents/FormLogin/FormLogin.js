@@ -2,6 +2,7 @@ import React, {useRef} from 'react';
 import { useForm } from "react-hook-form";
 import styles from './FormLogin.module.css';
 
+
 function FormLogin(props) {
 	const form = useRef();
 	
@@ -16,7 +17,7 @@ function FormLogin(props) {
 	
 	const onSubmit = (data) => {
 		const userData = JSON.parse(localStorage.getItem(data.email));
-		if (userData) { // getItem can return actual value or null
+		if (userData) {
 			if (userData.password === data.password) {
 				alert(userData.name + 'Ви успішно Авторизувалися');
 			} else {
@@ -29,7 +30,7 @@ function FormLogin(props) {
 	
 	return (
 		<>
-			<form ref={form} className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+			<form className={styles.form} ref={form} onSubmit={handleSubmit(onSubmit)}>
 				<div className={styles.wrapForm}>
 					<label>Your Email: name@gmail.com
 						<input

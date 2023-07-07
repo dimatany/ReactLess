@@ -1,4 +1,5 @@
 $bright-orange: #edae3b;
+$soft-blue2: #5383ed;
 
 .wrapBlock {
   margin: 0 0 100px 0;
@@ -24,6 +25,7 @@ $bright-orange: #edae3b;
         width: 400px;
         height: 300px;
         border-radius: 10px;
+        box-shadow: 0 5px 32px 0 $soft-blue2;
       }
     }
     .descriptionText {

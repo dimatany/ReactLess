@@ -25,6 +25,7 @@
   width: 400px;
   height: 300px;
   border-radius: 10px;
+  box-shadow: 0 5px 32px 0 #5383ed;
 }
 .wrapBlock .wrapDescription .descriptionText {
   width: 40%;

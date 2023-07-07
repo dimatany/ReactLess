@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './Login.module.css'
+import styles from './Authorization.module.css'
 import Headings from '../Headings/Headings';
 import FormLogin from '../FormLogin/FormLogin';
 
 
-function Login(props) {
+function Authorization(props) {
 	return (
 		<div className={styles.wrap}>
 			<Headings heading={props.title}/>
@@ -13,8 +13,8 @@ function Login(props) {
 	);
 }
 
-Login.defaultProps = {
+Authorization.defaultProps = {
 	title: 'Авторизація',
 };
 
-export default Login;
+export default Authorization;

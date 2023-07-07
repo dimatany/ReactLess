@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './ButtonFeedback.module.css'
 import Modal from '../Modal/Modal';
-import Form from '../Form/Form';
+import FormFeedback from '../FormFeedback/FormFeedback';
 
 function ButtonFeedback(props) {
 	const [modalOpen, setModalOpen] = React.useState(false);
@@ -18,7 +18,7 @@ function ButtonFeedback(props) {
 				{modalOpen && (
 					<Modal
 						isVisible={modalOpen}
-						content={<Form/>}
+						content={<FormFeedback/>}
 						onClose={() => setModalOpen(false)}
 					/>
 				)}

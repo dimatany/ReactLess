@@ -24,7 +24,7 @@ const Goods = lazy(() => import('./Сomponents/Goods/Goods'));
 const Stocks = lazy(() => import('./Сomponents/Stocks/Stocks'));
 const Blog = lazy(() => import('./Сomponents/Blog/Blog'));
 const Contacts = lazy(() => import('./Сomponents/Contact/Contacts'));
-const Login = lazy(() => import('./Сomponents/Login/Login'));
+const Login = lazy(() => import('./Сomponents/Authorization/Authorization'));
 const NotFound = lazy(() => import('./Сomponents/NotFound/NotFound'));
 const renderLoader = () => <Loading/>;
 

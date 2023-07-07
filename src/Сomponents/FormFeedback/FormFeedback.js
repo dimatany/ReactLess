@@ -1,9 +1,9 @@
 import React, { useRef } from 'react';
 import { useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser';
-import styles from './Form.module.css'
+import styles from './FormFeedback.module.css'
 
-function Form(props) {
+function FormFeedback(props) {
 	const form = useRef();
 	
 	const {
@@ -112,9 +112,9 @@ function Form(props) {
 	);
 }
 
-Form.defaultProps = {
+FormFeedback.defaultProps = {
 	text: 'Відправити',
 	
 };
 
-export default Form;
+export default FormFeedback;

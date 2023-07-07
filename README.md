@@ -17,13 +17,13 @@ I'm going to describe the components that have already been implemented in the p
 - **Countdown component** - which counts the time to the end of the promotion.
 - **Pagination** of articles and a section of customer comments.
 - **Google Map component** - where you can find accommodation for the arrival destination.
-- **Modal window** - button where you can find the **Form to send messages** to managers of Beauty Salon.
+- **Modal window** - button where you can find the **FormFeedback to send messages** to managers of Beauty Salon.
 - **Theme switch button** - from dark to light and reverse.
 - **'Like' component** - for the product card or article or comment on the website.
 
 ***Planning features***
 - **A button to translate the text on the website**.
-- **Login/registration form**.
+- **Authorization/registration form**.
 - **Store Basket**.
 - **Payment component**.
 
@@ -39,7 +39,7 @@ I used the following libraries during the project:
 - [react-google-maps](https://www.npmjs.com/package/@react-google-maps/api)
 - [Redux Toolkit](https://redux-toolkit.js.org)
 - [Axios](https://www.npmjs.com/package/axios)
-- [React Hook Form](https://www.npmjs.com/package/react-hook-form)
+- [React Hook FormFeedback](https://www.npmjs.com/package/react-hook-form)
 - [React Router DOM](https://www.npmjs.com/package/react-router-dom)
 - [react-tabs](https://github.com/reactjs/react-tabs#forcerendertabpanel-boolean)
 

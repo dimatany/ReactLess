@@ -17,7 +17,7 @@ function FormSingUp(props) {
 	
 	const onSubmit = (data) => {
 		const userData = JSON.parse(localStorage.getItem(data.email));
-		if (userData) { // getItem can return actual value or null
+		if (userData) {
 			if (userData.password === data.password) {
 				alert(userData.name + 'Ви успішно Авторизувалися');
 			} else {
@@ -27,6 +27,7 @@ function FormSingUp(props) {
 			reset();
 		}
 	};
+	
 	return (
 		<div className={styles.wrap}>
 			<Headings heading={props.title}/>
