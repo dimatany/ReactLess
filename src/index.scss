@@ -86,35 +86,49 @@ body::-webkit-scrollbar-thumb {
 
 ///////////// - color theme rules
 :root[data-theme="light"] {
-  --background-image:
-          url(
-          "https://images.unsplash.com/photo-1533628635777-112b2239b1c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80");
-  --background-position: center center;
-  --background-size: cover;
-  --background-repeat: no-repeat;
-  --background-attachment: fixed;
+  --position: relative;
+  ::before {
+    --background-image: url("https://images.unsplash.com/photo-1533628635777-112b2239b1c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80");
+    --background-size: cover;
+    --background-repeat: no-repeat;
+    --background-position: center center;
+    --content: ' ';
+    --height: 100%;
+    --left: 0;
+    --position: fixed;
+    --top: 0;
+    --width: 100%;
+    --will-change: transform;
+    --z-index: -1;
+  }
   --color: #191d1c;
   h1 {
     --color: #FAEBD7;
   }
 }
 :root[data-theme="dark"] {
-  --background-image:
-          url(
-          "https://www.magazin-shashlyka.com.ua/catalog/view/theme/default/image/main.jpg");
-  --background-position: center center;
-  --background-size: cover;
-  --background-repeat: no-repeat;
-  --background-attachment: fixed;
+  --position: relative;
+  ::before {
+    --background-image: url("https://www.magazin-shashlyka.com.ua/catalog/view/theme/default/image/main.jpg");
+    --background-size: cover;
+    --background-repeat: no-repeat;
+    --background-position: center center;
+    --content: ' ';
+    --height: 100%;
+    --left: 0;
+    --position: fixed;
+    --top: 0;
+    --width: 100%;
+    --will-change: transform;
+    --z-index: -1;
+  }
   --color: #FAEBD7;
   h1 {
     --color: #FAEBD7;
   }
 }
 body {
-  background-image: var(--background-image);
   background-position: var(--background-position);
-  background-size: var(--background-size);
   background-repeat: var(--background-repeat);
   background-attachment: var(--background-attachment);
   color: var(--color);
@@ -122,5 +136,16 @@ body {
     color: var(--color);
   }
 }
-
+body::before {
+  background-image: var(--background-image);
+  background-size: var(--background-size);
+  content: var(--content);
+  height: var(--height);
+  left: var(--left);
+  position: var(--position);
+  top: var(--top);
+  width: var(--width);
+  will-change: var(--will-change);
+  z-index: var(--z-index);
+}
 
