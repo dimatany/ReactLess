@@ -69,7 +69,7 @@ body::-webkit-scrollbar-thumb {
   --color: #191d1c;
 }
 :root[data-theme=light] ::before {
-  --background-image: url("https://images.unsplash.com/photo-1533628635777-112b2239b1c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80");
+  --background-image: url("https://raw.githubusercontent.com/dimatany/ReactLess/main/src/BLL/img/General/fonWhite.jpeg");
   --background-size: cover;
   --background-repeat: no-repeat;
   --background-position: center center;
@@ -91,7 +91,7 @@ body::-webkit-scrollbar-thumb {
   --color: #FAEBD7;
 }
 :root[data-theme=dark] ::before {
-  --background-image: url("https://www.magazin-shashlyka.com.ua/catalog/view/theme/default/image/main.jpg");
+  --background-image: url("https://raw.githubusercontent.com/dimatany/ReactLess/main/src/BLL/img/General/fonDarck.jpg");
   --background-size: cover;
   --background-repeat: no-repeat;
   --background-position: center center;
