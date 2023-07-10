@@ -31,6 +31,7 @@ const renderLoader = () => <Loading/>;
 function App(props) {
   return (
       <div className="container">
+          <div className='bgFix'></div>
           <Suspense fallback={renderLoader()}>
               <BrowserRouter>
                   <div className="buttonTheme">
