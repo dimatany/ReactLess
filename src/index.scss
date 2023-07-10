@@ -86,7 +86,6 @@ body::-webkit-scrollbar-thumb {
 
 ///////////// - color theme rules
 :root[data-theme="light"] {
-  --position: relative;
   --color: #191d1c;
   h1 {
     --color: #FAEBD7;
@@ -104,7 +103,6 @@ body::-webkit-scrollbar-thumb {
   }
 }
 :root[data-theme="dark"] {
-  --position: relative;
   --color: #FAEBD7;
   h1 {
     --color: #FAEBD7;

@@ -65,7 +65,6 @@ body::-webkit-scrollbar-thumb {
   }
 }
 :root[data-theme=light] {
-  --position: relative;
   --color: #191d1c;
 }
 :root[data-theme=light] h1 {
@@ -84,7 +83,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 :root[data-theme=dark] {
-  --position: relative;
   --color: #FAEBD7;
 }
 :root[data-theme=dark] h1 {
