@@ -1,0 +1,72 @@
+.wrap {
+  padding-top: 200px;
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+}
+.wrap p {
+  margin-bottom: 100px;
+}
+.wrap .transition {
+  width: 70%;
+  margin: 70px auto 70px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  background: #191d1c;
+  border-radius: 20px;
+}
+.wrap .transition a {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  margin: 5px;
+}
+.wrap .transition:before,
+.wrap .transition:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+  background-size: 400% 400%;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  border-radius: 20px;
+  z-index: -1;
+  animation: animate 5s ease alternate infinite;
+}
+.wrap .transition:after {
+  filter: blur(20px);
+}
+@keyframes animate {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.wrapLink {
+  font-weight: 500;
+  font-size: 25px;
+  margin-top: 40px;
+  font-style: italic;
+}
+.wrapLink .link {
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+.wrapLink .link:hover {
+  color: #edae3b;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=FormWrapLogin.module.css.map */

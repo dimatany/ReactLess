@@ -1,9 +1,9 @@
 import React, {useRef} from 'react';
 import { useForm } from "react-hook-form";
-import styles from './FormLogin.module.css';
+import styles from './FormInOut.module.css';
 
 
-function FormLogin(props) {
+function FormInOut(props) {
 	const form = useRef();
 	
 	const {
@@ -59,23 +59,17 @@ function FormLogin(props) {
 					       value={props.text}
 					       disabled={!isValid}
 					/>
-					<p className={styles.wrapLink}>
-						<a href="https://dimatany.github.io/WorkingExamples/" className={styles.link}>Forgot you password?</a>
-					</p>
 				</div>
 			</form>
-			<div className={styles.transition}>
-				<a href="/registration">{props.linkTitle}</a>
-			</div>
+			
 		</>
 	);
 }
 
-FormLogin.defaultProps = {
+FormInOut.defaultProps = {
 	title: 'Авторизація',
 	text: 'Відправити',
-	linkTitle: 'Якщо ви ще не зареєстровані на сайті, будь ласка, перейдіть на сторінку реєстрації!'
 };
 
 
-export default FormLogin;
+export default FormInOut;

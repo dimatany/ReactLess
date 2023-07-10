@@ -15,7 +15,7 @@ import Toggle from './Сomponents/Toggle/Toggle';
 import { ThemeContext, themes } from './Contexts/ThemeContext';
 import NavBurger from './Сomponents/NavBurger/NavBurger';
 import UsersContainer from './Сomponents/Users/UsersContainer';
-import FormSingUp from './Сomponents/FormSingUp/FormSingUp';
+import FormWrapSingUp from './Сomponents/FormWrapSingUp/FormWrapSingUp';
 
 
 const About = lazy(() => import('./Сomponents/About/About'));
@@ -24,7 +24,7 @@ const Goods = lazy(() => import('./Сomponents/Goods/Goods'));
 const Stocks = lazy(() => import('./Сomponents/Stocks/Stocks'));
 const Blog = lazy(() => import('./Сomponents/Blog/Blog'));
 const Contacts = lazy(() => import('./Сomponents/Contact/Contacts'));
-const Login = lazy(() => import('./Сomponents/Authorization/Authorization'));
+const Login = lazy(() => import('./Сomponents/FormWrapLogin/FormWrapLogin'));
 const NotFound = lazy(() => import('./Сomponents/NotFound/NotFound'));
 const renderLoader = () => <Loading/>;
 
@@ -105,7 +105,7 @@ function App(props) {
                                   />}
                               />
                               <Route path="registration" element={
-                                  <FormSingUp/>}
+                                  <FormWrapSingUp/>}
                               />
                               <Route path="*" element={<NotFound/>}/>
                           </Routes>

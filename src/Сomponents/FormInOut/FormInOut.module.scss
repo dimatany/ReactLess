@@ -11,15 +11,13 @@ $moderate-orange2: rgb(186, 138, 76, .4);
 $bright-red: #FE2E2E;
 $lime-green: #4fa19d;
 
-
-
 .form {
   display: flex;
   justify-content: center;
   min-width: 320px;
   max-width: 500px;
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   padding: 30px 10px 0;
   border-radius: 10px;
   background-color: $grayish-blue;
@@ -67,64 +65,5 @@ $lime-green: #4fa19d;
       letter-spacing: 10px;
       border-radius: 10px;
     }
-    .wrapLink {
-      font-weight: 500;
-      font-size: 18px;
-      .link {
-        color: $white;
-        cursor: pointer;
-        transition: all 200ms linear;
-        &:hover {
-          color: $bright-orange;
-          text-decoration: none;
-        }
-      }
-    }
-  }
-}
-
-.transition {
-  width: 70%;
-  margin: 70px auto 70px;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  position: relative;
-  background: $dark-salt;
-  border-radius: 20px;
-  a {
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 22px;
-    color: white;
-    margin: 5px;
-  }
-}
-.transition:before,
-.transition:after{
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000);
-  background-size: 400% 400%;
-  width: calc(100% + 6px);
-  height: calc(100% + 6px);
-  border-radius: 20px;
-  z-index: -1;
-  animation: animate 5s ease alternate infinite;
-}
-.transition:after{
-  filter: blur(20px);
-}
-@keyframes animate{
-  0%{
-    background-position: 0 50%;
-  }
-  50%{
-    background-position: 100% 50%;
-  }
-  100%{
-    background-position: 0 50%;
   }
 }
