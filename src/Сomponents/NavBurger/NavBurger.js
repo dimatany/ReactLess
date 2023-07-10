@@ -3,30 +3,19 @@ import styles from './NavBurger.module.css';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import {NavLink} from 'react-router-dom';
 import SVGAvatar from '../SVG/SVGAvatar';
-
-import { zoomIn } from 'react-animations';
-import Radium, {StyleRoot} from 'radium';
 import SVGLogin from '../SVG/SVGLogin';
 import Tooltip from '../Tooltip/Tooltip';
 
 function NavBurger() {
 	const [nav, setNav] = useState(false);
-	const style = {
-		zoomIn : {
-			animation: 'infinite 6s',
-			animationName: Radium.keyframes(zoomIn, 'zoomIn'),
-		}
-	};
 	
 	return (
 		<header className={styles.header}>
 			<div className={styles.wrap}>
 				<a href="/about" className={styles.logo}>
-					<StyleRoot>
-						<div style={style.zoomIn}>
-							<SVGAvatar fill='#5383ed'/>
-						</div>
-					</StyleRoot>
+					<div>
+						<SVGAvatar fill='#5383ed'/>
+					</div>
 				</a>
 				<ul className={nav ? [styles.menu, styles.active].join(' ') : [styles.menu]}>
 					<li onClick={() => setNav(!nav)} className={styles.login}><NavLink  style={({ isActive }) => (isActive ? {color: '#FE2E2E'} : {color: '#ffffff'})} to="/login"><Tooltip content='Вхід'><SVGLogin fill='#4fa19d'/></Tooltip></NavLink></li>
