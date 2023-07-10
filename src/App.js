@@ -2,7 +2,6 @@ import React, { lazy, Suspense } from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import './index.css';
 
-
 import Loading from './Сomponents/Loading/Loading';
 import GoodsDetail from './Сomponents/GoodsDetail/GoodsDetail';
 import WhatWeDoDetail from './Сomponents/WhatWeDoDetail/WhatWeDoDetail';
@@ -17,7 +16,6 @@ import NavBurger from './Сomponents/NavBurger/NavBurger';
 import UsersContainer from './Сomponents/Users/UsersContainer';
 import FormWrapSingUp from './Сomponents/FormWrapSingUp/FormWrapSingUp';
 
-
 const About = lazy(() => import('./Сomponents/About/About'));
 const Masters = lazy(() => import('./Сomponents/Masters/Masters'));
 const Goods = lazy(() => import('./Сomponents/Goods/Goods'));
@@ -31,7 +29,6 @@ const renderLoader = () => <Loading/>;
 function App(props) {
   return (
       <div className="container">
-          <div className='bgFix'></div>
           <Suspense fallback={renderLoader()}>
               <BrowserRouter>
                   <div className="buttonTheme">
