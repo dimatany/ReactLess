@@ -1,9 +1,11 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState} from 'react';
 import { useForm } from "react-hook-form";
 import styles from './FormInOut.module.css';
 
 
-function FormInOut(props) {
+function FormInOut({handleClick ,...props}) {
+	const [email, setEmail] = useState('');
+	const [pass, setPass] = useState('');
 	const form = useRef();
 	
 	const {
@@ -43,6 +45,7 @@ function FormInOut(props) {
 							})}
 							type="email"
 							autoComplete='username'
+							onChange={(e) => setEmail(e.target.value)}
 						/>
 						{errors.email && <span style={{ color: 'red' }}>
 							Додайте адресу у встановленому форматі!</span>}
@@ -52,12 +55,14 @@ function FormInOut(props) {
 							{...register('password')}
 							type='password'
 							autoComplete='current-password'
+							onChange={(e) => setPass(e.target.value)}
 						/>
 					</label>
 					<input type={'submit'}
 					       className={styles.btn}
 					       value={props.text}
 					       disabled={!isValid}
+					       onClick={() => handleClick(email, pass)}
 					/>
 				</div>
 			</form>
