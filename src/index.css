@@ -79,8 +79,8 @@ body::-webkit-scrollbar-thumb {
   --height: 100%;
   --z-index: -1;
   --background-image: url("https://raw.githubusercontent.com/dimatany/ReactLess/main/src/BLL/img/General/fonWhite.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  --background-size: cover;
+  --background-repeat: no-repeat;
 }
 
 :root[data-theme=dark] {
@@ -98,8 +98,8 @@ body::-webkit-scrollbar-thumb {
   --height: 100%;
   --z-index: -1;
   --background-image: url("https://raw.githubusercontent.com/dimatany/ReactLess/main/src/BLL/img/General/fonDarck.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  --background-size: cover;
+  --background-repeat: no-repeat;
 }
 
 body {
