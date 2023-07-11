@@ -12,7 +12,6 @@ import Footer from './Сomponents/Footer/Footer';
 import Toggle from './Сomponents/Toggle/Toggle';
 import { ThemeContext, themes } from './Contexts/ThemeContext';
 import NavBurger from './Сomponents/NavBurger/NavBurger';
-import UsersContainer from './Сomponents/Users/UsersContainer';
 import SingUp from './Сomponents/SingUp/SingUp';
 
 const About = lazy(() => import('./Сomponents/About/About'));
@@ -98,11 +97,6 @@ function App(props) {
                                   />}
                               />
                               <Route path="contacts" element={<Contacts/>}/>
-                              <Route path="users" element={
-                                  <UsersContainer
-                                      dataUsers={props.appData.dataUsers}
-                                  />}
-                              />
                               <Route path="*" element={<NotFound/>}/>
                           </Routes>
                           <ButtonFeedback>

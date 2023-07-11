@@ -5,7 +5,6 @@ import whatWeDoReducer from './reducers/whatWeDoReducer';
 import mastersReducer from './reducers/mastersReducer';
 import goodsReducer from './reducers/goodsReducer';
 import blogReducer from './reducers/blogReducer';
-import usersReducer from './reducers/usersReducer';
 import loginReducer from './reducers/loginReducer';
 
 let reducers = combineReducers({
@@ -15,7 +14,6 @@ let reducers = combineReducers({
 	dataMasters: mastersReducer,
 	dataGoods: goodsReducer,
 	dataBlog: blogReducer,
-	dataUsers: usersReducer,
 	dataLogin: loginReducer,//edd
 });
 
