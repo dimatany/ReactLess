@@ -4,6 +4,9 @@
   margin: 0 auto;
   text-align: center;
 }
+.wrap p {
+  margin-bottom: 100px;
+}
 .wrap .transition {
   width: 70%;
   margin: 70px auto 70px;
@@ -19,6 +22,7 @@
   text-decoration: none;
   font-size: 22px;
   color: white;
+  margin: 5px;
 }
 .wrap .transition:before,
 .wrap .transition:after {
@@ -49,4 +53,20 @@
   }
 }
 
-/*# sourceMappingURL=FormWrapSingUp.module.css.map */
+.wrapLink {
+  font-weight: 500;
+  font-size: 25px;
+  margin-top: 40px;
+  font-style: italic;
+}
+.wrapLink .link {
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+.wrapLink .link:hover {
+  color: #edae3b;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=Login.module.css.map */

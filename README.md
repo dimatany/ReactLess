@@ -23,7 +23,7 @@ I'm going to describe the components that have already been implemented in the p
 
 ***Planning features***
 - **A button to translate the text on the website**.
-- **FormWrapLogin/registration form**.
+- **Login/registration form**.
 - **Store Basket**.
 - **Payment component**.
 

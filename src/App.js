@@ -1,7 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import './index.css';
-
 import Loading from './Сomponents/Loading/Loading';
 import GoodsDetail from './Сomponents/GoodsDetail/GoodsDetail';
 import WhatWeDoDetail from './Сomponents/WhatWeDoDetail/WhatWeDoDetail';
@@ -14,8 +13,7 @@ import Toggle from './Сomponents/Toggle/Toggle';
 import { ThemeContext, themes } from './Contexts/ThemeContext';
 import NavBurger from './Сomponents/NavBurger/NavBurger';
 import UsersContainer from './Сomponents/Users/UsersContainer';
-import FormWrapSingUp from './Сomponents/FormWrapSingUp/FormWrapSingUp';
-import FormWrapLogin from './Сomponents/FormWrapLogin/FormWrapLogin';
+import SingUp from './Сomponents/SingUp/SingUp';
 
 const About = lazy(() => import('./Сomponents/About/About'));
 const Masters = lazy(() => import('./Сomponents/Masters/Masters'));
@@ -23,7 +21,7 @@ const Goods = lazy(() => import('./Сomponents/Goods/Goods'));
 const Stocks = lazy(() => import('./Сomponents/Stocks/Stocks'));
 const Blog = lazy(() => import('./Сomponents/Blog/Blog'));
 const Contacts = lazy(() => import('./Сomponents/Contact/Contacts'));
-const Login = lazy(() => import('./Сomponents/FormWrapLogin/FormWrapLogin'));
+const Login = lazy(() => import('./Сomponents/Login/Login'));
 const NotFound = lazy(() => import('./Сomponents/NotFound/NotFound'));
 const renderLoader = () => <Loading/>;
 
@@ -51,16 +49,16 @@ function App(props) {
                   <ErrorBoundary>
                       <main>
                           <Routes>
+                              <Route path="login" element={
+                                  <Login/>}
+                              />
+                              <Route path="registration" element={
+                                  <SingUp/>}
+                              />
                               <Route path="/" index element={
                                   <About
                                       dataWWD={props.appData.dataWWD}
                                   />}
-                              />
-                              <Route path="login" element={
-                                  <FormWrapLogin/>}
-                              />
-                              <Route path="registration" element={
-                                  <FormWrapSingUp/>}
                               />
                               <Route path="about" element={
                                   <About

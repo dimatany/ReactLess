@@ -1,9 +1,9 @@
 import React, {useRef, useState} from 'react';
 import { useForm } from "react-hook-form";
-import styles from './FormInOut.module.css';
+import styles from './Form.module.css';
 
 
-function FormInOut({handleClick ,...props}) {
+function Form({handleClick ,...props}) {
 	const [email, setEmail] = useState('');
 	const [pass, setPass] = useState('');
 	const form = useRef();
@@ -71,10 +71,10 @@ function FormInOut({handleClick ,...props}) {
 	);
 }
 
-FormInOut.defaultProps = {
+Form.defaultProps = {
 	title: 'Авторизація',
 	text: 'Відправити',
 };
 
 
-export default FormInOut;
+export default Form;

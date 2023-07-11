@@ -4,10 +4,10 @@ import {Link, useNavigate} from 'react-router-dom';
 import {getAuth, signInWithEmailAndPassword} from 'firebase/auth';
 import {setUser} from '../../BLL/reducers/loginReducer';
 import Headings from '../Headings/Headings';
-import FormInOut from '../FormInOut/FormInOut';
-import styles from './FormWrapLogin.module.css'
+import Form from '../Form/Form';
+import styles from './Login.module.css'
 
-function FormWrapLogin(props) {
+function Login(props) {
 	const dispatch = useDispatch();
 	const {push} = useNavigate();
 	const handleLogin = (email, password) => {
@@ -23,13 +23,13 @@ function FormWrapLogin(props) {
 			}));
 			push('/');
 		})
-		.catch(console.error)
+		.catch(() => alert('Invalid user!'))
 	};
 
 	return (
 		<div className={styles.wrap}>
 			<Headings heading={props.title}/>
-			<FormInOut handleClick={handleLogin}/>
+			<Form handleClick={handleLogin}/>
 			<p className={styles.wrapLink}>
 				<a href="https://dimatany.github.io/WorkingExamples/" className={styles.link}>{props.attention}</a>
 			</p>
@@ -40,10 +40,10 @@ function FormWrapLogin(props) {
 	);
 }
 
-FormWrapLogin.defaultProps = {
+Login.defaultProps = {
 	title: 'Авторизація',
 	linkTitle: 'Якщо ви ще не зареєстровані на сайті, будь ласка, перейдіть на сторінку реєстрації!',
 	attention: 'Забули свій пароль?',
 };
 
-export default FormWrapLogin;
+export default Login;
