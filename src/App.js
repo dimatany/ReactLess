@@ -15,6 +15,7 @@ import { ThemeContext, themes } from './Contexts/ThemeContext';
 import NavBurger from './Сomponents/NavBurger/NavBurger';
 import UsersContainer from './Сomponents/Users/UsersContainer';
 import FormWrapSingUp from './Сomponents/FormWrapSingUp/FormWrapSingUp';
+import FormWrapLogin from './Сomponents/FormWrapLogin/FormWrapLogin';
 
 const About = lazy(() => import('./Сomponents/About/About'));
 const Masters = lazy(() => import('./Сomponents/Masters/Masters'));
@@ -56,7 +57,10 @@ function App(props) {
                                   />}
                               />
                               <Route path="login" element={
-                                  <Login/>}
+                                  <FormWrapLogin/>}
+                              />
+                              <Route path="registration" element={
+                                  <FormWrapSingUp/>}
                               />
                               <Route path="about" element={
                                   <About
@@ -100,9 +104,6 @@ function App(props) {
                                   <UsersContainer
                                       dataUsers={props.appData.dataUsers}
                                   />}
-                              />
-                              <Route path="registration" element={
-                                  <FormWrapSingUp/>}
                               />
                               <Route path="*" element={<NotFound/>}/>
                           </Routes>

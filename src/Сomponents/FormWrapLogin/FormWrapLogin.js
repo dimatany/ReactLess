@@ -23,7 +23,7 @@ function FormWrapLogin(props) {
 			}));
 			push('/');
 		})
-		.catch(() => alert('Invalid user!'))
+		.catch(console.error)
 	};
 
 	return (

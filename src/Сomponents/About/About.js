@@ -7,6 +7,8 @@ import Brands from '../Brands/Brands';
 import WhoWeAre from '../WhoWeAre/WhoWeAre';
 import Descriptions from '../Descriptions/Descriptions';
 
+
+
 function About(props) {
 	return (
 		<>
