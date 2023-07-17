@@ -2,38 +2,3 @@ $bright-orange: #edae3b;
 $silver: rgba(255, 255, 255, .5);
 $dark-salt: #191d1c;
 
-.nav {
-  position: fixed;
-  z-index: 1;
-  max-width: 1600px;
-  width: 100%;
-  .border {
-    border-bottom: 1px solid $silver;
-    border-top: 1px solid transparent;
-    max-width: 1300px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 30px;
-    li {
-      a {
-        font-weight: 600;
-        font-size: 18px;
-        text-decoration: none;
-        text-shadow: 1px 1px 1px $dark-salt;
-        &:hover {
-          color: $bright-orange;
-        }
-        svg {
-          width: 60px;
-          height: 60px;
-        }
-      }
-    }
-  }
-}

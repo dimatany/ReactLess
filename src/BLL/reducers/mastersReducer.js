@@ -1,6 +1,3 @@
-const FOLLOW = 'FOLLOW';
-const UNFOLLOW = 'UNFOLLOW';
-
 let initialState = [
 	{
 		id: 'hairdresser',
@@ -191,16 +188,7 @@ let initialState = [
 ];
 
 const mastersReducer = (state = initialState, action) => {
-	switch (action.type) {
-		case FOLLOW:
-		case UNFOLLOW:
-		default:
-			return state;
-	}
+	return state;
 }
-
-export const followActionCreator = (userId) => ({type: FOLLOW, userId});
-export const unFollowActionCreator = (userId) => ({type: UNFOLLOW, userId});
-
 
 export default mastersReducer;

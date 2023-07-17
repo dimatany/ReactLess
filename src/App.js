@@ -59,7 +59,7 @@ function App(props) {
                                       dataWWD={props.appData.dataWWD}
                                   />}
                               />
-                              <Route path="about" element={
+                              <Route path="about" index element={
                                   <About
                                       dataWWD={props.appData.dataWWD}
                                   />}

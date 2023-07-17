@@ -18,8 +18,8 @@ function MasterDetailPost(props) {
 			<div className={styles.wrapDescription}>
 				<div className={styles.descriptionImg}>
 					<StyleRoot>
-						<div className="test" style={style.slideInLeft}>
-					<img src={props.image} alt={props.alt}/>
+						<div style={style.slideInLeft}>
+							<img src={props.image} alt={props.alt}/>
 						</div>
 					</StyleRoot>
 				</div>

@@ -16,6 +16,7 @@ function NavBurger() {
 			animationName: Radium.keyframes(zoomIn, 'zoomIn'),
 		}
 	};
+	const isActive = ({ isActive }) => (isActive ? {color: '#FE2E2E'} : {color: '#ffffff'});
 	
 	return (
 		<header className={styles.header}>
@@ -28,13 +29,13 @@ function NavBurger() {
 					</StyleRoot>
 				</a>
 				<ul className={nav ? [styles.menu, styles.active].join(' ') : [styles.menu]}>
-					<li onClick={() => setNav(!nav)} className={styles.login}><NavLink  style={({ isActive }) => (isActive ? {color: '#FE2E2E'} : {color: '#ffffff'})} to="/login"><Tooltip content='Вхід'><SVGLogin fill='#4fa19d'/></Tooltip></NavLink></li>
-					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={({ isActive }) => (isActive ? {color: '#FE2E2E'} : {color: '#ffffff'})} to="/about">Головна</NavLink></li>
-					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={({ isActive }) => (isActive ? {color: '#FE2E2E'} : {color: '#ffffff'})} to="/masters">Майстри</NavLink></li>
-					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={({ isActive }) => (isActive ? {color: '#FE2E2E'} : {color: '#ffffff'})} to="/goods">Товари</NavLink></li>
-					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={({ isActive }) => (isActive ? {color: '#FE2E2E'} : {color: '#ffffff'})} to="/stocks">Акції</NavLink></li>
-					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={({ isActive }) => (isActive ? {color: '#FE2E2E'} : {color: '#ffffff'})} to="/blog">Блог</NavLink></li>
-					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={({ isActive }) => (isActive ? {color: '#FE2E2E'} : {color: '#ffffff'})} to="/contacts">Контакти</NavLink></li>
+					<li onClick={() => setNav(!nav)} className={styles.login}><NavLink  style={isActive} to="/login"><Tooltip content='Вхід'><SVGLogin fill='#4fa19d'/></Tooltip></NavLink></li>
+					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/about">Головна</NavLink></li>
+					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/masters">Майстри</NavLink></li>
+					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/goods">Товари</NavLink></li>
+					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/stocks">Акції</NavLink></li>
+					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/blog">Блог</NavLink></li>
+					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/contacts">Контакти</NavLink></li>
 				</ul>
 				<div onClick={() => setNav(!nav)} className={styles.mobile_btn}>
 					{nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}

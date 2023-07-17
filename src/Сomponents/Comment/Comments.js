@@ -4,10 +4,8 @@ import {addCommentActionCreator, updateNewCommentTextActionCreator,} from '../..
 import ButtonSubmit from '../ButtonSubmit/ButtonSubmit';
 
 function Comments(props) {
-	
 	let state = props.store.getState().dataCommentPage;
 	let newCommentText = state.newCommentText;
-	
 	let addComments = () => {
 		props.store.dispatch(addCommentActionCreator());
 	}
@@ -15,7 +13,6 @@ function Comments(props) {
 		let text = event.target.value;
 		props.store.dispatch(updateNewCommentTextActionCreator(text));
 	}
-	
 	
 	return (
 		<div className={styles.blockWrap}>
