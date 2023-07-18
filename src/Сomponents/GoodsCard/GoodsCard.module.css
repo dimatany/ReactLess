@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: row;
   box-shadow: 0 5px 5px 1px rgba(255, 255, 255, 0.5);
-  background: #ffffff;
   text-align: center;
   border-radius: 10px;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: auto;
   margin: 1em auto;
   min-height: 350px;
   max-width: 600px;
@@ -24,10 +24,19 @@
   font-size: 58px;
 }
 .container .wrapBlock {
+  box-sizing: border-box;
   max-height: 100px;
-  overflow: auto;
+  overflow-y: auto;
   order: 0;
   margin-bottom: 10px;
+}
+.container .wrapBlock::-webkit-scrollbar {
+  width: 10px;
+}
+.container .wrapBlock::-webkit-scrollbar-thumb {
+  background: #8ab4f8;
+  border-radius: 16px;
+  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
 .container .checkbox {
   display: none;
@@ -95,8 +104,7 @@
   margin: 0 10px 0 10px;
   color: #191d1c;
   font-size: 18px;
-  width: 95%;
-  overflow: auto;
+  width: 90%;
   height: 250px;
 }
 .container .productDetails .more {
@@ -124,7 +132,6 @@
   transition: all 0.5s ease-out;
   display: inline-block;
   position: relative;
-  overflow: auto;
   height: 100%;
   float: right;
   width: 50%;
@@ -132,11 +139,7 @@
 .container .productImage img {
   width: 100%;
   height: 100%;
-  transition: all 0.5s ease-out;
   cursor: pointer;
-}
-.container .productImage img:hover {
-  transform: scale(1.5, 1.5);
 }
 .container .productImage::after {
   content: "";

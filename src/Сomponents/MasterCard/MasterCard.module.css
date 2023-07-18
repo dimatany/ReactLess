@@ -17,7 +17,7 @@
   width: 300px;
   border-radius: 10px;
   transition: background 0.8s;
-  overflow: auto;
+  overflow: hidden;
   box-shadow: 0 70px 63px -60px #202125;
   display: flex;
   justify-content: center;
