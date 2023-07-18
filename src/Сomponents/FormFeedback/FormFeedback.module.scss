@@ -22,7 +22,7 @@ $bright-red: #FE2E2E;
     height: 35px;
     p {
       color: $bright-red;
-      overflow: scroll;
+      overflow: auto;
       &::before {
         display: inline;
         content: "⚠ ";

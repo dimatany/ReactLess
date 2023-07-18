@@ -48,7 +48,7 @@ details > p {
 
 .price > span {
   padding: 10px 0 15px 0;
-  overflow: scroll;
+  overflow: auto;
   font-size: 30px;
   color: #FE2E2E;
 }

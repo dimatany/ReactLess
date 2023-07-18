@@ -19,7 +19,7 @@
 }
 .form .error p {
   color: #FE2E2E;
-  overflow: scroll;
+  overflow: auto;
 }
 .form .error p::before {
   display: inline;

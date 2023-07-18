@@ -5,7 +5,7 @@
   background: #ffffff;
   text-align: center;
   border-radius: 10px;
-  overflow: hidden;
+  overflow: auto;
   margin: 1em auto;
   min-height: 350px;
   max-width: 600px;
@@ -25,7 +25,7 @@
 }
 .container .wrapBlock {
   max-height: 100px;
-  overflow: hidden;
+  overflow: auto;
   order: 0;
   margin-bottom: 10px;
 }
@@ -89,14 +89,14 @@
   width: 95%;
   font-size: 24px;
   color: #191d1c;
-  overflow: scroll;
+  overflow: auto;
 }
 .container .productDetails p {
   margin: 0 10px 0 10px;
   color: #191d1c;
   font-size: 18px;
   width: 95%;
-  overflow: hidden;
+  overflow: auto;
   height: 250px;
 }
 .container .productDetails .more {
@@ -124,7 +124,7 @@
   transition: all 0.5s ease-out;
   display: inline-block;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
   height: 100%;
   float: right;
   width: 50%;
@@ -168,7 +168,7 @@
   border-radius: 10px;
   position: relative;
   top: 0;
-  overflow: hidden;
+  overflow: auto;
   cursor: pointer;
   outline: none;
   border: none;
