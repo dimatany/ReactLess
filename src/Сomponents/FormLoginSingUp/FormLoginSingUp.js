@@ -59,9 +59,9 @@ function FormLoginSingUp({handleClick ,...props}) {
 						/>
 					</label>
 					<input type={'submit'}
-					       className={styles.btn}
-					       value={props.text}
 					       disabled={!isValid}
+					       value={props.text}
+					       className={styles.btn}
 					       onClick={() => handleClick(email, pass)}
 					/>
 				</div>
@@ -74,5 +74,6 @@ FormLoginSingUp.defaultProps = {
 	title: 'Авторизація',
 	text: 'Відправити',
 };
+
 
 export default FormLoginSingUp;

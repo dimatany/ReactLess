@@ -64,6 +64,9 @@ $lime-green: #4fa19d;
       font-size: 16px;
       letter-spacing: 10px;
       border-radius: 10px;
+      &:active {
+        background-color: $soft-blue2;
+      }
     }
   }
 }
