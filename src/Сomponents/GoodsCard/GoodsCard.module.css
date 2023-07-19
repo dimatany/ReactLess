@@ -76,19 +76,9 @@
 }
 .container .productDetails {
   width: 50%;
-  background: #8ab4f8;
   will-change: transform;
-}
-.container .productDetails::after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background: linear-gradient(30deg, #f7d775, #5383ed, #FE2E2E, #4fa19d, #f7d775, #5383ed, #FE2E2E, #4fa19d);
-  background-size: 300% 300%;
-  width: calc(100% + 3px);
-  height: calc(100% + 3px);
-  z-index: -1;
+  background-image: linear-gradient(90deg, rgb(160, 222, 219), rgb(3, 165, 209));
+  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
 .container .productDetails h4 {
   margin: 0 auto;
