@@ -140,8 +140,6 @@ $lime-green: #4fa19d;
     }
   }
   .productImage {
-    transition: all 0.5s ease-out;
-    display: inline-block;
     position: relative;
     height: 100%;
     float: right;
@@ -150,17 +148,6 @@ $lime-green: #4fa19d;
       width: 100%;
       height: 100%;
       cursor: pointer;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      top: -2px;
-      left: -2px;
-      background: linear-gradient(30deg, $soft-yellow, $soft-blue2, $bright-red, $lime-green,  $soft-yellow, $soft-blue2, $bright-red, $lime-green);
-      background-size: 300% 300%;
-      width: calc(100% + 3px);
-      height: calc(100% + 3px);
-      z-index: -1;
     }
   }
   .productImage:hover .info {
