@@ -1,15 +1,4 @@
-$dark-blue: #202125;
-$dark-salt: #191d1c;
 $grayish-blue: #434343;
-$white: #ffffff;
-$soft-blue: #8ab4f8;
-$soft-blue2: #5383ed;
-$silver: rgba(255, 255, 255, .5);
-$soft-yellow: #f7d775;
-$bright-orange: #edae3b;
-$moderate-orange2: rgb(186, 138, 76, .4);
-$bright-red: #FE2E2E;
-$lime-green: #4fa19d;
 
 .wrapper {
   display: flex;
@@ -23,9 +12,8 @@ $lime-green: #4fa19d;
   h3 {
     margin: 0 auto 100px;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
-    color: $bright-orange;
-    text-shadow: 2px 2px 2px $grayish-blue;
+    text-shadow: 1px 1px 1px $grayish-blue;
   }
 }

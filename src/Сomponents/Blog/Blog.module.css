@@ -11,10 +11,9 @@
 .wrapper h3 {
   margin: 0 auto 100px;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
-  color: #edae3b;
-  text-shadow: 2px 2px 2px #434343;
+  text-shadow: 1px 1px 1px #434343;
 }
 
 /*# sourceMappingURL=Blog.module.css.map */

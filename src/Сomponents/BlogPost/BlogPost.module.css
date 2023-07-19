@@ -13,7 +13,7 @@
   padding: 0;
   display: flex;
   align-items: center;
-  background: #5383ed;
+  background-image: linear-gradient(37deg, rgb(32, 218, 233), rgb(40, 21, 236));
   border-radius: 10px;
   box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
@@ -24,7 +24,8 @@
   font-size: 20px;
   font-weight: 700;
   padding: 20px 30px;
-  background: black;
+  background-image: radial-gradient(circle at center center, transparent, rgb(33, 33, 33)), repeating-linear-gradient(135deg, rgb(33, 33, 33) 0px, rgb(33, 33, 33) 2px, transparent 2px, transparent 10px, rgb(33, 33, 33) 10px, rgb(33, 33, 33) 11px, transparent 11px, transparent 21px), repeating-linear-gradient(45deg, rgb(47, 47, 47) 0px, rgb(47, 47, 47) 4px, transparent 4px, transparent 8px), linear-gradient(90deg, rgb(33, 33, 33), rgb(33, 33, 33));
+  box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
   flex: 0 0 auto;
   border-radius: 50%;
   color: white;
@@ -52,17 +53,17 @@
 .wrap .wrapPost .postContent .less {
   cursor: pointer;
   color: #191d1c;
-  text-shadow: 4px 4px 4px #333333;
+  text-shadow: 1px 1px 1px #333333;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   padding-top: 20px;
 }
 .wrap .wrapPost .postContent .more {
-  color: #edae3b;
-  text-shadow: 4px 4px 4px #333333;
+  color: #FE2E2E;
+  text-shadow: 1px 1px 1px #333333;
   cursor: pointer;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   padding-top: 20px;
 }
 
