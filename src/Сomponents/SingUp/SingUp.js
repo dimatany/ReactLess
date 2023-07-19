@@ -12,7 +12,7 @@ function SingUp(props) {
 	let navigate = useNavigate();
 	const handleRegister = (email, password) => {
 		const auth = getAuth();
-		console.log(auth);
+		//console.log(auth);
 		createUserWithEmailAndPassword (auth, email, password)
 		.then(({user}) => {
 			console.log(user);

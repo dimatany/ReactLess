@@ -12,7 +12,7 @@ function Login(props) {
 	let navigate = useNavigate();
 	const handleLogin = (email, password) => {
 		const auth = getAuth();
-		console.log(auth);
+		//console.log(auth);
 		signInWithEmailAndPassword(auth, email, password)
 		.then(({user}) => {
 			console.log(user);
