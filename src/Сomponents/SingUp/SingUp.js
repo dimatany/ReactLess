@@ -5,14 +5,14 @@ import {getAuth, createUserWithEmailAndPassword} from 'firebase/auth';
 import {setUser} from '../../BLL/reducers/loginReducer';
 import Headings from '../Headings/Headings';
 import FormLoginSingUp from '../FormLoginSingUp/FormLoginSingUp';
-import styles from './SingUp.module.css'
-
+import styles from './SingUp.module.css';
 
 function SingUp(props) {
 	const dispatch = useDispatch();
 	let navigate = useNavigate();
 	const handleRegister = (email, password) => {
 		const auth = getAuth();
+		console.log(auth);
 		createUserWithEmailAndPassword (auth, email, password)
 		.then(({user}) => {
 			console.log(user);

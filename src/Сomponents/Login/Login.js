@@ -5,7 +5,7 @@ import {getAuth, signInWithEmailAndPassword} from 'firebase/auth';
 import {setUser} from '../../BLL/reducers/loginReducer';
 import Headings from '../Headings/Headings';
 import FormLoginSingUp from '../FormLoginSingUp/FormLoginSingUp';
-import styles from './Login.module.css'
+import styles from './Login.module.css';
 
 function Login(props) {
 	const dispatch = useDispatch();
