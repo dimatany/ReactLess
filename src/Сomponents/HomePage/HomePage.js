@@ -1,7 +1,7 @@
 import React from 'react';
 import {Navigate} from 'react-router-dom';
 import {useDispatch} from 'react-redux';
-import {useAuth} from '../Form/useAuth';
+import {useAuth} from '../FormLoginSingUp/useAuth';
 import {removeUser} from '../../BLL/reducers/loginReducer';
 
 const HomePage = () => {

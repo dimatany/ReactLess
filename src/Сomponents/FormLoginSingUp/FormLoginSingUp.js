@@ -1,9 +1,9 @@
 import React, {useRef, useState} from 'react';
 import { useForm } from "react-hook-form";
-import styles from './Form.module.css';
+import styles from './FormLoginSingUp.module.css';
 
 
-function Form({handleClick ,...props}) {
+function FormLoginSingUp({handleClick ,...props}) {
 	const [email, setEmail] = useState('');
 	const [pass, setPass] = useState('');
 	const form = useRef();
@@ -66,15 +66,13 @@ function Form({handleClick ,...props}) {
 					/>
 				</div>
 			</form>
-			
 		</>
 	);
 }
 
-Form.defaultProps = {
+FormLoginSingUp.defaultProps = {
 	title: 'Авторизація',
 	text: 'Відправити',
 };
 
-
-export default Form;
+export default FormLoginSingUp;

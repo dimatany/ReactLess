@@ -1,16 +1,16 @@
 import React from 'react';
 import {useDispatch} from 'react-redux';
 import {Link, useNavigate} from 'react-router-dom';
-import {createUserWithEmailAndPassword, getAuth} from 'firebase/auth';
+import {getAuth, createUserWithEmailAndPassword} from 'firebase/auth';
 import {setUser} from '../../BLL/reducers/loginReducer';
 import Headings from '../Headings/Headings';
-import Form from '../Form/Form';
+import FormLoginSingUp from '../FormLoginSingUp/FormLoginSingUp';
 import styles from './SingUp.module.css'
 
 
 function SingUp(props) {
 	const dispatch = useDispatch();
-	const {push} = useNavigate();
+	let navigate = useNavigate();
 	const handleRegister = (email, password) => {
 		const auth = getAuth();
 		createUserWithEmailAndPassword (auth, email, password)
@@ -21,7 +21,7 @@ function SingUp(props) {
 				id: user.uid,
 				token: user.accessToken,
 			}));
-			push('/');
+			navigate('/about');
 		})
 		.catch(console.error)
 	};
@@ -29,7 +29,7 @@ function SingUp(props) {
 	return (
 		<div className={styles.wrap}>
 			<Headings heading={props.title}/>
-			<Form handleClick={handleRegister}/>
+			<FormLoginSingUp handleClick={handleRegister}/>
 			<div className={styles.transition}>
 				<Link to='/about'>{props.linkTitle}</Link>
 			</div>

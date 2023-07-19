@@ -4,12 +4,12 @@ import {Link, useNavigate} from 'react-router-dom';
 import {getAuth, signInWithEmailAndPassword} from 'firebase/auth';
 import {setUser} from '../../BLL/reducers/loginReducer';
 import Headings from '../Headings/Headings';
-import Form from '../Form/Form';
+import FormLoginSingUp from '../FormLoginSingUp/FormLoginSingUp';
 import styles from './Login.module.css'
 
 function Login(props) {
 	const dispatch = useDispatch();
-	const {push} = useNavigate();
+	let navigate = useNavigate();
 	const handleLogin = (email, password) => {
 		const auth = getAuth();
 		console.log(auth);
@@ -21,15 +21,15 @@ function Login(props) {
 				id: user.uid,
 				token: user.accessToken,
 			}));
-			push('/');
+			navigate('/masters');
 		})
-		.catch(() => alert('Invalid user!'))
+		.catch(console.error)
 	};
 
 	return (
 		<div className={styles.wrap}>
 			<Headings heading={props.title}/>
-			<Form handleClick={handleLogin}/>
+			<FormLoginSingUp handleClick={handleLogin}/>
 			<p className={styles.wrapLink}>
 				<a href="https://dimatany.github.io/WorkingExamples/" className={styles.link}>{props.attention}</a>
 			</p>

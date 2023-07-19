@@ -11,7 +11,7 @@ import {Provider} from 'react-redux';
 import reduxStore from './BLL/reduxStore';
 import reportWebVitals from './reportWebVitals';
 import ThemeProvider from './Providers/ThemeProvider';
-import '../src/firebase';//edd
+import '../src/firebase';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

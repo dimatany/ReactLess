@@ -1,4 +1,4 @@
-import {createSlice} from '@reduxjs/toolkit';
+const SET_USER_DATA = 'SET_USER_DATA';
 
 const initialState = {
 	email: null,
@@ -6,23 +6,19 @@ const initialState = {
 	id: null,
 };
 
-const loginReducer = createSlice({
-	name: 'user',
-	initialState,
-	reducers: {
-		setUser(state,  action) {
-			state.email = action.payload.email;
-			state.token = action.payload.token;
-			state.id = action.payload.id;
-			},
-		removeUser(state) {
-			state.email = null;
-			state.token = null;
-			state.id = null;
-		},
-	},
-});
+const authReducer = (state = initialState, action) => {
+	switch (action.type) {
+		case SET_USER_DATA:
+			return {
+				...state,
+				...action.data
+			}
+		default:
+			return state;
+	}
+}
 
-export const {setUser, removeUser} = loginReducer.actions;
 
-export default loginReducer.reducer;
+export const setUser = (email, token, id) => ({type: SET_USER_DATA, data: {id, email, token} });
+
+export default authReducer;

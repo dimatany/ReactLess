@@ -19,7 +19,6 @@ function NavBurger() {
 	};
 	const isActive = ({ isActive }) => (isActive ? {color: '#FE2E2E'} : {color: '#ffffff'});
 	
-	
 	return (
 		<header className={styles.header}>
 			<div className={styles.wrap}>
@@ -33,7 +32,6 @@ function NavBurger() {
 				<ul className={nav ? [styles.menu, styles.active].join(' ') : [styles.menu]}>
 					
 					<li className={styles.login}><LanguageButton/></li>
-					
 					
 					<li onClick={() => setNav(!nav)} className={styles.login}><NavLink to="/login"><Tooltip content='Вхід'><SVGLogin fill='#4fa19d'/></Tooltip></NavLink></li>
 					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/about">Головна</NavLink></li>
@@ -50,5 +48,4 @@ function NavBurger() {
 		</header>
 	);
 }
-
 export default NavBurger;

@@ -4,7 +4,7 @@ import whatWeDoReducer from './reducers/whatWeDoReducer';
 import mastersReducer from './reducers/mastersReducer';
 import goodsReducer from './reducers/goodsReducer';
 import blogReducer from './reducers/blogReducer';
-import loginReducer from './reducers/loginReducer';
+import authReducer from './reducers/loginReducer';
 
 let reducers = combineReducers({
 	dataCommentPage: commentReducer,
@@ -12,7 +12,7 @@ let reducers = combineReducers({
 	dataMasters: mastersReducer,
 	dataGoods: goodsReducer,
 	dataBlog: blogReducer,
-	dataLogin: loginReducer,//edd
+	dataLogin: authReducer,
 });
 
 let store = createStore(reducers);
