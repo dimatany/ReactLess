@@ -34,7 +34,7 @@ function Form({handleClick ,...props}) {
 		<>
 			<form className={styles.form} ref={form} onSubmit={handleSubmit(onSubmit)}>
 				<div className={styles.wrapForm}>
-					<label>Your Email: name@gmail.com
+					<label>Ваш Email: name@gmail.com
 						<input
 							{...register('email', {
 								required: 'Це поле потрібно заповнити!',
@@ -50,7 +50,7 @@ function Form({handleClick ,...props}) {
 						{errors.email && <span style={{ color: 'red' }}>
 							Додайте адресу у встановленому форматі!</span>}
 					</label>
-					<label>Your password:
+					<label>Ваш пароль:
 						<input
 							{...register('password')}
 							type='password'

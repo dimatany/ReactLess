@@ -26,7 +26,7 @@ function FormFeedback(props) {
 	
 	return (
 		<form ref={form} onSubmit={sendEmail} className={styles.form}>
-			<label>Your First Name:
+			<label>Ваше ім'я:
 				<input
 					{...register('firstName', {
 						required: 'Це поле потрібно заповнити!',
@@ -43,7 +43,7 @@ function FormFeedback(props) {
 			<span className={styles.error}>
 				{errors?.firstName && <p>{errors?.firstName?.message || 'Error!'}</p>}
 			</span>
-			<label>Your Last Name:
+			<label>Ваше прізвище:
 				<input
 					{...register('lastName', {
 						required: 'Це поле потрібно заповнити!',
@@ -60,7 +60,7 @@ function FormFeedback(props) {
 			<span className={styles.error}>
 				{errors?.lastName && <p>{errors?.lastName?.message || 'Error!'}</p>}
 			</span>
-			<label>Your Email: name@gmail.com
+			<label>Ваша електронна пошта: name@gmail.com
 				<input
 					{...register('email', {
 						required: 'Це поле потрібно заповнити!',
@@ -73,7 +73,7 @@ function FormFeedback(props) {
 			<span className={styles.error}>
 				{errors?.email && <p>{errors?.email?.message || 'Error!'}</p>}
 			</span>
-			<label>Your Telefon: 380676742376
+			<label>Ваш телефон: 380676742376
 				<input
 					{...register('telefon', {
 						required: 'Це поле потрібно заповнити!',
@@ -90,7 +90,7 @@ function FormFeedback(props) {
 			<span className={styles.error}>
 				{errors?.telefon && <p>{errors?.telefon?.message || 'Error!'}</p>}
 			</span>
-			<label>Your message:
+			<label>Текст вашого повідомлення:
 				<textarea
 					{...register('textMessage', {
 						required: 'Це поле потрібно заповнити!',

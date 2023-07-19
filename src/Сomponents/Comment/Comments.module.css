@@ -50,4 +50,10 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 720px) {
+  .blockWrap {
+    width: 90%;
+  }
+}
+
 /*# sourceMappingURL=Comments.module.css.map */
