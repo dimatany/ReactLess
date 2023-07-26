@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { useForm } from "react-hook-form";
 import styles from './FormLoginSingUp.module.css';
+import {Link} from 'react-router-dom';
 
 
 function FormLoginSingUp({handleClick ,...props}) {
@@ -70,6 +71,7 @@ function FormLoginSingUp({handleClick ,...props}) {
 FormLoginSingUp.defaultProps = {
 	title: 'Авторизація',
 	text: 'Відправити',
+	linkTitle: 'Якщо ви ще не зареєстровані на сайті, будь ласка, перейдіть на сторінку реєстрації!',
 };
 
 

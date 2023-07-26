@@ -37,7 +37,7 @@ function SingUp(props) {
 
 SingUp.defaultProps = {
 	title: 'Реєстрація',
-	linkTitle: 'Якщо ви не хочете увійти в свій обліковий запис, ви можете перейти на головну сторінку сайту!'
+	linkTitle: 'Натисніть, щоб перейти на головну сторінку сайту!'
 };
 
 export default SingUp;
