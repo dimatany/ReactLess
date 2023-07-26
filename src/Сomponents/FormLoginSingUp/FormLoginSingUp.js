@@ -42,6 +42,7 @@ function FormLoginSingUp({handleClick ,...props}) {
 							})}
 							type="email"
 							autoComplete='email'
+							autoFocus={true}
 							onChange={(e) => setEmail(e.target.value)}
 						/>
 						{errors.email && <span style={{ color: 'red' }}>
@@ -53,6 +54,7 @@ function FormLoginSingUp({handleClick ,...props}) {
 							type='password'
 							autoComplete='current-password'
 							id="current-password"
+							autoFocus={true}
 							onChange={(e) => setPassword(e.target.value)}
 						/>
 					</label>
