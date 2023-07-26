@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { useForm } from "react-hook-form";
 import styles from './FormLoginSingUp.module.css';
-import {Link} from 'react-router-dom';
+
 
 
 function FormLoginSingUp({handleClick ,...props}) {
