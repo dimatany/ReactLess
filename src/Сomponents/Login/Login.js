@@ -1,11 +1,11 @@
 import React from 'react';
 import {Link, useNavigate} from 'react-router-dom';
+import {getAuth} from 'firebase/auth';
 import Headings from '../Headings/Headings';
 import FormLoginSingUp from '../FormLoginSingUp/FormLoginSingUp';
-import styles from './Login.module.css';
 import {signInUser} from '../../firebase';
 import {startSession} from '../../session';
-import {getAuth} from 'firebase/auth';
+import styles from './Login.module.css';
 
 
 function Login(props) {

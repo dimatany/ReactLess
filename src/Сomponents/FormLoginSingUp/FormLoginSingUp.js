@@ -3,7 +3,6 @@ import { useForm } from "react-hook-form";
 import styles from './FormLoginSingUp.module.css';
 
 
-
 function FormLoginSingUp({handleClick ,...props}) {
 	const [error, setError] = useState('');
 	const [email, setEmail] = useState('');
@@ -42,7 +41,7 @@ function FormLoginSingUp({handleClick ,...props}) {
 								}
 							})}
 							type="email"
-							autoComplete='username'
+							autoComplete='email'
 							onChange={(e) => setEmail(e.target.value)}
 						/>
 						{errors.email && <span style={{ color: 'red' }}>
@@ -53,6 +52,7 @@ function FormLoginSingUp({handleClick ,...props}) {
 							{...register('password')}
 							type='password'
 							autoComplete='current-password'
+							id="current-password"
 							onChange={(e) => setPassword(e.target.value)}
 						/>
 					</label>

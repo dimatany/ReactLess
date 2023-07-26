@@ -3,9 +3,10 @@ import {Link, useNavigate} from 'react-router-dom';
 import {getAuth} from 'firebase/auth';
 import Headings from '../Headings/Headings';
 import FormLoginSingUp from '../FormLoginSingUp/FormLoginSingUp';
-import styles from './SingUp.module.css';
 import {createUser} from '../../firebase';
 import {startSession} from '../../session';
+import styles from './SingUp.module.css';
+
 
 function SingUp(props) {
 	let navigate = useNavigate();
