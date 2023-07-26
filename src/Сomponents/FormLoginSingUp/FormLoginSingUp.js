@@ -4,9 +4,9 @@ import styles from './FormLoginSingUp.module.css';
 
 
 function FormLoginSingUp({handleClick ,...props}) {
-	const [error, setError] = useState("");
-	const [email, setEmail] = useState("");
-	const [password, setPassword] = useState("");
+	const [error, setError] = useState('');
+	const [email, setEmail] = useState('');
+	const [password, setPassword] = useState('');
 	
 	const {
 		register,

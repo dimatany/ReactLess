@@ -1,29 +1,27 @@
 import React from 'react';
-import {useDispatch} from 'react-redux';
 import {Link, useNavigate} from 'react-router-dom';
-import {getAuth, createUserWithEmailAndPassword} from 'firebase/auth';
-import {setUser} from '../../BLL/reducers/loginReducer';
+import {getAuth} from 'firebase/auth';
 import Headings from '../Headings/Headings';
 import FormLoginSingUp from '../FormLoginSingUp/FormLoginSingUp';
 import styles from './SingUp.module.css';
+import {createUser} from '../../firebase';
+import {startSession} from '../../session';
 
 function SingUp(props) {
-	const dispatch = useDispatch();
 	let navigate = useNavigate();
-	const handleRegister = (email, password) => {
+	
+	const handleRegister = async (email, password) => {
 		const auth = getAuth();
-		//console.log(auth);
-		createUserWithEmailAndPassword (auth, email, password)
-		.then(({user}) => {
-			console.log(user);
-			dispatch(setUser({
-				email: user.email,
-				id: user.uid,
-				token: user.accessToken,
-			}));
-			navigate('/about');
-		})
-		.catch(console.error)
+		console.log(auth);
+		try {
+			let [registerResponse] = await Promise.all(
+				[createUser(email, password)]);
+			startSession(registerResponse.user);
+			navigate("/goods");
+		}
+		catch (error) {
+			alert(error.message);
+		}
 	};
 	
 	return (
