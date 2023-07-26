@@ -19,7 +19,7 @@ function FormLoginSingUp({handleClick ,...props}) {
 	return (
 		<>
 			{error && <p>{error}</p>}
-			<form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+			<form className={styles.form} onSubmit={onSubmit}>
 				<div className={styles.wrapForm}>
 					<label>Ваш Email: name@gmail.com
 						<input
@@ -36,7 +36,6 @@ function FormLoginSingUp({handleClick ,...props}) {
 						/>
 					</label>
 					<input type={'submit'}
-					       disabled={!isValid}
 					       value={props.text}
 					       className={styles.btn}
 					       onClick={() => handleClick(email, password)}
