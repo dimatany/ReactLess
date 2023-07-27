@@ -19,9 +19,13 @@ function FormLoginSingUp({handleClick ,...props}) {
 	
 	const onSubmit = async (form, event) => {
 		event.preventDefault();
-		if (error) {
-			setError("Помилка даних! Перевірте данні та пробуйте знову!");
+		if (!(
+			!email || !password)) {
+			setError('');
 			reset();
+		} else {
+			//console.log('Logging in...');
+			setError('');
 		}
 	};
 	
@@ -40,10 +44,6 @@ function FormLoginSingUp({handleClick ,...props}) {
 									message: "Додайте адресу у встановленому форматі!"
 								}
 							})}
-							
-							name='email'
-							id='email'
-							
 							type='email'
 							autoComplete='email'
 							onChange={(e) => setEmail(e.target.value)}
@@ -54,19 +54,12 @@ function FormLoginSingUp({handleClick ,...props}) {
 					<label>Ваш пароль:
 						<input
 							{...register('password')}
-							
-							name='password'
-							id='password'
-							
 							type='password'
 							autoComplete='current-password'
 							onChange={(e) => setPassword(e.target.value)}
 						/>
 					</label>
 					<input
-						name='submit'
-						id='submit'
-						
 						type='submit'
 						disabled={!isValid}
 						value={props.text}

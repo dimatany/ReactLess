@@ -1,0 +1,21 @@
+.wrap {
+  padding-top: 200px;
+  padding-bottom: 100px;
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+}
+.wrap h2 {
+  margin-bottom: 30px;
+  color: #edae3b;
+}
+.wrap p {
+  margin-bottom: 30px;
+  color: #FE2E2E;
+}
+.wrap .buttonSubmit {
+  margin-top: -15%;
+}
+
+/*# sourceMappingURL=HomePage.module.css.map */

@@ -86,26 +86,59 @@ body::-webkit-scrollbar-thumb {
 
 ///////////// - color theme rules
 :root[data-theme="light"] {
-  --background-color: #FAEBD7;
+  --position: relative;
   --color: #191d1c;
   h1 {
     --color: #FAEBD7;
   }
-
+  .theme {
+    --position: fixed;
+    --top: 0;
+    --left: 0;
+    --width: 100%;
+    --height: 100%;
+    --z-index: -1;
+    --background-image: url("https://raw.githubusercontent.com/dimatany/ReactLess/main/src/BLL/img/General/fonWhite.jpeg");
+    --background-size: cover;
+    --background-repeat: no-repeat;
+  }
 }
 :root[data-theme="dark"] {
-  --background-color: #202125;
+  --position: relative;
   --color: #FAEBD7;
   h1 {
     --color: #FAEBD7;
   }
-
+  .theme {
+    --position: fixed;
+    --top: 0;
+    --left: 0;
+    --width: 100%;
+    --height: 100%;
+    --z-index: -1;
+    --background-image: url("https://raw.githubusercontent.com/dimatany/ReactLess/main/src/BLL/img/General/fonDarck.jpg");
+    --background-size: cover;
+    --background-repeat: no-repeat;
+  }
 }
 body {
-  background-color: var(--background-color);
+  background-position: var(--background-position);
+  background-repeat: var(--background-repeat);
+  background-attachment: var(--background-attachment);
   color: var(--color);
   h1 {
     color: var(--color);
+  }
+  .theme {
+    position: var(--position);
+    top: var(--top);
+    left: var(--left);
+    width: var(--width);
+    height: var(--height);
+    z-index: var(--z-index);
+    background-image: var(--background-image);
+    background-size: var(--background-size);
+    background-repeat: var(--background-repeat);
   }
 }
 

@@ -13,6 +13,7 @@ import Toggle from './Сomponents/Toggle/Toggle';
 import { ThemeContext, themes } from './Contexts/ThemeContext';
 import NavBurger from './Сomponents/NavBurger/NavBurger';
 import SingUp from './Сomponents/SingUp/SingUp';
+import HomePage from './Сomponents/HomePage/HomePage';
 
 const About = lazy(() => import('./Сomponents/About/About'));
 const Masters = lazy(() => import('./Сomponents/Masters/Masters'));
@@ -27,6 +28,7 @@ const renderLoader = () => <Loading/>;
 function App(props) {
     return (
         <div className="container">
+            <div className='theme'></div>
             <Suspense fallback={renderLoader()}>
                 <BrowserRouter>
                     <div className="buttonTheme">
@@ -53,6 +55,9 @@ function App(props) {
                                 />
                                 <Route path="registration" element={
                                     <SingUp/>}
+                                />
+                                <Route path="homePage" element={
+                                    <HomePage/>}
                                 />
                                 <Route path="/" index element={
                                     <About
