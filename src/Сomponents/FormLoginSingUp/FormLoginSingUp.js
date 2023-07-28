@@ -11,7 +11,7 @@ function FormLoginSingUp({handleClick ,...props}) {
 	const {
 		register,
 		handleSubmit,
-		formState: {errors},
+		formState: {errors, isValid},
 		reset,
 	} = useForm({
 		mode: 'onBlur',
@@ -24,6 +24,7 @@ function FormLoginSingUp({handleClick ,...props}) {
 			setError('');
 			reset();
 		} else {
+			//console.log('Logging in...');
 			setError('');
 		}
 	};
@@ -60,6 +61,7 @@ function FormLoginSingUp({handleClick ,...props}) {
 					</label>
 					<input
 						type='submit'
+						disabled={!isValid}
 						value={props.text}
 						className={styles.btn}
 						onClick={() => handleClick(email, password)}
