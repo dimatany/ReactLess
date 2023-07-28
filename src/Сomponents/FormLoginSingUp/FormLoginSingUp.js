@@ -55,7 +55,7 @@ function FormLoginSingUp({handleClick ,...props}) {
 						<input
 							{...register('password')}
 							type='password'
-							autoComplete='current-password'
+							autoComplete='new-password'
 							onChange={(e) => setPassword(e.target.value)}
 						/>
 					</label>
