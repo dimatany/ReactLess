@@ -61,7 +61,7 @@ function FormLoginSingUp({handleClick ,...props}) {
 					</label>
 					<input
 						type='submit'
-						disabled={!isValid}
+						disabled={isValid}
 						value={props.text}
 						className={styles.btn}
 						onClick={() => handleClick(email, password)}

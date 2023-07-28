@@ -20,10 +20,11 @@ I'm going to describe the components that have already been implemented in the p
 - **Modal window** - button where you can find the **FormFeedback to send messages** to managers of Beauty Salon.
 - **Theme switch button** - from dark to light and reverse.
 - **'Like' component** - for the product card or article or comment on the website.
+- **Login/registration form**.
 
 ***Planning features***
+
 - **A button to translate the text on the website**.
-- **Login/registration form**.
 - **Store Basket**.
 - **Payment component**.
 
@@ -42,6 +43,7 @@ I used the following libraries during the project:
 - [React Hook FormFeedback](https://www.npmjs.com/package/react-hook-form)
 - [React Router DOM](https://www.npmjs.com/package/react-router-dom)
 - [react-tabs](https://github.com/reactjs/react-tabs#forcerendertabpanel-boolean)
+- [Firebase](https://firebase.google.com)
 
 
 I understand that some libraries might not be needed in the project, but  one of my objectives was to learn how to use these libraries.
