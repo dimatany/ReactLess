@@ -7,7 +7,6 @@ import './index.css';
 import App from './App';
 import './BLL/fonts/Gilroy/Gilroy-Light.woff';
 import './BLL/fonts/Dahlia/Dahlia.ttf';
-import {Provider} from 'react-redux';
 import reduxStore from './BLL/reduxStore';
 import reportWebVitals from './reportWebVitals';
 import ThemeProvider from './Providers/ThemeProvider';
@@ -19,9 +18,7 @@ let rerenderEntireTree = (state) => {
 	root.render (
 		<StrictMode>
 			<ThemeProvider>
-				<Provider store={store}>
-					<App appData={state} store={reduxStore}/>
-				</Provider>
+				<App appData={state} store={reduxStore}/>
 			</ThemeProvider>
 		</StrictMode>
 	);

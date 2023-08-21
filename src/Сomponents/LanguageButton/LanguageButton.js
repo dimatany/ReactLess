@@ -1,16 +1,12 @@
 import React, {useState} from 'react';
-import { useContext } from "react";
-import { LanguageContext } from '../../Contexts/multiLingualContext';
 import SVGLanguage from '../SVG/SVGLanguage';
 import Tooltip from '../Tooltip/Tooltip';
 
 function LanguageButton() {
-	const { language } = useContext(LanguageContext);
 	const [isClicked, setClicked] = useState(true);
 	const handleOnClick = () => {
 		setClicked(!isClicked);
 	};
-	
 	
 	return (
 		<>
@@ -18,13 +14,13 @@ function LanguageButton() {
 				isClicked ?
 				(<button onClick={handleOnClick}>
 					<Tooltip content='На русский язык'>
-						<SVGLanguage fill='#ffffff'/>{language}
+						<SVGLanguage fill='#4fa19d'/>
 					</Tooltip>
 				</button>)
 				:
 				(<button onClick={handleOnClick}>
 					<Tooltip content='На українську мову'>
-						<SVGLanguage fill='#4fa19d'/>{language}
+						<SVGLanguage fill='#ffffff'/>
 					</Tooltip>
 				</button>)
 			}

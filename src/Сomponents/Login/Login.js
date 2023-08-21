@@ -18,7 +18,7 @@ function Login(props) {
 			let [loginResponse] = await Promise.all(
 				[signInUser(email, password)]);
 			startSession(loginResponse.user);
-			navigate("/about");
+			navigate('/homePage');
 		}
 		catch (error) {
 			alert(error.message);

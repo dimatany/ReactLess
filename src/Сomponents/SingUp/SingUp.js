@@ -18,7 +18,7 @@ function SingUp(props) {
 			let [registerResponse] = await Promise.all(
 				[createUser(email, password)]);
 			startSession(registerResponse.user);
-			navigate("/homePage");
+			navigate('/homePage');
 		}
 		catch (error) {
 			alert(error.message);
