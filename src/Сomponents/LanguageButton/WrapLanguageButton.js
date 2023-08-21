@@ -1,13 +1,10 @@
-import React, {useContext} from 'react';
-import {LanguageContext} from '../../Contexts/multiLingualContext';
-import LanguageButton from './LanguageButton';
+import React, { useState} from 'react';
+import LanguageContext from '../../Contexts/LanguageContext';
 
-function WrapLanguageButton(props) {
-	const {  toggleLanguage } = useContext(LanguageContext);
+function WrapLanguageButton({ children }) {
+	const [language, setLanguage] = useState('');
 	return (
-		<>
-			<LanguageButton onClick={toggleLanguage}/>
-		</>
+		<LanguageContext.Provider value={{ language, setLanguage }}>{ children }</LanguageContext.Provider>
 	);
 }
 

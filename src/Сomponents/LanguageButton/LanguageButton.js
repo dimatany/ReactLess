@@ -1,28 +1,28 @@
-import React, {useState} from 'react';
-import SVGLanguage from '../SVG/SVGLanguage';
-import Tooltip from '../Tooltip/Tooltip';
+import React, {useState, useContext} from 'react';
+import styles from './LanguageButton.module.css'
+import LanguageContext from '../../Contexts/LanguageContext';
+import SVGRu from '../SVG/SVGRu';
+import SVGUa from '../SVG/SVGUa';
+
 
 function LanguageButton() {
-	const [isClicked, setClicked] = useState(true);
+	const {language, setLanguage} = useContext(LanguageContext);
+	const [isClicked, setIsClicked] = useState(true);
 	const handleOnClick = () => {
-		setClicked(!isClicked);
+		setIsClicked(!setIsClicked);
 	};
 	
 	return (
 		<>
 			{
 				isClicked ?
-				(<button onClick={handleOnClick}>
-					<Tooltip content='На русский язык'>
-						<SVGLanguage fill='#4fa19d'/>
-					</Tooltip>
-				</button>)
-				:
-				(<button onClick={handleOnClick}>
-					<Tooltip content='На українську мову'>
-						<SVGLanguage fill='#ffffff'/>
-					</Tooltip>
-				</button>)
+					(<button onClick={handleOnClick}>
+						<SVGUa/>
+					</button>)
+					:
+					(<button onClick={handleOnClick}>
+						<SVGRu/>
+					</button>)
 			}
 		</>
 	);

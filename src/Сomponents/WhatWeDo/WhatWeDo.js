@@ -12,7 +12,7 @@ function WhatWeDo(props) {
 		<div className={[styles["services"], styles['wrap']].join(" ")}>
 			<Headings heading={props.title}/>
 			<div className={styles.card}>
-				{props.dataWWD.map(el =>
+				{props.dataWWD.russian.map(el =>
 					<div className={styles.shadow} key={el.id}>
 						<img key={el.id} src={el.image} alt={el.alt}/>
 						{/*Без `../about/${el.id}` - такой топорной конкатенации
