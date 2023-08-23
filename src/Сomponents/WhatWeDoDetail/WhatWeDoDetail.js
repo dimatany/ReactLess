@@ -5,11 +5,13 @@ import styles from './WhatWeDoDetail.module.css';
 import Descriptions from '../Descriptions/Descriptions';
 import Headings from '../Headings/Headings';
 import WhatWeDoDetailBlock from '../WhatWeDoDetailBlock/WhatWeDoDetailBlock';
+import data from '../../BLL/json/whatWeDo/ru.json';
 
 function WhatWeDoDetail(props) {
 	const params = useParams();
 	
-	const currentWWD = props.dataWWD.find(
+	//const currentWWD = props.dataWWD.russian.find
+	const currentWWD = data.find(
 		(el) => el.id === params.whatWeDoDetail
 	);
 	

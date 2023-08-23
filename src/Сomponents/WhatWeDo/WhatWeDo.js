@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import styles from './WhatWeDo.module.css';
 import { Link } from "react-router-dom";
 import Headings from '../Headings/Headings';
+import data from '../../BLL/json/whatWeDo/ru.json';
+////{props.dataWWD.russian.map(el =>
 
 function WhatWeDo(props) {
 	const [checked, setChecked] = useState(true);
@@ -12,7 +14,7 @@ function WhatWeDo(props) {
 		<div className={[styles["services"], styles['wrap']].join(" ")}>
 			<Headings heading={props.title}/>
 			<div className={styles.card}>
-				{props.dataWWD.russian.map(el =>
+				{data.map(el =>
 					<div className={styles.shadow} key={el.id}>
 						<img key={el.id} src={el.image} alt={el.alt}/>
 						{/*Без `../about/${el.id}` - такой топорной конкатенации
