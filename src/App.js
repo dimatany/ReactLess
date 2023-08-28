@@ -14,6 +14,7 @@ import { ThemeContext, themes } from './Contexts/ThemeContext';
 import NavBurger from './Сomponents/NavBurger/NavBurger';
 import SingUp from './Сomponents/SingUp/SingUp';
 import HomePage from './Сomponents/HomePage/HomePage';
+import './i18n';
 
 const About = lazy(() => import('./Сomponents/About/About'));
 const Masters = lazy(() => import('./Сomponents/Masters/Masters'));

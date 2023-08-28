@@ -11,6 +11,7 @@ $bright-orange: #edae3b;
 $moderate-orange2: rgb(186, 138, 76, .4);
 $bright-red: #FE2E2E;
 $lime-green: #4fa19d;
+$size: 3rem;
 
 .header {
   width: 100%;
@@ -60,6 +61,48 @@ $lime-green: #4fa19d;
   a {
     text-decoration: none;
   }
+}
+
+.customSelect {
+  position: relative;
+  select {
+    width: 100%;
+    box-shadow: inset 2px 2px 2px hsla(0deg, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+    color: $white;
+    border-radius: 10px;
+    padding: 5px 30px;
+    cursor: pointer;
+    appearance: none;
+    overflow: auto;
+    background: $grayish-blue;
+    background-size: 20px auto;
+    outline: none;
+    option {
+      background: red;
+    }
+  }
+}
+.customSelect::before,
+.customSelect::after {
+  --size: 0.3rem;
+  position: absolute;
+  content: "";
+  right: 1rem;
+  pointer-events: none;
+}
+
+.customSelect::before {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-bottom: var(--size) solid black;
+  top: 40%;
+}
+
+.customSelect::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid black;
+  top: 55%;
 }
 
 @media (max-width: 1080px) {

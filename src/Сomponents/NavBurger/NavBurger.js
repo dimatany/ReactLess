@@ -7,10 +7,11 @@ import SVGLogin from '../SVG/SVGLogin';
 import Tooltip from '../Tooltip/Tooltip';
 import Radium, {StyleRoot} from 'radium';
 import {zoomIn} from 'react-animations';
-import LanguageButton from '../LanguageButton/LanguageButton';
+import {LANGUAGES} from '../../Сonstants/constants';
 
 function NavBurger() {
 	const [nav, setNav] = useState(false);
+	
 	const style = {
 		zoomIn : {
 			animation: 'infinite 6s',
@@ -31,7 +32,15 @@ function NavBurger() {
 				</a>
 				<ul className={nav ? [styles.menu, styles.active].join(' ') : [styles.menu]}>
 					
-					<li className={styles.login}><LanguageButton/></li>
+					<div className={styles.customSelect}>
+						<select defaultValue={"ua"}>
+							{LANGUAGES.map(({ code, label }) => (
+								<option key={code} value={code}>
+									{label}
+								</option>
+							))}
+						</select>
+					</div>
 					
 					<li onClick={() => setNav(!nav)} className={styles.login}><NavLink to="/login"><Tooltip content='Вхід'><SVGLogin fill='#4fa19d'/></Tooltip></NavLink></li>
 					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/about">Головна</NavLink></li>
