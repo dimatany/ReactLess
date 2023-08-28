@@ -8,9 +8,17 @@ import Tooltip from '../Tooltip/Tooltip';
 import Radium, {StyleRoot} from 'radium';
 import {zoomIn} from 'react-animations';
 import {LANGUAGES} from '../../Сonstants/constants';
+import {useTranslation} from 'react-i18next';
 
 function NavBurger() {
 	const [nav, setNav] = useState(false);
+	const { i18n, t } = useTranslation();
+	
+	const onChangeLang = (e) => {
+		const languageCode = e.target.value;
+		i18n.changeLanguage(languageCode )
+		.then(r => e.target.value);
+	};
 	
 	const style = {
 		zoomIn : {
@@ -31,9 +39,8 @@ function NavBurger() {
 					</StyleRoot>
 				</a>
 				<ul className={nav ? [styles.menu, styles.active].join(' ') : [styles.menu]}>
-					
 					<div className={styles.customSelect}>
-						<select defaultValue={"ua"}>
+						<select defaultValue={i18n.language} onChange={onChangeLang}>
 							{LANGUAGES.map(({ code, label }) => (
 								<option key={code} value={code}>
 									{label}
@@ -41,14 +48,13 @@ function NavBurger() {
 							))}
 						</select>
 					</div>
-					
 					<li onClick={() => setNav(!nav)} className={styles.login}><NavLink to="/login"><Tooltip content='Вхід'><SVGLogin fill='#4fa19d'/></Tooltip></NavLink></li>
-					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/about">Головна</NavLink></li>
-					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/masters">Майстри</NavLink></li>
-					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/goods">Товари</NavLink></li>
-					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/stocks">Акції</NavLink></li>
-					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/blog">Блог</NavLink></li>
-					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/contacts">Контакти</NavLink></li>
+					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/about">{t('navLiMain')}</NavLink></li>
+					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/masters">{t('navLiMasters')}</NavLink></li>
+					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/goods">{t('navLiGoods')}</NavLink></li>
+					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/stocks">{t('navLiStocks')}</NavLink></li>
+					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/blog">{t('navLiBlog')}</NavLink></li>
+					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/contacts">{t('navLiContacts')}</NavLink></li>
 				</ul>
 				<div onClick={() => setNav(!nav)} className={styles.mobile_btn}>
 					{nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}

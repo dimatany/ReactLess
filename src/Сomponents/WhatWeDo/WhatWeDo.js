@@ -3,16 +3,18 @@ import styles from './WhatWeDo.module.css';
 import { Link } from "react-router-dom";
 import Headings from '../Headings/Headings';
 import data from '../../BLL/json/whatWeDo/ru.json';
+import {useTranslation} from 'react-i18next';
 ////{props.dataWWD.russian.map(el =>
 
 function WhatWeDo(props) {
 	const [checked, setChecked] = useState(true);
+	const { t } = useTranslation();
 	function handleChange() {
 		setChecked(!checked);
 	}
 	return (
 		<div className={[styles["services"], styles['wrap']].join(" ")}>
-			<Headings heading={props.title}/>
+			<Headings heading={t('title1')}/>
 			<div className={styles.card}>
 				{data.map(el =>
 					<div className={styles.shadow} key={el.id}>

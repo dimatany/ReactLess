@@ -1,16 +1,19 @@
 import React from 'react';
 import styles from './WhoWeAre.module.css'
 import SVGDivision from '../SVG/SVGDivision';
+import {useTranslation} from 'react-i18next';
 
-function WhoWeAre(props) {
+function WhoWeAre() {
+	const { t } = useTranslation();
 	return (
 		<div className={[styles["about"], styles['wrap']].join(" ")}>
 			<span>
 				<SVGDivision fill="#5383ed"/>
 			</span>
-			<p>{props.explanation1}</p>
-			<p>{props.explanation2}</p>
-			<p>{props.explanation3}</p>
+			<p>{t('whoWeAre.explanation1')}</p>
+			<p>{t('whoWeAre.explanation2')}</p>
+			<p>{t('whoWeAre.explanation3')}</p>
+			{/*<p>{props.explanation3}</p>*/}
 		</div>
 	);
 }
