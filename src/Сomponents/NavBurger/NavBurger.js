@@ -49,12 +49,12 @@ function NavBurger() {
 						</select>
 					</div>
 					<li onClick={() => setNav(!nav)} className={styles.login}><NavLink to="/login"><Tooltip content='Вхід'><SVGLogin fill='#4fa19d'/></Tooltip></NavLink></li>
-					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/about">{t('navLiMain')}</NavLink></li>
-					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/masters">{t('navLiMasters')}</NavLink></li>
-					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/goods">{t('navLiGoods')}</NavLink></li>
-					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/stocks">{t('navLiStocks')}</NavLink></li>
-					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/blog">{t('navLiBlog')}</NavLink></li>
-					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/contacts">{t('navLiContacts')}</NavLink></li>
+					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/about">{t('NavBurger.navLiMain')}</NavLink></li>
+					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/masters">{t('NavBurger.navLiMasters')}</NavLink></li>
+					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/goods">{t('NavBurger.navLiGoods')}</NavLink></li>
+					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/stocks">{t('NavBurger.navLiStocks')}</NavLink></li>
+					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/blog">{t('NavBurger.navLiBlog')}</NavLink></li>
+					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/contacts">{t('NavBurger.navLiContacts')}</NavLink></li>
 				</ul>
 				<div onClick={() => setNav(!nav)} className={styles.mobile_btn}>
 					{nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}

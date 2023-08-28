@@ -2,9 +2,8 @@ import React, {useState} from 'react';
 import styles from './WhatWeDo.module.css';
 import { Link } from "react-router-dom";
 import Headings from '../Headings/Headings';
-import data from '../../BLL/json/whatWeDo/ru.json';
 import {useTranslation} from 'react-i18next';
-////{props.dataWWD.russian.map(el =>
+
 
 function WhatWeDo(props) {
 	const [checked, setChecked] = useState(true);
@@ -14,9 +13,9 @@ function WhatWeDo(props) {
 	}
 	return (
 		<div className={[styles["services"], styles['wrap']].join(" ")}>
-			<Headings heading={t('title1')}/>
+			<Headings heading={t('WhatWeDo.section1')}/>
 			<div className={styles.card}>
-				{data.map(el =>
+				{props.dataWWD.map(el =>
 					<div className={styles.shadow} key={el.id}>
 						<img key={el.id} src={el.image} alt={el.alt}/>
 						{/*Без `../about/${el.id}` - такой топорной конкатенации
@@ -24,7 +23,7 @@ function WhatWeDo(props) {
 						из-за того что она индексная - не нашла другого варианта
 						как исправить баг*/}
 						<Link to={`../about/${el.id}`} className={styles.link}>
-							<label htmlFor="button">{props.label}</label>
+							<label htmlFor="button">{t('WhatWeDo.label1')}</label>
 							<input className={styles.checkbox}  checked={checked} onChange={handleChange} />
 						</Link>
 						<p className={styles.wrapDescr}>{el.title}</p>
@@ -35,8 +34,4 @@ function WhatWeDo(props) {
 	);
 }
 
-WhatWeDo.defaultProps = {
-	title: 'Наші послуги',
-	label: 'Дізнайтеся більше...',
-};
 export default WhatWeDo;
