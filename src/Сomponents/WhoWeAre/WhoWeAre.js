@@ -13,7 +13,6 @@ function WhoWeAre() {
 			<p>{t('WhoWeAre.explanation1')}</p>
 			<p>{t('WhoWeAre.explanation2')}</p>
 			<p>{t('WhoWeAre.explanation3')}</p>
-			{/*<p>{props.explanation3}</p>*/}
 		</div>
 	);
 }

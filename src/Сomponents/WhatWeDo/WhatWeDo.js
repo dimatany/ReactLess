@@ -3,19 +3,21 @@ import styles from './WhatWeDo.module.css';
 import { Link } from "react-router-dom";
 import Headings from '../Headings/Headings';
 import {useTranslation} from 'react-i18next';
+import {getSlideInfo} from '../../BLL/json/wwdData';
 
-
-function WhatWeDo(props) {
+function WhatWeDo() {
 	const [checked, setChecked] = useState(true);
 	const { t } = useTranslation();
+	const slideInfo = getSlideInfo(t);
 	function handleChange() {
 		setChecked(!checked);
 	}
+	
 	return (
 		<div className={[styles["services"], styles['wrap']].join(" ")}>
 			<Headings heading={t('WhatWeDo.section1')}/>
 			<div className={styles.card}>
-				{props.dataWWD.map(el =>
+				{slideInfo.map(el =>
 					<div className={styles.shadow} key={el.id}>
 						<img key={el.id} src={el.image} alt={el.alt}/>
 						{/*Без `../about/${el.id}` - такой топорной конкатенации

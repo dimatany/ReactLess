@@ -1,10 +1,15 @@
 import React from 'react';
 import styles from './SelectLanguages.module.css';
-import {LANGUAGES} from '../../Сonstants/constants';
 import {useTranslation} from 'react-i18next';
 
+export const LANGUAGES = [
+	{ label: "Ukraine", code: "ua" },
+	{ label: "English", code: "en" },
+	{ label: "Russian", code: "ru" },
+];
+
 function SelectLanguages() {
-	const { i18n, t } = useTranslation();
+	const { i18n} = useTranslation();
 	const onChangeLang = (e) => {
 		const languageCode = e.target.value;
 		i18n.changeLanguage(languageCode )
