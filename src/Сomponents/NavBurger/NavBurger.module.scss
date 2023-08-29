@@ -11,7 +11,6 @@ $bright-orange: #edae3b;
 $moderate-orange2: rgb(186, 138, 76, .4);
 $bright-red: #FE2E2E;
 $lime-green: #4fa19d;
-$size: 3rem;
 
 .header {
   width: 100%;
@@ -90,14 +89,12 @@ $size: 3rem;
   right: 1rem;
   pointer-events: none;
 }
-
 .customSelect::before {
   border-left: var(--size) solid transparent;
   border-right: var(--size) solid transparent;
   border-bottom: var(--size) solid black;
   top: 40%;
 }
-
 .customSelect::after {
   border-left: var(--size) solid transparent;
   border-right: var(--size) solid transparent;

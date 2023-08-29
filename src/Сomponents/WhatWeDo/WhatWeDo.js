@@ -24,7 +24,7 @@ function WhatWeDo(props) {
 						как исправить баг*/}
 						<Link to={`../about/${el.id}`} className={styles.link}>
 							<label htmlFor="button">{t('WhatWeDo.label1')}</label>
-							<input className={styles.checkbox}  checked={checked} onChange={handleChange} />
+							<input className={styles.checkbox} checked={checked} onChange={handleChange} />
 						</Link>
 						<p className={styles.wrapDescr}>{el.title}</p>
 					</div>

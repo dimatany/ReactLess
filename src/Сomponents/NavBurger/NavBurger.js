@@ -7,19 +7,12 @@ import SVGLogin from '../SVG/SVGLogin';
 import Tooltip from '../Tooltip/Tooltip';
 import Radium, {StyleRoot} from 'radium';
 import {zoomIn} from 'react-animations';
-import {LANGUAGES} from '../../Сonstants/constants';
+import SelectLanguages from '../SelectLanguages/SelectLanguages';
 import {useTranslation} from 'react-i18next';
 
 function NavBurger() {
 	const [nav, setNav] = useState(false);
-	const { i18n, t } = useTranslation();
-	
-	const onChangeLang = (e) => {
-		const languageCode = e.target.value;
-		i18n.changeLanguage(languageCode )
-		.then(r => e.target.value);
-	};
-	
+	const { t } = useTranslation();
 	const style = {
 		zoomIn : {
 			animation: 'infinite 6s',
@@ -39,15 +32,7 @@ function NavBurger() {
 					</StyleRoot>
 				</a>
 				<ul className={nav ? [styles.menu, styles.active].join(' ') : [styles.menu]}>
-					<div className={styles.customSelect}>
-						<select defaultValue={i18n.language} onChange={onChangeLang}>
-							{LANGUAGES.map(({ code, label }) => (
-								<option key={code} value={code}>
-									{label}
-								</option>
-							))}
-						</select>
-					</div>
+					<SelectLanguages/>
 					<li onClick={() => setNav(!nav)} className={styles.login}><NavLink to="/login"><Tooltip content='Вхід'><SVGLogin fill='#4fa19d'/></Tooltip></NavLink></li>
 					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/about">{t('NavBurger.navLiMain')}</NavLink></li>
 					<li onClick={() => setNav(!nav)} className={styles.navItem}><NavLink  style={isActive}  to="/masters">{t('NavBurger.navLiMasters')}</NavLink></li>
