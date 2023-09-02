@@ -44,6 +44,7 @@ I used the following libraries during the project:
 - [React Router DOM](https://www.npmjs.com/package/react-router-dom)
 - [react-tabs](https://github.com/reactjs/react-tabs#forcerendertabpanel-boolean)
 - [Firebase](https://firebase.google.com)
+- [i18n](https://react.i18next.com)
 
 
 I understand that some libraries might not be needed in the project, but  one of my objectives was to learn how to use these libraries.
