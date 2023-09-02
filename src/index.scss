@@ -26,6 +26,20 @@ $lime-green: #4fa19d;
 body {
   font-family: 'Cormorant Garamond', serif;
   font-weight: bold;
+  position: relative;
+}
+
+body::before {
+  background: url("https://raw.githubusercontent.com/dimatany/ReactLess/main/src/BLL/img/General/fonWhite.jpeg") no-repeat center center;
+  background-size: cover;
+  content: ' ';
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  will-change: transform;
+  z-index: -1;
 }
 body::-webkit-scrollbar {
   width: 16px;
@@ -86,7 +100,16 @@ body::-webkit-scrollbar-thumb {
 
 ///////////// - color theme rules
 :root[data-theme="light"] {
-  --background-color: #FAEBD7;
+  --background: url('https://raw.githubusercontent.com/dimatany/ReactLess/main/src/BLL/img/General/fonWhite.jpeg') no-repeat center center;
+  --background-size: cover;
+  --content: ' ';
+  --height: 100%;
+  --left: 0;
+  --top: 0;
+  --position: fixed;
+  --width: 100%;
+  --will-change: transform;
+  --z-index: -1;
   --color: #191d1c;
   h1 {
     --color: #FAEBD7;
@@ -94,7 +117,16 @@ body::-webkit-scrollbar-thumb {
 
 }
 :root[data-theme="dark"] {
-  --background-color: #202125;
+  --background: url('https://raw.githubusercontent.com/dimatany/ReactLess/main/src/BLL/img/General/fonDarck.jpg') no-repeat center center;
+  --background-size: cover;
+  --content: ' ';
+  --height: 100%;
+  --left: 0;
+  --top: 0;
+  --position: fixed;
+  --width: 100%;
+  --will-change: transform;
+  --z-index: -1;
   --color: #FAEBD7;
   h1 {
     --color: #FAEBD7;
@@ -102,8 +134,19 @@ body::-webkit-scrollbar-thumb {
 
 }
 body {
-  background-color: var(--background-color);
   color: var(--color);
+  &:before {
+    background: var(--background);
+    background-size: var(--background-size);
+    content: var(--content);
+    height: var(--height);
+    left: var(--left);
+    position: var(--position);
+    top: var(--top);
+    width: var(--width);
+    will-change: var(--will-change);
+    z-index: var(--z-index);
+  }
   h1 {
     color: var(--color);
   }

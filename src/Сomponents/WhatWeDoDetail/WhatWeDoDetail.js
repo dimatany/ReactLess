@@ -5,11 +5,14 @@ import styles from './WhatWeDoDetail.module.css';
 import Descriptions from '../Descriptions/Descriptions';
 import Headings from '../Headings/Headings';
 import WhatWeDoDetailBlock from '../WhatWeDoDetailBlock/WhatWeDoDetailBlock';
+import {useTranslation} from 'react-i18next';
+import {getSlideInfo} from '../../BLL/json/wwdData';
 
-function WhatWeDoDetail(props) {
+function WhatWeDoDetail() {
 	const params = useParams();
-	
-	const currentWWD = props.dataWWD.find(
+	const { t } = useTranslation();
+	const slideInfo = getSlideInfo(t);
+	const currentWWD = slideInfo.find(
 		(el) => el.id === params.whatWeDoDetail
 	);
 	
@@ -17,8 +20,8 @@ function WhatWeDoDetail(props) {
 	
 	return (
 		<div className={styles.wrap}>
-			<Headings heading={title}/>
-			<Descriptions text={props.text2}/>
+			<Headings heading={t('WhatWeDo.title1')}/>
+			<Descriptions text={t('WhatWeDoDetail.explanation1')}/>
 			<ErrorBoundary>
 				<WhatWeDoDetailBlock
 					image={image1}
@@ -45,13 +48,8 @@ function WhatWeDoDetail(props) {
 					subTitle2={subSubTitle4}
 					subTitlePrice={subtitlePrice4}/>
 			</ErrorBoundary>
-			<Descriptions text={props.text}/>
+			<Descriptions text={t('WhatWeDoDetail.explanation2')}/>
 		</div>
 	);
 }
-
-WhatWeDoDetail.defaultProps = {
-	text: 'У нас є багато різних послуг в асортименті - якщо ви хочете зареєструватися на консультацію по номерах або електронній пошті, наданих в капелюсі сайту',
-	text2: 'Ми надаємо послуги популяції по догляду за волоссям (різання, створення волосся, фарбування, танення та іншого фарбування, стрижки, гоління та стрижки, стрижка та стрижка бороди та вус тощо) в номері обладнаному спеціально для цього.',
-};
 export default WhatWeDoDetail;

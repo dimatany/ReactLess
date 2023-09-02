@@ -27,7 +27,7 @@ function NavBurger() {
 				<a href="/about" className={styles.logo}>
 					<StyleRoot>
 						<div style={style.zoomIn}>
-							<SVGAvatar fill='#5383ed'/>
+							<SVGAvatar fill='#FE2E2E'/>
 						</div>
 					</StyleRoot>
 				</a>
