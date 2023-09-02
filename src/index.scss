@@ -29,18 +29,6 @@ body {
   position: relative;
 }
 
-body::before {
-  background: url("https://raw.githubusercontent.com/dimatany/ReactLess/main/src/BLL/img/General/fonWhite.jpeg") no-repeat center center;
-  background-size: cover;
-  content: ' ';
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  will-change: transform;
-  z-index: -1;
-}
 body::-webkit-scrollbar {
   width: 16px;
 }
