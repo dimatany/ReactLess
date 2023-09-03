@@ -1,6 +1,11 @@
 import React from 'react';
-import styles from './WhatWeDoDetailBlock.module.css'
+import styles from './WhatWeDoDetailBlock.module.css';
+import {useTranslation} from 'react-i18next';
+
+
 function WhatWeDoDetailBlock(props) {
+	const { t } = useTranslation();
+	
 	return (
 		<>
 			<div className={styles.infoBlock}>
@@ -13,7 +18,7 @@ function WhatWeDoDetailBlock(props) {
 						<p>{props.subTitle2}</p>
 						<div className={styles.price}>
 							<span>{props.subTitlePrice}</span>
-							<span className={styles.currency}>{props.currency}</span>
+							<span className={styles.currency}>{t('Technical.currency')}</span>
 						</div>
 					</details>
 				</div>
@@ -22,7 +27,4 @@ function WhatWeDoDetailBlock(props) {
 	);
 }
 
-WhatWeDoDetailBlock.defaultProps = {
-	currency: 'грн',
-};
 export default WhatWeDoDetailBlock;

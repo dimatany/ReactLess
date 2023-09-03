@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import ErrorBoundary from '../ErrorBoundary/ErrorBoundary';
 import styles from './WhatWeDoDetail.module.css';
 import Descriptions from '../Descriptions/Descriptions';
-import Headings from '../Headings/Headings';
 import WhatWeDoDetailBlock from '../WhatWeDoDetailBlock/WhatWeDoDetailBlock';
 import {useTranslation} from 'react-i18next';
 import {getSlideInfo} from '../../BLL/json/wwdData';
@@ -17,12 +16,10 @@ function WhatWeDoDetail() {
 	);
 	
 	const { subtitle1, subtitlePrice1, subSubTitle1, subtitle2, subtitlePrice2, subSubTitle2, subtitle3, subtitlePrice3, subSubTitle3, subtitle4, subtitlePrice4, subSubTitle4, image1, image2, image3, image4, alt } = currentWWD;
-	//const { title, subtitle1, subtitlePrice1, subSubTitle1, subtitle2, subtitlePrice2, subSubTitle2, subtitle3, subtitlePrice3, subSubTitle3, subtitle4, subtitlePrice4, subSubTitle4, image1, image2, image3, image4, alt } = currentWWD;
 	
 	return (
 		<div className={styles.wrap}>
-			<Headings heading={t('WhatWeDo.title1')}/>
-			<Descriptions text={t('WhatWeDoDetail.explanation1')}/>
+			<Descriptions text={t('WhatWeDoDetail.explanation')}/>
 			<ErrorBoundary>
 				<WhatWeDoDetailBlock
 					image={image1}
@@ -49,7 +46,6 @@ function WhatWeDoDetail() {
 					subTitle2={subSubTitle4}
 					subTitlePrice={subtitlePrice4}/>
 			</ErrorBoundary>
-			<Descriptions text={t('WhatWeDoDetail.explanation2')}/>
 		</div>
 	);
 }
