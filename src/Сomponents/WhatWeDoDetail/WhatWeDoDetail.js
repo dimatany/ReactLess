@@ -5,7 +5,7 @@ import styles from './WhatWeDoDetail.module.css';
 import Descriptions from '../Descriptions/Descriptions';
 import WhatWeDoDetailBlock from '../WhatWeDoDetailBlock/WhatWeDoDetailBlock';
 import {useTranslation} from 'react-i18next';
-import {getSlideInfo} from '../../BLL/json/wwdData';
+import {getSlideInfo} from '../../BLL/data/wwdData';
 
 function WhatWeDoDetail() {
 	const params = useParams();

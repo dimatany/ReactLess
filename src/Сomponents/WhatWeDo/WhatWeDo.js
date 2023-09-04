@@ -3,7 +3,7 @@ import styles from './WhatWeDo.module.css';
 import { Link } from "react-router-dom";
 import Headings from '../Headings/Headings';
 import {useTranslation} from 'react-i18next';
-import {getSlideInfo} from '../../BLL/json/wwdData';
+import {getSlideInfo} from '../../BLL/data/wwdData';
 
 function WhatWeDo() {
 	const [checked, setChecked] = useState(true);

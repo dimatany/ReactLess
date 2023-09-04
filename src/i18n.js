@@ -1,7 +1,7 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import * as i18 from 'i18next';
-import translation from './BLL/json/resources';
+import translation from './BLL/data/resources';
 
 const resources = translation;
 

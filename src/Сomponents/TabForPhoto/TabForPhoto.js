@@ -2,9 +2,11 @@ import React, {useState} from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import "react-tabs/style/react-tabs.css";
 import './TabForPhoto.css';
+import {useTranslation} from 'react-i18next';
 
 function TabForPhoto() {
 	const [tabIndex, setTabIndex] = useState(0);
+	const { t } = useTranslation();
 	
 	return (
 		<Tabs className='wrapper'
@@ -12,10 +14,10 @@ function TabForPhoto() {
 		      onSelect={tabIndex => setTabIndex(tabIndex)}
 		>
 			<TabList className='tabPanel'>
-				<Tab className='tab'>Показати все</Tab>
-				<Tab className='tab'>Перукарські послуги</Tab>
-				<Tab className='tab'>Макіяж</Tab>
-				<Tab className='tab'>Манікюр</Tab>
+				<Tab className='tab'>{t('TabForPhoto.showAll')}</Tab>
+				<Tab className='tab'>{t('TabForPhoto.haircareServices')}</Tab>
+				<Tab className='tab'>{t('TabForPhoto.makeup')}</Tab>
+				<Tab className='tab'>{t('TabForPhoto.manicur')}</Tab>
 			</TabList>
 			<TabPanel>
 				<div className='tabContent'>

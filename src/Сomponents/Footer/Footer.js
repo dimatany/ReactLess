@@ -2,8 +2,11 @@ import React from 'react';
 import styles from './Footer.module.css'
 import SVGAvatar from '../SVG/SVGAvatar';
 import SVGInstagram from '../SVG/SVGInstagram';
+import {useTranslation} from 'react-i18next';
 
 function Footer(props) {
+	const { t } = useTranslation();
+	
 	return (
 		<>
 			<address className={[styles["section"], styles['wrap'], styles['border']].join(" ")}>
@@ -11,21 +14,21 @@ function Footer(props) {
 					<SVGAvatar fill='#5383ed'/>
 				</div>
 				<div className={styles.contacts}>
-					<span>{props.title1}</span>
+					<span>{t('Footer.title1')}</span>
 					<ul>
 						<li><a href="mailto:cheize2020@gmail.com?subject=contact for joint work">{props.email}</a></li>
 						<li><a href="tel:+380670000000">{props.number}</a></li>
 					</ul>
 				</div>
 				<div className={styles.mode}>
-					<span>{props.title2}</span>
+					<span>{t('Footer.title2')}</span>
 					<ul>
-						<li>{props.mode1}</li>
-						<li>{props.mode2}</li>
+						<li>{t('Footer.mode1')}</li>
+						<li>{t('Footer.mode1')}</li>
 					</ul>
 				</div>
 				<div className={styles.social}>
-					<span>{props.title3}</span>
+					<span>{t('Footer.title3')}</span>
 					<a href="https://www.instagram.com/cheize20/?hl=ru"
 					   target="_blank"
 					   rel="noopener noreferrer nofollow"
@@ -35,7 +38,7 @@ function Footer(props) {
 				</div>
 			</address>
 			<div className={styles.copyright}>
-				<span>{props.copyright}</span>
+				<span>{t('copyright')}</span>
 			</div>
 		</>
 	);

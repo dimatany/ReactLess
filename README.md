@@ -21,12 +21,10 @@ I'm going to describe the components that have already been implemented in the p
 - **Theme switch button** - from dark to light and reverse.
 - **'Like' component** - for the product card or article or comment on the website.
 - **Login/registration form**.
+- - **A button to translate the text on the website in three languages**.
 
 ***Planning features***
-
-- **A button to translate the text on the website**.
 - **Store Basket**.
-- **Payment component**.
 
 ## Tech
 
@@ -54,7 +52,10 @@ I understand that some libraries might not be needed in the project, but  one of
 
 > When I was creating this project, all decisions were made on my own, I used Google to help! This is a great skill, since before me, someone has already met a similar problem.
 
->I learned to stop in time in the attacks of perfectionism and write the code further. Even if I think the code is not ideal, it works well.
+> I learned to stop in time in the attacks of perfectionism and write the code further. Even if I think the code is not ideal, it works well.
 
 `If you have any questions - be free to contact me!`
 
+### P.S.
+> Translation of the site is not produced by fullness - I transferred the first two tabs with all the sets. My task - will show the site translation with the popular library to the  8-12 transfers components, but not the artistic translation of the entire website!
+> Also, I report that the design of the entire website has not been derived from a professional designer. I have made a lot of components myself, because I wanted to show you what I could do them myself.

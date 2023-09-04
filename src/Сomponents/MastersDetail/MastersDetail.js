@@ -4,11 +4,15 @@ import ErrorBoundary from '../ErrorBoundary/ErrorBoundary';
 import styles from './MastersDetail.module.css';
 import Headings from '../Headings/Headings';
 import MasterDetailPost from '../MasterDetailPost/MasterDetailPost';
+import {useTranslation} from 'react-i18next';
+import {getSlideInfo} from '../../BLL/data/masters';
 
-function MastersDetail(props) {
+function MastersDetail() {
 	const params = useParams();
+	const { t } = useTranslation();
+	const slideInfo = getSlideInfo(t);
 	
-	const currentMD = props.dataMasters.find(
+	const currentMD = slideInfo.find(
 		(el) => el.id === params.mastersDetail
 	);
 	
@@ -16,7 +20,7 @@ function MastersDetail(props) {
 	
 	return (
 		<div className={styles.wrap}>
-			<Headings heading={props.title}/>
+			<Headings heading={t('MasterCard.heading')}/>
 			<ErrorBoundary>
 				<MasterDetailPost subTitle={subTitle1} image={image1} alt={altImage} text={text1}/>
 				<MasterDetailPost subTitle={subTitle2} image={image2} alt={altImage} text={text2}/>
@@ -29,7 +33,4 @@ function MastersDetail(props) {
 	);
 }
 
-MastersDetail.defaultProps = {
-	title: 'Варіанти',
-};
 export default MastersDetail;

@@ -6,8 +6,11 @@ import WhatWeDo from '../WhatWeDo/WhatWeDo';
 import Brands from '../Brands/Brands';
 import WhoWeAre from '../WhoWeAre/WhoWeAre';
 import Descriptions from '../Descriptions/Descriptions';
+import {useTranslation} from 'react-i18next';
 
 function About(props) {
+	const { t } = useTranslation();
+	
 	return (
 		<>
 			<Title/>
@@ -19,13 +22,9 @@ function About(props) {
 			<ErrorBoundary>
 				<Tabs/>
 			</ErrorBoundary>
-			<Descriptions text={props.text}/>
+			<Descriptions text={t('Technical.description')}/>
 		</>
 	);
 }
-
-About.defaultProps = {
-	text: 'Приходьте на «новим» обличчям, бездоганним манікюром і макіяжем, ефектним волоссям, цілющим масажем та гарним настроем!',
-};
 
 export default About;
